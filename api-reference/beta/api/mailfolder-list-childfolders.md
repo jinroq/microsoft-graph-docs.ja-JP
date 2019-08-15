@@ -5,30 +5,30 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b4be94524be8af1682db79d6cb71bce8569c1900
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1c3151174276ad4bcb9fdfb89550609aebaba1e5
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342881"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415296"
 ---
-# <a name="list-childfolders"></a><span data-ttu-id="1a7c3-104">childFolders を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="1a7c3-104">List childFolders</span></span>
+# <a name="list-childfolders"></a><span data-ttu-id="df9c7-104">childFolders を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="df9c7-104">List childFolders</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a7c3-p102">指定したフォルダーの下のフォルダーのコレクションを取得します。`.../me/mailFolders` ショートカットを使用して、最上位フォルダーのコレクションを取得して、別のフォルダーに移動することができます。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-p102">Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level folder collection and navigate to another folder.</span></span>
+<span data-ttu-id="df9c7-p102">指定したフォルダーの下のフォルダーのコレクションを取得します。`.../me/mailFolders` ショートカットを使用して、最上位フォルダーのコレクションを取得して、別のフォルダーに移動することができます。</span><span class="sxs-lookup"><span data-stu-id="df9c7-p102">Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level folder collection and navigate to another folder.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a7c3-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1a7c3-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="df9c7-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="df9c7-107">Permissions</span></span>
 
-<span data-ttu-id="1a7c3-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="df9c7-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="df9c7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1a7c3-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1a7c3-110">Permission type</span></span>                        | <span data-ttu-id="1a7c3-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1a7c3-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="df9c7-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="df9c7-110">Permission type</span></span>                        | <span data-ttu-id="df9c7-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="df9c7-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:------------------------------------|
-| <span data-ttu-id="1a7c3-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1a7c3-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="1a7c3-113">メール ReadBasic、Mail. 読み取り、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a7c3-113">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
-| <span data-ttu-id="1a7c3-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1a7c3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a7c3-115">メール ReadBasic、Mail. 読み取り、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1a7c3-115">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
-| <span data-ttu-id="1a7c3-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1a7c3-116">Application</span></span>                            | <span data-ttu-id="1a7c3-117">-ReadBasic、mail. 読み取り、および書き込み</span><span class="sxs-lookup"><span data-stu-id="1a7c3-117">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span>           |
+| <span data-ttu-id="df9c7-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="df9c7-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="df9c7-113">メール ReadBasic、Mail. 読み取り、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="df9c7-113">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
+| <span data-ttu-id="df9c7-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="df9c7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df9c7-115">メール ReadBasic、Mail. 読み取り、ReadWrite</span><span class="sxs-lookup"><span data-stu-id="df9c7-115">Mail.ReadBasic, Mail.Read, Mail.ReadWrite</span></span>           |
+| <span data-ttu-id="df9c7-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="df9c7-116">Application</span></span>                            | <span data-ttu-id="df9c7-117">-ReadBasic、mail. 読み取り、および書き込み</span><span class="sxs-lookup"><span data-stu-id="df9c7-117">Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite</span></span>           |
 
-## <a name="http-request"></a><span data-ttu-id="1a7c3-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1a7c3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="df9c7-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="df9c7-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,34 +37,34 @@ GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1a7c3-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="1a7c3-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="df9c7-119">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="df9c7-119">Optional query parameters</span></span>
 
-<span data-ttu-id="1a7c3-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="df9c7-120">このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。</span><span class="sxs-lookup"><span data-stu-id="df9c7-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1a7c3-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1a7c3-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="df9c7-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="df9c7-121">Request headers</span></span>
 
-| <span data-ttu-id="1a7c3-122">名前</span><span class="sxs-lookup"><span data-stu-id="1a7c3-122">Name</span></span>          | <span data-ttu-id="1a7c3-123">型</span><span class="sxs-lookup"><span data-stu-id="1a7c3-123">Type</span></span>   | <span data-ttu-id="1a7c3-124">説明</span><span class="sxs-lookup"><span data-stu-id="1a7c3-124">Description</span></span>               |
+| <span data-ttu-id="df9c7-122">名前</span><span class="sxs-lookup"><span data-stu-id="df9c7-122">Name</span></span>          | <span data-ttu-id="df9c7-123">型</span><span class="sxs-lookup"><span data-stu-id="df9c7-123">Type</span></span>   | <span data-ttu-id="df9c7-124">説明</span><span class="sxs-lookup"><span data-stu-id="df9c7-124">Description</span></span>               |
 |:--------------|:-------|:--------------------------|
-| <span data-ttu-id="1a7c3-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a7c3-125">Authorization</span></span> | <span data-ttu-id="1a7c3-126">string</span><span class="sxs-lookup"><span data-stu-id="1a7c3-126">string</span></span> | <span data-ttu-id="1a7c3-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="df9c7-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="df9c7-125">Authorization</span></span> | <span data-ttu-id="df9c7-126">string</span><span class="sxs-lookup"><span data-stu-id="df9c7-126">string</span></span> | <span data-ttu-id="df9c7-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="df9c7-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1a7c3-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="1a7c3-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="df9c7-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="df9c7-129">Request body</span></span>
 
-<span data-ttu-id="1a7c3-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="df9c7-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="df9c7-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a7c3-131">応答</span><span class="sxs-lookup"><span data-stu-id="1a7c3-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="df9c7-131">応答</span><span class="sxs-lookup"><span data-stu-id="df9c7-131">Response</span></span>
 
-<span data-ttu-id="1a7c3-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[mailfolder](../resources/mailfolder.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-132">If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
+<span data-ttu-id="df9c7-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[mailfolder](../resources/mailfolder.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="df9c7-132">If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="1a7c3-133">例</span><span class="sxs-lookup"><span data-stu-id="1a7c3-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="df9c7-133">例</span><span class="sxs-lookup"><span data-stu-id="df9c7-133">Examples</span></span>
 
-### <a name="example-1-list-mail-folders"></a><span data-ttu-id="1a7c3-134">例 1: メールフォルダーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="1a7c3-134">Example 1: List mail folders</span></span>
+### <a name="example-1-list-mail-folders"></a><span data-ttu-id="df9c7-134">例 1: メールフォルダーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="df9c7-134">Example 1: List mail folders</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1a7c3-135">要求</span><span class="sxs-lookup"><span data-stu-id="1a7c3-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="df9c7-135">要求</span><span class="sxs-lookup"><span data-stu-id="df9c7-135">Request</span></span>
 
-<span data-ttu-id="1a7c3-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-136">The following is an example of the request.</span></span>
+<span data-ttu-id="df9c7-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="df9c7-136">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1a7c3-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="1a7c3-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="df9c7-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="df9c7-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailfolder_get_childfolders"
@@ -73,20 +73,16 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1a7c3-138">C#</span><span class="sxs-lookup"><span data-stu-id="1a7c3-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="df9c7-138">C#</span><span class="sxs-lookup"><span data-stu-id="df9c7-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-childfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a7c3-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a7c3-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="df9c7-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="df9c7-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-get-childfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1a7c3-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="1a7c3-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="df9c7-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="df9c7-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-get-childfolders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="1a7c3-141">Java</span><span class="sxs-lookup"><span data-stu-id="1a7c3-141">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/mailfolder-get-childfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,11 +90,11 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 <!-- markdownlint-disable MD024 -->
 
-#### <a name="response"></a><span data-ttu-id="1a7c3-142">応答</span><span class="sxs-lookup"><span data-stu-id="1a7c3-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="df9c7-141">応答</span><span class="sxs-lookup"><span data-stu-id="df9c7-141">Response</span></span>
 
-<span data-ttu-id="1a7c3-143">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-143">The following is an example of the response.</span></span>
+<span data-ttu-id="df9c7-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="df9c7-142">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="1a7c3-144">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1a7c3-145">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-145">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="df9c7-143">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="df9c7-143">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="df9c7-144">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="df9c7-144">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -144,14 +140,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a><span data-ttu-id="1a7c3-146">例 2: メール検索フォルダーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="1a7c3-146">Example 2: List mail search folders</span></span>
+### <a name="example-2-list-mail-search-folders"></a><span data-ttu-id="df9c7-145">例 2: メール検索フォルダーを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="df9c7-145">Example 2: List mail search folders</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1a7c3-147">要求</span><span class="sxs-lookup"><span data-stu-id="1a7c3-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="df9c7-146">要求</span><span class="sxs-lookup"><span data-stu-id="df9c7-146">Request</span></span>
 
-<span data-ttu-id="1a7c3-148">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-148">The following is an example of the request.</span></span>
+<span data-ttu-id="df9c7-147">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="df9c7-147">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="1a7c3-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="1a7c3-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="df9c7-148">プロトコル</span><span class="sxs-lookup"><span data-stu-id="df9c7-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_childfolders_of_searchfolders"
@@ -160,30 +156,26 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="1a7c3-150">C#</span><span class="sxs-lookup"><span data-stu-id="1a7c3-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="df9c7-149">C#</span><span class="sxs-lookup"><span data-stu-id="df9c7-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-childfolders-of-searchfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a7c3-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a7c3-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="df9c7-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="df9c7-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-childfolders-of-searchfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1a7c3-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="1a7c3-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="df9c7-151">目的-C</span><span class="sxs-lookup"><span data-stu-id="df9c7-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-childfolders-of-searchfolders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="1a7c3-153">Java</span><span class="sxs-lookup"><span data-stu-id="1a7c3-153">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-childfolders-of-searchfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="1a7c3-154">応答</span><span class="sxs-lookup"><span data-stu-id="1a7c3-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="df9c7-152">応答</span><span class="sxs-lookup"><span data-stu-id="df9c7-152">Response</span></span>
 
-<span data-ttu-id="1a7c3-155">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-155">The following is an example of the response.</span></span>
+<span data-ttu-id="df9c7-153">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="df9c7-153">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="1a7c3-156">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-156">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1a7c3-157">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="1a7c3-157">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="df9c7-154">**注:** ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="df9c7-154">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="df9c7-155">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="df9c7-155">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

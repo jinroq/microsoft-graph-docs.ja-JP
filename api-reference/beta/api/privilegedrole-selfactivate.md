@@ -5,67 +5,67 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 7fbe9b8a0f37238c393d5c9848b578263b5318ae
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eb984bb532d19e3e0cacd5827a9027e4aa4c0533
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361249"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36412776"
 ---
-# <a name="privilegedrole-selfactivate"></a><span data-ttu-id="40731-103">privilegedRole: selfActivate</span><span class="sxs-lookup"><span data-stu-id="40731-103">privilegedRole: selfActivate</span></span>
+# <a name="privilegedrole-selfactivate"></a><span data-ttu-id="78877-103">privilegedRole: selfActivate</span><span class="sxs-lookup"><span data-stu-id="78877-103">privilegedRole: selfActivate</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="40731-104">要求者に割り当てられている役割をアクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="40731-104">Activate the role that is assigned to the requester.</span></span>
+<span data-ttu-id="78877-104">要求者に割り当てられている役割をアクティブ化します。</span><span class="sxs-lookup"><span data-stu-id="78877-104">Activate the role that is assigned to the requester.</span></span>
 
-><span data-ttu-id="40731-105">**注:** 2018年12月有効になると、この API はサポートされなくなり、使用されなくなります。</span><span class="sxs-lookup"><span data-stu-id="40731-105">**Note:** Effective December 2018, this API will no longer be supported and should not be used.</span></span> <span data-ttu-id="40731-106">代わりに、 [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md)を使用します。</span><span class="sxs-lookup"><span data-stu-id="40731-106">Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) instead.</span></span>
+><span data-ttu-id="78877-105">**注:** 2018年12月有効になると、この API はサポートされなくなり、使用されなくなります。</span><span class="sxs-lookup"><span data-stu-id="78877-105">**Note:** Effective December 2018, this API will no longer be supported and should not be used.</span></span> <span data-ttu-id="78877-106">代わりに、 [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md)を使用します。</span><span class="sxs-lookup"><span data-stu-id="78877-106">Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) instead.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="40731-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="40731-107">Permissions</span></span>
-<span data-ttu-id="40731-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="40731-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="78877-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="78877-107">Permissions</span></span>
+<span data-ttu-id="78877-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="78877-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="40731-110">リクエスターは、自分に```selfActivate```割り当てられている役割に対してのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="40731-110">The requestor can only call ```selfActivate``` for the role that is assigned to him.</span></span>
+<span data-ttu-id="78877-110">リクエスターは、自分に```selfActivate```割り当てられている役割に対してのみ呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="78877-110">The requestor can only call ```selfActivate``` for the role that is assigned to him.</span></span>
  
 
-|<span data-ttu-id="40731-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="40731-111">Permission type</span></span>      | <span data-ttu-id="40731-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="40731-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="78877-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="78877-111">Permission type</span></span>      | <span data-ttu-id="78877-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="78877-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="40731-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="40731-113">Delegated (work or school account)</span></span> | <span data-ttu-id="40731-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="40731-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="40731-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="40731-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40731-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40731-116">Not supported.</span></span>    |
-|<span data-ttu-id="40731-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="40731-117">Application</span></span> | <span data-ttu-id="40731-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="40731-118">Not supported.</span></span> |
+|<span data-ttu-id="78877-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="78877-113">Delegated (work or school account)</span></span> | <span data-ttu-id="78877-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="78877-114">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="78877-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="78877-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78877-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="78877-116">Not supported.</span></span>    |
+|<span data-ttu-id="78877-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="78877-117">Application</span></span> | <span data-ttu-id="78877-118">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="78877-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="40731-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="40731-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="78877-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="78877-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-<span data-ttu-id="40731-120">これは``<id>`` 、ターゲットの役割 ID であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="40731-120">Note that ``<id>`` is the target role ID.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="40731-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="40731-121">Request headers</span></span>
-| <span data-ttu-id="40731-122">名前</span><span class="sxs-lookup"><span data-stu-id="40731-122">Name</span></span>       | <span data-ttu-id="40731-123">説明</span><span class="sxs-lookup"><span data-stu-id="40731-123">Description</span></span>|
+<span data-ttu-id="78877-120">これは``{id}`` 、ターゲットの役割 ID であることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="78877-120">Note that ``{id}`` is the target role ID.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="78877-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="78877-121">Request headers</span></span>
+| <span data-ttu-id="78877-122">名前</span><span class="sxs-lookup"><span data-stu-id="78877-122">Name</span></span>       | <span data-ttu-id="78877-123">説明</span><span class="sxs-lookup"><span data-stu-id="78877-123">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="40731-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="40731-124">Authorization</span></span>  | <span data-ttu-id="40731-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="40731-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="78877-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="78877-124">Authorization</span></span>  | <span data-ttu-id="78877-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="78877-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="40731-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="40731-127">Request body</span></span>
-<span data-ttu-id="40731-128">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="40731-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="78877-127">要求本文</span><span class="sxs-lookup"><span data-stu-id="78877-127">Request body</span></span>
+<span data-ttu-id="78877-128">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="78877-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="40731-129">パラメーター</span><span class="sxs-lookup"><span data-stu-id="40731-129">Parameter</span></span>    | <span data-ttu-id="40731-130">型</span><span class="sxs-lookup"><span data-stu-id="40731-130">Type</span></span>   |<span data-ttu-id="40731-131">説明</span><span class="sxs-lookup"><span data-stu-id="40731-131">Description</span></span>|
+| <span data-ttu-id="78877-129">パラメーター</span><span class="sxs-lookup"><span data-stu-id="78877-129">Parameter</span></span>    | <span data-ttu-id="78877-130">型</span><span class="sxs-lookup"><span data-stu-id="78877-130">Type</span></span>   |<span data-ttu-id="78877-131">説明</span><span class="sxs-lookup"><span data-stu-id="78877-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="40731-132">したがっ</span><span class="sxs-lookup"><span data-stu-id="40731-132">reason</span></span>|<span data-ttu-id="40731-133">string</span><span class="sxs-lookup"><span data-stu-id="40731-133">string</span></span>|<span data-ttu-id="40731-134">省略可能。</span><span class="sxs-lookup"><span data-stu-id="40731-134">Optional.</span></span> <span data-ttu-id="40731-135">この役割のライセンス認証の理由についての説明。</span><span class="sxs-lookup"><span data-stu-id="40731-135">Description about the reason for this role activation.</span></span>|
-|<span data-ttu-id="40731-136">duration</span><span class="sxs-lookup"><span data-stu-id="40731-136">duration</span></span>|<span data-ttu-id="40731-137">string</span><span class="sxs-lookup"><span data-stu-id="40731-137">string</span></span>|<span data-ttu-id="40731-138">省略可能。</span><span class="sxs-lookup"><span data-stu-id="40731-138">Optional.</span></span> <span data-ttu-id="40731-139">有効な値は```min``` 、(最小ライセンス認証の```default```期間)、(ロールの既定のライセンス認証の期間)、または倍精度の値を使用してライセンス認証の時間数を指定します。</span><span class="sxs-lookup"><span data-stu-id="40731-139">Valid values could be ```min``` (minimal activation duration), ```default``` (default activation duration for the role), or a double value to specify how many hours is the activation.</span></span> <span data-ttu-id="40731-140">指定した期間は、役割の設定から、役割のアクティブ化の期間より長くすることはできません。</span><span class="sxs-lookup"><span data-stu-id="40731-140">The specified duration cannot be longer than the role's activation duration from the role setting.</span></span> |
-|<span data-ttu-id="40731-141">ticketNumber</span><span class="sxs-lookup"><span data-stu-id="40731-141">ticketNumber</span></span>|<span data-ttu-id="40731-142">string</span><span class="sxs-lookup"><span data-stu-id="40731-142">string</span></span>|<span data-ttu-id="40731-143">省略可能。</span><span class="sxs-lookup"><span data-stu-id="40731-143">Optional.</span></span> <span data-ttu-id="40731-144">この役割のライセンス認証の追跡に使用されるチケット番号。</span><span class="sxs-lookup"><span data-stu-id="40731-144">The ticket number that is used to tracking this role activation.</span></span>|
-|<span data-ttu-id="40731-145">ticketSystem</span><span class="sxs-lookup"><span data-stu-id="40731-145">ticketSystem</span></span>|<span data-ttu-id="40731-146">string</span><span class="sxs-lookup"><span data-stu-id="40731-146">string</span></span>|<span data-ttu-id="40731-147">省略可能。</span><span class="sxs-lookup"><span data-stu-id="40731-147">Optional.</span></span> <span data-ttu-id="40731-148">チケットシステム。</span><span class="sxs-lookup"><span data-stu-id="40731-148">The ticket system.</span></span>|
+|<span data-ttu-id="78877-132">したがっ</span><span class="sxs-lookup"><span data-stu-id="78877-132">reason</span></span>|<span data-ttu-id="78877-133">string</span><span class="sxs-lookup"><span data-stu-id="78877-133">string</span></span>|<span data-ttu-id="78877-134">省略可能。</span><span class="sxs-lookup"><span data-stu-id="78877-134">Optional.</span></span> <span data-ttu-id="78877-135">この役割のライセンス認証の理由についての説明。</span><span class="sxs-lookup"><span data-stu-id="78877-135">Description about the reason for this role activation.</span></span>|
+|<span data-ttu-id="78877-136">duration</span><span class="sxs-lookup"><span data-stu-id="78877-136">duration</span></span>|<span data-ttu-id="78877-137">string</span><span class="sxs-lookup"><span data-stu-id="78877-137">string</span></span>|<span data-ttu-id="78877-138">省略可能。</span><span class="sxs-lookup"><span data-stu-id="78877-138">Optional.</span></span> <span data-ttu-id="78877-139">有効な値は```min``` 、(最小ライセンス認証の```default```期間)、(ロールの既定のライセンス認証の期間)、または倍精度の値を使用してライセンス認証の時間数を指定します。</span><span class="sxs-lookup"><span data-stu-id="78877-139">Valid values could be ```min``` (minimal activation duration), ```default``` (default activation duration for the role), or a double value to specify how many hours is the activation.</span></span> <span data-ttu-id="78877-140">指定した期間は、役割の設定から、役割のアクティブ化の期間より長くすることはできません。</span><span class="sxs-lookup"><span data-stu-id="78877-140">The specified duration cannot be longer than the role's activation duration from the role setting.</span></span> |
+|<span data-ttu-id="78877-141">ticketNumber</span><span class="sxs-lookup"><span data-stu-id="78877-141">ticketNumber</span></span>|<span data-ttu-id="78877-142">string</span><span class="sxs-lookup"><span data-stu-id="78877-142">string</span></span>|<span data-ttu-id="78877-143">省略可能。</span><span class="sxs-lookup"><span data-stu-id="78877-143">Optional.</span></span> <span data-ttu-id="78877-144">この役割のライセンス認証の追跡に使用されるチケット番号。</span><span class="sxs-lookup"><span data-stu-id="78877-144">The ticket number that is used to tracking this role activation.</span></span>|
+|<span data-ttu-id="78877-145">ticketSystem</span><span class="sxs-lookup"><span data-stu-id="78877-145">ticketSystem</span></span>|<span data-ttu-id="78877-146">string</span><span class="sxs-lookup"><span data-stu-id="78877-146">string</span></span>|<span data-ttu-id="78877-147">省略可能。</span><span class="sxs-lookup"><span data-stu-id="78877-147">Optional.</span></span> <span data-ttu-id="78877-148">チケットシステム。</span><span class="sxs-lookup"><span data-stu-id="78877-148">The ticket system.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="40731-149">応答</span><span class="sxs-lookup"><span data-stu-id="40731-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="78877-149">応答</span><span class="sxs-lookup"><span data-stu-id="78877-149">Response</span></span>
 
-<span data-ttu-id="40731-150">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="40731-150">If successful, this method returns a `200 OK` response code and a [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="78877-150">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[privilegedRoleAssignment](../resources/privilegedroleassignment.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="78877-150">If successful, this method returns a `200 OK` response code and a [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
 
-<span data-ttu-id="40731-151">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="40731-151">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="40731-152">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="40731-152">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="40731-153">例</span><span class="sxs-lookup"><span data-stu-id="40731-153">Example</span></span>
-<span data-ttu-id="40731-154">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="40731-154">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="40731-155">要求</span><span class="sxs-lookup"><span data-stu-id="40731-155">Request</span></span>
-<span data-ttu-id="40731-156">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="40731-156">Here is an example of the request.</span></span>
+<span data-ttu-id="78877-151">テナントが PIM に登録されている必要があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="78877-151">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="78877-152">それ以外の場合、HTTP 403 の禁止状態コードが返されます。</span><span class="sxs-lookup"><span data-stu-id="78877-152">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="78877-153">例</span><span class="sxs-lookup"><span data-stu-id="78877-153">Example</span></span>
+<span data-ttu-id="78877-154">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="78877-154">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="78877-155">要求</span><span class="sxs-lookup"><span data-stu-id="78877-155">Request</span></span>
+<span data-ttu-id="78877-156">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="78877-156">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="40731-157">プロトコル</span><span class="sxs-lookup"><span data-stu-id="40731-157">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="78877-157">プロトコル</span><span class="sxs-lookup"><span data-stu-id="78877-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedrole_selfactivate"
@@ -82,29 +82,25 @@ Content-length: 142
   "ticketSystem": "ticketSystem-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="40731-158">C#</span><span class="sxs-lookup"><span data-stu-id="40731-158">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="78877-158">C#</span><span class="sxs-lookup"><span data-stu-id="78877-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedrole-selfactivate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="40731-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="40731-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78877-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="78877-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedrole-selfactivate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="40731-160">目的-C</span><span class="sxs-lookup"><span data-stu-id="40731-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="78877-160">目的-C</span><span class="sxs-lookup"><span data-stu-id="78877-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfactivate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="40731-161">Java</span><span class="sxs-lookup"><span data-stu-id="40731-161">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="40731-162">応答</span><span class="sxs-lookup"><span data-stu-id="40731-162">Response</span></span>
-<span data-ttu-id="40731-163">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="40731-163">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="78877-161">応答</span><span class="sxs-lookup"><span data-stu-id="78877-161">Response</span></span>
+<span data-ttu-id="78877-162">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="78877-162">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="40731-p109">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="40731-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="78877-p109">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="78877-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

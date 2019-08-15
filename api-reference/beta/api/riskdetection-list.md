@@ -5,66 +5,66 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 441b475f21db911cb03501bae5986b36ef20eff3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3497f19e4a1348cd42ae9ba272eca551ee676cb2
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36358322"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410900"
 ---
-# <a name="list-riskdetection"></a><span data-ttu-id="8face-103">リスト riskDetection</span><span class="sxs-lookup"><span data-stu-id="8face-103">List riskDetection</span></span>
+# <a name="list-riskdetection"></a><span data-ttu-id="4ced4-103">リスト riskDetection</span><span class="sxs-lookup"><span data-stu-id="4ced4-103">List riskDetection</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8face-104">**RiskDetection**オブジェクトのコレクションのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="8face-104">Retrieve the properties of a collection of **riskDetection** objects.</span></span>
+<span data-ttu-id="4ced4-104">**RiskDetection**オブジェクトのコレクションのプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="4ced4-104">Retrieve the properties of a collection of **riskDetection** objects.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="8face-105">リスク検出 API を使用するには、Azure AD Premium P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="8face-105">You must have an Azure AD Premium P2 license to use the risk detection API.</span></span>
+><span data-ttu-id="4ced4-105">リスク検出 API を使用するには、Azure AD Premium P2 ライセンスが必要です。</span><span class="sxs-lookup"><span data-stu-id="4ced4-105">You must have an Azure AD Premium P2 license to use the risk detection API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8face-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8face-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4ced4-106">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="4ced4-106">Permissions</span></span>
 
-<span data-ttu-id="8face-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8face-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4ced4-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4ced4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8face-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8face-109">Permission type</span></span>      | <span data-ttu-id="8face-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8face-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4ced4-109">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="4ced4-109">Permission type</span></span>      | <span data-ttu-id="4ced4-110">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="4ced4-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8face-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8face-111">Delegated (work or school account)</span></span> | <span data-ttu-id="8face-112">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="8face-112">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="8face-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8face-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8face-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8face-114">Not supported.</span></span>    |
-|<span data-ttu-id="8face-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8face-115">Application</span></span> | <span data-ttu-id="8face-116">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="8face-116">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="4ced4-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="4ced4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4ced4-112">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="4ced4-112">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="4ced4-113">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="4ced4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ced4-114">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4ced4-114">Not supported.</span></span>    |
+|<span data-ttu-id="4ced4-115">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4ced4-115">Application</span></span> | <span data-ttu-id="4ced4-116">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="4ced4-116">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8face-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8face-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4ced4-117">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="4ced4-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskDetections
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8face-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="8face-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4ced4-118">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="4ced4-118">Optional query parameters</span></span>
 
-<span data-ttu-id="8face-119">このメソッドは`$filter` 、 `$select`クエリの応答をサポートし、カスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="8face-119">This method supports `$filter` and `$select` to customize the query response.</span></span> <span data-ttu-id="8face-120">このトピックの後半の例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8face-120">See the example later in this topic.</span></span> 
+<span data-ttu-id="4ced4-119">このメソッドは`$filter` 、 `$select`クエリの応答をサポートし、カスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="4ced4-119">This method supports `$filter` and `$select` to customize the query response.</span></span> <span data-ttu-id="4ced4-120">このトピックの後半の例を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4ced4-120">See the example later in this topic.</span></span> 
 
-## <a name="request-headers"></a><span data-ttu-id="8face-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8face-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4ced4-121">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="4ced4-121">Request headers</span></span>
 
-| <span data-ttu-id="8face-122">名前</span><span class="sxs-lookup"><span data-stu-id="8face-122">Name</span></span>      |<span data-ttu-id="8face-123">説明</span><span class="sxs-lookup"><span data-stu-id="8face-123">Description</span></span>|
+| <span data-ttu-id="4ced4-122">名前</span><span class="sxs-lookup"><span data-stu-id="4ced4-122">Name</span></span>      |<span data-ttu-id="4ced4-123">説明</span><span class="sxs-lookup"><span data-stu-id="4ced4-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8face-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="8face-124">Authorization</span></span>  | <span data-ttu-id="8face-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8face-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8face-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8face-127">Content-Type</span></span> | <span data-ttu-id="8face-128">application/json</span><span class="sxs-lookup"><span data-stu-id="8face-128">application/json</span></span> |
+| <span data-ttu-id="4ced4-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ced4-124">Authorization</span></span>  | <span data-ttu-id="4ced4-p103">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="4ced4-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4ced4-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4ced4-127">Content-Type</span></span> | <span data-ttu-id="4ced4-128">application/json</span><span class="sxs-lookup"><span data-stu-id="4ced4-128">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8face-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="8face-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4ced4-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="4ced4-129">Request body</span></span>
 
-<span data-ttu-id="8face-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="8face-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="4ced4-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="4ced4-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8face-131">応答</span><span class="sxs-lookup"><span data-stu-id="8face-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4ced4-131">応答</span><span class="sxs-lookup"><span data-stu-id="4ced4-131">Response</span></span>
 
-<span data-ttu-id="8face-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskDetection](../resources/riskdetection.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="8face-132">If successful, this method returns a `200 OK` response code and a collection of [riskDetection](../resources/riskdetection.md) objects in the response body.</span></span>
+<span data-ttu-id="4ced4-132">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[riskDetection](../resources/riskdetection.md)オブジェクトのコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="4ced4-132">If successful, this method returns a `200 OK` response code and a collection of [riskDetection](../resources/riskdetection.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8face-133">例</span><span class="sxs-lookup"><span data-stu-id="8face-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="4ced4-133">例</span><span class="sxs-lookup"><span data-stu-id="4ced4-133">Examples</span></span>
 
-### <a name="example-1-list-risk-detections"></a><span data-ttu-id="8face-134">例 1: リスクの検出を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="8face-134">Example 1: List risk detections</span></span>
+### <a name="example-1-list-risk-detections"></a><span data-ttu-id="4ced4-134">例 1: リスクの検出を一覧表示する</span><span class="sxs-lookup"><span data-stu-id="4ced4-134">Example 1: List risk detections</span></span>
 
-#### <a name="request"></a><span data-ttu-id="8face-135">要求</span><span class="sxs-lookup"><span data-stu-id="8face-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4ced4-135">要求</span><span class="sxs-lookup"><span data-stu-id="4ced4-135">Request</span></span>
 
-<span data-ttu-id="8face-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="8face-136">Here is an example of the request.</span></span>
+<span data-ttu-id="4ced4-136">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="4ced4-136">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8face-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8face-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="4ced4-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="4ced4-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_riskDetection"
@@ -73,28 +73,24 @@ GET /riskDetections
 ```http
 GET https://graph.microsoft.com/beta/riskDetections
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8face-138">C#</span><span class="sxs-lookup"><span data-stu-id="8face-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="4ced4-138">C#</span><span class="sxs-lookup"><span data-stu-id="4ced4-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8face-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8face-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4ced4-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4ced4-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8face-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="8face-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4ced4-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="4ced4-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="8face-141">Java</span><span class="sxs-lookup"><span data-stu-id="8face-141">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="8face-142">応答</span><span class="sxs-lookup"><span data-stu-id="8face-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4ced4-141">応答</span><span class="sxs-lookup"><span data-stu-id="4ced4-141">Response</span></span>
 
-<span data-ttu-id="8face-143">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8face-143">Here is an example of the response.</span></span>
+<span data-ttu-id="4ced4-142">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="4ced4-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,14 +135,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risk-detections-and-filter-the-results"></a><span data-ttu-id="8face-144">例 2: リスクを検出して結果をフィルター処理する</span><span class="sxs-lookup"><span data-stu-id="8face-144">Example 2: List risk detections and filter the results</span></span>
+### <a name="example-2-list-risk-detections-and-filter-the-results"></a><span data-ttu-id="4ced4-143">例 2: リスクを検出して結果をフィルター処理する</span><span class="sxs-lookup"><span data-stu-id="4ced4-143">Example 2: List risk detections and filter the results</span></span>
 
-#### <a name="request"></a><span data-ttu-id="8face-145">要求</span><span class="sxs-lookup"><span data-stu-id="8face-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4ced4-144">要求</span><span class="sxs-lookup"><span data-stu-id="4ced4-144">Request</span></span>
 
-<span data-ttu-id="8face-146">次の例は、を使用`$filter`してリスクレベルが中、またはリスクイベントの種類が unfamilarFeatures であるというリスクの検出のコレクションを取得する方法を示しています。これは、未知または異常な場所にサインインしていたことを示します。</span><span class="sxs-lookup"><span data-stu-id="8face-146">The following example shows how to use `$filter` to get the collection of risk detections where the risk level is medium or the risk event type is unfamilarFeatures, which indicates the sign-in was in an unfamiliar or anomalous location.</span></span>
+<span data-ttu-id="4ced4-145">次の例は、を使用`$filter`してリスクレベルが中、またはリスクイベントの種類が unfamilarFeatures であるというリスクの検出のコレクションを取得する方法を示しています。これは、未知または異常な場所にサインインしていたことを示します。</span><span class="sxs-lookup"><span data-stu-id="4ced4-145">The following example shows how to use `$filter` to get the collection of risk detections where the risk level is medium or the risk event type is unfamilarFeatures, which indicates the sign-in was in an unfamiliar or anomalous location.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8face-147">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8face-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="4ced4-146">プロトコル</span><span class="sxs-lookup"><span data-stu-id="4ced4-146">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_filter_riskDetections"
@@ -155,28 +151,24 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8face-148">C#</span><span class="sxs-lookup"><span data-stu-id="8face-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="4ced4-147">C#</span><span class="sxs-lookup"><span data-stu-id="4ced4-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8face-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8face-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4ced4-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4ced4-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-filter-riskdetections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8face-150">目的-C</span><span class="sxs-lookup"><span data-stu-id="8face-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4ced4-149">目的-C</span><span class="sxs-lookup"><span data-stu-id="4ced4-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-filter-riskdetections-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="8face-151">Java</span><span class="sxs-lookup"><span data-stu-id="8face-151">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskdetections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="8face-152">応答</span><span class="sxs-lookup"><span data-stu-id="8face-152">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4ced4-150">応答</span><span class="sxs-lookup"><span data-stu-id="4ced4-150">Response</span></span>
 
-<span data-ttu-id="8face-153">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8face-153">Here is an example of the response.</span></span>
+<span data-ttu-id="4ced4-151">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="4ced4-151">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,60 +5,60 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 054e26a9653d35b403aa3ff1cc38487830b7a067
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c8eea755c543f3373ac157551824c47d8d82d13e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317201"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418503"
 ---
-# <a name="update-workbookchartdatalabels"></a><span data-ttu-id="97984-103">WorkbookChartDataLabels の更新</span><span class="sxs-lookup"><span data-stu-id="97984-103">Update workbookChartDataLabels</span></span>
+# <a name="update-workbookchartdatalabels"></a><span data-ttu-id="e8263-103">WorkbookChartDataLabels の更新</span><span class="sxs-lookup"><span data-stu-id="e8263-103">Update workbookChartDataLabels</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="97984-104">chartdatalabels オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="97984-104">Update the properties of chartdatalabels object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="97984-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="97984-105">Permissions</span></span>
-<span data-ttu-id="97984-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="97984-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e8263-104">chartdatalabels オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="e8263-104">Update the properties of chartdatalabels object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e8263-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e8263-105">Permissions</span></span>
+<span data-ttu-id="e8263-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e8263-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="97984-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="97984-108">Permission type</span></span>      | <span data-ttu-id="97984-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="97984-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e8263-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e8263-108">Permission type</span></span>      | <span data-ttu-id="e8263-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e8263-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="97984-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="97984-110">Delegated (work or school account)</span></span> | <span data-ttu-id="97984-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97984-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="97984-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="97984-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97984-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97984-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="97984-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="97984-114">Application</span></span> | <span data-ttu-id="97984-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="97984-115">Not supported.</span></span> |
+|<span data-ttu-id="e8263-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e8263-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e8263-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8263-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e8263-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e8263-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8263-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8263-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e8263-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e8263-114">Application</span></span> | <span data-ttu-id="e8263-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e8263-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="97984-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="97984-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e8263-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e8263-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/datalabels
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="97984-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="97984-117">Optional request headers</span></span>
-| <span data-ttu-id="97984-118">名前</span><span class="sxs-lookup"><span data-stu-id="97984-118">Name</span></span>       | <span data-ttu-id="97984-119">説明</span><span class="sxs-lookup"><span data-stu-id="97984-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="e8263-117">オプションの要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e8263-117">Optional request headers</span></span>
+| <span data-ttu-id="e8263-118">名前</span><span class="sxs-lookup"><span data-stu-id="e8263-118">Name</span></span>       | <span data-ttu-id="e8263-119">説明</span><span class="sxs-lookup"><span data-stu-id="e8263-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="97984-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="97984-120">Authorization</span></span>  | <span data-ttu-id="97984-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="97984-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="97984-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="97984-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="97984-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="97984-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e8263-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e8263-120">Authorization</span></span>  | <span data-ttu-id="e8263-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e8263-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e8263-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e8263-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e8263-p103">変更を保持するかどうかを決定するブック セッション ID。省略可能。</span><span class="sxs-lookup"><span data-stu-id="e8263-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="97984-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="97984-126">Request body</span></span>
-<span data-ttu-id="97984-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="97984-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e8263-126">要求本文</span><span class="sxs-lookup"><span data-stu-id="e8263-126">Request body</span></span>
+<span data-ttu-id="e8263-p104">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="e8263-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="97984-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="97984-130">Property</span></span>     | <span data-ttu-id="97984-131">型</span><span class="sxs-lookup"><span data-stu-id="97984-131">Type</span></span>   |<span data-ttu-id="97984-132">説明</span><span class="sxs-lookup"><span data-stu-id="97984-132">Description</span></span>|
+| <span data-ttu-id="e8263-130">プロパティ</span><span class="sxs-lookup"><span data-stu-id="e8263-130">Property</span></span>     | <span data-ttu-id="e8263-131">型</span><span class="sxs-lookup"><span data-stu-id="e8263-131">Type</span></span>   |<span data-ttu-id="e8263-132">説明</span><span class="sxs-lookup"><span data-stu-id="e8263-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="97984-133">position</span><span class="sxs-lookup"><span data-stu-id="97984-133">position</span></span>|<span data-ttu-id="97984-134">string</span><span class="sxs-lookup"><span data-stu-id="97984-134">string</span></span>|<span data-ttu-id="97984-p105">データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。</span><span class="sxs-lookup"><span data-stu-id="97984-p105">DataLabelPosition value that represents the position of the data label. Possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.</span></span>|
-|<span data-ttu-id="97984-137">separator</span><span class="sxs-lookup"><span data-stu-id="97984-137">separator</span></span>|<span data-ttu-id="97984-138">string</span><span class="sxs-lookup"><span data-stu-id="97984-138">string</span></span>|<span data-ttu-id="97984-139">グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。</span><span class="sxs-lookup"><span data-stu-id="97984-139">String representing the separator used for the data labels on a chart.</span></span>|
-|<span data-ttu-id="97984-140">showBubbleSize</span><span class="sxs-lookup"><span data-stu-id="97984-140">showBubbleSize</span></span>|<span data-ttu-id="97984-141">ブール値</span><span class="sxs-lookup"><span data-stu-id="97984-141">boolean</span></span>|<span data-ttu-id="97984-142">データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="97984-142">Boolean value representing if the data label bubble size is visible or not.</span></span>|
-|<span data-ttu-id="97984-143">showCategoryName</span><span class="sxs-lookup"><span data-stu-id="97984-143">showCategoryName</span></span>|<span data-ttu-id="97984-144">ブール値</span><span class="sxs-lookup"><span data-stu-id="97984-144">boolean</span></span>|<span data-ttu-id="97984-145">データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="97984-145">Boolean value representing if the data label category name is visible or not.</span></span>|
-|<span data-ttu-id="97984-146">showLegendKey</span><span class="sxs-lookup"><span data-stu-id="97984-146">showLegendKey</span></span>|<span data-ttu-id="97984-147">ブール値</span><span class="sxs-lookup"><span data-stu-id="97984-147">boolean</span></span>|<span data-ttu-id="97984-148">データ ラベルの凡例マーカーを表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="97984-148">Boolean value representing if the data label legend key is visible or not.</span></span>|
-|<span data-ttu-id="97984-149">showPercentage</span><span class="sxs-lookup"><span data-stu-id="97984-149">showPercentage</span></span>|<span data-ttu-id="97984-150">ブール値</span><span class="sxs-lookup"><span data-stu-id="97984-150">boolean</span></span>|<span data-ttu-id="97984-151">データ ラベルのパーセンテージを表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="97984-151">Boolean value representing if the data label percentage is visible or not.</span></span>|
-|<span data-ttu-id="97984-152">showSeriesName</span><span class="sxs-lookup"><span data-stu-id="97984-152">showSeriesName</span></span>|<span data-ttu-id="97984-153">ブール値</span><span class="sxs-lookup"><span data-stu-id="97984-153">boolean</span></span>|<span data-ttu-id="97984-154">データ ラベルの系列名を表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="97984-154">Boolean value representing if the data label series name is visible or not.</span></span>|
-|<span data-ttu-id="97984-155">showValue</span><span class="sxs-lookup"><span data-stu-id="97984-155">showValue</span></span>|<span data-ttu-id="97984-156">ブール値</span><span class="sxs-lookup"><span data-stu-id="97984-156">boolean</span></span>|<span data-ttu-id="97984-157">データ ラベルの値を表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="97984-157">Boolean value representing if the data label value is visible or not.</span></span>|
+|<span data-ttu-id="e8263-133">position</span><span class="sxs-lookup"><span data-stu-id="e8263-133">position</span></span>|<span data-ttu-id="e8263-134">string</span><span class="sxs-lookup"><span data-stu-id="e8263-134">string</span></span>|<span data-ttu-id="e8263-p105">データ ラベルの位置を表す DataLabelPosition 値。可能な値は、`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout` です。</span><span class="sxs-lookup"><span data-stu-id="e8263-p105">DataLabelPosition value that represents the position of the data label. Possible values are: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.</span></span>|
+|<span data-ttu-id="e8263-137">separator</span><span class="sxs-lookup"><span data-stu-id="e8263-137">separator</span></span>|<span data-ttu-id="e8263-138">string</span><span class="sxs-lookup"><span data-stu-id="e8263-138">string</span></span>|<span data-ttu-id="e8263-139">グラフのデータ ラベルに使用される区切り文字を表す文字列を設定します。</span><span class="sxs-lookup"><span data-stu-id="e8263-139">String representing the separator used for the data labels on a chart.</span></span>|
+|<span data-ttu-id="e8263-140">showBubbleSize</span><span class="sxs-lookup"><span data-stu-id="e8263-140">showBubbleSize</span></span>|<span data-ttu-id="e8263-141">ブール値</span><span class="sxs-lookup"><span data-stu-id="e8263-141">boolean</span></span>|<span data-ttu-id="e8263-142">データ ラベルのバブルのサイズを表示または非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="e8263-142">Boolean value representing if the data label bubble size is visible or not.</span></span>|
+|<span data-ttu-id="e8263-143">showCategoryName</span><span class="sxs-lookup"><span data-stu-id="e8263-143">showCategoryName</span></span>|<span data-ttu-id="e8263-144">ブール値</span><span class="sxs-lookup"><span data-stu-id="e8263-144">boolean</span></span>|<span data-ttu-id="e8263-145">データ ラベルのカテゴリ名を表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="e8263-145">Boolean value representing if the data label category name is visible or not.</span></span>|
+|<span data-ttu-id="e8263-146">showLegendKey</span><span class="sxs-lookup"><span data-stu-id="e8263-146">showLegendKey</span></span>|<span data-ttu-id="e8263-147">ブール値</span><span class="sxs-lookup"><span data-stu-id="e8263-147">boolean</span></span>|<span data-ttu-id="e8263-148">データ ラベルの凡例マーカーを表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="e8263-148">Boolean value representing if the data label legend key is visible or not.</span></span>|
+|<span data-ttu-id="e8263-149">showPercentage</span><span class="sxs-lookup"><span data-stu-id="e8263-149">showPercentage</span></span>|<span data-ttu-id="e8263-150">ブール値</span><span class="sxs-lookup"><span data-stu-id="e8263-150">boolean</span></span>|<span data-ttu-id="e8263-151">データ ラベルのパーセンテージを表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="e8263-151">Boolean value representing if the data label percentage is visible or not.</span></span>|
+|<span data-ttu-id="e8263-152">showSeriesName</span><span class="sxs-lookup"><span data-stu-id="e8263-152">showSeriesName</span></span>|<span data-ttu-id="e8263-153">ブール値</span><span class="sxs-lookup"><span data-stu-id="e8263-153">boolean</span></span>|<span data-ttu-id="e8263-154">データ ラベルの系列名を表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="e8263-154">Boolean value representing if the data label series name is visible or not.</span></span>|
+|<span data-ttu-id="e8263-155">showValue</span><span class="sxs-lookup"><span data-stu-id="e8263-155">showValue</span></span>|<span data-ttu-id="e8263-156">ブール値</span><span class="sxs-lookup"><span data-stu-id="e8263-156">boolean</span></span>|<span data-ttu-id="e8263-157">データ ラベルの値を表示するか非表示にするかを表すブール型の値。</span><span class="sxs-lookup"><span data-stu-id="e8263-157">Boolean value representing if the data label value is visible or not.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="97984-158">応答</span><span class="sxs-lookup"><span data-stu-id="97984-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e8263-158">応答</span><span class="sxs-lookup"><span data-stu-id="e8263-158">Response</span></span>
 
-<span data-ttu-id="97984-159">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookChartDataLabels](../resources/workbookchartdatalabels.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="97984-159">If successful, this method returns a `200 OK` response code and updated [workbookChartDataLabels](../resources/workbookchartdatalabels.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="97984-160">例</span><span class="sxs-lookup"><span data-stu-id="97984-160">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="97984-161">要求</span><span class="sxs-lookup"><span data-stu-id="97984-161">Request</span></span>
-<span data-ttu-id="97984-162">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="97984-162">Here is an example of the request.</span></span>
+<span data-ttu-id="e8263-159">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[workbookChartDataLabels](../resources/workbookchartdatalabels.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e8263-159">If successful, this method returns a `200 OK` response code and updated [workbookChartDataLabels](../resources/workbookchartdatalabels.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e8263-160">例</span><span class="sxs-lookup"><span data-stu-id="e8263-160">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e8263-161">要求</span><span class="sxs-lookup"><span data-stu-id="e8263-161">Request</span></span>
+<span data-ttu-id="e8263-162">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="e8263-162">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="97984-163">プロトコル</span><span class="sxs-lookup"><span data-stu-id="97984-163">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e8263-163">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e8263-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_chartdatalabels"
@@ -76,26 +76,22 @@ Content-length: 134
   "showLegendKey": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="97984-164">C#</span><span class="sxs-lookup"><span data-stu-id="97984-164">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e8263-164">C#</span><span class="sxs-lookup"><span data-stu-id="e8263-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chartdatalabels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="97984-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="97984-165">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e8263-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e8263-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chartdatalabels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="97984-166">目的-C</span><span class="sxs-lookup"><span data-stu-id="97984-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e8263-166">目的-C</span><span class="sxs-lookup"><span data-stu-id="e8263-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-chartdatalabels-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="97984-167">Java</span><span class="sxs-lookup"><span data-stu-id="97984-167">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-chartdatalabels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="97984-168">応答</span><span class="sxs-lookup"><span data-stu-id="97984-168">Response</span></span>
-<span data-ttu-id="97984-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="97984-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e8263-167">応答</span><span class="sxs-lookup"><span data-stu-id="e8263-167">Response</span></span>
+<span data-ttu-id="e8263-p106">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="e8263-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

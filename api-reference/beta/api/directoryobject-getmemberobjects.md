@@ -5,31 +5,31 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b19bdfcf666275445c1454bc00f6598786ef906
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ee0db6cdaac92d722c2cfab21104eae5e3a09581
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324592"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36417383"
 ---
-# <a name="get-member-objects"></a><span data-ttu-id="fbcdb-104">メンバー オブジェクトを取得する</span><span class="sxs-lookup"><span data-stu-id="fbcdb-104">Get member objects</span></span>
+# <a name="get-member-objects"></a><span data-ttu-id="5caaa-104">メンバー オブジェクトを取得する</span><span class="sxs-lookup"><span data-stu-id="5caaa-104">Get member objects</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- <span data-ttu-id="fbcdb-105">ユーザー、グループ、サービスプリンシパル、またはディレクトリオブジェクトがメンバーになっているすべてのグループ、管理単位、およびディレクトリロールを返します。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-105">Returns all the groups, administrative units and directory roles that a user, group, service principals or directory object is a member of.</span></span> <span data-ttu-id="fbcdb-106">この関数は、推移的です。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-106">This function is transitive.</span></span> 
- > <span data-ttu-id="fbcdb-107">注:ユーザーのみがディレクトリ ロールのメンバーになることができます。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-107">Note: Only users can be members of directory roles.</span></span>
+ <span data-ttu-id="5caaa-105">ユーザー、グループ、サービスプリンシパル、またはディレクトリオブジェクトがメンバーになっているすべてのグループ、管理単位、およびディレクトリロールを返します。</span><span class="sxs-lookup"><span data-stu-id="5caaa-105">Returns all the groups, administrative units and directory roles that a user, group, service principals or directory object is a member of.</span></span> <span data-ttu-id="5caaa-106">この関数は、推移的です。</span><span class="sxs-lookup"><span data-stu-id="5caaa-106">This function is transitive.</span></span> 
+ > <span data-ttu-id="5caaa-107">注:ユーザーのみがディレクトリ ロールのメンバーになることができます。</span><span class="sxs-lookup"><span data-stu-id="5caaa-107">Note: Only users can be members of directory roles.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fbcdb-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="fbcdb-108">Permissions</span></span>
-<span data-ttu-id="fbcdb-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5caaa-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="5caaa-108">Permissions</span></span>
+<span data-ttu-id="5caaa-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5caaa-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="fbcdb-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="fbcdb-111">Permission type</span></span>      | <span data-ttu-id="fbcdb-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="fbcdb-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5caaa-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="5caaa-111">Permission type</span></span>      | <span data-ttu-id="5caaa-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="5caaa-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fbcdb-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="fbcdb-113">Delegated (work or school account)</span></span> | <span data-ttu-id="fbcdb-114">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="fbcdb-114">Directory.Read.All</span></span>    |
-|<span data-ttu-id="fbcdb-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="fbcdb-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fbcdb-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-116">Not supported.</span></span>    |
-|<span data-ttu-id="fbcdb-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="fbcdb-117">Application</span></span> | <span data-ttu-id="fbcdb-118">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="fbcdb-118">Directory.Read.All</span></span> |
+|<span data-ttu-id="5caaa-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="5caaa-113">Delegated (work or school account)</span></span> | <span data-ttu-id="5caaa-114">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="5caaa-114">Directory.Read.All</span></span>    |
+|<span data-ttu-id="5caaa-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="5caaa-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5caaa-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="5caaa-116">Not supported.</span></span>    |
+|<span data-ttu-id="5caaa-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5caaa-117">Application</span></span> | <span data-ttu-id="5caaa-118">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="5caaa-118">Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fbcdb-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="fbcdb-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5caaa-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="5caaa-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMemberObjects
@@ -39,28 +39,28 @@ POST /servicePrincipals/{id}/getMemberObjects
 POST /directoryObjects/{id}/getMemberObjects
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="fbcdb-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="fbcdb-120">Request headers</span></span>
-| <span data-ttu-id="fbcdb-121">名前</span><span class="sxs-lookup"><span data-stu-id="fbcdb-121">Name</span></span>       | <span data-ttu-id="fbcdb-122">型</span><span class="sxs-lookup"><span data-stu-id="fbcdb-122">Type</span></span> | <span data-ttu-id="fbcdb-123">説明</span><span class="sxs-lookup"><span data-stu-id="fbcdb-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5caaa-120">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="5caaa-120">Request headers</span></span>
+| <span data-ttu-id="5caaa-121">名前</span><span class="sxs-lookup"><span data-stu-id="5caaa-121">Name</span></span>       | <span data-ttu-id="5caaa-122">型</span><span class="sxs-lookup"><span data-stu-id="5caaa-122">Type</span></span> | <span data-ttu-id="5caaa-123">説明</span><span class="sxs-lookup"><span data-stu-id="5caaa-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="fbcdb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="fbcdb-124">Authorization</span></span>  | <span data-ttu-id="fbcdb-125">string</span><span class="sxs-lookup"><span data-stu-id="fbcdb-125">string</span></span>  | <span data-ttu-id="fbcdb-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fbcdb-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fbcdb-128">Content-Type</span></span>  | <span data-ttu-id="fbcdb-129">application/json</span><span class="sxs-lookup"><span data-stu-id="fbcdb-129">application/json</span></span>  |
+| <span data-ttu-id="5caaa-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="5caaa-124">Authorization</span></span>  | <span data-ttu-id="5caaa-125">string</span><span class="sxs-lookup"><span data-stu-id="5caaa-125">string</span></span>  | <span data-ttu-id="5caaa-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="5caaa-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5caaa-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5caaa-128">Content-Type</span></span>  | <span data-ttu-id="5caaa-129">application/json</span><span class="sxs-lookup"><span data-stu-id="5caaa-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="fbcdb-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="fbcdb-130">Request body</span></span>
-<span data-ttu-id="fbcdb-131">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5caaa-130">要求本文</span><span class="sxs-lookup"><span data-stu-id="5caaa-130">Request body</span></span>
+<span data-ttu-id="5caaa-131">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="5caaa-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="fbcdb-132">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fbcdb-132">Parameter</span></span>    | <span data-ttu-id="fbcdb-133">型</span><span class="sxs-lookup"><span data-stu-id="fbcdb-133">Type</span></span>   |<span data-ttu-id="fbcdb-134">説明</span><span class="sxs-lookup"><span data-stu-id="fbcdb-134">Description</span></span>|
+| <span data-ttu-id="5caaa-132">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5caaa-132">Parameter</span></span>    | <span data-ttu-id="5caaa-133">型</span><span class="sxs-lookup"><span data-stu-id="5caaa-133">Type</span></span>   |<span data-ttu-id="5caaa-134">説明</span><span class="sxs-lookup"><span data-stu-id="5caaa-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fbcdb-135">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="fbcdb-135">securityEnabledOnly</span></span>|<span data-ttu-id="fbcdb-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="fbcdb-136">Boolean</span></span>| <span data-ttu-id="fbcdb-p105">エンティティがメンバーであるセキュリティ グループのみを返すように指定するには **true**、がメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。**注**:パラメーターが **true** の場合、関数はユーザーでのみ呼び出せます。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-p105">**true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**.</span></span> |
+|<span data-ttu-id="5caaa-135">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="5caaa-135">securityEnabledOnly</span></span>|<span data-ttu-id="5caaa-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="5caaa-136">Boolean</span></span>| <span data-ttu-id="5caaa-p105">エンティティがメンバーであるセキュリティ グループのみを返すように指定するには **true**、がメンバーであるすべてのグループとディレクトリ ロールを返すように指定するには **false** を設定します。**注**:パラメーターが **true** の場合、関数はユーザーでのみ呼び出せます。</span><span class="sxs-lookup"><span data-stu-id="5caaa-p105">**true** to specify that only security groups that the entity is a member of should be returned; **false** to specify that all groups and directory roles that the entity is a member of should be returned. **Note**: The function can only be called on a user if the parameter is **true**.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="fbcdb-139">応答</span><span class="sxs-lookup"><span data-stu-id="fbcdb-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5caaa-139">応答</span><span class="sxs-lookup"><span data-stu-id="5caaa-139">Response</span></span>
 
-<span data-ttu-id="fbcdb-140">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-140">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="5caaa-140">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で文字列コレクション オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="5caaa-140">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fbcdb-141">例</span><span class="sxs-lookup"><span data-stu-id="fbcdb-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5caaa-141">例</span><span class="sxs-lookup"><span data-stu-id="5caaa-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="fbcdb-142">要求</span><span class="sxs-lookup"><span data-stu-id="fbcdb-142">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="5caaa-142">要求</span><span class="sxs-lookup"><span data-stu-id="5caaa-142">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="fbcdb-143">プロトコル</span><span class="sxs-lookup"><span data-stu-id="fbcdb-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="5caaa-143">プロトコル</span><span class="sxs-lookup"><span data-stu-id="5caaa-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_getmemberobjects"
@@ -73,27 +73,23 @@ Content-type: application/json
   "securityEnabledOnly": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="fbcdb-144">C#</span><span class="sxs-lookup"><span data-stu-id="fbcdb-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="5caaa-144">C#</span><span class="sxs-lookup"><span data-stu-id="5caaa-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fbcdb-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fbcdb-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5caaa-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5caaa-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="fbcdb-146">目的-C</span><span class="sxs-lookup"><span data-stu-id="fbcdb-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5caaa-146">目的-C</span><span class="sxs-lookup"><span data-stu-id="5caaa-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmemberobjects-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="fbcdb-147">Java</span><span class="sxs-lookup"><span data-stu-id="fbcdb-147">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="fbcdb-148">応答</span><span class="sxs-lookup"><span data-stu-id="fbcdb-148">Response</span></span>
-<span data-ttu-id="fbcdb-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="fbcdb-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5caaa-147">応答</span><span class="sxs-lookup"><span data-stu-id="5caaa-147">Response</span></span>
+<span data-ttu-id="5caaa-p106">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="5caaa-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

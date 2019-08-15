@@ -5,36 +5,36 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe2a985e6b232a9f7578c1dcd615d16fd42aede2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4335933614d55394491215c78281bb44d6e73ba5
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317845"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419105"
 ---
-# <a name="update-calendar"></a><span data-ttu-id="6cfbe-104">予定表を更新する</span><span class="sxs-lookup"><span data-stu-id="6cfbe-104">Update calendar</span></span>
+# <a name="update-calendar"></a><span data-ttu-id="b1806-104">予定表を更新する</span><span class="sxs-lookup"><span data-stu-id="b1806-104">Update calendar</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6cfbe-105">[予定表](../resources/calendar.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-105">Update the properties of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="6cfbe-106">[ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="6cfbe-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6cfbe-107">Permissions</span></span>
-<span data-ttu-id="6cfbe-108">この API を呼び出すには、イベントが含まれる予定表の種類と、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次のいずれかのアクセス許可が必要になります。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-108">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="6cfbe-109">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b1806-105">[予定表](../resources/calendar.md)オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="b1806-105">Update the properties of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="b1806-106">[ユーザー](../resources/user.md)の予定表、または Office 365 [グループ](../resources/group.md)の既定の予定表のいずれかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="b1806-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b1806-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b1806-107">Permissions</span></span>
+<span data-ttu-id="b1806-108">この API を呼び出すには、イベントが含まれる予定表の種類と、要求されたアクセス許可の種類 (委任またはアプリケーション) に応じて、次のいずれかのアクセス許可が必要になります。</span><span class="sxs-lookup"><span data-stu-id="b1806-108">Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API.</span></span> <span data-ttu-id="b1806-109">アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b1806-109">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6cfbe-110">カレンダー</span><span class="sxs-lookup"><span data-stu-id="6cfbe-110">Calendar</span></span> | <span data-ttu-id="6cfbe-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6cfbe-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6cfbe-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6cfbe-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6cfbe-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6cfbe-113">Application</span></span> |
+| <span data-ttu-id="b1806-110">カレンダー</span><span class="sxs-lookup"><span data-stu-id="b1806-110">Calendar</span></span> | <span data-ttu-id="b1806-111">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b1806-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b1806-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b1806-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b1806-113">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b1806-113">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="6cfbe-114">ユーザーの予定表</span><span class="sxs-lookup"><span data-stu-id="6cfbe-114">user calendar</span></span> | <span data-ttu-id="6cfbe-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6cfbe-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="6cfbe-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6cfbe-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="6cfbe-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6cfbe-117">Calendars.ReadWrite</span></span> |
-| <span data-ttu-id="6cfbe-118">グループ calendar</span><span class="sxs-lookup"><span data-stu-id="6cfbe-118">group calendar</span></span> | <span data-ttu-id="6cfbe-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6cfbe-119">Group.ReadWrite.All</span></span> | <span data-ttu-id="6cfbe-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-120">Not supported.</span></span> | <span data-ttu-id="6cfbe-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-121">Not supported.</span></span> |
+| <span data-ttu-id="b1806-114">ユーザーの予定表</span><span class="sxs-lookup"><span data-stu-id="b1806-114">user calendar</span></span> | <span data-ttu-id="b1806-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b1806-115">Calendars.ReadWrite</span></span> | <span data-ttu-id="b1806-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b1806-116">Calendars.ReadWrite</span></span> | <span data-ttu-id="b1806-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b1806-117">Calendars.ReadWrite</span></span> |
+| <span data-ttu-id="b1806-118">グループ calendar</span><span class="sxs-lookup"><span data-stu-id="b1806-118">group calendar</span></span> | <span data-ttu-id="b1806-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b1806-119">Group.ReadWrite.All</span></span> | <span data-ttu-id="b1806-120">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1806-120">Not supported.</span></span> | <span data-ttu-id="b1806-121">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1806-121">Not supported.</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="6cfbe-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6cfbe-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b1806-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b1806-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="6cfbe-123">ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-123">A user's or group's default [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="b1806-123">ユーザーまたはグループの既定の[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="b1806-123">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
 PATCH /groups/{id}/calendar
 ```
-<span data-ttu-id="6cfbe-124">既定の [calendarGroup](../resources/calendargroup.md) のユーザーの[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b1806-124">既定の [calendarGroup](../resources/calendargroup.md) のユーザーの[予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="b1806-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
@@ -42,34 +42,34 @@ PATCH /users/{id | userPrincipalName}/calendars/{id}
 PATCH /me/calendarGroup/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
-<span data-ttu-id="6cfbe-125">指定の [calendarGroup](../resources/calendargroup.md) のユーザーの [予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b1806-125">指定の [calendarGroup](../resources/calendargroup.md) のユーザーの [予定表](../resources/calendar.md)。</span><span class="sxs-lookup"><span data-stu-id="b1806-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendarGroups/{id}/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="6cfbe-126">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6cfbe-126">Request headers</span></span>
-| <span data-ttu-id="6cfbe-127">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6cfbe-127">Header</span></span>       | <span data-ttu-id="6cfbe-128">値</span><span class="sxs-lookup"><span data-stu-id="6cfbe-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b1806-126">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1806-126">Request headers</span></span>
+| <span data-ttu-id="b1806-127">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1806-127">Header</span></span>       | <span data-ttu-id="b1806-128">値</span><span class="sxs-lookup"><span data-stu-id="b1806-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6cfbe-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="6cfbe-129">Authorization</span></span>  | <span data-ttu-id="6cfbe-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6cfbe-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6cfbe-132">Content-Type</span></span>  | <span data-ttu-id="6cfbe-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="6cfbe-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="b1806-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="b1806-129">Authorization</span></span>  | <span data-ttu-id="b1806-p104">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b1806-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b1806-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b1806-132">Content-Type</span></span>  | <span data-ttu-id="b1806-p105">application/json. Required.</span><span class="sxs-lookup"><span data-stu-id="b1806-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="6cfbe-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="6cfbe-135">Request body</span></span>
-<span data-ttu-id="6cfbe-p106">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b1806-135">要求本文</span><span class="sxs-lookup"><span data-stu-id="b1806-135">Request body</span></span>
+<span data-ttu-id="b1806-p106">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="b1806-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="6cfbe-139">プロパティ</span><span class="sxs-lookup"><span data-stu-id="6cfbe-139">Property</span></span>     | <span data-ttu-id="6cfbe-140">型</span><span class="sxs-lookup"><span data-stu-id="6cfbe-140">Type</span></span>   |<span data-ttu-id="6cfbe-141">説明</span><span class="sxs-lookup"><span data-stu-id="6cfbe-141">Description</span></span>|
+| <span data-ttu-id="b1806-139">プロパティ</span><span class="sxs-lookup"><span data-stu-id="b1806-139">Property</span></span>     | <span data-ttu-id="b1806-140">型</span><span class="sxs-lookup"><span data-stu-id="b1806-140">Type</span></span>   |<span data-ttu-id="b1806-141">説明</span><span class="sxs-lookup"><span data-stu-id="b1806-141">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6cfbe-142">color</span><span class="sxs-lookup"><span data-stu-id="6cfbe-142">color</span></span>|<span data-ttu-id="6cfbe-143">String</span><span class="sxs-lookup"><span data-stu-id="6cfbe-143">String</span></span>|<span data-ttu-id="6cfbe-p107">UI で予定表を他の予定表から区別するための配色テーマを指定します。プロパティ値は次のとおりです。薄い青=0、薄い緑=1、薄いオレンジ=2、薄い灰色=3、薄い黄=4、薄い青緑=5、薄いピンク=6、薄い茶色=7、薄い赤=8、最大色=9、自動=-1</span><span class="sxs-lookup"><span data-stu-id="6cfbe-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
-|<span data-ttu-id="6cfbe-146">isDefaultCalendar</span><span class="sxs-lookup"><span data-stu-id="6cfbe-146">isDefaultCalendar</span></span>|<span data-ttu-id="6cfbe-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="6cfbe-147">Boolean</span></span>|<span data-ttu-id="6cfbe-148">この予定表がユーザーの既定の予定表であれば True、そうでなければ False。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-148">True if this calendar is the user's default calendar, false otherwise.</span></span>|
-|<span data-ttu-id="6cfbe-149">name</span><span class="sxs-lookup"><span data-stu-id="6cfbe-149">name</span></span>|<span data-ttu-id="6cfbe-150">String</span><span class="sxs-lookup"><span data-stu-id="6cfbe-150">String</span></span>|<span data-ttu-id="6cfbe-151">予定表の名前。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-151">The calendar name.</span></span>|
+|<span data-ttu-id="b1806-142">color</span><span class="sxs-lookup"><span data-stu-id="b1806-142">color</span></span>|<span data-ttu-id="b1806-143">String</span><span class="sxs-lookup"><span data-stu-id="b1806-143">String</span></span>|<span data-ttu-id="b1806-p107">UI で予定表を他の予定表から区別するための配色テーマを指定します。プロパティ値は次のとおりです。薄い青=0、薄い緑=1、薄いオレンジ=2、薄い灰色=3、薄い黄=4、薄い青緑=5、薄いピンク=6、薄い茶色=7、薄い赤=8、最大色=9、自動=-1</span><span class="sxs-lookup"><span data-stu-id="b1806-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
+|<span data-ttu-id="b1806-146">isDefaultCalendar</span><span class="sxs-lookup"><span data-stu-id="b1806-146">isDefaultCalendar</span></span>|<span data-ttu-id="b1806-147">Boolean</span><span class="sxs-lookup"><span data-stu-id="b1806-147">Boolean</span></span>|<span data-ttu-id="b1806-148">この予定表がユーザーの既定の予定表であれば True、そうでなければ False。</span><span class="sxs-lookup"><span data-stu-id="b1806-148">True if this calendar is the user's default calendar, false otherwise.</span></span>|
+|<span data-ttu-id="b1806-149">name</span><span class="sxs-lookup"><span data-stu-id="b1806-149">name</span></span>|<span data-ttu-id="b1806-150">String</span><span class="sxs-lookup"><span data-stu-id="b1806-150">String</span></span>|<span data-ttu-id="b1806-151">予定表の名前。</span><span class="sxs-lookup"><span data-stu-id="b1806-151">The calendar name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="6cfbe-152">応答</span><span class="sxs-lookup"><span data-stu-id="6cfbe-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b1806-152">応答</span><span class="sxs-lookup"><span data-stu-id="b1806-152">Response</span></span>
 
-<span data-ttu-id="6cfbe-153">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[予定表](../resources/calendar.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-153">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6cfbe-154">例</span><span class="sxs-lookup"><span data-stu-id="6cfbe-154">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6cfbe-155">要求</span><span class="sxs-lookup"><span data-stu-id="6cfbe-155">Request</span></span>
-<span data-ttu-id="6cfbe-156">次の例では、サインインしているユーザーの既定の予定表の名前を更新します。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-156">The following example updates the name of the signed-in user's default calendar.</span></span>
+<span data-ttu-id="b1806-153">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で、更新された[予定表](../resources/calendar.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b1806-153">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b1806-154">例</span><span class="sxs-lookup"><span data-stu-id="b1806-154">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b1806-155">要求</span><span class="sxs-lookup"><span data-stu-id="b1806-155">Request</span></span>
+<span data-ttu-id="b1806-156">次の例では、サインインしているユーザーの既定の予定表の名前を更新します。</span><span class="sxs-lookup"><span data-stu-id="b1806-156">The following example updates the name of the signed-in user's default calendar.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6cfbe-157">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6cfbe-157">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b1806-157">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b1806-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -82,26 +82,22 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6cfbe-158">C#</span><span class="sxs-lookup"><span data-stu-id="6cfbe-158">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b1806-158">C#</span><span class="sxs-lookup"><span data-stu-id="b1806-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6cfbe-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6cfbe-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b1806-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b1806-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6cfbe-160">目的-C</span><span class="sxs-lookup"><span data-stu-id="6cfbe-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b1806-160">目的-C</span><span class="sxs-lookup"><span data-stu-id="b1806-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="6cfbe-161">Java</span><span class="sxs-lookup"><span data-stu-id="6cfbe-161">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6cfbe-162">応答</span><span class="sxs-lookup"><span data-stu-id="6cfbe-162">Response</span></span>
-<span data-ttu-id="6cfbe-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6cfbe-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b1806-161">応答</span><span class="sxs-lookup"><span data-stu-id="b1806-161">Response</span></span>
+<span data-ttu-id="b1806-p108">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="b1806-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

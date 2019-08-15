@@ -5,32 +5,32 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f542258dba9ab4882cb1379970f031bed1261697
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 26d35bae2eb5dd85989660e243355ea3099bf54d
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317434"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418711"
 ---
-# <a name="create-chatmessage-in-a-channel"></a><span data-ttu-id="57e1e-103">チャネルでの chatMessage の作成</span><span class="sxs-lookup"><span data-stu-id="57e1e-103">Create chatMessage in a channel</span></span>
+# <a name="create-chatmessage-in-a-channel"></a><span data-ttu-id="b1919-103">チャネルでの chatMessage の作成</span><span class="sxs-lookup"><span data-stu-id="b1919-103">Create chatMessage in a channel</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="57e1e-104">指定した[チャネル](../resources/channel.md)で新しい[chatmessage](../resources/chatmessage.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-104">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="b1919-104">指定した[チャネル](../resources/channel.md)で新しい[chatmessage](../resources/chatmessage.md)を作成します。</span><span class="sxs-lookup"><span data-stu-id="b1919-104">Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).</span></span>
 
-> <span data-ttu-id="57e1e-105">**注**: データ移行にこの API を使用することはお勧めしません。</span><span class="sxs-lookup"><span data-stu-id="57e1e-105">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="57e1e-106">標準的な移行に必要なスループットはありません。</span><span class="sxs-lookup"><span data-stu-id="57e1e-106">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="b1919-105">**注**: データ移行にこの API を使用することはお勧めしません。</span><span class="sxs-lookup"><span data-stu-id="b1919-105">**Note**: We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="b1919-106">標準的な移行に必要なスループットはありません。</span><span class="sxs-lookup"><span data-stu-id="b1919-106">It does not have the throughput necessary for a typical migration.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="57e1e-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="57e1e-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b1919-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b1919-107">Permissions</span></span>
 
-<span data-ttu-id="57e1e-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="57e1e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b1919-p102">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b1919-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="57e1e-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="57e1e-110">Permission type</span></span>                        | <span data-ttu-id="57e1e-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="57e1e-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b1919-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b1919-110">Permission type</span></span>                        | <span data-ttu-id="b1919-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b1919-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="57e1e-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="57e1e-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="57e1e-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57e1e-113">Group.ReadWrite.All</span></span> |
-| <span data-ttu-id="57e1e-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="57e1e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57e1e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="57e1e-115">Not supported.</span></span> |
-| <span data-ttu-id="57e1e-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="57e1e-116">Application</span></span>                            | <span data-ttu-id="57e1e-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="57e1e-117">Not supported.</span></span> |
+| <span data-ttu-id="b1919-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b1919-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b1919-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b1919-113">Group.ReadWrite.All</span></span> |
+| <span data-ttu-id="b1919-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b1919-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b1919-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1919-115">Not supported.</span></span> |
+| <span data-ttu-id="b1919-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b1919-116">Application</span></span>                            | <span data-ttu-id="b1919-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1919-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="57e1e-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="57e1e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b1919-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b1919-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,30 +38,30 @@ ms.locfileid: "36317434"
 POST /teams/{id}/channels/{id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="57e1e-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="57e1e-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b1919-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b1919-119">Request headers</span></span>
 
-| <span data-ttu-id="57e1e-120">名前</span><span class="sxs-lookup"><span data-stu-id="57e1e-120">Name</span></span>          | <span data-ttu-id="57e1e-121">説明</span><span class="sxs-lookup"><span data-stu-id="57e1e-121">Description</span></span>   |
+| <span data-ttu-id="b1919-120">名前</span><span class="sxs-lookup"><span data-stu-id="b1919-120">Name</span></span>          | <span data-ttu-id="b1919-121">説明</span><span class="sxs-lookup"><span data-stu-id="b1919-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="57e1e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="57e1e-122">Authorization</span></span> | <span data-ttu-id="57e1e-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="57e1e-123">Bearer {code}</span></span> |
+| <span data-ttu-id="b1919-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b1919-122">Authorization</span></span> | <span data-ttu-id="b1919-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="b1919-123">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="57e1e-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="57e1e-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b1919-124">要求本文</span><span class="sxs-lookup"><span data-stu-id="b1919-124">Request body</span></span>
 
-<span data-ttu-id="57e1e-125">要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-125">In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="57e1e-126">Body プロパティのみが必須で、その他のプロパティはオプションです。</span><span class="sxs-lookup"><span data-stu-id="57e1e-126">Only the body property is mandatory, other properties are optional.</span></span>
+<span data-ttu-id="b1919-125">要求本文で、[メッセージ](../resources/chatmessage.md)オブジェクトの JSON 表記を指定します。</span><span class="sxs-lookup"><span data-stu-id="b1919-125">In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object.</span></span> <span data-ttu-id="b1919-126">Body プロパティのみが必須で、その他のプロパティはオプションです。</span><span class="sxs-lookup"><span data-stu-id="b1919-126">Only the body property is mandatory, other properties are optional.</span></span>
 
-> <span data-ttu-id="57e1e-127">注: 添付ファイルと画像を使用したメッセージの送信はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="57e1e-127">Note: Sending messages with attachments and images is not supported.</span></span>
+> <span data-ttu-id="b1919-127">注: 添付ファイルと画像を使用したメッセージの送信はサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b1919-127">Note: Sending messages with attachments and images is not supported.</span></span>
 
-## <a name="response"></a><span data-ttu-id="57e1e-128">応答</span><span class="sxs-lookup"><span data-stu-id="57e1e-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b1919-128">応答</span><span class="sxs-lookup"><span data-stu-id="b1919-128">Response</span></span>
 
-<span data-ttu-id="57e1e-129">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で新しい[chatmessage](../resources/chatmessage.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-129">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="b1919-129">成功した場合、このメソッド`201 Created`は応答コードと、応答本文で新しい[chatmessage](../resources/chatmessage.md)オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b1919-129">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="57e1e-130">例</span><span class="sxs-lookup"><span data-stu-id="57e1e-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b1919-130">例</span><span class="sxs-lookup"><span data-stu-id="b1919-130">Examples</span></span>
 
-### <a name="example-1-hello-world"></a><span data-ttu-id="57e1e-131">例 1: Hello World</span><span class="sxs-lookup"><span data-stu-id="57e1e-131">Example 1: Hello World</span></span>
+### <a name="example-1-hello-world"></a><span data-ttu-id="b1919-131">例 1: Hello World</span><span class="sxs-lookup"><span data-stu-id="b1919-131">Example 1: Hello World</span></span>
 
-#### <a name="request"></a><span data-ttu-id="57e1e-132">要求</span><span class="sxs-lookup"><span data-stu-id="57e1e-132">Request</span></span>
-<span data-ttu-id="57e1e-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-133">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="b1919-132">要求</span><span class="sxs-lookup"><span data-stu-id="b1919-132">Request</span></span>
+<span data-ttu-id="b1919-133">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b1919-133">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="57e1e-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="57e1e-134">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b1919-134">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b1919-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -77,31 +77,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="57e1e-135">C#</span><span class="sxs-lookup"><span data-stu-id="57e1e-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b1919-135">C#</span><span class="sxs-lookup"><span data-stu-id="b1919-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="57e1e-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="57e1e-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b1919-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b1919-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="57e1e-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="57e1e-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b1919-137">目的-C</span><span class="sxs-lookup"><span data-stu-id="b1919-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="57e1e-138">Java</span><span class="sxs-lookup"><span data-stu-id="57e1e-138">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="57e1e-139">応答</span><span class="sxs-lookup"><span data-stu-id="57e1e-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b1919-138">応答</span><span class="sxs-lookup"><span data-stu-id="b1919-138">Response</span></span>
 
-<span data-ttu-id="57e1e-140">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-140">The following is an example of the response.</span></span>
+<span data-ttu-id="b1919-139">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b1919-139">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="57e1e-141">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="57e1e-141">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="57e1e-142">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="57e1e-142">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b1919-140">ここに示す response オブジェクトは読みやすいように短縮される場合があります。</span><span class="sxs-lookup"><span data-stu-id="b1919-140">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b1919-141">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b1919-141">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -148,10 +144,10 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-mentions"></a><span data-ttu-id="57e1e-143">例 2: @mentions</span><span class="sxs-lookup"><span data-stu-id="57e1e-143">Example 2: @mentions</span></span>
+### <a name="example-2-mentions"></a><span data-ttu-id="b1919-142">例 2: @mentions</span><span class="sxs-lookup"><span data-stu-id="b1919-142">Example 2: @mentions</span></span>
 
-#### <a name="request"></a><span data-ttu-id="57e1e-144">要求</span><span class="sxs-lookup"><span data-stu-id="57e1e-144">Request</span></span>
-<span data-ttu-id="57e1e-145">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-145">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="b1919-143">要求</span><span class="sxs-lookup"><span data-stu-id="b1919-143">Request</span></span>
+<span data-ttu-id="b1919-144">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b1919-144">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -181,9 +177,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="57e1e-146">応答</span><span class="sxs-lookup"><span data-stu-id="57e1e-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b1919-145">応答</span><span class="sxs-lookup"><span data-stu-id="b1919-145">Response</span></span>
 
-<span data-ttu-id="57e1e-147">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-147">The following is an example of the response.</span></span>
+<span data-ttu-id="b1919-146">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b1919-146">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -243,10 +239,10 @@ Content-length: 160
 }
 ```
 
-### <a name="example-3-cards"></a><span data-ttu-id="57e1e-148">例 3: カード</span><span class="sxs-lookup"><span data-stu-id="57e1e-148">Example 3: Cards</span></span>
+### <a name="example-3-cards"></a><span data-ttu-id="b1919-147">例 3: カード</span><span class="sxs-lookup"><span data-stu-id="b1919-147">Example 3: Cards</span></span>
 
-#### <a name="request"></a><span data-ttu-id="57e1e-149">要求</span><span class="sxs-lookup"><span data-stu-id="57e1e-149">Request</span></span>
-<span data-ttu-id="57e1e-150">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-150">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="b1919-148">要求</span><span class="sxs-lookup"><span data-stu-id="b1919-148">Request</span></span>
+<span data-ttu-id="b1919-149">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b1919-149">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -274,9 +270,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="57e1e-151">応答</span><span class="sxs-lookup"><span data-stu-id="57e1e-151">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b1919-150">応答</span><span class="sxs-lookup"><span data-stu-id="b1919-150">Response</span></span>
 
-<span data-ttu-id="57e1e-152">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="57e1e-152">The following is an example of the response.</span></span>
+<span data-ttu-id="b1919-151">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b1919-151">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -330,9 +326,9 @@ Content-length: 160
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="57e1e-153">関連項目</span><span class="sxs-lookup"><span data-stu-id="57e1e-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1919-152">関連項目</span><span class="sxs-lookup"><span data-stu-id="b1919-152">See also</span></span>
 
-- [<span data-ttu-id="57e1e-154">カードリファレンス</span><span class="sxs-lookup"><span data-stu-id="57e1e-154">Cards Reference</span></span>](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
+- [<span data-ttu-id="b1919-153">カードリファレンス</span><span class="sxs-lookup"><span data-stu-id="b1919-153">Cards Reference</span></span>](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

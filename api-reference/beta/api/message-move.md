@@ -5,30 +5,30 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c2ccf81ee88b13bbe29cca397e29b3e1f60c1203
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 66df0eeff2c6fc3cbde38ee11fcdb91acc1f3795
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346899"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36415030"
 ---
-# <a name="message-move"></a><span data-ttu-id="ccbde-104">メッセージ: move</span><span class="sxs-lookup"><span data-stu-id="ccbde-104">message: move</span></span>
+# <a name="message-move"></a><span data-ttu-id="63799-104">メッセージ: move</span><span class="sxs-lookup"><span data-stu-id="63799-104">message: move</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ccbde-105">メッセージをフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="ccbde-105">Move a message to a folder.</span></span> <span data-ttu-id="ccbde-106">これにより、宛先フォルダーにメッセージの新しいコピーが作成され、元のメッセージが削除されます。</span><span class="sxs-lookup"><span data-stu-id="ccbde-106">This creates a new copy of the message in the destination folder and removes the original message.</span></span>
+<span data-ttu-id="63799-105">メッセージをフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="63799-105">Move a message to a folder.</span></span> <span data-ttu-id="63799-106">これにより、宛先フォルダーにメッセージの新しいコピーが作成され、元のメッセージが削除されます。</span><span class="sxs-lookup"><span data-stu-id="63799-106">This creates a new copy of the message in the destination folder and removes the original message.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ccbde-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="ccbde-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="63799-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="63799-107">Permissions</span></span>
 
-<span data-ttu-id="ccbde-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ccbde-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="63799-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="63799-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ccbde-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="ccbde-110">Permission type</span></span> | <span data-ttu-id="ccbde-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="ccbde-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="63799-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="63799-110">Permission type</span></span> | <span data-ttu-id="63799-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="63799-111">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="ccbde-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="ccbde-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ccbde-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ccbde-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ccbde-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="ccbde-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ccbde-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ccbde-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="ccbde-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ccbde-116">Application</span></span> | <span data-ttu-id="ccbde-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ccbde-117">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="63799-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="63799-112">Delegated (work or school account)</span></span> | <span data-ttu-id="63799-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63799-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="63799-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="63799-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63799-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63799-115">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="63799-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="63799-116">Application</span></span> | <span data-ttu-id="63799-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="63799-117">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ccbde-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="ccbde-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63799-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="63799-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,34 +39,34 @@ POST /me/mailFolders/{id}/messages/{id}/move
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ccbde-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ccbde-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="63799-119">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="63799-119">Request headers</span></span>
 
-| <span data-ttu-id="ccbde-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="ccbde-120">Header</span></span> | <span data-ttu-id="ccbde-121">値</span><span class="sxs-lookup"><span data-stu-id="ccbde-121">Value</span></span> |
+| <span data-ttu-id="63799-120">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="63799-120">Header</span></span> | <span data-ttu-id="63799-121">値</span><span class="sxs-lookup"><span data-stu-id="63799-121">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="ccbde-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ccbde-122">Authorization</span></span> | <span data-ttu-id="ccbde-123">`Bearer {token}`</span><span class="sxs-lookup"><span data-stu-id="ccbde-123">`Bearer {token}`.</span></span> <span data-ttu-id="ccbde-124">必須です。</span><span class="sxs-lookup"><span data-stu-id="ccbde-124">Required.</span></span> |
-| <span data-ttu-id="ccbde-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ccbde-125">Content-Type</span></span> | <span data-ttu-id="ccbde-126">`application/json`</span><span class="sxs-lookup"><span data-stu-id="ccbde-126">`application/json`.</span></span> <span data-ttu-id="ccbde-127">必須です。</span><span class="sxs-lookup"><span data-stu-id="ccbde-127">Required.</span></span> |
+| <span data-ttu-id="63799-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="63799-122">Authorization</span></span> | <span data-ttu-id="63799-123">`Bearer {token}`</span><span class="sxs-lookup"><span data-stu-id="63799-123">`Bearer {token}`.</span></span> <span data-ttu-id="63799-124">必須です。</span><span class="sxs-lookup"><span data-stu-id="63799-124">Required.</span></span> |
+| <span data-ttu-id="63799-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="63799-125">Content-Type</span></span> | <span data-ttu-id="63799-126">`application/json`</span><span class="sxs-lookup"><span data-stu-id="63799-126">`application/json`.</span></span> <span data-ttu-id="63799-127">必須です。</span><span class="sxs-lookup"><span data-stu-id="63799-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ccbde-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="ccbde-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="63799-128">要求本文</span><span class="sxs-lookup"><span data-stu-id="63799-128">Request body</span></span>
 
-<span data-ttu-id="ccbde-129">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="ccbde-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="63799-129">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="63799-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ccbde-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ccbde-130">Parameter</span></span>   | <span data-ttu-id="ccbde-131">型</span><span class="sxs-lookup"><span data-stu-id="ccbde-131">Type</span></span> |<span data-ttu-id="ccbde-132">説明</span><span class="sxs-lookup"><span data-stu-id="ccbde-132">Description</span></span>|
+| <span data-ttu-id="63799-130">パラメーター</span><span class="sxs-lookup"><span data-stu-id="63799-130">Parameter</span></span>   | <span data-ttu-id="63799-131">型</span><span class="sxs-lookup"><span data-stu-id="63799-131">Type</span></span> |<span data-ttu-id="63799-132">説明</span><span class="sxs-lookup"><span data-stu-id="63799-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ccbde-133">DestinationId</span><span class="sxs-lookup"><span data-stu-id="ccbde-133">DestinationId</span></span>|<span data-ttu-id="ccbde-134">String</span><span class="sxs-lookup"><span data-stu-id="ccbde-134">String</span></span>|<span data-ttu-id="ccbde-135">宛先フォルダーの ID または既知のフォルダー名です。</span><span class="sxs-lookup"><span data-stu-id="ccbde-135">The destination folder ID, or a well-known folder name.</span></span> <span data-ttu-id="ccbde-136">サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ccbde-136">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>|
+|<span data-ttu-id="63799-133">DestinationId</span><span class="sxs-lookup"><span data-stu-id="63799-133">DestinationId</span></span>|<span data-ttu-id="63799-134">String</span><span class="sxs-lookup"><span data-stu-id="63799-134">String</span></span>|<span data-ttu-id="63799-135">宛先フォルダーの ID または既知のフォルダー名です。</span><span class="sxs-lookup"><span data-stu-id="63799-135">The destination folder ID, or a well-known folder name.</span></span> <span data-ttu-id="63799-136">サポートされている既知のフォルダー名の一覧については、「[mailFolder リソースの種類](../resources/mailfolder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="63799-136">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ccbde-137">応答</span><span class="sxs-lookup"><span data-stu-id="ccbde-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="63799-137">応答</span><span class="sxs-lookup"><span data-stu-id="63799-137">Response</span></span>
 
-<span data-ttu-id="ccbde-138">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="ccbde-138">If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.</span></span>
+<span data-ttu-id="63799-138">成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [message](../resources/message.md) リソースを返します。</span><span class="sxs-lookup"><span data-stu-id="63799-138">If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ccbde-139">例</span><span class="sxs-lookup"><span data-stu-id="ccbde-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="63799-139">例</span><span class="sxs-lookup"><span data-stu-id="63799-139">Example</span></span>
 
-<span data-ttu-id="ccbde-140">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="ccbde-140">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="63799-140">以下は、この API を呼び出す方法の例です。</span><span class="sxs-lookup"><span data-stu-id="63799-140">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="ccbde-141">要求</span><span class="sxs-lookup"><span data-stu-id="ccbde-141">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="63799-141">要求</span><span class="sxs-lookup"><span data-stu-id="63799-141">Request</span></span>
 
-<span data-ttu-id="ccbde-142">次の要求は、指定されたメッセージを既知のフォルダー名 `deleteditems` で識別される削除済みアイテム フォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="ccbde-142">The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.</span></span>
+<span data-ttu-id="63799-142">次の要求は、指定されたメッセージを既知のフォルダー名 `deleteditems` で識別される削除済みアイテム フォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="63799-142">The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ccbde-143">プロトコル</span><span class="sxs-lookup"><span data-stu-id="ccbde-143">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="63799-143">プロトコル</span><span class="sxs-lookup"><span data-stu-id="63799-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -81,30 +81,26 @@ Content-type: application/json
   "destinationId": "deleteditems"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ccbde-144">C#</span><span class="sxs-lookup"><span data-stu-id="ccbde-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="63799-144">C#</span><span class="sxs-lookup"><span data-stu-id="63799-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-move-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ccbde-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ccbde-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="63799-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="63799-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-move-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ccbde-146">目的-C</span><span class="sxs-lookup"><span data-stu-id="ccbde-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="63799-146">目的-C</span><span class="sxs-lookup"><span data-stu-id="63799-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-move-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="ccbde-147">Java</span><span class="sxs-lookup"><span data-stu-id="ccbde-147">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-move-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="ccbde-148">応答</span><span class="sxs-lookup"><span data-stu-id="ccbde-148">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="63799-147">応答</span><span class="sxs-lookup"><span data-stu-id="63799-147">Response</span></span>
 
-<span data-ttu-id="ccbde-149">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="ccbde-149">Here is an example of the response.</span></span>
+<span data-ttu-id="63799-148">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="63799-148">Here is an example of the response.</span></span>
 
-> <span data-ttu-id="ccbde-150">**注:**  ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="ccbde-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ccbde-151">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="ccbde-151">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="63799-149">**注:**  ここに示す応答オブジェクトは、読みやすさのために短縮されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="63799-149">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="63799-150">実際の呼び出しではすべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="63799-150">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

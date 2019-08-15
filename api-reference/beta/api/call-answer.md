@@ -5,60 +5,60 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6540cc9d20868c6a29c24ad44179b1fc904968e6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4d59f48ff3a43e2e72273c6d13a8b16e3a7e96fe
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317816"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419021"
 ---
-# <a name="call-answer"></a><span data-ttu-id="cd4ba-103">通話: 応答</span><span class="sxs-lookup"><span data-stu-id="cd4ba-103">call: answer</span></span>
+# <a name="call-answer"></a><span data-ttu-id="8d524-103">通話: 応答</span><span class="sxs-lookup"><span data-stu-id="8d524-103">call: answer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cd4ba-104">着信に応答します。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-104">Answer an incoming call.</span></span>
+<span data-ttu-id="8d524-104">着信に応答します。</span><span class="sxs-lookup"><span data-stu-id="8d524-104">Answer an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cd4ba-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="cd4ba-105">Permissions</span></span>
-<span data-ttu-id="cd4ba-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8d524-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8d524-105">Permissions</span></span>
+<span data-ttu-id="8d524-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8d524-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="cd4ba-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="cd4ba-108">Permission type</span></span> | <span data-ttu-id="cd4ba-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="cd4ba-109">Permissions (from least to most privileged)</span></span>                 |
+| <span data-ttu-id="8d524-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8d524-108">Permission type</span></span> | <span data-ttu-id="8d524-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8d524-109">Permissions (from least to most privileged)</span></span>                 |
 | :-------------- | :-----------------------------------------------------------|
-| <span data-ttu-id="cd4ba-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="cd4ba-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="cd4ba-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="cd4ba-111">Not Supported</span></span>                        |
-| <span data-ttu-id="cd4ba-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="cd4ba-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd4ba-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="cd4ba-113">Not Supported</span></span>                        |
-| <span data-ttu-id="cd4ba-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="cd4ba-114">Application</span></span>     | <span data-ttu-id="cd4ba-115">None</span><span class="sxs-lookup"><span data-stu-id="cd4ba-115">None</span></span>                                                        |
+| <span data-ttu-id="8d524-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8d524-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="8d524-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="8d524-111">Not Supported</span></span>                        |
+| <span data-ttu-id="8d524-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8d524-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8d524-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="8d524-113">Not Supported</span></span>                        |
+| <span data-ttu-id="8d524-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8d524-114">Application</span></span>     | <span data-ttu-id="8d524-115">None</span><span class="sxs-lookup"><span data-stu-id="8d524-115">None</span></span>                                                        |
 
-## <a name="http-request"></a><span data-ttu-id="cd4ba-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="cd4ba-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8d524-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8d524-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
 POST /applications/{id}/calls/{id}/answer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cd4ba-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="cd4ba-117">Request headers</span></span>
-| <span data-ttu-id="cd4ba-118">名前</span><span class="sxs-lookup"><span data-stu-id="cd4ba-118">Name</span></span>          | <span data-ttu-id="cd4ba-119">説明</span><span class="sxs-lookup"><span data-stu-id="cd4ba-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="8d524-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="8d524-117">Request headers</span></span>
+| <span data-ttu-id="8d524-118">名前</span><span class="sxs-lookup"><span data-stu-id="8d524-118">Name</span></span>          | <span data-ttu-id="8d524-119">説明</span><span class="sxs-lookup"><span data-stu-id="8d524-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="cd4ba-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="cd4ba-120">Authorization</span></span> | <span data-ttu-id="cd4ba-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8d524-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8d524-120">Authorization</span></span> | <span data-ttu-id="8d524-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="8d524-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cd4ba-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="cd4ba-123">Request body</span></span>
-<span data-ttu-id="cd4ba-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8d524-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="8d524-123">Request body</span></span>
+<span data-ttu-id="8d524-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="8d524-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="cd4ba-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cd4ba-125">Parameter</span></span>        | <span data-ttu-id="cd4ba-126">型</span><span class="sxs-lookup"><span data-stu-id="cd4ba-126">Type</span></span>                                     |<span data-ttu-id="cd4ba-127">説明</span><span class="sxs-lookup"><span data-stu-id="cd4ba-127">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="8d524-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8d524-125">Parameter</span></span>        | <span data-ttu-id="8d524-126">型</span><span class="sxs-lookup"><span data-stu-id="8d524-126">Type</span></span>                                     |<span data-ttu-id="8d524-127">説明</span><span class="sxs-lookup"><span data-stu-id="8d524-127">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="cd4ba-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="cd4ba-128">callbackUri</span></span>       |<span data-ttu-id="cd4ba-129">String</span><span class="sxs-lookup"><span data-stu-id="cd4ba-129">String</span></span>                                    |<span data-ttu-id="cd4ba-130">コールバック時のコールバック ID またはサブスクリプション ID。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="cd4ba-131">要する</span><span class="sxs-lookup"><span data-stu-id="cd4ba-131">(Required)</span></span>                                                               |
-|<span data-ttu-id="cd4ba-132">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="cd4ba-132">acceptedModalities</span></span>|<span data-ttu-id="cd4ba-133">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="cd4ba-133">String collection</span></span>                         |<span data-ttu-id="cd4ba-134">Accept モダリティのリスト。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-134">The list of accept modalities.</span></span> <span data-ttu-id="cd4ba-135">使用可能な値`unknown`は`audio`、 `video`、 `screenSharing` `videoBasedScreenSharing`、、 `data`、、です。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="cd4ba-136">要する</span><span class="sxs-lookup"><span data-stu-id="cd4ba-136">(Required)</span></span> |
-|<span data-ttu-id="cd4ba-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="cd4ba-137">mediaConfig</span></span>       |[<span data-ttu-id="cd4ba-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="cd4ba-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="cd4ba-139">メディア構成。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-139">The media configuration.</span></span> <span data-ttu-id="cd4ba-140">要する</span><span class="sxs-lookup"><span data-stu-id="cd4ba-140">(Required)</span></span>                                                                                                            |
+|<span data-ttu-id="8d524-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="8d524-128">callbackUri</span></span>       |<span data-ttu-id="8d524-129">String</span><span class="sxs-lookup"><span data-stu-id="8d524-129">String</span></span>                                    |<span data-ttu-id="8d524-130">コールバック時のコールバック ID またはサブスクリプション ID。</span><span class="sxs-lookup"><span data-stu-id="8d524-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="8d524-131">要する</span><span class="sxs-lookup"><span data-stu-id="8d524-131">(Required)</span></span>                                                               |
+|<span data-ttu-id="8d524-132">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="8d524-132">acceptedModalities</span></span>|<span data-ttu-id="8d524-133">文字列コレクション</span><span class="sxs-lookup"><span data-stu-id="8d524-133">String collection</span></span>                         |<span data-ttu-id="8d524-134">Accept モダリティのリスト。</span><span class="sxs-lookup"><span data-stu-id="8d524-134">The list of accept modalities.</span></span> <span data-ttu-id="8d524-135">使用可能な値`unknown`は`audio`、 `video`、 `screenSharing` `videoBasedScreenSharing`、、 `data`、、です。</span><span class="sxs-lookup"><span data-stu-id="8d524-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="8d524-136">要する</span><span class="sxs-lookup"><span data-stu-id="8d524-136">(Required)</span></span> |
+|<span data-ttu-id="8d524-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="8d524-137">mediaConfig</span></span>       |[<span data-ttu-id="8d524-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="8d524-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="8d524-139">メディア構成。</span><span class="sxs-lookup"><span data-stu-id="8d524-139">The media configuration.</span></span> <span data-ttu-id="8d524-140">要する</span><span class="sxs-lookup"><span data-stu-id="8d524-140">(Required)</span></span>                                                                                                            |
 
-## <a name="response"></a><span data-ttu-id="cd4ba-141">応答</span><span class="sxs-lookup"><span data-stu-id="cd4ba-141">Response</span></span>
-<span data-ttu-id="cd4ba-142">このメソッドは`202 Accepted`応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-142">This method returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="8d524-141">応答</span><span class="sxs-lookup"><span data-stu-id="8d524-141">Response</span></span>
+<span data-ttu-id="8d524-142">このメソッドは`202 Accepted`応答コードを返します。</span><span class="sxs-lookup"><span data-stu-id="8d524-142">This method returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="cd4ba-143">例</span><span class="sxs-lookup"><span data-stu-id="cd4ba-143">Examples</span></span>
-<span data-ttu-id="cd4ba-144">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-144">The following example shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="8d524-143">例</span><span class="sxs-lookup"><span data-stu-id="8d524-143">Examples</span></span>
+<span data-ttu-id="8d524-144">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d524-144">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="cd4ba-145">要求</span><span class="sxs-lookup"><span data-stu-id="cd4ba-145">Request</span></span>
-<span data-ttu-id="cd4ba-146">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-146">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="8d524-145">要求</span><span class="sxs-lookup"><span data-stu-id="8d524-145">Request</span></span>
+<span data-ttu-id="8d524-146">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d524-146">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="cd4ba-147">プロトコル</span><span class="sxs-lookup"><span data-stu-id="cd4ba-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8d524-147">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8d524-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer"
@@ -79,27 +79,23 @@ Content-Length: 211
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="cd4ba-148">C#</span><span class="sxs-lookup"><span data-stu-id="cd4ba-148">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8d524-148">C#</span><span class="sxs-lookup"><span data-stu-id="8d524-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cd4ba-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cd4ba-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8d524-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8d524-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cd4ba-150">目的-C</span><span class="sxs-lookup"><span data-stu-id="cd4ba-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8d524-150">目的-C</span><span class="sxs-lookup"><span data-stu-id="8d524-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="cd4ba-151">Java</span><span class="sxs-lookup"><span data-stu-id="cd4ba-151">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="cd4ba-152">応答</span><span class="sxs-lookup"><span data-stu-id="cd4ba-152">Response</span></span>
-<span data-ttu-id="cd4ba-153">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="cd4ba-153">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8d524-151">応答</span><span class="sxs-lookup"><span data-stu-id="8d524-151">Response</span></span>
+<span data-ttu-id="8d524-152">以下は、応答の例です。</span><span class="sxs-lookup"><span data-stu-id="8d524-152">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -110,9 +106,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="cd4ba-154">サービスホストされたメディアを使用した VOIP 通話への応答</span><span class="sxs-lookup"><span data-stu-id="cd4ba-154">Answer VOIP call with service hosted media</span></span>
+### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="8d524-153">サービスホストされたメディアを使用した VOIP 通話への応答</span><span class="sxs-lookup"><span data-stu-id="8d524-153">Answer VOIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="cd4ba-155">通知-受信</span><span class="sxs-lookup"><span data-stu-id="cd4ba-155">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="8d524-154">通知-受信</span><span class="sxs-lookup"><span data-stu-id="8d524-154">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -180,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="cd4ba-156">要求</span><span class="sxs-lookup"><span data-stu-id="cd4ba-156">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="8d524-155">要求</span><span class="sxs-lookup"><span data-stu-id="8d524-155">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -212,13 +208,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="cd4ba-157">応答</span><span class="sxs-lookup"><span data-stu-id="cd4ba-157">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8d524-156">応答</span><span class="sxs-lookup"><span data-stu-id="8d524-156">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="cd4ba-158">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="cd4ba-158">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="8d524-157">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="8d524-157">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -247,7 +243,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="cd4ba-159">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="cd4ba-159">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="8d524-158">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="8d524-158">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -276,9 +272,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="cd4ba-160">アプリケーションでホストされているメディアを使用した VOIP 通話への応答</span><span class="sxs-lookup"><span data-stu-id="cd4ba-160">Answer VOIP call with application hosted media</span></span>
+### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="8d524-159">アプリケーションでホストされているメディアを使用した VOIP 通話への応答</span><span class="sxs-lookup"><span data-stu-id="8d524-159">Answer VOIP call with application hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="cd4ba-161">通知-受信</span><span class="sxs-lookup"><span data-stu-id="cd4ba-161">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="8d524-160">通知-受信</span><span class="sxs-lookup"><span data-stu-id="8d524-160">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -333,7 +329,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="cd4ba-162">要求</span><span class="sxs-lookup"><span data-stu-id="cd4ba-162">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="8d524-161">要求</span><span class="sxs-lookup"><span data-stu-id="8d524-161">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -356,13 +352,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="cd4ba-163">応答</span><span class="sxs-lookup"><span data-stu-id="cd4ba-163">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8d524-162">応答</span><span class="sxs-lookup"><span data-stu-id="8d524-162">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="cd4ba-164">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="cd4ba-164">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="8d524-163">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="8d524-163">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -391,7 +387,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="cd4ba-165">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="cd4ba-165">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="8d524-164">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="8d524-164">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

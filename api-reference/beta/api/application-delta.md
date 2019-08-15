@@ -5,83 +5,83 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa3f7f0a5d7b07a23cc75652e66b8ca519e24a22
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5e9bb4cda87498c4e57e11d706128a8332d35361
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318776"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408357"
 ---
-# <a name="application-delta"></a><span data-ttu-id="6d8c8-104">アプリケーション: デルタ</span><span class="sxs-lookup"><span data-stu-id="6d8c8-104">application: delta</span></span>
+# <a name="application-delta"></a><span data-ttu-id="42135-104">アプリケーション: デルタ</span><span class="sxs-lookup"><span data-stu-id="42135-104">application: delta</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6d8c8-105">リソースコレクション全体の完全な読み取りを実行せずに、新しく作成、更新、または削除されたアプリケーションを取得します。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-105">Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.</span></span> <span data-ttu-id="6d8c8-106">詳細については、「[デルタクエリの使用](/graph/delta-query-overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-106">See [Using Delta Query](/graph/delta-query-overview) for details.</span></span>
+<span data-ttu-id="42135-105">リソースコレクション全体の完全な読み取りを実行せずに、新しく作成、更新、または削除されたアプリケーションを取得します。</span><span class="sxs-lookup"><span data-stu-id="42135-105">Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection.</span></span> <span data-ttu-id="42135-106">詳細については、「[デルタクエリの使用](/graph/delta-query-overview)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="42135-106">See [Using Delta Query](/graph/delta-query-overview) for details.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6d8c8-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6d8c8-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="42135-107">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="42135-107">Permissions</span></span>
 
-<span data-ttu-id="6d8c8-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="42135-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="42135-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="6d8c8-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6d8c8-110">Permission type</span></span>      | <span data-ttu-id="6d8c8-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6d8c8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="42135-110">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="42135-110">Permission type</span></span>      | <span data-ttu-id="42135-111">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="42135-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6d8c8-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6d8c8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6d8c8-113">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6d8c8-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6d8c8-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6d8c8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d8c8-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-115">Not supported.</span></span>    |
-|<span data-ttu-id="6d8c8-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6d8c8-116">Application</span></span> | <span data-ttu-id="6d8c8-117">Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="6d8c8-117">Application.ReadWrite.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="42135-112">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="42135-112">Delegated (work or school account)</span></span> | <span data-ttu-id="42135-113">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="42135-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="42135-114">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="42135-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42135-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="42135-115">Not supported.</span></span>    |
+|<span data-ttu-id="42135-116">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="42135-116">Application</span></span> | <span data-ttu-id="42135-117">Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="42135-117">Application.ReadWrite.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6d8c8-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6d8c8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42135-118">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="42135-118">HTTP request</span></span>
 
-<span data-ttu-id="6d8c8-119">変更の追跡を開始するには、アプリケーションリソースにデルタ関数を含む要求を行います。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-119">To begin tracking changes, you make a request including the delta function on the application resource.</span></span> 
+<span data-ttu-id="42135-119">変更の追跡を開始するには、アプリケーションリソースにデルタ関数を含む要求を行います。</span><span class="sxs-lookup"><span data-stu-id="42135-119">To begin tracking changes, you make a request including the delta function on the application resource.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/delta
 ```
 
-### <a name="query-parameters"></a><span data-ttu-id="6d8c8-120">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6d8c8-120">Query parameters</span></span>
+### <a name="query-parameters"></a><span data-ttu-id="42135-120">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="42135-120">Query parameters</span></span>
 
-<span data-ttu-id="6d8c8-121">変更の追跡では、1回以上の**デルタ**関数呼び出しが発生します。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-121">Tracking changes incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="6d8c8-122">任意のクエリ パラメーター (`$deltatoken` と`$skiptoken`以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-122">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="6d8c8-123">Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-123">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span> <span data-ttu-id="6d8c8-124">必要なクエリ パラメーターを前もって 1 回指定しておくだけで済みます。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-124">You only need to specify any desired query parameters once upfront.</span></span> <span data-ttu-id="6d8c8-125">その後の要求では、前の応答で得られた `nextLink` や `deltaLink` の URL をコピーして適用します。エンコード済みの必要なパラメーターがこの URL に既に含まれているためです。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-125">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
+<span data-ttu-id="42135-121">変更の追跡では、1回以上の**デルタ**関数呼び出しが発生します。</span><span class="sxs-lookup"><span data-stu-id="42135-121">Tracking changes incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="42135-122">任意のクエリ パラメーター (`$deltatoken` と`$skiptoken`以外) を使用する場合は、最初の**デルタ**要求でこれを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="42135-122">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="42135-123">Microsoft Graph は、応答で提供される `nextLink` または `deltaLink` の URL のトークン部分に指定したパラメーターを自動的にエンコードします。</span><span class="sxs-lookup"><span data-stu-id="42135-123">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span> <span data-ttu-id="42135-124">必要なクエリ パラメーターを前もって 1 回指定しておくだけで済みます。</span><span class="sxs-lookup"><span data-stu-id="42135-124">You only need to specify any desired query parameters once upfront.</span></span> <span data-ttu-id="42135-125">その後の要求では、前の応答で得られた `nextLink` や `deltaLink` の URL をコピーして適用します。エンコード済みの必要なパラメーターがこの URL に既に含まれているためです。</span><span class="sxs-lookup"><span data-stu-id="42135-125">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
 
-| <span data-ttu-id="6d8c8-126">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6d8c8-126">Query parameter</span></span>      | <span data-ttu-id="6d8c8-127">種類</span><span class="sxs-lookup"><span data-stu-id="6d8c8-127">Type</span></span>   |<span data-ttu-id="6d8c8-128">説明</span><span class="sxs-lookup"><span data-stu-id="6d8c8-128">Description</span></span>|
+| <span data-ttu-id="42135-126">クエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="42135-126">Query parameter</span></span>      | <span data-ttu-id="42135-127">種類</span><span class="sxs-lookup"><span data-stu-id="42135-127">Type</span></span>   |<span data-ttu-id="42135-128">説明</span><span class="sxs-lookup"><span data-stu-id="42135-128">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6d8c8-129">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="6d8c8-129">$deltatoken</span></span> | <span data-ttu-id="6d8c8-130">string</span><span class="sxs-lookup"><span data-stu-id="6d8c8-130">string</span></span> | <span data-ttu-id="6d8c8-131">同じリソースコレクションに対する前`deltaLink`の**デルタ**関数呼び出しの URL で返された[状態トークン](/graph/delta-query-overview)。変更追跡のラウンドが終了したことを示します。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-131">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="6d8c8-132">そのコレクションの次の`deltaLink`ラウンドの変更追跡の最初の要求で、このトークンを含む URL 全体を保存して適用します。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-132">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
-| <span data-ttu-id="6d8c8-133">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="6d8c8-133">$skiptoken</span></span> | <span data-ttu-id="6d8c8-134">string</span><span class="sxs-lookup"><span data-stu-id="6d8c8-134">string</span></span> | <span data-ttu-id="6d8c8-135">前の**デルタ**関数呼び出しの`nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じリソースコレクションに追跡すべき変更が他にもあることを示します。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-135">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.</span></span> |
+| <span data-ttu-id="42135-129">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="42135-129">$deltatoken</span></span> | <span data-ttu-id="42135-130">string</span><span class="sxs-lookup"><span data-stu-id="42135-130">string</span></span> | <span data-ttu-id="42135-131">同じリソースコレクションに対する前`deltaLink`の**デルタ**関数呼び出しの URL で返された[状態トークン](/graph/delta-query-overview)。変更追跡のラウンドが終了したことを示します。</span><span class="sxs-lookup"><span data-stu-id="42135-131">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking.</span></span> <span data-ttu-id="42135-132">そのコレクションの次の`deltaLink`ラウンドの変更追跡の最初の要求で、このトークンを含む URL 全体を保存して適用します。</span><span class="sxs-lookup"><span data-stu-id="42135-132">Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
+| <span data-ttu-id="42135-133">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="42135-133">$skiptoken</span></span> | <span data-ttu-id="42135-134">string</span><span class="sxs-lookup"><span data-stu-id="42135-134">string</span></span> | <span data-ttu-id="42135-135">前の**デルタ**関数呼び出しの`nextLink` URL で[状態トークン](/graph/delta-query-overview)が返され、同じリソースコレクションに追跡すべき変更が他にもあることを示します。</span><span class="sxs-lookup"><span data-stu-id="42135-135">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection.</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6d8c8-136">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="6d8c8-136">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="42135-136">オプションのクエリ パラメーター</span><span class="sxs-lookup"><span data-stu-id="42135-136">Optional query parameters</span></span>
 
-<span data-ttu-id="6d8c8-137">このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-137">This method supports OData Query Parameters to help customize the response.</span></span>
+<span data-ttu-id="42135-137">このメソッドは、応答をカスタマイズするための OData クエリ パラメーターをサポートします。</span><span class="sxs-lookup"><span data-stu-id="42135-137">This method supports OData Query Parameters to help customize the response.</span></span>
 
-- <span data-ttu-id="6d8c8-p106">任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.</span></span> 
+- <span data-ttu-id="42135-p106">任意の GET リクエストと同様に `$select` クエリ パラメーターを使用して、最善のパフォーマンスを得るために必要なプロパティのみを指定することができます。_Id_ プロパティは常に返されます。</span><span class="sxs-lookup"><span data-stu-id="42135-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.</span></span> 
 
-- <span data-ttu-id="6d8c8-140">`$filter` に対するサポートには制限があります。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-140">There is limited support for `$filter`:</span></span>
-  * <span data-ttu-id="6d8c8-141">サポートされ`$filter`ている唯一の式は、id: `$filter=id+eq+{value}`または`$filter=id+eq+{value1}+or+id+eq+{value2}`を使用して特定のリソースの変更を追跡することです。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-141">The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.</span></span> <span data-ttu-id="6d8c8-142">指定できる id の数は、URL の最大の長さによって制限されます。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-142">The number of ids you can specify is limited by the maximum URL length.</span></span>
+- <span data-ttu-id="42135-140">`$filter` に対するサポートには制限があります。</span><span class="sxs-lookup"><span data-stu-id="42135-140">There is limited support for `$filter`:</span></span>
+  * <span data-ttu-id="42135-141">サポートされ`$filter`ている唯一の式は、id: `$filter=id+eq+{value}`または`$filter=id+eq+{value1}+or+id+eq+{value2}`を使用して特定のリソースの変更を追跡することです。</span><span class="sxs-lookup"><span data-stu-id="42135-141">The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.</span></span> <span data-ttu-id="42135-142">指定できる id の数は、URL の最大の長さによって制限されます。</span><span class="sxs-lookup"><span data-stu-id="42135-142">The number of ids you can specify is limited by the maximum URL length.</span></span>
 
 
-## <a name="request-headers"></a><span data-ttu-id="6d8c8-143">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6d8c8-143">Request headers</span></span>
-| <span data-ttu-id="6d8c8-144">名前</span><span class="sxs-lookup"><span data-stu-id="6d8c8-144">Name</span></span>       | <span data-ttu-id="6d8c8-145">説明</span><span class="sxs-lookup"><span data-stu-id="6d8c8-145">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="42135-143">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="42135-143">Request headers</span></span>
+| <span data-ttu-id="42135-144">名前</span><span class="sxs-lookup"><span data-stu-id="42135-144">Name</span></span>       | <span data-ttu-id="42135-145">説明</span><span class="sxs-lookup"><span data-stu-id="42135-145">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6d8c8-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="6d8c8-146">Authorization</span></span>  | <span data-ttu-id="6d8c8-147">Bearer &lt;token&gt;</span><span class="sxs-lookup"><span data-stu-id="6d8c8-147">Bearer &lt;token&gt;</span></span>|
-| <span data-ttu-id="6d8c8-148">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6d8c8-148">Content-Type</span></span>  | <span data-ttu-id="6d8c8-149">application/json</span><span class="sxs-lookup"><span data-stu-id="6d8c8-149">application/json</span></span> |
+| <span data-ttu-id="42135-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="42135-146">Authorization</span></span>  | <span data-ttu-id="42135-147">Bearer &lt;token&gt;</span><span class="sxs-lookup"><span data-stu-id="42135-147">Bearer &lt;token&gt;</span></span>|
+| <span data-ttu-id="42135-148">Content-Type</span><span class="sxs-lookup"><span data-stu-id="42135-148">Content-Type</span></span>  | <span data-ttu-id="42135-149">application/json</span><span class="sxs-lookup"><span data-stu-id="42135-149">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6d8c8-150">要求本文</span><span class="sxs-lookup"><span data-stu-id="6d8c8-150">Request body</span></span>
-<span data-ttu-id="6d8c8-151">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-151">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42135-150">要求本文</span><span class="sxs-lookup"><span data-stu-id="42135-150">Request body</span></span>
+<span data-ttu-id="42135-151">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="42135-151">Do not supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="6d8c8-152">応答</span><span class="sxs-lookup"><span data-stu-id="6d8c8-152">Response</span></span>
+### <a name="response"></a><span data-ttu-id="42135-152">応答</span><span class="sxs-lookup"><span data-stu-id="42135-152">Response</span></span>
 
-<span data-ttu-id="6d8c8-153">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[application](../resources/application.md) collection オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-153">If successful, this method returns `200 OK` response code and [application](../resources/application.md) collection object in the response body.</span></span> <span data-ttu-id="6d8c8-154">応答には、nextLink URL または deltaLink URL も含まれます。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-154">The response also includes a nextLink URL or a deltaLink URL.</span></span> 
+<span data-ttu-id="42135-153">成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[application](../resources/application.md) collection オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="42135-153">If successful, this method returns `200 OK` response code and [application](../resources/application.md) collection object in the response body.</span></span> <span data-ttu-id="42135-154">応答には、nextLink URL または deltaLink URL も含まれます。</span><span class="sxs-lookup"><span data-stu-id="42135-154">The response also includes a nextLink URL or a deltaLink URL.</span></span> 
 
-- <span data-ttu-id="6d8c8-155">URL が返される場合は、セッションに取得するデータの追加ページがあります。`nextLink`</span><span class="sxs-lookup"><span data-stu-id="6d8c8-155">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="6d8c8-156">アプリケーションは`deltaLink` URL が応答に含まれるまで`nextLink` URLを使用して要求を続けます。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-156">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
+- <span data-ttu-id="42135-155">URL が返される場合は、セッションに取得するデータの追加ページがあります。`nextLink`</span><span class="sxs-lookup"><span data-stu-id="42135-155">If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="42135-156">アプリケーションは`deltaLink` URL が応答に含まれるまで`nextLink` URLを使用して要求を続けます。</span><span class="sxs-lookup"><span data-stu-id="42135-156">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
 
-- <span data-ttu-id="6d8c8-157">URL が返される場合、返されるリソースの既存の状態に関するデータはありません。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-157">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="6d8c8-158">今後のリソースの`deltaLink`変更点については、URL を永続化して使用してください。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-158">Persist and use the `deltaLink` URL to learn about changes to the resource in the future.</span></span>
+- <span data-ttu-id="42135-157">URL が返される場合、返されるリソースの既存の状態に関するデータはありません。</span><span class="sxs-lookup"><span data-stu-id="42135-157">If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="42135-158">今後のリソースの`deltaLink`変更点については、URL を永続化して使用してください。</span><span class="sxs-lookup"><span data-stu-id="42135-158">Persist and use the `deltaLink` URL to learn about changes to the resource in the future.</span></span>
 
-<span data-ttu-id="6d8c8-159">参照先:</span><span class="sxs-lookup"><span data-stu-id="6d8c8-159">See:</span></span></br>
-- <span data-ttu-id="6d8c8-160">詳細については、「[デルタ クエリの使用](/graph/delta-query-overview)」をご覧ください</span><span class="sxs-lookup"><span data-stu-id="6d8c8-160">[Using Delta Query](/graph/delta-query-overview) for more details</span></span></br>
-- <span data-ttu-id="6d8c8-161">要求の例については、「[ユーザーに対する増分の変更の取得](/graph/delta-query-users)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-161">[Get incremental changes for users](/graph/delta-query-users) for an example requests.</span></span></br>
+<span data-ttu-id="42135-159">参照先:</span><span class="sxs-lookup"><span data-stu-id="42135-159">See:</span></span></br>
+- <span data-ttu-id="42135-160">詳細については、「[デルタ クエリの使用](/graph/delta-query-overview)」をご覧ください</span><span class="sxs-lookup"><span data-stu-id="42135-160">[Using Delta Query](/graph/delta-query-overview) for more details</span></span></br>
+- <span data-ttu-id="42135-161">要求の例については、「[ユーザーに対する増分の変更の取得](/graph/delta-query-users)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="42135-161">[Get incremental changes for users](/graph/delta-query-users) for an example requests.</span></span></br>
 
-### <a name="example"></a><span data-ttu-id="6d8c8-162">例</span><span class="sxs-lookup"><span data-stu-id="6d8c8-162">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6d8c8-163">要求</span><span class="sxs-lookup"><span data-stu-id="6d8c8-163">Request</span></span>
+### <a name="example"></a><span data-ttu-id="42135-162">例</span><span class="sxs-lookup"><span data-stu-id="42135-162">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="42135-163">要求</span><span class="sxs-lookup"><span data-stu-id="42135-163">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6d8c8-164">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6d8c8-164">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="42135-164">プロトコル</span><span class="sxs-lookup"><span data-stu-id="42135-164">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_delta"
@@ -89,27 +89,23 @@ GET /applications/delta
 ```http
 GET https://graph.microsoft.com/beta/applications/delta
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6d8c8-165">C#</span><span class="sxs-lookup"><span data-stu-id="6d8c8-165">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="42135-165">C#</span><span class="sxs-lookup"><span data-stu-id="42135-165">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6d8c8-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6d8c8-166">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="42135-166">JavaScript</span><span class="sxs-lookup"><span data-stu-id="42135-166">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/application-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6d8c8-167">目的-C</span><span class="sxs-lookup"><span data-stu-id="6d8c8-167">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="42135-167">目的-C</span><span class="sxs-lookup"><span data-stu-id="42135-167">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-delta-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="6d8c8-168">Java</span><span class="sxs-lookup"><span data-stu-id="6d8c8-168">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/application-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="6d8c8-169">応答</span><span class="sxs-lookup"><span data-stu-id="6d8c8-169">Response</span></span>
-<span data-ttu-id="6d8c8-p111">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="6d8c8-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="42135-168">応答</span><span class="sxs-lookup"><span data-stu-id="42135-168">Response</span></span>
+<span data-ttu-id="42135-p111">注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="42135-p111">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- { 
   "blockType": "response",
   "truncated": true,

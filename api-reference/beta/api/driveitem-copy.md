@@ -6,30 +6,30 @@ title: ファイルまたはフォルダーをコピーする
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f24f57c31a909a3937aab0ff4e6f3f78575a2ab5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 22cb3f59b8db2ad6f884940df1acce9aab6b6b6a
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321061"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36416847"
 ---
-# <a name="copy-a-driveitem"></a><span data-ttu-id="8b273-103">DriveItem をコピーする</span><span class="sxs-lookup"><span data-stu-id="8b273-103">Copy a DriveItem</span></span>
+# <a name="copy-a-driveitem"></a><span data-ttu-id="b56c0-103">DriveItem をコピーする</span><span class="sxs-lookup"><span data-stu-id="b56c0-103">Copy a DriveItem</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8b273-104">新しい親アイテムの下に、または新しい名前を指定して、[driveItem][item-resource] (すべての子を含む) のコピーを非同期に作成します。</span><span class="sxs-lookup"><span data-stu-id="8b273-104">Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.</span></span>
+<span data-ttu-id="b56c0-104">新しい親アイテムの下に、または新しい名前を指定して、[driveItem][item-resource] (すべての子を含む) のコピーを非同期に作成します。</span><span class="sxs-lookup"><span data-stu-id="b56c0-104">Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8b273-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="8b273-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b56c0-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b56c0-105">Permissions</span></span>
 
-<span data-ttu-id="8b273-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8b273-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b56c0-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b56c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b273-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="8b273-108">Permission type</span></span>      | <span data-ttu-id="8b273-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="8b273-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b56c0-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b56c0-108">Permission type</span></span>      | <span data-ttu-id="b56c0-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b56c0-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8b273-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="8b273-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8b273-111">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b273-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b273-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="8b273-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b273-113">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b273-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8b273-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="8b273-114">Application</span></span> | <span data-ttu-id="8b273-115">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b273-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b56c0-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b56c0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b56c0-111">Files.ReadWrite、Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b56c0-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b56c0-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b56c0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b56c0-113">Files.ReadWrite、Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b56c0-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b56c0-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b56c0-114">Application</span></span> | <span data-ttu-id="b56c0-115">Files.ReadWrite.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b56c0-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8b273-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="8b273-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b56c0-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b56c0-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,25 +41,25 @@ POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
 
-### <a name="request-body"></a><span data-ttu-id="8b273-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="8b273-117">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="b56c0-117">要求本文</span><span class="sxs-lookup"><span data-stu-id="b56c0-117">Request body</span></span>
 
-<span data-ttu-id="8b273-118">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="8b273-118">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="b56c0-118">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b56c0-118">In the request body, provide a JSON object with the following parameters.</span></span>
 
 
-| <span data-ttu-id="8b273-119">名前</span><span class="sxs-lookup"><span data-stu-id="8b273-119">Name</span></span>            | <span data-ttu-id="8b273-120">値</span><span class="sxs-lookup"><span data-stu-id="8b273-120">Value</span></span>                                          | <span data-ttu-id="8b273-121">説明</span><span class="sxs-lookup"><span data-stu-id="8b273-121">Description</span></span>                                                                                                 |
+| <span data-ttu-id="b56c0-119">名前</span><span class="sxs-lookup"><span data-stu-id="b56c0-119">Name</span></span>            | <span data-ttu-id="b56c0-120">値</span><span class="sxs-lookup"><span data-stu-id="b56c0-120">Value</span></span>                                          | <span data-ttu-id="b56c0-121">説明</span><span class="sxs-lookup"><span data-stu-id="b56c0-121">Description</span></span>                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="8b273-122">parentReference</span><span class="sxs-lookup"><span data-stu-id="8b273-122">parentReference</span></span> | [<span data-ttu-id="8b273-123">ItemReference</span><span class="sxs-lookup"><span data-stu-id="8b273-123">ItemReference</span></span>](../resources/itemreference.md) | <span data-ttu-id="8b273-p102">省略可能。コピーが作成される親アイテムへの参照。</span><span class="sxs-lookup"><span data-stu-id="8b273-p102">Optional. Reference to the parent item the copy will be created in.</span></span>                                         |
-| <span data-ttu-id="8b273-126">name</span><span class="sxs-lookup"><span data-stu-id="8b273-126">name</span></span>            | <span data-ttu-id="8b273-127">string</span><span class="sxs-lookup"><span data-stu-id="8b273-127">string</span></span>                                         | <span data-ttu-id="8b273-p103">省略可能。コピーの新しい名前。これを指定しない場合は、元の名前と同じ名前が使用されます。</span><span class="sxs-lookup"><span data-stu-id="8b273-p103">Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.</span></span>    |
+| <span data-ttu-id="b56c0-122">parentReference</span><span class="sxs-lookup"><span data-stu-id="b56c0-122">parentReference</span></span> | [<span data-ttu-id="b56c0-123">ItemReference</span><span class="sxs-lookup"><span data-stu-id="b56c0-123">ItemReference</span></span>](../resources/itemreference.md) | <span data-ttu-id="b56c0-p102">省略可能。コピーが作成される親アイテムへの参照。</span><span class="sxs-lookup"><span data-stu-id="b56c0-p102">Optional. Reference to the parent item the copy will be created in.</span></span>                                         |
+| <span data-ttu-id="b56c0-126">name</span><span class="sxs-lookup"><span data-stu-id="b56c0-126">name</span></span>            | <span data-ttu-id="b56c0-127">string</span><span class="sxs-lookup"><span data-stu-id="b56c0-127">string</span></span>                                         | <span data-ttu-id="b56c0-p103">省略可能。コピーの新しい名前。これを指定しない場合は、元の名前と同じ名前が使用されます。</span><span class="sxs-lookup"><span data-stu-id="b56c0-p103">Optional. The new name for the copy. If this isn't provided, the same name will be used as the original.</span></span>    |
 
-<span data-ttu-id="8b273-131">**注:** _parentReference_ には、ターゲット フォルダーの `driveId` と `id` パラメーターを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="8b273-131">**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.</span></span>
+<span data-ttu-id="b56c0-131">**注:** _parentReference_ には、ターゲット フォルダーの `driveId` と `id` パラメーターを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="b56c0-131">**Note:** The _parentReference_ should include the `driveId` and `id` parameters for the target folder.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b273-132">例</span><span class="sxs-lookup"><span data-stu-id="8b273-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b56c0-132">例</span><span class="sxs-lookup"><span data-stu-id="b56c0-132">Example</span></span>
 
-<span data-ttu-id="8b273-133">この例では、`{item-id}` で識別されるファイルを `driveId` および `id` の値で識別されるフォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="8b273-133">This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.</span></span>
-<span data-ttu-id="8b273-134">ファイルの新しいコピーの名前は `contoso plan (copy).txt` になります。</span><span class="sxs-lookup"><span data-stu-id="8b273-134">The new copy of the file will be named `contoso plan (copy).txt`.</span></span>
+<span data-ttu-id="b56c0-133">この例では、`{item-id}` で識別されるファイルを `driveId` および `id` の値で識別されるフォルダーにコピーします。</span><span class="sxs-lookup"><span data-stu-id="b56c0-133">This example copies a file identified by `{item-id}` into a folder identified with a `driveId` and `id` value.</span></span>
+<span data-ttu-id="b56c0-134">ファイルの新しいコピーの名前は `contoso plan (copy).txt` になります。</span><span class="sxs-lookup"><span data-stu-id="b56c0-134">The new copy of the file will be named `contoso plan (copy).txt`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8b273-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="8b273-135">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b56c0-135">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b56c0-135">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -74,28 +74,24 @@ Content-Type: application/json
   "name": "contoso plan (copy).txt"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8b273-136">C#</span><span class="sxs-lookup"><span data-stu-id="8b273-136">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b56c0-136">C#</span><span class="sxs-lookup"><span data-stu-id="b56c0-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8b273-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8b273-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b56c0-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b56c0-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8b273-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="8b273-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b56c0-138">目的-C</span><span class="sxs-lookup"><span data-stu-id="b56c0-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/copy-item-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="8b273-139">Java</span><span class="sxs-lookup"><span data-stu-id="8b273-139">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/copy-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="8b273-140">応答</span><span class="sxs-lookup"><span data-stu-id="8b273-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b56c0-139">応答</span><span class="sxs-lookup"><span data-stu-id="b56c0-139">Response</span></span>
 
-<span data-ttu-id="8b273-141">要求の受け入れ時に、コピーの[進行状況を監視する](/graph/long-running-actions-overview)方法についての詳細を返します。</span><span class="sxs-lookup"><span data-stu-id="8b273-141">Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.</span></span>
+<span data-ttu-id="b56c0-140">要求の受け入れ時に、コピーの[進行状況を監視する](/graph/long-running-actions-overview)方法についての詳細を返します。</span><span class="sxs-lookup"><span data-stu-id="b56c0-140">Returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -104,11 +100,11 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="8b273-p105">`Location` ヘッダーの値は、コピー操作の現在の状況を返すサービスの URL を提供します。 この情報を使用して、[コピーがいつ終了したかを判断する](/graph/long-running-actions-overview)ことができます。</span><span class="sxs-lookup"><span data-stu-id="8b273-p105">The value of the `Location` header provides a URL for a service that will return the current state of the copy operation. You can use this info to [determine when the copy has finished](/graph/long-running-actions-overview).</span></span>
+<span data-ttu-id="b56c0-p105">`Location` ヘッダーの値は、コピー操作の現在の状況を返すサービスの URL を提供します。 この情報を使用して、[コピーがいつ終了したかを判断する](/graph/long-running-actions-overview)ことができます。</span><span class="sxs-lookup"><span data-stu-id="b56c0-p105">The value of the `Location` header provides a URL for a service that will return the current state of the copy operation. You can use this info to [determine when the copy has finished](/graph/long-running-actions-overview).</span></span>
 
-### <a name="remarks"></a><span data-ttu-id="8b273-144">備考</span><span class="sxs-lookup"><span data-stu-id="8b273-144">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="b56c0-143">備考</span><span class="sxs-lookup"><span data-stu-id="b56c0-143">Remarks</span></span>
 
-<span data-ttu-id="8b273-p106">多くの場合、コピー操作は非同期で実行されます。API からの応答は、コピー操作が受け入れられたか、コピー先のファイル名が既に使用中のためという理由で拒否されたことのみを示します。</span><span class="sxs-lookup"><span data-stu-id="8b273-p106">In many cases the copy action is performed asynchronously. The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.</span></span>
+<span data-ttu-id="b56c0-p106">多くの場合、コピー操作は非同期で実行されます。API からの応答は、コピー操作が受け入れられたか、コピー先のファイル名が既に使用中のためという理由で拒否されたことのみを示します。</span><span class="sxs-lookup"><span data-stu-id="b56c0-p106">In many cases the copy action is performed asynchronously. The response from the API will only indicate that the copy operation was accepted or rejected, say due to the destination filename already being in use.</span></span>
 
 [item-resource]: ../resources/driveitem.md
 

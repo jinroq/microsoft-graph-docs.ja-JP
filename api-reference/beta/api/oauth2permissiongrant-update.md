@@ -5,58 +5,58 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ec040d8a645c37bfd80f25ce66e3947e4256759e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: af8780e9e943e6585ff4f46baab289d9f6f99dd6
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36346783"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36414666"
 ---
-# <a name="update-oauth2permissiongrant"></a><span data-ttu-id="7c447-103">OAuth2PermissionGrant の更新</span><span class="sxs-lookup"><span data-stu-id="7c447-103">Update oAuth2PermissionGrant</span></span>
+# <a name="update-oauth2permissiongrant"></a><span data-ttu-id="1a49d-103">OAuth2PermissionGrant の更新</span><span class="sxs-lookup"><span data-stu-id="1a49d-103">Update oAuth2PermissionGrant</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7c447-104">OAuth2PermissionGrant オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="7c447-104">Update the properties of oAuth2PermissionGrant object.</span></span>
+<span data-ttu-id="1a49d-104">OAuth2PermissionGrant オブジェクトのプロパティを更新します。</span><span class="sxs-lookup"><span data-stu-id="1a49d-104">Update the properties of oAuth2PermissionGrant object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7c447-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="7c447-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1a49d-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="1a49d-105">Permissions</span></span>
 
-<span data-ttu-id="7c447-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7c447-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1a49d-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a49d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="7c447-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="7c447-108">Permission type</span></span>      | <span data-ttu-id="7c447-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="7c447-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1a49d-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="1a49d-108">Permission type</span></span>      | <span data-ttu-id="1a49d-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="1a49d-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7c447-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="7c447-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7c447-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7c447-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="7c447-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="7c447-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c447-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="7c447-113">Not supported.</span></span>    |
-|<span data-ttu-id="7c447-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="7c447-114">Application</span></span> | <span data-ttu-id="7c447-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7c447-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="1a49d-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="1a49d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1a49d-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1a49d-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="1a49d-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="1a49d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a49d-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="1a49d-113">Not supported.</span></span>    |
+|<span data-ttu-id="1a49d-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="1a49d-114">Application</span></span> | <span data-ttu-id="1a49d-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1a49d-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7c447-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="7c447-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1a49d-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="1a49d-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /oAuth2Permissiongrants/{id}
 PATCH /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
 PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="7c447-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="7c447-117">Request headers</span></span>
-| <span data-ttu-id="7c447-118">名前</span><span class="sxs-lookup"><span data-stu-id="7c447-118">Name</span></span>       | <span data-ttu-id="7c447-119">型</span><span class="sxs-lookup"><span data-stu-id="7c447-119">Type</span></span> | <span data-ttu-id="7c447-120">説明</span><span class="sxs-lookup"><span data-stu-id="7c447-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1a49d-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="1a49d-117">Request headers</span></span>
+| <span data-ttu-id="1a49d-118">名前</span><span class="sxs-lookup"><span data-stu-id="1a49d-118">Name</span></span>       | <span data-ttu-id="1a49d-119">型</span><span class="sxs-lookup"><span data-stu-id="1a49d-119">Type</span></span> | <span data-ttu-id="1a49d-120">説明</span><span class="sxs-lookup"><span data-stu-id="1a49d-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="7c447-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7c447-121">Authorization</span></span>  | <span data-ttu-id="7c447-122">string</span><span class="sxs-lookup"><span data-stu-id="7c447-122">string</span></span>  | <span data-ttu-id="7c447-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="7c447-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1a49d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a49d-121">Authorization</span></span>  | <span data-ttu-id="1a49d-122">string</span><span class="sxs-lookup"><span data-stu-id="1a49d-122">string</span></span>  | <span data-ttu-id="1a49d-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="1a49d-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7c447-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="7c447-125">Request body</span></span>
-<span data-ttu-id="7c447-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="7c447-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1a49d-125">要求本文</span><span class="sxs-lookup"><span data-stu-id="1a49d-125">Request body</span></span>
+<span data-ttu-id="1a49d-p103">要求本文で、更新する関連フィールドの値を指定します。要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。</span><span class="sxs-lookup"><span data-stu-id="1a49d-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="7c447-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="7c447-129">Property</span></span>     | <span data-ttu-id="7c447-130">型</span><span class="sxs-lookup"><span data-stu-id="7c447-130">Type</span></span>   |<span data-ttu-id="7c447-131">説明</span><span class="sxs-lookup"><span data-stu-id="7c447-131">Description</span></span>|
+| <span data-ttu-id="1a49d-129">プロパティ</span><span class="sxs-lookup"><span data-stu-id="1a49d-129">Property</span></span>     | <span data-ttu-id="1a49d-130">型</span><span class="sxs-lookup"><span data-stu-id="1a49d-130">Type</span></span>   |<span data-ttu-id="1a49d-131">説明</span><span class="sxs-lookup"><span data-stu-id="1a49d-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7c447-132">scope</span><span class="sxs-lookup"><span data-stu-id="7c447-132">scope</span></span>|<span data-ttu-id="7c447-133">String</span><span class="sxs-lookup"><span data-stu-id="7c447-133">String</span></span>| <span data-ttu-id="7c447-134">OAuth 2.0 アクセストークンでリソースアプリケーションが想定するスコープ要求の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="7c447-134">Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token.</span></span> |
+|<span data-ttu-id="1a49d-132">scope</span><span class="sxs-lookup"><span data-stu-id="1a49d-132">scope</span></span>|<span data-ttu-id="1a49d-133">String</span><span class="sxs-lookup"><span data-stu-id="1a49d-133">String</span></span>| <span data-ttu-id="1a49d-134">OAuth 2.0 アクセストークンでリソースアプリケーションが想定するスコープ要求の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="1a49d-134">Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="7c447-135">応答</span><span class="sxs-lookup"><span data-stu-id="7c447-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1a49d-135">応答</span><span class="sxs-lookup"><span data-stu-id="1a49d-135">Response</span></span>
 
-<span data-ttu-id="7c447-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="7c447-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="1a49d-p104">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="1a49d-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7c447-138">例</span><span class="sxs-lookup"><span data-stu-id="7c447-138">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7c447-139">要求</span><span class="sxs-lookup"><span data-stu-id="7c447-139">Request</span></span>
+## <a name="example"></a><span data-ttu-id="1a49d-138">例</span><span class="sxs-lookup"><span data-stu-id="1a49d-138">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1a49d-139">要求</span><span class="sxs-lookup"><span data-stu-id="1a49d-139">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7c447-140">プロトコル</span><span class="sxs-lookup"><span data-stu-id="7c447-140">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1a49d-140">プロトコル</span><span class="sxs-lookup"><span data-stu-id="1a49d-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_oAuth2Permissiongrant"
@@ -70,25 +70,21 @@ Content-length: 30
   "scope": "scope-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7c447-141">C#</span><span class="sxs-lookup"><span data-stu-id="7c447-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1a49d-141">C#</span><span class="sxs-lookup"><span data-stu-id="1a49d-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-oauth2permissiongrant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7c447-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7c447-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1a49d-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a49d-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-oauth2permissiongrant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7c447-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="7c447-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1a49d-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="1a49d-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="7c447-144">Java</span><span class="sxs-lookup"><span data-stu-id="7c447-144">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-oauth2permissiongrant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="7c447-145">応答</span><span class="sxs-lookup"><span data-stu-id="7c447-145">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1a49d-144">応答</span><span class="sxs-lookup"><span data-stu-id="1a49d-144">Response</span></span>
 
 <!-- {
   "blockType": "response",
