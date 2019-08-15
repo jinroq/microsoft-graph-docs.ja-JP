@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3e837dae5d53d6cc5bd796f1044c614e6b798d51
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ac04f5b63a12147a926aa0dcd1c3aaae462a0852
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319131"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408791"
 ---
 # <a name="reset-accessreview"></a>AccessReview をリセットする
 
@@ -30,7 +30,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /accessReviews('<id>')/resetDecisions()
+POST /accessReviews/{reviewId}/resetDecisions
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
@@ -65,10 +65,6 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reset-accessreview-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reset-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
