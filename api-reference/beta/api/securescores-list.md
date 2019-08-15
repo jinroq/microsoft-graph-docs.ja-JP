@@ -5,30 +5,30 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 76642b168d4d1361ce50a9d938696840df1c7fea
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 164fd07fd45b9ece52710cf0b197e877de79f471
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364181"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36410421"
 ---
-# <a name="list-securescores"></a><span data-ttu-id="e5aaf-103">secureScores のリスト</span><span class="sxs-lookup"><span data-stu-id="e5aaf-103">List secureScores</span></span>
+# <a name="list-securescores"></a><span data-ttu-id="b6edf-103">secureScores のリスト</span><span class="sxs-lookup"><span data-stu-id="b6edf-103">List secureScores</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e5aaf-104">[SecureScores](../resources/securescores.md)オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-104">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
+<span data-ttu-id="b6edf-104">[SecureScores](../resources/securescores.md)オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="b6edf-104">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e5aaf-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e5aaf-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6edf-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b6edf-105">Permissions</span></span>
 
-<span data-ttu-id="e5aaf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b6edf-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6edf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5aaf-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e5aaf-108">Permission type</span></span>      | <span data-ttu-id="e5aaf-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e5aaf-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b6edf-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b6edf-108">Permission type</span></span>      | <span data-ttu-id="b6edf-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b6edf-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e5aaf-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e5aaf-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="e5aaf-111">SecurityEvents。 All、SecurityEvents.。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
-|<span data-ttu-id="e5aaf-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e5aaf-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="e5aaf-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-113">Not supported.</span></span>  |
-|<span data-ttu-id="e5aaf-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e5aaf-114">Application</span></span> | <span data-ttu-id="e5aaf-115">SecurityEvents。 All、SecurityEvents.。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="b6edf-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b6edf-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="b6edf-111">SecurityEvents。 All、SecurityEvents.。</span><span class="sxs-lookup"><span data-stu-id="b6edf-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
+|<span data-ttu-id="b6edf-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b6edf-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="b6edf-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b6edf-113">Not supported.</span></span>  |
+|<span data-ttu-id="b6edf-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b6edf-114">Application</span></span> | <span data-ttu-id="b6edf-115">SecurityEvents。 All、SecurityEvents.。</span><span class="sxs-lookup"><span data-stu-id="b6edf-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e5aaf-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e5aaf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6edf-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b6edf-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "36364181"
 GET /security/secureScores
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e5aaf-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e5aaf-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b6edf-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b6edf-117">Request headers</span></span>
 
-| <span data-ttu-id="e5aaf-118">名前</span><span class="sxs-lookup"><span data-stu-id="e5aaf-118">Name</span></span>      |<span data-ttu-id="e5aaf-119">説明</span><span class="sxs-lookup"><span data-stu-id="e5aaf-119">Description</span></span>|
+| <span data-ttu-id="b6edf-118">名前</span><span class="sxs-lookup"><span data-stu-id="b6edf-118">Name</span></span>      |<span data-ttu-id="b6edf-119">説明</span><span class="sxs-lookup"><span data-stu-id="b6edf-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="e5aaf-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5aaf-120">Authorization</span></span>  | <span data-ttu-id="e5aaf-121">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-121">Bearer {code}.</span></span> <span data-ttu-id="e5aaf-122">必須です。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-122">Required.</span></span>|
+| <span data-ttu-id="b6edf-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6edf-120">Authorization</span></span>  | <span data-ttu-id="b6edf-121">ベアラー {code}。</span><span class="sxs-lookup"><span data-stu-id="b6edf-121">Bearer {code}.</span></span> <span data-ttu-id="b6edf-122">必須です。</span><span class="sxs-lookup"><span data-stu-id="b6edf-122">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e5aaf-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="e5aaf-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6edf-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="b6edf-123">Request body</span></span>
 
-<span data-ttu-id="e5aaf-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="b6edf-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="b6edf-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e5aaf-125">応答</span><span class="sxs-lookup"><span data-stu-id="e5aaf-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b6edf-125">応答</span><span class="sxs-lookup"><span data-stu-id="b6edf-125">Response</span></span>
 
-<span data-ttu-id="e5aaf-126">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**secureScores**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-126">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
+<span data-ttu-id="b6edf-126">成功した場合、このメソッド`200 OK`は応答コードと、応答本文で**secureScores**オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="b6edf-126">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5aaf-127">例</span><span class="sxs-lookup"><span data-stu-id="e5aaf-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6edf-127">例</span><span class="sxs-lookup"><span data-stu-id="b6edf-127">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e5aaf-128">要求</span><span class="sxs-lookup"><span data-stu-id="e5aaf-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b6edf-128">要求</span><span class="sxs-lookup"><span data-stu-id="b6edf-128">Request</span></span>
 
-<span data-ttu-id="e5aaf-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-129">The following is an example of the request.</span></span>
+<span data-ttu-id="b6edf-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6edf-129">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="e5aaf-130">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e5aaf-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b6edf-130">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b6edf-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securescores_list"
@@ -65,28 +65,24 @@ GET /security/secureScores
 ```http
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="e5aaf-131">C#</span><span class="sxs-lookup"><span data-stu-id="e5aaf-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b6edf-131">C#</span><span class="sxs-lookup"><span data-stu-id="b6edf-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescores-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e5aaf-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e5aaf-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b6edf-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b6edf-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescores-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e5aaf-133">目的-C</span><span class="sxs-lookup"><span data-stu-id="e5aaf-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b6edf-133">目的-C</span><span class="sxs-lookup"><span data-stu-id="b6edf-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescores-list-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="e5aaf-134">Java</span><span class="sxs-lookup"><span data-stu-id="e5aaf-134">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/securescores-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e5aaf-135">応答</span><span class="sxs-lookup"><span data-stu-id="e5aaf-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b6edf-134">応答</span><span class="sxs-lookup"><span data-stu-id="b6edf-134">Response</span></span>
 
-<span data-ttu-id="e5aaf-136">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e5aaf-136">The following is an example of the response.</span></span>
+<span data-ttu-id="b6edf-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b6edf-135">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
