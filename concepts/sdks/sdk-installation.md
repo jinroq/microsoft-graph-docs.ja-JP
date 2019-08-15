@@ -1,6 +1,6 @@
 ---
 title: Microsoft Graph SDK をインストールする
-description: C#、Java、Javascript、目的-C、PHP、および Ruby の Microsoft Graph Sdk をインストールする手順について説明します。
+description: C#、Java、Javascript、Objective-C、PHP、および Ruby の Microsoft Graph Sdk をインストールする手順について説明します。
 localization_priority: Normal
 author: MichaelMainer
 ms.openlocfilehash: a46f005e2ff646f420d19741eca3c8c21a95291a
@@ -79,24 +79,24 @@ npm install @microsoft/microsoft-graph-client
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 
-## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Microsoft Graph の目的-C SDK をインストールする
+## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Microsoft Graph の Objective-C SDK をインストールする
 
-Microsoft Graph の目的-C SDK は、iOS と macOS の両方のプラットフォームをサポートしており、Cocoアポストロフィ Ds または Carthage のどちらかを使用してプロジェクトにインストールできます。
+Microsoft Graph の Objective-C SDK は、iOS と macOS の両方のプラットフォームをサポートしており、Cocoアポストロフィ Ds または Carthage のどちらかを使用してプロジェクトにインストールできます。
 
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Cocoアポストロフィを使用して Microsoft Graph の目標-C SDK をインストールする
+### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Cocoアポストロフィを使用して Microsoft Graph の Objective-C SDK をインストールする
 
-Podfile に次の行を追加して、xcode プロジェクトに、目的の C Microsoft Graph SDK および Microsoft Graph の目的-C Auth SDK を含めます。
+Podfile に次の行を追加して、xcode プロジェクトに、Objective-C Microsoft Graph SDK および Microsoft Graph の Objective-C Auth SDK を含めます。
 
 ```
 pod 'MSGraphClientSDK'
 pod 'MSGraphMSALAuthProvider'
 ```
 
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Carthage を使用して Microsoft Graph の目標-C SDK をインストールする
+### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Carthage を使用して Microsoft Graph の Objective-C SDK をインストールする
 
 次の手順を実行して、 [Carthage](https://github.com/Carthage/Carthage)パッケージマネージャーを使用して、microsoft Graph の目的-c SDK と microsoft Graph の目標-c Auth sdk をインストールします。
 
-1. 目標-C SDK GitHub リポジトリと[リリースタグ](https://github.com/microsoftgraph/msgraph-sdk-objc/releases)を指定する**Cartfile**を作成します。
+1. Objective-C SDK GitHub リポジトリと[リリースタグ](https://github.com/microsoftgraph/msgraph-sdk-objc/releases)を指定する**Cartfile**を作成します。
 
 ```
 github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
