@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56952167daae1cff8068871861f11c48c4c9d076
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f06e6f3f7b61e62a4cab8f6a4ea06e33374e278
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313037"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36408993"
 ---
 # <a name="add-accessreview-reviewer"></a>AccessReview レビュー担当者を追加する
 
@@ -31,7 +31,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、�
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /accessReviews('{reviewId}')/reviewers
+POST /accessReviews/{reviewId}/reviewers
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |
@@ -82,10 +82,6 @@ Content-Type: application/json
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/add-accessreview-reviewer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/add-accessreview-reviewer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
