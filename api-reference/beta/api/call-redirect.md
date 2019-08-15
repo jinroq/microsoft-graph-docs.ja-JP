@@ -5,63 +5,63 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 47b3497514b455e7e14d954098d2a13f7d55f9fa
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a43f9c6164e69315d60f39c2ae0b9c1ba3df2c9f
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317702"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36418895"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="0b462-103">call: redirect</span><span class="sxs-lookup"><span data-stu-id="0b462-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="2fd99-103">call: redirect</span><span class="sxs-lookup"><span data-stu-id="2fd99-103">call: redirect</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0b462-104">着信をリダイレクトします。</span><span class="sxs-lookup"><span data-stu-id="0b462-104">Redirect an incoming call.</span></span>
+<span data-ttu-id="2fd99-104">着信をリダイレクトします。</span><span class="sxs-lookup"><span data-stu-id="2fd99-104">Redirect an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0b462-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="0b462-105">Permissions</span></span>
-<span data-ttu-id="0b462-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0b462-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2fd99-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="2fd99-105">Permissions</span></span>
+<span data-ttu-id="2fd99-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2fd99-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0b462-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="0b462-108">Permission type</span></span> | <span data-ttu-id="0b462-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="0b462-109">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="2fd99-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="2fd99-108">Permission type</span></span> | <span data-ttu-id="2fd99-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="2fd99-109">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="0b462-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="0b462-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0b462-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="0b462-111">Not Supported</span></span>                |
-| <span data-ttu-id="0b462-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="0b462-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b462-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="0b462-113">Not Supported</span></span>                |
-| <span data-ttu-id="0b462-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="0b462-114">Application</span></span>     | <span data-ttu-id="0b462-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="0b462-115">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="2fd99-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="2fd99-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="2fd99-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="2fd99-111">Not Supported</span></span>                |
+| <span data-ttu-id="2fd99-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="2fd99-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2fd99-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="2fd99-113">Not Supported</span></span>                |
+| <span data-ttu-id="2fd99-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="2fd99-114">Application</span></span>     | <span data-ttu-id="2fd99-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="2fd99-115">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="0b462-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="0b462-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2fd99-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="2fd99-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/redirect
 POST /applications/{id}/calls/{id}/redirect
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0b462-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="0b462-117">Request headers</span></span>
-| <span data-ttu-id="0b462-118">名前</span><span class="sxs-lookup"><span data-stu-id="0b462-118">Name</span></span>          | <span data-ttu-id="0b462-119">説明</span><span class="sxs-lookup"><span data-stu-id="0b462-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="2fd99-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="2fd99-117">Request headers</span></span>
+| <span data-ttu-id="2fd99-118">名前</span><span class="sxs-lookup"><span data-stu-id="2fd99-118">Name</span></span>          | <span data-ttu-id="2fd99-119">説明</span><span class="sxs-lookup"><span data-stu-id="2fd99-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="0b462-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="0b462-120">Authorization</span></span> | <span data-ttu-id="0b462-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="0b462-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2fd99-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2fd99-120">Authorization</span></span> | <span data-ttu-id="2fd99-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="2fd99-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0b462-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="0b462-123">Request body</span></span>
-<span data-ttu-id="0b462-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="0b462-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2fd99-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="2fd99-123">Request body</span></span>
+<span data-ttu-id="2fd99-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="2fd99-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0b462-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0b462-125">Parameter</span></span>      | <span data-ttu-id="0b462-126">型</span><span class="sxs-lookup"><span data-stu-id="0b462-126">Type</span></span>    |<span data-ttu-id="0b462-127">説明</span><span class="sxs-lookup"><span data-stu-id="0b462-127">Description</span></span>|
+| <span data-ttu-id="2fd99-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2fd99-125">Parameter</span></span>      | <span data-ttu-id="2fd99-126">型</span><span class="sxs-lookup"><span data-stu-id="2fd99-126">Type</span></span>    |<span data-ttu-id="2fd99-127">説明</span><span class="sxs-lookup"><span data-stu-id="2fd99-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0b462-128">Targets</span><span class="sxs-lookup"><span data-stu-id="0b462-128">targets</span></span>|<span data-ttu-id="0b462-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="0b462-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="0b462-130">リダイレクト操作の対象となる参加者。</span><span class="sxs-lookup"><span data-stu-id="0b462-130">The target participants of the redirect operation.</span></span>|
-|<span data-ttu-id="0b462-131">targetDisposition ポジション</span><span class="sxs-lookup"><span data-stu-id="0b462-131">targetDisposition</span></span>|<span data-ttu-id="0b462-132">String</span><span class="sxs-lookup"><span data-stu-id="0b462-132">String</span></span>|<span data-ttu-id="0b462-133">指定できる値は次のとおりです。`default`</span><span class="sxs-lookup"><span data-stu-id="0b462-133">The possible value is: `default`</span></span>|
-|<span data-ttu-id="0b462-134">timeout</span><span class="sxs-lookup"><span data-stu-id="0b462-134">timeout</span></span>|<span data-ttu-id="0b462-135">Int32</span><span class="sxs-lookup"><span data-stu-id="0b462-135">Int32</span></span>|<span data-ttu-id="0b462-136">リダイレクト操作のタイムアウト (秒単位)。</span><span class="sxs-lookup"><span data-stu-id="0b462-136">The timeout in seconds for the redirect operation.</span></span>|
-|<span data-ttu-id="0b462-137">maskCallee 先</span><span class="sxs-lookup"><span data-stu-id="0b462-137">maskCallee</span></span>|<span data-ttu-id="0b462-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="0b462-138">Boolean</span></span>|<span data-ttu-id="0b462-139">呼び出し先をマスクするかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="0b462-139">Indicates whether to mask the callee.</span></span>|
-|<span data-ttu-id="0b462-140">maskCaller</span><span class="sxs-lookup"><span data-stu-id="0b462-140">maskCaller</span></span>|<span data-ttu-id="0b462-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="0b462-141">Boolean</span></span>|<span data-ttu-id="0b462-142">発信者をマスクするかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="0b462-142">Indicates whether to mask the caller.</span></span>|
+|<span data-ttu-id="2fd99-128">Targets</span><span class="sxs-lookup"><span data-stu-id="2fd99-128">targets</span></span>|<span data-ttu-id="2fd99-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="2fd99-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="2fd99-130">リダイレクト操作の対象となる参加者。</span><span class="sxs-lookup"><span data-stu-id="2fd99-130">The target participants of the redirect operation.</span></span>|
+|<span data-ttu-id="2fd99-131">targetDisposition ポジション</span><span class="sxs-lookup"><span data-stu-id="2fd99-131">targetDisposition</span></span>|<span data-ttu-id="2fd99-132">String</span><span class="sxs-lookup"><span data-stu-id="2fd99-132">String</span></span>|<span data-ttu-id="2fd99-133">指定できる値は次のとおりです。`default`</span><span class="sxs-lookup"><span data-stu-id="2fd99-133">The possible value is: `default`</span></span>|
+|<span data-ttu-id="2fd99-134">timeout</span><span class="sxs-lookup"><span data-stu-id="2fd99-134">timeout</span></span>|<span data-ttu-id="2fd99-135">Int32</span><span class="sxs-lookup"><span data-stu-id="2fd99-135">Int32</span></span>|<span data-ttu-id="2fd99-136">リダイレクト操作のタイムアウト (秒単位)。</span><span class="sxs-lookup"><span data-stu-id="2fd99-136">The timeout in seconds for the redirect operation.</span></span>|
+|<span data-ttu-id="2fd99-137">maskCallee 先</span><span class="sxs-lookup"><span data-stu-id="2fd99-137">maskCallee</span></span>|<span data-ttu-id="2fd99-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="2fd99-138">Boolean</span></span>|<span data-ttu-id="2fd99-139">呼び出し先をマスクするかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="2fd99-139">Indicates whether to mask the callee.</span></span>|
+|<span data-ttu-id="2fd99-140">maskCaller</span><span class="sxs-lookup"><span data-stu-id="2fd99-140">maskCaller</span></span>|<span data-ttu-id="2fd99-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="2fd99-141">Boolean</span></span>|<span data-ttu-id="2fd99-142">発信者をマスクするかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="2fd99-142">Indicates whether to mask the caller.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="0b462-143">応答</span><span class="sxs-lookup"><span data-stu-id="0b462-143">Response</span></span>
-<span data-ttu-id="0b462-144">応答`202 Accepted`コードを返します。</span><span class="sxs-lookup"><span data-stu-id="0b462-144">Returns `202 Accepted` response code</span></span>
+## <a name="response"></a><span data-ttu-id="2fd99-143">応答</span><span class="sxs-lookup"><span data-stu-id="2fd99-143">Response</span></span>
+<span data-ttu-id="2fd99-144">応答`202 Accepted`コードを返します。</span><span class="sxs-lookup"><span data-stu-id="2fd99-144">Returns `202 Accepted` response code</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0b462-145">例</span><span class="sxs-lookup"><span data-stu-id="0b462-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="2fd99-145">例</span><span class="sxs-lookup"><span data-stu-id="2fd99-145">Examples</span></span>
 
-### <a name="redirect-a-call"></a><span data-ttu-id="0b462-146">通話をリダイレクトする</span><span class="sxs-lookup"><span data-stu-id="0b462-146">Redirect a call</span></span>
+### <a name="redirect-a-call"></a><span data-ttu-id="2fd99-146">通話をリダイレクトする</span><span class="sxs-lookup"><span data-stu-id="2fd99-146">Redirect a call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="0b462-147">要求</span><span class="sxs-lookup"><span data-stu-id="0b462-147">Request</span></span>
-<span data-ttu-id="0b462-148">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="0b462-148">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="2fd99-147">要求</span><span class="sxs-lookup"><span data-stu-id="2fd99-147">Request</span></span>
+<span data-ttu-id="2fd99-148">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="2fd99-148">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="0b462-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="0b462-149">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="2fd99-149">プロトコル</span><span class="sxs-lookup"><span data-stu-id="2fd99-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-redirect"
@@ -92,28 +92,24 @@ Content-Length: 515
   "maskCaller": false
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="0b462-150">C#</span><span class="sxs-lookup"><span data-stu-id="0b462-150">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="2fd99-150">C#</span><span class="sxs-lookup"><span data-stu-id="2fd99-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0b462-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0b462-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2fd99-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2fd99-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0b462-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="0b462-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2fd99-152">目的-C</span><span class="sxs-lookup"><span data-stu-id="2fd99-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="0b462-153">Java</span><span class="sxs-lookup"><span data-stu-id="0b462-153">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="0b462-154">応答</span><span class="sxs-lookup"><span data-stu-id="0b462-154">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="2fd99-153">応答</span><span class="sxs-lookup"><span data-stu-id="2fd99-153">Response</span></span>
 
-> <span data-ttu-id="0b462-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="0b462-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="2fd99-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="2fd99-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -124,9 +120,9 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="forward-a-call"></a><span data-ttu-id="0b462-157">通話を転送する</span><span class="sxs-lookup"><span data-stu-id="0b462-157">Forward a call</span></span>
+### <a name="forward-a-call"></a><span data-ttu-id="2fd99-156">通話を転送する</span><span class="sxs-lookup"><span data-stu-id="2fd99-156">Forward a call</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="0b462-158">通知-受信</span><span class="sxs-lookup"><span data-stu-id="0b462-158">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="2fd99-157">通知-受信</span><span class="sxs-lookup"><span data-stu-id="2fd99-157">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -179,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="0b462-159">要求</span><span class="sxs-lookup"><span data-stu-id="0b462-159">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="2fd99-158">要求</span><span class="sxs-lookup"><span data-stu-id="2fd99-158">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
@@ -206,13 +202,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0b462-160">応答</span><span class="sxs-lookup"><span data-stu-id="0b462-160">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="2fd99-159">応答</span><span class="sxs-lookup"><span data-stu-id="2fd99-159">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a><span data-ttu-id="0b462-161">通知-リダイレクト</span><span class="sxs-lookup"><span data-stu-id="0b462-161">Notification - redirecting</span></span>
+##### <a name="notification---redirecting"></a><span data-ttu-id="2fd99-160">通知-リダイレクト</span><span class="sxs-lookup"><span data-stu-id="2fd99-160">Notification - redirecting</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -241,7 +237,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="0b462-162">通知の終了</span><span class="sxs-lookup"><span data-stu-id="0b462-162">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="2fd99-161">通知の終了</span><span class="sxs-lookup"><span data-stu-id="2fd99-161">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

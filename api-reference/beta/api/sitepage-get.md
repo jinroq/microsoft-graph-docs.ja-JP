@@ -6,71 +6,67 @@ title: サイト内のページを取得する
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: eaa358be376596ee37dacc4eec4d1005e10d085c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: da0327c9646ad89b40247ea6946e221484846a6e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363699"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36409934"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="38380-103">サイトのサイトページリストのページを取得する</span><span class="sxs-lookup"><span data-stu-id="38380-103">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="9fffd-103">サイトのサイトページリストのページを取得する</span><span class="sxs-lookup"><span data-stu-id="9fffd-103">Get a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="38380-104">[サイト][]のサイトページ[リスト][]内の[sitepage][]のメタデータを返します。</span><span class="sxs-lookup"><span data-stu-id="38380-104">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="9fffd-104">[サイト][]のサイトページ[リスト][]内の[sitepage][]のメタデータを返します。</span><span class="sxs-lookup"><span data-stu-id="9fffd-104">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [サイト]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="38380-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="38380-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9fffd-108">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="9fffd-108">Permissions</span></span>
 
-<span data-ttu-id="38380-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38380-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9fffd-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9fffd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="38380-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="38380-111">Permission type</span></span>      | <span data-ttu-id="38380-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="38380-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9fffd-111">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="9fffd-111">Permission type</span></span>      | <span data-ttu-id="9fffd-112">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="9fffd-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="38380-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="38380-113">Delegated (work or school account)</span></span> | <span data-ttu-id="38380-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38380-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="38380-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="38380-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38380-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="38380-116">Not supported.</span></span>    |
-|<span data-ttu-id="38380-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="38380-117">Application</span></span> | <span data-ttu-id="38380-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="38380-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="9fffd-113">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="9fffd-113">Delegated (work or school account)</span></span> | <span data-ttu-id="9fffd-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9fffd-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9fffd-115">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="9fffd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9fffd-116">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9fffd-116">Not supported.</span></span>    |
+|<span data-ttu-id="9fffd-117">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9fffd-117">Application</span></span> | <span data-ttu-id="9fffd-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9fffd-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="38380-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="38380-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9fffd-119">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="9fffd-119">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="38380-120">例</span><span class="sxs-lookup"><span data-stu-id="38380-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9fffd-120">例</span><span class="sxs-lookup"><span data-stu-id="9fffd-120">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="38380-121">要求</span><span class="sxs-lookup"><span data-stu-id="38380-121">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="9fffd-121">要求</span><span class="sxs-lookup"><span data-stu-id="9fffd-121">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="38380-122">プロトコル</span><span class="sxs-lookup"><span data-stu-id="38380-122">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="9fffd-122">プロトコル</span><span class="sxs-lookup"><span data-stu-id="9fffd-122">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="38380-123">C#</span><span class="sxs-lookup"><span data-stu-id="38380-123">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="9fffd-123">C#</span><span class="sxs-lookup"><span data-stu-id="9fffd-123">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="38380-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="38380-124">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9fffd-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9fffd-124">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="38380-125">目的-C</span><span class="sxs-lookup"><span data-stu-id="38380-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9fffd-125">目的-C</span><span class="sxs-lookup"><span data-stu-id="9fffd-125">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="38380-126">Java</span><span class="sxs-lookup"><span data-stu-id="38380-126">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="38380-127">応答</span><span class="sxs-lookup"><span data-stu-id="38380-127">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9fffd-126">応答</span><span class="sxs-lookup"><span data-stu-id="9fffd-126">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

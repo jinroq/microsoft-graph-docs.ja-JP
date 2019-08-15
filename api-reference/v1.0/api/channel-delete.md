@@ -5,55 +5,55 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 387c952b0c7c9795ee2269c3e8dbecc91e9318f1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 282ea962b7f9ac5e435a4522d06e90f58fc8a437
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369053"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422189"
 ---
-# <a name="delete-channel"></a><span data-ttu-id="41b75-103">チャネルを削除する</span><span class="sxs-lookup"><span data-stu-id="41b75-103">Delete channel</span></span>
+# <a name="delete-channel"></a><span data-ttu-id="e8698-103">チャネルを削除する</span><span class="sxs-lookup"><span data-stu-id="e8698-103">Delete channel</span></span>
 
 
 
-<span data-ttu-id="41b75-104">[チャネル](../resources/channel.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="41b75-104">Delete the [channel](../resources/channel.md).</span></span>
+<span data-ttu-id="e8698-104">[チャネル](../resources/channel.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="e8698-104">Delete the [channel](../resources/channel.md).</span></span>
 
-> <span data-ttu-id="41b75-105">**注**: アプリケーションのアクセス許可とこの API には既知の問題があります。</span><span class="sxs-lookup"><span data-stu-id="41b75-105">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="41b75-106">詳細については、「[既知の問題の一覧](/graph/known-issues#application-permissions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="41b75-106">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
+> <span data-ttu-id="e8698-105">**注**: アプリケーションのアクセス許可とこの API には既知の問題があります。</span><span class="sxs-lookup"><span data-stu-id="e8698-105">**Note**: There is a known issue with application permissions and this API.</span></span> <span data-ttu-id="e8698-106">詳細については、「[既知の問題の一覧](/graph/known-issues#application-permissions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e8698-106">For details, see the [known issues list](/graph/known-issues#application-permissions).</span></span>
 
-> <span data-ttu-id="41b75-107">**注**: 削除されたチャネル内のデータは、チーム所有者が削除されたチャネルを回復できるように、数週間にわたって引き続き保存されます。</span><span class="sxs-lookup"><span data-stu-id="41b75-107">**Note**: The data in deleted channels will continue to be stored for several weeks to allow team owner to recovery deleted channel.</span></span> <span data-ttu-id="41b75-108">その間、同じ displayName で新しいチャネルを作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="41b75-108">During that time, a new channel with the same displayName may not be created.</span></span>
+> <span data-ttu-id="e8698-107">**注**: 削除されたチャネル内のデータは、チーム所有者が削除されたチャネルを回復できるように、数週間にわたって引き続き保存されます。</span><span class="sxs-lookup"><span data-stu-id="e8698-107">**Note**: The data in deleted channels will continue to be stored for several weeks to allow team owner to recovery deleted channel.</span></span> <span data-ttu-id="e8698-108">その間、同じ displayName で新しいチャネルを作成することはできません。</span><span class="sxs-lookup"><span data-stu-id="e8698-108">During that time, a new channel with the same displayName may not be created.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="41b75-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="41b75-109">Permissions</span></span>
-<span data-ttu-id="41b75-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="41b75-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e8698-109">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="e8698-109">Permissions</span></span>
+<span data-ttu-id="e8698-p103">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e8698-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="41b75-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="41b75-112">Permission type</span></span>      | <span data-ttu-id="41b75-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="41b75-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e8698-112">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="e8698-112">Permission type</span></span>      | <span data-ttu-id="e8698-113">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="e8698-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="41b75-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="41b75-114">Delegated (work or school account)</span></span> | <span data-ttu-id="41b75-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41b75-115">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="41b75-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="41b75-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="41b75-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="41b75-117">Not supported.</span></span>    |
-|<span data-ttu-id="41b75-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="41b75-118">Application</span></span> | <span data-ttu-id="41b75-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="41b75-119">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e8698-114">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="e8698-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e8698-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8698-115">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="e8698-116">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="e8698-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8698-117">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e8698-117">Not supported.</span></span>    |
+|<span data-ttu-id="e8698-118">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e8698-118">Application</span></span> | <span data-ttu-id="e8698-119">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8698-119">Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="41b75-120">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="41b75-120">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="41b75-121">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="41b75-121">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="e8698-120">**注**: この API は、管理者のアクセス許可をサポートします。</span><span class="sxs-lookup"><span data-stu-id="e8698-120">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="e8698-121">グローバル管理者と Microsoft Teams サービス管理者は、メンバーではないチームにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="e8698-121">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="41b75-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="41b75-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e8698-122">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="e8698-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{id}/channels/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="41b75-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="41b75-123">Request headers</span></span>
-| <span data-ttu-id="41b75-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="41b75-124">Header</span></span>       | <span data-ttu-id="41b75-125">値</span><span class="sxs-lookup"><span data-stu-id="41b75-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="e8698-123">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e8698-123">Request headers</span></span>
+| <span data-ttu-id="e8698-124">ヘッダー</span><span class="sxs-lookup"><span data-stu-id="e8698-124">Header</span></span>       | <span data-ttu-id="e8698-125">値</span><span class="sxs-lookup"><span data-stu-id="e8698-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="41b75-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="41b75-126">Authorization</span></span>  | <span data-ttu-id="41b75-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="41b75-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e8698-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="e8698-126">Authorization</span></span>  | <span data-ttu-id="e8698-p105">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="e8698-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="41b75-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="41b75-129">Request body</span></span>
-<span data-ttu-id="41b75-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="41b75-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e8698-129">要求本文</span><span class="sxs-lookup"><span data-stu-id="e8698-129">Request body</span></span>
+<span data-ttu-id="e8698-130">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="e8698-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="41b75-131">応答</span><span class="sxs-lookup"><span data-stu-id="41b75-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e8698-131">応答</span><span class="sxs-lookup"><span data-stu-id="e8698-131">Response</span></span>
 
-<span data-ttu-id="41b75-p106">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="41b75-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="41b75-134">例</span><span class="sxs-lookup"><span data-stu-id="41b75-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="41b75-135">要求</span><span class="sxs-lookup"><span data-stu-id="41b75-135">Request</span></span>
-<span data-ttu-id="41b75-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="41b75-136">The following is an example of the request.</span></span>
+<span data-ttu-id="e8698-p106">成功した場合、このメソッドは `204 No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="e8698-p106">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e8698-134">例</span><span class="sxs-lookup"><span data-stu-id="e8698-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e8698-135">要求</span><span class="sxs-lookup"><span data-stu-id="e8698-135">Request</span></span>
+<span data-ttu-id="e8698-136">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e8698-136">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="41b75-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="41b75-137">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e8698-137">プロトコル</span><span class="sxs-lookup"><span data-stu-id="e8698-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_channel"
@@ -62,28 +62,24 @@ DELETE /teams/{id}/channels/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="41b75-138">C#</span><span class="sxs-lookup"><span data-stu-id="41b75-138">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e8698-138">C#</span><span class="sxs-lookup"><span data-stu-id="e8698-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="41b75-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="41b75-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e8698-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e8698-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="41b75-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="41b75-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e8698-140">目的-C</span><span class="sxs-lookup"><span data-stu-id="e8698-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="41b75-141">Java</span><span class="sxs-lookup"><span data-stu-id="41b75-141">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="41b75-142">応答</span><span class="sxs-lookup"><span data-stu-id="41b75-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e8698-141">応答</span><span class="sxs-lookup"><span data-stu-id="e8698-141">Response</span></span>
 
-<span data-ttu-id="41b75-143">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="41b75-143">The following is an example of the response.</span></span> 
+<span data-ttu-id="e8698-142">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="e8698-142">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

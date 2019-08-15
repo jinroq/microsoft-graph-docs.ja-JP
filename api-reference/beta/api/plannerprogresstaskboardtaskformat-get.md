@@ -5,79 +5,75 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: d128cb688e25d70224c3cb94e7ff3f1319fe5088
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a7eac4f30877e406a93cd5f021db41977ca7b91e
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36361465"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413194"
 ---
-# <a name="get-plannerprogresstaskboardtaskformat"></a><span data-ttu-id="599e6-103">Get plannerProgressTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="599e6-103">Get plannerProgressTaskBoardTaskFormat</span></span>
+# <a name="get-plannerprogresstaskboardtaskformat"></a><span data-ttu-id="616bb-103">Get plannerProgressTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="616bb-103">Get plannerProgressTaskBoardTaskFormat</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="599e6-104">**plannerProgressTaskBoardTaskFormat** オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="599e6-104">Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="599e6-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="599e6-105">Permissions</span></span>
-<span data-ttu-id="599e6-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="599e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="616bb-104">**plannerProgressTaskBoardTaskFormat** オブジェクトのプロパティとリレーションシップを取得します。</span><span class="sxs-lookup"><span data-stu-id="616bb-104">Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="616bb-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="616bb-105">Permissions</span></span>
+<span data-ttu-id="616bb-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="616bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="599e6-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="599e6-108">Permission type</span></span>      | <span data-ttu-id="599e6-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="599e6-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="616bb-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="616bb-108">Permission type</span></span>      | <span data-ttu-id="616bb-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="616bb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="599e6-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="599e6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="599e6-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="599e6-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="599e6-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="599e6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="599e6-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="599e6-113">Not supported.</span></span>    |
-|<span data-ttu-id="599e6-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="599e6-114">Application</span></span> | <span data-ttu-id="599e6-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="599e6-115">Not supported.</span></span> |
+|<span data-ttu-id="616bb-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="616bb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="616bb-111">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="616bb-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="616bb-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="616bb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="616bb-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="616bb-113">Not supported.</span></span>    |
+|<span data-ttu-id="616bb-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="616bb-114">Application</span></span> | <span data-ttu-id="616bb-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="616bb-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="599e6-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="599e6-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="616bb-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="616bb-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>/progressTaskBoardFormat
+GET /planner/tasks/{id}/progressTaskBoardFormat
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="599e6-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="599e6-117">Request headers</span></span>
-| <span data-ttu-id="599e6-118">名前</span><span class="sxs-lookup"><span data-stu-id="599e6-118">Name</span></span>      |<span data-ttu-id="599e6-119">説明</span><span class="sxs-lookup"><span data-stu-id="599e6-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="616bb-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="616bb-117">Request headers</span></span>
+| <span data-ttu-id="616bb-118">名前</span><span class="sxs-lookup"><span data-stu-id="616bb-118">Name</span></span>      |<span data-ttu-id="616bb-119">説明</span><span class="sxs-lookup"><span data-stu-id="616bb-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="599e6-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="599e6-120">Authorization</span></span>  | <span data-ttu-id="599e6-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="599e6-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="616bb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="616bb-120">Authorization</span></span>  | <span data-ttu-id="616bb-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="616bb-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="599e6-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="599e6-123">Request body</span></span>
-<span data-ttu-id="599e6-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="599e6-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="616bb-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="616bb-123">Request body</span></span>
+<span data-ttu-id="616bb-124">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="616bb-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="599e6-125">応答</span><span class="sxs-lookup"><span data-stu-id="599e6-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="616bb-125">応答</span><span class="sxs-lookup"><span data-stu-id="616bb-125">Response</span></span>
 
-<span data-ttu-id="599e6-126">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="599e6-126">If successful, this method returns a `200 OK` response code and [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.</span></span>
+<span data-ttu-id="616bb-126">成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="616bb-126">If successful, this method returns a `200 OK` response code and [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) object in the response body.</span></span>
 
-<span data-ttu-id="599e6-p103">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="599e6-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="616bb-p103">このメソッドは、いずれかの [HTTP 状態コード](/graph/errors)を返します。このメソッドでアプリが処理する最も一般的なエラーは、403 および 404 応答です。これらのエラーの詳細については、「[一般的なプランナーのエラー条件](../resources/planner-overview.md#common-planner-error-conditions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="616bb-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="599e6-130">例</span><span class="sxs-lookup"><span data-stu-id="599e6-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="599e6-131">要求</span><span class="sxs-lookup"><span data-stu-id="599e6-131">Request</span></span>
-<span data-ttu-id="599e6-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="599e6-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="616bb-130">例</span><span class="sxs-lookup"><span data-stu-id="616bb-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="616bb-131">要求</span><span class="sxs-lookup"><span data-stu-id="616bb-131">Request</span></span>
+<span data-ttu-id="616bb-132">以下は、要求の例です。</span><span class="sxs-lookup"><span data-stu-id="616bb-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="599e6-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="599e6-133">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="616bb-133">プロトコル</span><span class="sxs-lookup"><span data-stu-id="616bb-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_plannerprogresstaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/tasks/<id>/progressTaskBoardFormat
+GET https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="599e6-134">C#</span><span class="sxs-lookup"><span data-stu-id="599e6-134">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="616bb-134">C#</span><span class="sxs-lookup"><span data-stu-id="616bb-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerprogresstaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="599e6-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="599e6-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="616bb-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="616bb-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plannerprogresstaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="599e6-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="599e6-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="616bb-136">目的-C</span><span class="sxs-lookup"><span data-stu-id="616bb-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plannerprogresstaskboardtaskformat-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="599e6-137">Java</span><span class="sxs-lookup"><span data-stu-id="599e6-137">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-plannerprogresstaskboardtaskformat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="599e6-138">応答</span><span class="sxs-lookup"><span data-stu-id="599e6-138">Response</span></span>
-<span data-ttu-id="599e6-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="599e6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="616bb-137">応答</span><span class="sxs-lookup"><span data-stu-id="616bb-137">Response</span></span>
+<span data-ttu-id="616bb-p104">以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。</span><span class="sxs-lookup"><span data-stu-id="616bb-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

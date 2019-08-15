@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: a798c73f389cb2948e29ad02a937c309f876814f
+ms.openlocfilehash: 0b9eb752ac3caa1063fe6d867ff030596d97a0f2
 ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413277"
+ms.locfileid: "36416193"
 ---
 ```javascript
 
@@ -15,12 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-const plannerPlan = {
-  title: "title-value"
-};
-
-let res = await client.api('/planner/plans/{id}')
+let res = await client.api('/education/schools/2961761D-8094-4183-A9F6-8E36E966C7D9/administrativeUnit')
     .version('beta')
-    .update({plannerPlan : plannerPlan});
+    .get();
 
 ```

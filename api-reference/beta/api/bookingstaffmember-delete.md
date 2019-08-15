@@ -5,50 +5,50 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5442d72f8c97d69ff91ae7d0747f920077d36e33
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eb6b696ed722c675de792a5d7a46b44048ba4840
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36318106"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36419343"
 ---
-# <a name="delete-bookingstaffmember"></a><span data-ttu-id="6827e-103">BookingStaffMember の削除</span><span class="sxs-lookup"><span data-stu-id="6827e-103">Delete bookingStaffMember</span></span>
+# <a name="delete-bookingstaffmember"></a><span data-ttu-id="c305e-103">BookingStaffMember の削除</span><span class="sxs-lookup"><span data-stu-id="c305e-103">Delete bookingStaffMember</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6827e-104">指定した[bookingbusiness](../resources/bookingbusiness.md)の[スタッフメンバー](../resources/bookingstaffmember.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="6827e-104">Delete a [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="6827e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="6827e-105">Permissions</span></span>
-<span data-ttu-id="6827e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6827e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c305e-104">指定した[bookingbusiness](../resources/bookingbusiness.md)の[スタッフメンバー](../resources/bookingstaffmember.md)を削除します。</span><span class="sxs-lookup"><span data-stu-id="c305e-104">Delete a [staff member](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c305e-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="c305e-105">Permissions</span></span>
+<span data-ttu-id="c305e-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c305e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6827e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="6827e-108">Permission type</span></span>      | <span data-ttu-id="6827e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="6827e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c305e-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="c305e-108">Permission type</span></span>      | <span data-ttu-id="c305e-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="c305e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6827e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="6827e-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="6827e-111">予約します。すべての予約</span><span class="sxs-lookup"><span data-stu-id="6827e-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="6827e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="6827e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6827e-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6827e-113">Not supported.</span></span>   |
-|<span data-ttu-id="6827e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="6827e-114">Application</span></span> | <span data-ttu-id="6827e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6827e-115">Not supported.</span></span>  |
+|<span data-ttu-id="c305e-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="c305e-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="c305e-111">予約します。すべての予約</span><span class="sxs-lookup"><span data-stu-id="c305e-111">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="c305e-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="c305e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c305e-113">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c305e-113">Not supported.</span></span>   |
+|<span data-ttu-id="c305e-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="c305e-114">Application</span></span> | <span data-ttu-id="c305e-115">サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="c305e-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="6827e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="6827e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c305e-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="c305e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /bookingBusinesses/{id}/staffMembers/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="6827e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="6827e-117">Request headers</span></span>
-| <span data-ttu-id="6827e-118">名前</span><span class="sxs-lookup"><span data-stu-id="6827e-118">Name</span></span>       | <span data-ttu-id="6827e-119">説明</span><span class="sxs-lookup"><span data-stu-id="6827e-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c305e-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="c305e-117">Request headers</span></span>
+| <span data-ttu-id="c305e-118">名前</span><span class="sxs-lookup"><span data-stu-id="c305e-118">Name</span></span>       | <span data-ttu-id="c305e-119">説明</span><span class="sxs-lookup"><span data-stu-id="c305e-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="6827e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6827e-120">Authorization</span></span>  | <span data-ttu-id="6827e-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="6827e-121">Bearer {code}</span></span>|
+| <span data-ttu-id="c305e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c305e-120">Authorization</span></span>  | <span data-ttu-id="c305e-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="c305e-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6827e-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="6827e-122">Request body</span></span>
-<span data-ttu-id="6827e-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="6827e-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c305e-122">要求本文</span><span class="sxs-lookup"><span data-stu-id="c305e-122">Request body</span></span>
+<span data-ttu-id="c305e-123">このメソッドには、要求本文を指定しません。</span><span class="sxs-lookup"><span data-stu-id="c305e-123">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="6827e-124">応答</span><span class="sxs-lookup"><span data-stu-id="6827e-124">Response</span></span>
-<span data-ttu-id="6827e-p102">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="6827e-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c305e-124">応答</span><span class="sxs-lookup"><span data-stu-id="c305e-124">Response</span></span>
+<span data-ttu-id="c305e-p102">成功した場合、このメソッドは `204, No Content` 応答コードを返します。応答本文には何も返されません。</span><span class="sxs-lookup"><span data-stu-id="c305e-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6827e-127">例</span><span class="sxs-lookup"><span data-stu-id="6827e-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6827e-128">要求</span><span class="sxs-lookup"><span data-stu-id="6827e-128">Request</span></span>
-<span data-ttu-id="6827e-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6827e-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c305e-127">例</span><span class="sxs-lookup"><span data-stu-id="c305e-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c305e-128">要求</span><span class="sxs-lookup"><span data-stu-id="c305e-128">Request</span></span>
+<span data-ttu-id="c305e-129">要求の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c305e-129">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6827e-130">プロトコル</span><span class="sxs-lookup"><span data-stu-id="6827e-130">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c305e-130">プロトコル</span><span class="sxs-lookup"><span data-stu-id="c305e-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_bookingstaffmember"
@@ -56,26 +56,22 @@ DELETE /bookingBusinesses/{id}/staffMembers/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/5fae928f-6d2d-417a-ad96-4b0caeb362d6
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6827e-131">C#</span><span class="sxs-lookup"><span data-stu-id="6827e-131">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c305e-131">C#</span><span class="sxs-lookup"><span data-stu-id="c305e-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingstaffmember-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6827e-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6827e-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c305e-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c305e-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-bookingstaffmember-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6827e-133">目的-C</span><span class="sxs-lookup"><span data-stu-id="6827e-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c305e-133">目的-C</span><span class="sxs-lookup"><span data-stu-id="c305e-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-bookingstaffmember-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="6827e-134">Java</span><span class="sxs-lookup"><span data-stu-id="6827e-134">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-bookingstaffmember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6827e-135">応答</span><span class="sxs-lookup"><span data-stu-id="6827e-135">Response</span></span>
-<span data-ttu-id="6827e-136">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6827e-136">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="c305e-134">応答</span><span class="sxs-lookup"><span data-stu-id="c305e-134">Response</span></span>
+<span data-ttu-id="c305e-135">応答の例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c305e-135">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

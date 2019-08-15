@@ -5,58 +5,58 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e25ceb061412222bafcf555090a168f3d114845f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 31036b5bbafb2c47e91a39507f9b03707be86619
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342373"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36413772"
 ---
-# <a name="participant-invite"></a><span data-ttu-id="3fc14-103">参加者: 招待</span><span class="sxs-lookup"><span data-stu-id="3fc14-103">participant: invite</span></span>
+# <a name="participant-invite"></a><span data-ttu-id="b8196-103">参加者: 招待</span><span class="sxs-lookup"><span data-stu-id="b8196-103">participant: invite</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3fc14-104">アクティブな通話に参加者を招待します。</span><span class="sxs-lookup"><span data-stu-id="3fc14-104">Invite participants to the active call.</span></span>
+<span data-ttu-id="b8196-104">アクティブな通話に参加者を招待します。</span><span class="sxs-lookup"><span data-stu-id="b8196-104">Invite participants to the active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3fc14-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="3fc14-105">Permissions</span></span>
-<span data-ttu-id="3fc14-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3fc14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b8196-105">アクセス許可</span><span class="sxs-lookup"><span data-stu-id="b8196-105">Permissions</span></span>
+<span data-ttu-id="b8196-p101">この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8196-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="3fc14-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="3fc14-108">Permission type</span></span> | <span data-ttu-id="3fc14-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="3fc14-109">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="b8196-108">アクセス許可の種類</span><span class="sxs-lookup"><span data-stu-id="b8196-108">Permission type</span></span> | <span data-ttu-id="b8196-109">アクセス許可 (特権の小さいものから大きいものへ)</span><span class="sxs-lookup"><span data-stu-id="b8196-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="3fc14-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="3fc14-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="3fc14-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="3fc14-111">Not Supported</span></span>                       |
-| <span data-ttu-id="3fc14-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="3fc14-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3fc14-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="3fc14-113">Not Supported</span></span>                       |
-| <span data-ttu-id="3fc14-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3fc14-114">Application</span></span>     | <span data-ttu-id="3fc14-115">InitiateGroupCalls を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="3fc14-115">Calls.InitiateGroupCalls.All</span></span>                               |
+| <span data-ttu-id="b8196-110">委任 (職場または学校のアカウント)</span><span class="sxs-lookup"><span data-stu-id="b8196-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b8196-111">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="b8196-111">Not Supported</span></span>                       |
+| <span data-ttu-id="b8196-112">委任 (個人用 Microsoft アカウント)</span><span class="sxs-lookup"><span data-stu-id="b8196-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b8196-113">サポート対象外</span><span class="sxs-lookup"><span data-stu-id="b8196-113">Not Supported</span></span>                       |
+| <span data-ttu-id="b8196-114">アプリケーション</span><span class="sxs-lookup"><span data-stu-id="b8196-114">Application</span></span>     | <span data-ttu-id="b8196-115">InitiateGroupCalls を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="b8196-115">Calls.InitiateGroupCalls.All</span></span>                               |
 
-## <a name="http-request"></a><span data-ttu-id="3fc14-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="3fc14-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b8196-116">HTTP 要求</span><span class="sxs-lookup"><span data-stu-id="b8196-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/invite
 POST /applications/{id}/calls/{id}/participants/invite
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3fc14-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="3fc14-117">Request headers</span></span>
-| <span data-ttu-id="3fc14-118">名前</span><span class="sxs-lookup"><span data-stu-id="3fc14-118">Name</span></span>          | <span data-ttu-id="3fc14-119">説明</span><span class="sxs-lookup"><span data-stu-id="3fc14-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="b8196-117">要求ヘッダー</span><span class="sxs-lookup"><span data-stu-id="b8196-117">Request headers</span></span>
+| <span data-ttu-id="b8196-118">名前</span><span class="sxs-lookup"><span data-stu-id="b8196-118">Name</span></span>          | <span data-ttu-id="b8196-119">説明</span><span class="sxs-lookup"><span data-stu-id="b8196-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="3fc14-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3fc14-120">Authorization</span></span> | <span data-ttu-id="3fc14-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="3fc14-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b8196-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8196-120">Authorization</span></span> | <span data-ttu-id="b8196-p102">ベアラー {トークン}。必須。</span><span class="sxs-lookup"><span data-stu-id="b8196-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3fc14-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="3fc14-123">Request body</span></span>
-<span data-ttu-id="3fc14-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="3fc14-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b8196-123">要求本文</span><span class="sxs-lookup"><span data-stu-id="b8196-123">Request body</span></span>
+<span data-ttu-id="b8196-124">要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="b8196-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="3fc14-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3fc14-125">Parameter</span></span>      | <span data-ttu-id="3fc14-126">型</span><span class="sxs-lookup"><span data-stu-id="3fc14-126">Type</span></span>    |<span data-ttu-id="3fc14-127">説明</span><span class="sxs-lookup"><span data-stu-id="3fc14-127">Description</span></span>|
+| <span data-ttu-id="b8196-125">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b8196-125">Parameter</span></span>      | <span data-ttu-id="b8196-126">型</span><span class="sxs-lookup"><span data-stu-id="b8196-126">Type</span></span>    |<span data-ttu-id="b8196-127">説明</span><span class="sxs-lookup"><span data-stu-id="b8196-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3fc14-128">participants</span><span class="sxs-lookup"><span data-stu-id="3fc14-128">participants</span></span>|<span data-ttu-id="3fc14-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="3fc14-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>| <span data-ttu-id="3fc14-130">招待する参加者。</span><span class="sxs-lookup"><span data-stu-id="3fc14-130">The participants to invite.</span></span>|
-|<span data-ttu-id="3fc14-131">clientContext</span><span class="sxs-lookup"><span data-stu-id="3fc14-131">clientContext</span></span>|<span data-ttu-id="3fc14-132">String</span><span class="sxs-lookup"><span data-stu-id="3fc14-132">String</span></span>|<span data-ttu-id="3fc14-133">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="3fc14-133">The client context.</span></span>|
+|<span data-ttu-id="b8196-128">participants</span><span class="sxs-lookup"><span data-stu-id="b8196-128">participants</span></span>|<span data-ttu-id="b8196-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)コレクション</span><span class="sxs-lookup"><span data-stu-id="b8196-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>| <span data-ttu-id="b8196-130">招待する参加者。</span><span class="sxs-lookup"><span data-stu-id="b8196-130">The participants to invite.</span></span>|
+|<span data-ttu-id="b8196-131">clientContext</span><span class="sxs-lookup"><span data-stu-id="b8196-131">clientContext</span></span>|<span data-ttu-id="b8196-132">String</span><span class="sxs-lookup"><span data-stu-id="b8196-132">String</span></span>|<span data-ttu-id="b8196-133">クライアントコンテキスト。</span><span class="sxs-lookup"><span data-stu-id="b8196-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="3fc14-134">応答</span><span class="sxs-lookup"><span data-stu-id="3fc14-134">Response</span></span>
-<span data-ttu-id="3fc14-135">この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。</span><span class="sxs-lookup"><span data-stu-id="3fc14-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="b8196-134">応答</span><span class="sxs-lookup"><span data-stu-id="b8196-134">Response</span></span>
+<span data-ttu-id="b8196-135">この`202 Accepted`要求に対して作成された[commsOperation](../resources/commsoperation.md)への uri を持つ応答コードと位置ヘッダーを返します。</span><span class="sxs-lookup"><span data-stu-id="b8196-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3fc14-136">例</span><span class="sxs-lookup"><span data-stu-id="3fc14-136">Examples</span></span>
-<span data-ttu-id="3fc14-137">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="3fc14-137">The following examples shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="b8196-136">例</span><span class="sxs-lookup"><span data-stu-id="b8196-136">Examples</span></span>
+<span data-ttu-id="b8196-137">次の例は、この API を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="b8196-137">The following examples shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3fc14-138">要求</span><span class="sxs-lookup"><span data-stu-id="3fc14-138">Request</span></span>
-<span data-ttu-id="3fc14-139">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="3fc14-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b8196-138">要求</span><span class="sxs-lookup"><span data-stu-id="b8196-138">Request</span></span>
+<span data-ttu-id="b8196-139">次の例は要求を示しています。</span><span class="sxs-lookup"><span data-stu-id="b8196-139">The following example shows the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3fc14-140">プロトコル</span><span class="sxs-lookup"><span data-stu-id="3fc14-140">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="b8196-140">プロトコル</span><span class="sxs-lookup"><span data-stu-id="b8196-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite"
@@ -85,28 +85,24 @@ Content-Length: 464
   "clientContext": "clientContext-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3fc14-141">C#</span><span class="sxs-lookup"><span data-stu-id="3fc14-141">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="b8196-141">C#</span><span class="sxs-lookup"><span data-stu-id="b8196-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3fc14-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3fc14-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b8196-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b8196-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3fc14-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="3fc14-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b8196-143">目的-C</span><span class="sxs-lookup"><span data-stu-id="b8196-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javatabjava"></a>[<span data-ttu-id="3fc14-144">Java</span><span class="sxs-lookup"><span data-stu-id="3fc14-144">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3fc14-145">応答</span><span class="sxs-lookup"><span data-stu-id="3fc14-145">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b8196-144">応答</span><span class="sxs-lookup"><span data-stu-id="b8196-144">Response</span></span>
 
-> <span data-ttu-id="3fc14-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="3fc14-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b8196-p103">**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。</span><span class="sxs-lookup"><span data-stu-id="b8196-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -120,9 +116,9 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="3fc14-148">既存の P2P 会議に参加者を招待する</span><span class="sxs-lookup"><span data-stu-id="3fc14-148">Invite Participants in Existing P2P meeting</span></span>
+### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="b8196-147">既存の P2P 会議に参加者を招待する</span><span class="sxs-lookup"><span data-stu-id="b8196-147">Invite Participants in Existing P2P meeting</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3fc14-149">要求</span><span class="sxs-lookup"><span data-stu-id="3fc14-149">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b8196-148">要求</span><span class="sxs-lookup"><span data-stu-id="b8196-148">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
@@ -147,7 +143,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3fc14-150">応答</span><span class="sxs-lookup"><span data-stu-id="3fc14-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b8196-149">応答</span><span class="sxs-lookup"><span data-stu-id="b8196-149">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -163,7 +159,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="3fc14-151">通知-操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="3fc14-151">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="b8196-150">通知-操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="b8196-150">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -193,7 +189,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="3fc14-152">通知-参加者が追加されて更新された名簿</span><span class="sxs-lookup"><span data-stu-id="3fc14-152">Notification - roster updated with participant added</span></span>
+##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="b8196-151">通知-参加者が追加されて更新された名簿</span><span class="sxs-lookup"><span data-stu-id="b8196-151">Notification - roster updated with participant added</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -266,13 +262,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="3fc14-153">既存の P2P 会議に参加者を招待する</span><span class="sxs-lookup"><span data-stu-id="3fc14-153">Invite Participants in Existing P2P meeting</span></span>
+### <a name="invite-participants-in-existing-p2p-meeting"></a><span data-ttu-id="b8196-152">既存の P2P 会議に参加者を招待する</span><span class="sxs-lookup"><span data-stu-id="b8196-152">Invite Participants in Existing P2P meeting</span></span>
 
-<span data-ttu-id="3fc14-154">この例は、既存の P2P 会議で[参加者を招待](../api/participant-invite.md)するための完全な E2E フローを示しています。</span><span class="sxs-lookup"><span data-stu-id="3fc14-154">This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.</span></span>
+<span data-ttu-id="b8196-153">この例は、既存の P2P 会議で[参加者を招待](../api/participant-invite.md)するための完全な E2E フローを示しています。</span><span class="sxs-lookup"><span data-stu-id="b8196-153">This example shows a complete E2E flow for [Invite Participants](../api/participant-invite.md) in an existing P2P meeting.</span></span>
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a><span data-ttu-id="3fc14-155">サービスホストメディアを使用した着信 VOIP 通話への応答</span><span class="sxs-lookup"><span data-stu-id="3fc14-155">Answer Incoming VOIP call with service hosted media</span></span>
+##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a><span data-ttu-id="b8196-154">サービスホストメディアを使用した着信 VOIP 通話への応答</span><span class="sxs-lookup"><span data-stu-id="b8196-154">Answer Incoming VOIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="3fc14-156">通知-受信</span><span class="sxs-lookup"><span data-stu-id="3fc14-156">Notification - Incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="b8196-155">通知-受信</span><span class="sxs-lookup"><span data-stu-id="b8196-155">Notification - Incoming</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -325,7 +321,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="3fc14-157">要求</span><span class="sxs-lookup"><span data-stu-id="3fc14-157">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b8196-156">要求</span><span class="sxs-lookup"><span data-stu-id="b8196-156">Request</span></span>
 
 ``` http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -351,7 +347,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3fc14-158">応答</span><span class="sxs-lookup"><span data-stu-id="3fc14-158">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b8196-157">応答</span><span class="sxs-lookup"><span data-stu-id="b8196-157">Response</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -367,7 +363,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="3fc14-159">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="3fc14-159">Notification - Establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="b8196-158">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="b8196-158">Notification - Establishing</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -396,7 +392,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="3fc14-160">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="3fc14-160">Notification - Established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="b8196-159">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="b8196-159">Notification - Established</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -427,11 +423,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a><span data-ttu-id="3fc14-161">メディアを使用しないチャネル会議への参加</span><span class="sxs-lookup"><span data-stu-id="3fc14-161">Join channel meeting without media</span></span>
+### <a name="join-channel-meeting-without-media"></a><span data-ttu-id="b8196-160">メディアを使用しないチャネル会議への参加</span><span class="sxs-lookup"><span data-stu-id="b8196-160">Join channel meeting without media</span></span>
 
-> <span data-ttu-id="3fc14-162">**重要**: bot インスタンスが転送を容易にする目的でのみ参加している場合は、メディアネゴシエーションを回避する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3fc14-162">**IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.</span></span>  <span data-ttu-id="3fc14-163">そのため、 `requestedModalities`または`mediaConfig`を使用せずに追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="3fc14-163">Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.</span></span>
+> <span data-ttu-id="b8196-161">**重要**: bot インスタンスが転送を容易にする目的でのみ参加している場合は、メディアネゴシエーションを回避する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b8196-161">**IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.</span></span>  <span data-ttu-id="b8196-162">そのため、 `requestedModalities`または`mediaConfig`を使用せずに追加することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="b8196-162">Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3fc14-164">要求</span><span class="sxs-lookup"><span data-stu-id="3fc14-164">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="b8196-163">要求</span><span class="sxs-lookup"><span data-stu-id="b8196-163">Request</span></span>
 
 ``` http
 POST /app/calls
@@ -467,14 +463,14 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3fc14-165">応答</span><span class="sxs-lookup"><span data-stu-id="3fc14-165">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b8196-164">応答</span><span class="sxs-lookup"><span data-stu-id="b8196-164">Response</span></span>
 
 ``` http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="3fc14-166">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="3fc14-166">Notification - Establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="b8196-165">通知-確立中</span><span class="sxs-lookup"><span data-stu-id="b8196-165">Notification - Establishing</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -504,7 +500,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="3fc14-167">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="3fc14-167">Notification - Established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="b8196-166">通知-確立済み</span><span class="sxs-lookup"><span data-stu-id="b8196-166">Notification - Established</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -534,7 +530,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participant-from-initial-incoming-call"></a><span data-ttu-id="3fc14-168">最初の着信呼び出しから参加者を招待する</span><span class="sxs-lookup"><span data-stu-id="3fc14-168">Invite participant from initial incoming call</span></span>
+### <a name="invite-participant-from-initial-incoming-call"></a><span data-ttu-id="b8196-167">最初の着信呼び出しから参加者を招待する</span><span class="sxs-lookup"><span data-stu-id="b8196-167">Invite participant from initial incoming call</span></span>
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -556,7 +552,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3fc14-169">応答</span><span class="sxs-lookup"><span data-stu-id="3fc14-169">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b8196-168">応答</span><span class="sxs-lookup"><span data-stu-id="b8196-168">Response</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -573,7 +569,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="3fc14-170">通知-操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="3fc14-170">Notification - Operation Completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="b8196-169">通知-操作が完了しました</span><span class="sxs-lookup"><span data-stu-id="b8196-169">Notification - Operation Completed</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -603,7 +599,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="3fc14-171">通知-参加者が追加されて更新された名簿</span><span class="sxs-lookup"><span data-stu-id="3fc14-171">Notification - Roster Updated With Participant Added</span></span>
+##### <a name="notification---roster-updated-with-participant-added"></a><span data-ttu-id="b8196-170">通知-参加者が追加されて更新された名簿</span><span class="sxs-lookup"><span data-stu-id="b8196-170">Notification - Roster Updated With Participant Added</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -676,7 +672,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a><span data-ttu-id="3fc14-172">通知-元の P2P 呼び出しを終了しました</span><span class="sxs-lookup"><span data-stu-id="3fc14-172">Notification - terminated the original P2P call</span></span>
+##### <a name="notification---terminated-the-original-p2p-call"></a><span data-ttu-id="b8196-171">通知-元の P2P 呼び出しを終了しました</span><span class="sxs-lookup"><span data-stu-id="b8196-171">Notification - terminated the original P2P call</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -706,7 +702,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a><span data-ttu-id="3fc14-173">通知-元の P2P 呼び出しを削除しました</span><span class="sxs-lookup"><span data-stu-id="3fc14-173">Notification - Deleted the original P2P call</span></span>
+##### <a name="notification---deleted-the-original-p2p-call"></a><span data-ttu-id="b8196-172">通知-元の P2P 呼び出しを削除しました</span><span class="sxs-lookup"><span data-stu-id="b8196-172">Notification - Deleted the original P2P call</span></span>
 
 ``` http
 POST https://bot.contoso.com/api/calls
