@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8cc1e566b5ade5b40109b9c4ac6fe27ac4503d95
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 494fd923a205000352fb1c95217ca81e79b8ef8b
+ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375507"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36422220"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -71,6 +71,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) に [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-beta) アクションを追加しました |
+
+### <a name="reports"></a>レポート
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | v1.0  | **deletedItemCount** および **deletedItemSizeInBytes** プロパティを [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) エンティティに追加しました。|
+| 追加        | v1.0  | **groupId** プロパティを [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) エンティティに追加しました。|
+| 追加        | v1.0  | **OwnerPrincipalName** プロパティを [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) エンティティに追加しました。|
+| 追加        | v1.0  | **ownerPrincipalName** プロパティを [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加しました。|
+| 追加        | v1.0  | **office365Active** および **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティティに追加しました。|
 
 ## <a name="july-2019"></a>2019 年 7 月
 
