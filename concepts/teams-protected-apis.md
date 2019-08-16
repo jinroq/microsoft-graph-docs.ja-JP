@@ -4,12 +4,12 @@ description: 機密データにアクセスする Microsoft Graph の Microsoft 
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ebf0bbda324f62c6413bbe3d70ade33a5052da0d
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 124a2f96f2c59909311fad605beeb1273193d8af
+ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778762"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36364531"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Microsoft Teams の保護された API
 
@@ -23,4 +23,5 @@ ms.locfileid: "35778762"
 * [アプリケーション アクセス許可](auth/auth-concepts.md#microsoft-graph-permissions)を使用する[チャット内のメッセージの一覧表示](/graph/api/chatmessage-list?view=graph-rest-beta) 
 * [アプリケーション アクセス許可](auth/auth-concepts.md#microsoft-graph-permissions)を使用する[チャット内のメッセージの取得](/graph/api/chatmessage-get?view=graph-rest-beta) 
 
-これらの保護された API へのアクセス権を要求するには、次の [要求フォーム](http://aka.ms/teamsgraph/requestaccess)の入力を完了します。 毎週アクセス権の要求を確認しています。 要求フォーム以外の情報も提供したい場合は、[teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com)までご連絡ください。
+これらの保護された API へのアクセス権を要求するには、次の [要求フォーム](http://aka.ms/teamsgraph/requestaccess)の入力を完了します。 毎週水曜日にアクセス要求を確認し、毎週金曜日に承認を展開します。
+要求フォーム以外の情報も提供したい場合は、[teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com) までご連絡ください。
