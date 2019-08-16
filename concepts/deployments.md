@@ -1,12 +1,12 @@
 ---
 title: 国内クラウドの展開
 description: Microsoft のデータセンターのグローバル ネットワークに加えて、Microsoft クラウド サービスは 3 つの独立した国内クラウドで利用できます。 これらの国内クラウドバージョンは、特定の国の地理的な境界内に限定され、ローカル担当者が運用している Microsoft エンタープライズクラウドサービスの物理的および論理的なネットワークの分離されたインスタンスです。
-ms.openlocfilehash: 73d392bae722d0f719f836766e344da19c77c6b2
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 406966a0bc6d1f5729ab96d4bd358ea21e3d9e6e
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133733"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437644"
 ---
 # <a name="national-cloud-deployments"></a>国内クラウドの展開
 
@@ -38,8 +38,6 @@ Microsoft Graph Api を呼び出す前に、最初にアプリケーションを
 |Azure AD (グローバル サービス)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
 Azure AD のアクセストークンと Microsoft Graph の詳細については、「 [authentication の基礎](./auth/auth-concepts.md)」を参照してください。 Azure AD 認証のシナリオについては、「 [AZURE ad 認証の基礎](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)」を参照してください。
-
-> **注:** [Azure AD v2.0 認証エンドポイントとトークン エンドポイント](https://docs.microsoft.com/azure/active-directory/develop/v2-overview)はグローバル サービスでのみ使用できます。国内クラウド展開での使用はまだサポートされていません。
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Microsoft Graph および Graph エクスプローラサービスのルートエンドポイント
