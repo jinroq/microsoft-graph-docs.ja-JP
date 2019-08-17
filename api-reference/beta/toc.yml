@@ -9268,6 +9268,33 @@
                   items:
                     - name: 共有リスト
                       href: api/insights-list-shared.md
+            - name: 分析
+              href: resources/useranalytics.md
+              items:
+                - name: Settings
+                  items:
+                    - name: Settings
+                      href: resources/settings.md
+                    - name: 設定を取得する
+                      href: api/useranalytics-get-settings.md
+                - name: アクティビティの統計情報
+                  items:
+                    - name: アクティビティの統計情報
+                      href: resources/activitystatistics.md
+                    - name: 呼び出しの統計の種類
+                      href: resources/callactivitystatistics.md
+                    - name: チャットの統計の種類
+                      href: resources/chatactivitystatistics.md
+                    - name: 電子メールの統計の種類
+                      href: resources/emailactivitystatistics.md
+                    - name: フォーカス統計の種類
+                      href: resources/focusactivitystatistics.md
+                    - name: 会議の統計の種類
+                      href: resources/meetingactivitystatistics.md
+                    - name: アクティビティ統計のリスト
+                      href: api/activitystatistics-list.md
+                    - name: アクティビティの統計情報を取得する
+                      href: api/activitystatistics-get.md
             - name: メンション
               href: resources/mention.md
         - name: タスクとプラン
@@ -9682,7 +9709,7 @@
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: 削除する
+                - name: 削除
                   href: api/outlooktaskfolder-delete.md
                 - name: グループ内のタスク フォルダーを一覧表示する
                   href: api/outlooktaskfolder-list-tasks.md

@@ -5,13 +5,23 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 714873a85951d2f03f602e0742c9f00b5faf0024
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: b4df1b1283ae0240e26ba3f63ccfad0094e285d7
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062060"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450481"
 ---
+### <a name="analyticsactivitytype-values"></a>分析のための値
+
+| 値
+|:--------------
+| call
+| チャット
+| メール
+| フォーカス
+| 定期的
+
 ### <a name="registrationauthmethod-values"></a>registrationAuthMethod の値
 
 |Member|
@@ -36,7 +46,6 @@ ms.locfileid: "36062060"
 |子供|5| ユーザーの子。|
 |も|シックス| ユーザーとの特定されていない関係。|
 |Unknownfuturevalue という|7| 将来の互換性のためのマーカー値。|
-
 
 ### <a name="scheduleentitytheme-values"></a>scheduleEntityTheme の値
 

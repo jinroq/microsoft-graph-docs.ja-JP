@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2037c747df42177e4735b1aba1d37605d11339d8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6a009640b47ce02b1719d6e5535813d365dc9e6
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010134"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450642"
 ---
 # <a name="invitation-resource-type"></a>招待リソースの種類
 
@@ -27,6 +27,8 @@ ms.locfileid: "36010134"
 
 招待状を作成すると、応答で引き換え URL が返されます (*inviteRedeemUrl*)。招待状作成 API では、*sendInvitationMessage* を true に設定することにより、引き換え URL を含むメールが自動的に招待ユーザーに送信されます。招待ユーザーに送信されるメッセージをカスタマイズすることもできます。代わりに、他の手段で引き換え URL を送信したい場合は、*sendInvitationMessage* を false に設定し、応答からの引き換え URL を使用して、独自の通信を作成することもできます。現在、引き換え処理を実行するための API はありません。招待ユーザーは、上記手順の通信で送信された *inviteRedeemUrl* リンクをクリックして、対話型引き換え処理をブラウザーで行う必要があります。完了すると、招待ユーザーは、組織における外部ユーザーになります。
 
+>[!NOTE]
+>招待の状態は、 **Externaluserstate**と、招待要求の一部として作成された外部[ユーザー](user.md)リソースの**externalUserStateChangeDateTime**プロパティを使用して追跡されます。
 
 ## <a name="methods"></a>メソッド
 | メソッド       | 戻り値の型  |説明|
