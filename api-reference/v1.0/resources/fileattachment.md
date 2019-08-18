@@ -2,15 +2,15 @@
 title: fileAttachment リソースの種類
 description: 'イベント、メッセージまたは投稿に添付されたファイル (テキスト ファイルや Word 文書など) です。**contentBytes** '
 localization_priority: Priority
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e80a4599d79d17829f2bb07bb61d4adf60df607
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 51e087ed466065c755ca801ed430678834e30703
+ms.sourcegitcommit: 36066afdced00f32838a03747d3e7760fc43683a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032509"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36453098"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
@@ -33,7 +33,7 @@ ms.locfileid: "36032509"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|base64 でエンコードされたファイルの内容。|
+|contentBytes|Edm.Binary|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
 |contentLocation|String|このプロパティは、サポートされていないため、使用しないでください。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
@@ -62,7 +62,7 @@ ms.locfileid: "36032509"
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "string (binary)",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",
