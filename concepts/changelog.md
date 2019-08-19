@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 494fd923a205000352fb1c95217ca81e79b8ef8b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f279dd6be424c34a80fc2b3e942d60ed9dec0d16
+ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422220"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36437672"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -72,6 +72,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) に [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-beta) アクションを追加しました |
 
+### <a name="identity-and-access-azure-ad"></a>ID およびアクセス (Azure AD)
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加 | ベータ版 | [roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta) リソースを追加しました。これは、RBAC プロバイダーから提示されるロール定義とロール割り当てへのアクセスを提供します。 |
+| 追加 | ベータ版 | [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) リソースを追加しました。これは、実行できる操作のリストであるアクセス権限コレクションを表します。 |
+| 追加 | ベータ版 | リソースへのアクセス権を付与する [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) リソースを追加しました。 |
+| 追加 | ベータ版 | unifiedRoleDefinition リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - プロバイダーの unifiedRoleDefinition オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - 新しい unifiedRoleDefinition オブジェクトを作成します。</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - 統一されたロール定義オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトのプロパティを更新します。</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトを削除します。</li></ul> |
+| 追加 | ベータ版 | unifiedRoleAssignment リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - プロバイダーの unifiedRoleAssignment オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleAssignment]() - 新しい unifiedRoleAssignment オブジェクトを作成します。</li><li>[Get unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトを削除します。 |
+
 ### <a name="reports"></a>レポート
 
 | **変更の種類** | **バージョン** | **説明**                  |
@@ -81,6 +91,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | v1.0  | **OwnerPrincipalName** プロパティを [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) エンティティに追加しました。|
 | 追加        | v1.0  | **ownerPrincipalName** プロパティを [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加しました。|
 | 追加        | v1.0  | **office365Active** および **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティティに追加しました。|
+
 
 ## <a name="july-2019"></a>2019 年 7 月
 
