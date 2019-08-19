@@ -7816,14 +7816,16 @@
                 - name: アクセス レビュー
                   href: resources/accessreview.md
                   items:
-                    - name: アクセス レビューを作成する
-                      href: api/accessreview-create.md
-                    - name: アクセス レビューを削除する
-                      href: api/accessreview-delete.md
+                    - name: アクセスレビューを一覧表示する
+                      href: api/accessreview-list.md
                     - name: アクセス レビューを取得する
                       href: api/accessreview-get.md
+                    - name: アクセス レビューを作成する
+                      href: api/accessreview-create.md
                     - name: アクセス レビューを更新する
                       href: api/accessreview-update.md
+                    - name: アクセス レビューを削除する
+                      href: api/accessreview-delete.md
                     - name: Reviewer (校閲者) を追加する
                       href: api/accessreview-addreviewer.md
                     - name: 決定を一覧表示する
@@ -9703,7 +9705,7 @@
               items:
                 - name: リスト
                   href: api/outlookuser-list-taskgroups.md
-                - name: 作成する
+                - name: 作成
                   href: api/outlookuser-post-taskgroups.md
                 - name: 取得
                   href: api/outlooktaskgroup-get.md

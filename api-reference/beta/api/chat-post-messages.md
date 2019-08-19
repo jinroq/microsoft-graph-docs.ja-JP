@@ -2,21 +2,21 @@
 title: ChatMessage の作成
 description: この API を使用して、新しい chatMessage を作成します。
 localization_priority: Normal
-author: RamjotSingh
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 784c275f3006af144b56c7de17758492f13e8db1
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 96099cf2628b31a03013ae680439e97a55f952c5
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418167"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460823"
 ---
 # <a name="create-chatmessage"></a>ChatMessage の作成
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定した[チャット](../resources/chat.md)で新しい[メッセージ](../resources/chatmessage.md)を作成します。
+指定した[チャット](../resources/chat.md)で新しい[メッセージ](../resources/chatmessage.md)を作成します。 この API は新しいチャットを作成できません。チャットメッセージを作成する前に、[リスト](chat-list.md)のチャットメソッドを使用して既存のチャットの Id を取得する必要があります。
 
 ## <a name="permissions"></a>アクセス許可
 
