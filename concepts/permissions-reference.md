@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 2fe8b2d9b7a89aec84cdc067fc9e69a647f64ccc
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 25f5f7df625aabaf4ace2f54b77537cd456981ab
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437679"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450684"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -73,6 +73,31 @@ _AccessReview.Read.All_、_AccessReview.ReadWrite.All_ と _AccessReview.ReadWri
 Azure AD ロールのアクセス レビューを読み取るための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、「セキュリティ閲覧者」、または「特権ロール管理者」のいずれかの管理者ロールのメンバーになっている必要があります。 Azure AD ロールのアクセス レビューを書き込むための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」または「特権ロール管理者」のいずれかの管理者ロールのメンバーになっている必要があります。
 
 管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
+
+---
+
+## <a name="analytics-resource-permissions"></a>分析リソースのアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   すべてのユーザー アクティビティの統計情報の読み取り。 | サインイン ユーザーなしで、ユーザー アクティビティの統計情報をアプリで読み取れるようにします。 | はい |
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+なし。
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+
+* _Analytics.Read_: [ユーザーの関連設定を一覧表示](/graph/api/useranalytics-get-settings?view=graph-rest-beta)します (`GET /beta/me/analytics/settings)
+* _Analytics.Read_: [ユーザーのアクティビティ統計情報を取得](/graph/api/activitystatistics-get?view=graph-rest-beta)します (`GET /beta/me/analytics/activitystatistics/{id})
+
+#### <a name="application"></a>Application
+
+なし。
 
 ---
 
@@ -1149,7 +1174,7 @@ _RoleManagement.ReadWrite.Directory_ のアクセス許可を持つアプリケ�
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Sites.Read.All_        | すべてのサイト コレクションに含まれるアイテムの読み取り | アプリは、サインインしているユーザーに代わって、すべてのサイト コレクション内のドキュメントを読み取り、アイテムを一覧表示できます。 | いいえ  | いいえ |
+| _Sites.Read.All_        | すべてのサイト コレクションに含まれるアイテムの読み取り | アプリは、サインインしているユーザーに代わって、すべてのサイト コレクション内のドキュメントを読み取り、アイテムを一覧表示できます。 | 不要  | いいえ |
 | _Sites.ReadWrite.All_   | すべてのサイト コレクション内のアイテムの読み取りおよび書き込み | サインイン ユーザーの代わりに、すべてのサイト コレクションに含まれるドキュメントとリスト アイテムをアプリで編集または削除できるようにします。 | いいえ  | いいえ |
 | _Sites.Manage.All_      | すべてのサイト コレクションにおけるアイテムとリストの作成、編集、および削除 | サインイン ユーザーの代わりに、すべてのサイト コレクションに含まれるリスト、ドキュメント、およびリスト アイテムをアプリで管理および作成できるようにします。 | いいえ | いいえ |
 | _Sites.FullControl.All_ | すべてのサイト コレクションのフル コントロール | サインイン ユーザーに代わって、アプリはすべてのサイト コレクション内の SharePoint サイトをフル コントロールできます。  | はい  | いいえ |

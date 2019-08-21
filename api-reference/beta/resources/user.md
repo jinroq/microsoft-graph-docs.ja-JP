@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 02fcc9db35f59ebca3bc85f1ddc65d8d2f7c3d89
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
+ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049625"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450516"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -197,7 +197,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) コレクション| 利用規約に対するユーザー承認状態。 読み取り専用です。 Null 許容型。|
+|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) コレクション| 利用規約に対するユーザー承認状態。 読み取り専用です。 Null 許容型です。|
+|分析|[useranalytics](useranalytics.md) コレクション| ユーザーのアクティビティ統計と関連設定。 読み取り専用。 Null 許容型。|
 |予定表|[calendar](calendar.md)|ユーザーの標準予定表。読み取り専用です。|
 |calendarGroups|[calendarGroup](calendargroup.md) コレクション|ユーザーの予定表グループ。読み取り専用です。Null 許容型。|
 |calendarView|[event](event.md) コレクション|予定表のカレンダー ビュー。読み取り専用です。Null 許容型。|
@@ -238,6 +239,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -337,6 +339,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
+  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
