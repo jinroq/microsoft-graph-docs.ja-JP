@@ -7447,8 +7447,15 @@
                 - name: 申請を戻す
                   href: api/educationsubmission-return.md
             - name: 結果
-              href: resources/educationoutcome.md
               items:
+                - name: 結果
+                  href: resources/educationoutcome.md
+                - name: フィードバック結果の種類
+                  href: resources/educationfeedbackoutcome.md
+                - name: ポイントの結果の種類
+                  href: resources/educationpointsoutcome.md
+                - name: の結果の種類
+                  href: resources/educationrubricoutcome.md
                 - name: 更新結果
                   href: api/educationoutcome-update.md
             - name: 同期プロファイル
@@ -9686,7 +9693,7 @@
             - name: Outlook タスク フォルダー
               href: resources/outlooktaskfolder.md
               items:
-                - name: List
+                - name: リスト
                   href: api/outlookuser-list-taskfolders.md
                 - name: 作成する
                   href: api/outlookuser-post-taskfolders.md
