@@ -213,16 +213,10 @@ items:
             href: security-concept-overview.md
           - name: データ フロー
             href: security-dataflow.md
-          - name: 認可
+          - name: Authorization
             href: security-authorization.md
-          - name: SIEM との統合
-            items:
-              - name: 概要
-                href: security-siemintegration.md
-              - name: Splunk
-                href: security-splunk-siemintegration.md
-              - name: QRadar
-                href: security-qradar-siemintegration.md
+          - name: 統合ソリューション
+            href: security-integration.md
           - name: パートナーの機会
             href: security-partner-overview.md
       - name: サイトとリスト

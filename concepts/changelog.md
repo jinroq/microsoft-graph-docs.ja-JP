@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f279dd6be424c34a80fc2b3e942d60ed9dec0d16
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437672"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36462006"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -81,6 +81,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | リソースへのアクセス権を付与する [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) リソースを追加しました。 |
 | 追加 | ベータ版 | unifiedRoleDefinition リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - プロバイダーの unifiedRoleDefinition オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - 新しい unifiedRoleDefinition オブジェクトを作成します。</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - 統一されたロール定義オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトのプロパティを更新します。</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトを削除します。</li></ul> |
 | 追加 | ベータ版 | unifiedRoleAssignment リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - プロバイダーの unifiedRoleAssignment オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleAssignment]() - 新しい unifiedRoleAssignment オブジェクトを作成します。</li><li>[Get unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトを削除します。 |
+| 追加 | ベータ版 | [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta) 操作を追加しました。 |
 
 ### <a name="reports"></a>レポート
 
@@ -90,7 +91,15 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | v1.0  | **groupId** プロパティを [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) エンティティに追加しました。|
 | 追加        | v1.0  | **OwnerPrincipalName** プロパティを [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) エンティティに追加しました。|
 | 追加        | v1.0  | **ownerPrincipalName** プロパティを [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加しました。|
-| 追加        | v1.0  | **office365Active** および **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティティに追加しました。|
+| 追加        | v1.0  | **office365Active** プロパティおよび **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティティに追加しました。|
+
+### <a name="social-and-workplace-intelligence-analytics"></a>ソーシャル インテリジェンスおよび職場のインテリジェンス (分析)
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加 | ベータ版 | 職場のインテリジェンス[分析 API](/graph/api/resources/useranalytics?view=graph-rest-beta) を導入しました。これによりユーザーが通話、チャット (インスタント メッセージ)、電子メール、集中作業、会議など、勤務時間中および勤務時間外のさまざまなアクティビティにどのように時間を費やすかについての分析を取得できます。 |
+| 追加 | ベータ版 | ユーザーが [analytics API](/graph/api/resources/settings?view=graph-rest-beta) を使用するために現在必要な設定を表す新しい職場のインテリジェンス[設定 API](/graph/api/resources/useranalytics?view=graph-rest-beta) を導入しました。 |
+| 追加 | ベータ版 | 新しい [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) リソース タイプと、それから派生した新しいリソースタイプ [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta)、[chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta)、[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta)、[focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta)、および [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta) が導入されました。 |
 
 
 ## <a name="july-2019"></a>2019 年 7 月
@@ -109,7 +118,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 ### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
 
 |変更の種類|バージョン|説明|
-|:---|:---|:---|
+|:----------------|:------------|:-----------------------------------------|
 |追加|ベータ版|新しいエンティティを追加しました。<br/>[managedAllDeviceCertificateState](/graph/api/resources/intune-deviceconfig-managedalldevicecertificatestate?view=graph-rest-beta)<br/>|
 |追加|ベータ版|新しい複合型を追加しました。<br/>[windowsKioskForceUpdateSchedule](/graph/api/resources/intune-deviceconfig-windowskioskforceupdateschedule?view=graph-rest-beta)<br/>|
 |追加|ベータ版|新しい列挙型を追加しました。<br/>[fileVaultState](/graph/api/resources/intune-deviceconfig-filevaultstate?view=graph-rest-beta)<br/>[windowsDefenderTamperProtectionOptions](/graph/api/resources/intune-deviceconfig-windowsdefendertamperprotectionoptions?view=graph-rest-beta)<br/>|
@@ -264,6 +273,8 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ## <a name="may-2019"></a>2019 年 5 月
 
+### <a name="calendar-mail-personal-contacts-outlook"></a>カレンダー、メール、個人用連絡先 (Outlook)
+
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 追加 | v1.0 およびベータ版 | アプリにメール、メールボックス設定、予定表、または連絡先へのアプリケーション アクセス許可が付与されている場合でも、管理者が特定のメールボックスのみにアプリのアクセスを制限できる機能が追加されました。 詳細については、「[アプリケーションのアクセス許可を Exchange Online の特定のメールボックスにスコーピングする](auth-limit-mailbox-access.md)」を参照してください。 |
@@ -355,6 +366,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版  | **OwnerPrincipalName**プロパティが [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta)エンティティに追加されました。|
 | 追加        | ベータ版  | **ownerPrincipalName** プロパティが [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加されました。|
 
+### <a name="security"></a>セキュリティ
 
 | **変更の種類** | **バージョン** | **説明**              |
 | :-------------- | :---------- | :--------------------------------------- |
