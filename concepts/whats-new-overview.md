@@ -3,12 +3,12 @@ title: Microsoft Graph の新機能
 description: Microsoft Graph の最新機能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 57a1ce3ac96577b31d1f5120dc3d88e89e288bd1
-ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
+ms.openlocfilehash: 4840dbb711f2088f011c5c66d6c59d47d58145af
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36564742"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622629"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph の新機能
 
@@ -31,6 +31,10 @@ Microsoft Graph チームでは、お客様のニーズを定期的に評価し�
 - [OneDrive 使用状況の計算の詳細](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0) と [SharePoint サイトの使用状況の詳細](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0) を取得するときに、所有者のプリンシパル名を追跡します。
 - [Office 365 サービス単位のユーザー カウントに関するレポートを取得する](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0) ときに、Office 365 のアクティブなユーザーと非アクティブなユーザーの数を取得します。
 
+### <a name="security"></a>セキュリティ
+- 多数のパートナー企業の製品から Splunk へのセキュリティのアラートと分析情報をストリームするための新しい[ Splunk 向け Microsoft Graph Security API アドオン](https://aka.ms/graphsecuritysplunkaddon)を使用して、簡単にそれらのセキュリティ データのリアルタイムの相関関係を有効化します。 詳細については、[お知らせ](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972)を参照してください。 
+- セキュリティ API で接続して統一された形式のデータを操作できるように、Microsoft または Microsoft パートナーによってビルドされた[その他のソリューションとコネクタの一覧を参照してください](security-integration.md)。
+
 
 ## <a name="august-2019-new-in-preview"></a>2019 年 8 月: プレビューの新機能
 
@@ -52,7 +56,7 @@ Intune の [8 月](changelog.md#august-2019) の更新プログラム
 - 管理者は、グループ メンバーシップのレビューの効率的な円滑化、エンタープライズ アプリケーションへのアクセス、およびロールの割り当てを行うために、[アクセス レビューを一覧表示](/graph/api/accessreview-list?view=graph-rest-beta)することができます。 定期的なアクセス レビューにより、適切なユーザーのみ、特定のリソースに引き続きアクセスすることを確実にします。
 
 ### <a name="social-and-workplace-intelligence"></a>ソーシャル インテリジェンスおよび職場のインテリジェンス
-[MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) は、時間の管理、職場での共同作業、ワークライフバランスに関するエンド ユーザーの分析情報を提供する Office 365 アプリです。 通話、チャット、メールなどの作業活動に費やされる時間のデータを統合したり、ユーザーの生産性とウェルビーイングを向上させたりするための[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns)を使用できるようになりました。 
+エンド ユーザーは、Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) アプリを使用して、時間の管理、職場での共同作業、ワークライフバランスに関する分析情報を取得できます。 現在、通話、チャット、メールなどの作業活動に費やされる時間のデータを統合したり、ユーザーの生産性とウェルビーイングを向上させたりするための[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns)を使用できるようになりました。 
 
 ## <a name="july-2019-new-and-generally-available"></a>2019 年 7 月: 新機能および一般公開 
 
