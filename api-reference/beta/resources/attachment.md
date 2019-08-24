@@ -3,20 +3,20 @@ title: 添付ファイル リソースの種類
 description: 関連コンテンツをイベントに追加できます。
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6ee3ba645f71b100b78b01fa1821bf91ca21cb26
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: da7e66d1edbda224fe547b7e7afc8fd88dc5e5aa
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013263"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622637"
 ---
 # <a name="attachment-resource-type"></a>添付ファイル リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-添付ファイルの形式で、関連するコンテンツを[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)に追加できます。
+添付ファイルの形式で、関連するコンテンツをユーザー[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、またはグループ[投稿](../resources/post.md)に追加できます。
 
 **attachment** は、次の派生型の添付ファイルの基本リソースです。
 
@@ -24,18 +24,20 @@ ms.locfileid: "36013263"
 * 項目 ([itemAttachment](../resources/itemattachment.md) リソースで表される連絡先、イベント、またはメッセージ)
 * ファイルへのリンク ([referenceAttachment](../resources/referenceattachment.md) リソース)
 
+グループの予定表のイベントは、添付ファイルをサポートしていません。
+
 ## <a name="methods"></a>メソッド
 
 次のメソッドは、派生型の添付ファイル (**fileAttachment**、**itemAttachment**、または **referenceAttachment**) のすべてに適用されます。
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[添付ファイルを取得する](../api/attachment-get.md) | [attachment](attachment.md) |イベント、メッセージ、Outlook タスク、または投稿に添付されている添付ファイルのプロパティとリレーションシップを読み取ります。|
-|[イベントに添付ファイルを追加する](../api/event-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルをイベントに追加します。|
+|[添付ファイルを取得する](../api/attachment-get.md) | [attachment](attachment.md) |ユーザーイベント、メッセージ、Outlook タスク、または投稿に添付されている添付ファイルのプロパティと関係を読み取ります。|
+|[ユーザーイベントに添付ファイルを追加する](../api/event-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルをユーザーの予定表のイベントに追加します。|
 |[メッセージに添付ファイルを追加する](../api/message-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルをメッセージに追加します。|
 |[Outlook タスクに添付ファイルを追加する](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Outlook タスクにファイル、アイテム、またはリンクの添付ファイルを追加します。|
 |[投稿に添付ファイルを追加する](../api/post-post-attachments.md) | [attachment](attachment.md) |ファイル、アイテム、またはリンクの添付ファイルを投稿に追加します。|
-|[イベントの添付ファイルを一覧表示する](../api/event-list-attachments.md) | [attachment](attachment.md) コレクション | イベントの添付ファイルの一覧を取得します。 |
+|[ユーザーイベントの添付ファイルを一覧表示する](../api/event-list-attachments.md) | [attachment](attachment.md) コレクション | ユーザーの予定表にあるイベントの添付ファイルの一覧を取得します。 |
 |[メッセージの添付ファイルを一覧表示する](../api/message-list-attachments.md) | [attachment](attachment.md) コレクション | メッセージの添付ファイルの一覧を取得します。 |
 |[Outlook タスクの添付ファイルを一覧表示する](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) コレクション | Outlook タスクの添付ファイルの一覧を取得します。 |
 |[投稿の添付ファイルを一覧表示する](../api/post-list-attachments.md) | [attachment](attachment.md) コレクション | 投稿の添付ファイルの一覧を取得します。 |

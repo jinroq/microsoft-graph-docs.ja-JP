@@ -3,12 +3,12 @@ title: Microsoft Graph の新機能
 description: Microsoft Graph の最新機能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3d2b209b08fe92f7866225838ffa0636a1f5609e
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 57a1ce3ac96577b31d1f5120dc3d88e89e288bd1
+ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450649"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36564742"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph の新機能
 
@@ -40,9 +40,19 @@ Microsoft Graph チームでは、お客様のニーズを定期的に評価し�
 ### <a name="devices-and-apps"></a>デバイスとアプリ
 Intune の [8 月](changelog.md#august-2019) の更新プログラム
 
-### <a name="files"></a>ファイル
-現時点まででは、便利なアクセスを提供するために [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) を [フォロー](/graph/api/driveitem-follow?view=graph-rest-beta)したり、移動、転送、名前を付けて保存などの操作を実行したりすることができます。 [フォローを取り消す](/graph/api/driveitem-unfollow?view=graph-rest-beta) アクションを使用して、ドライブ アイテムなどをフォローするのを停止できるようになりました。
+### <a name="education"></a>教育
+- 課題の特質とレベルで構成される[評価ルーブリック](/graph/api/resources/educationrubric?view=graph-rest-beta)に [教師](/graph/api/resources/educationuser?view=graph-rest-beta) または [課題](/graph/api/resources/educationassignment?view=graph-rest-beta)を関連付けます。 質の例にはスペルと文法が含まれます。レベルの例には "良い" と "悪い" が含まれます。 さらに、ルーブリックに得点と重みを関連付けることができます。 詳細については、 「[教育機関ルーブリックの概要](education-rubric-overview.md)」を参照してください。
+- [フィードバック](/graph/api/resources/educationfeedbackoutcome?view=graph-rest-beta)、[数値での評価](/graph/api/resources/educationpointsoutcome?view=graph-rest-beta)、または[ルーブリック](/graph/api/resources/educationrubricoutcome?view=graph-rest-beta)の観点から、課題を評価して結果を提示します。
 
+### <a name="files"></a>ファイル
+現時点まででは、[driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) を [フォロー](/graph/api/driveitem-follow?view=graph-rest-beta)して、便利なアクセスを提供したり、移動、転送、名前を付けて保存などの操作を容易にしたりすることができます。 [フォローを取り消す](/graph/api/driveitem-unfollow?view=graph-rest-beta) アクションを使用して、ドライブ アイテムなどをフォローするのを停止できるようになりました。
+
+### <a name="identity-and-access"></a>ID とアクセス
+- 役割ベースのアクセス制御 (RBAC) のプロバイダーは、特定のリソースで実行される可能性がある[ロールのアクションを定義](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta)して Azure Active Directory で[ロールの管理](/graph/api/resources/rolemanagement?view=graph-rest-beta)をしたり、そうしたロールの定義に基づいて[ロールの割り当て](/graph/api/resources/unifiedroleassignment?view=graph-rest-beta)を行い、それらのリソースに対応するアクセス権をそれらのロールに付与したりできます。
+- 管理者は、グループ メンバーシップのレビューの効率的な円滑化、エンタープライズ アプリケーションへのアクセス、およびロールの割り当てを行うために、[アクセス レビューを一覧表示](/graph/api/accessreview-list?view=graph-rest-beta)することができます。 定期的なアクセス レビューにより、適切なユーザーのみ、特定のリソースに引き続きアクセスすることを確実にします。
+
+### <a name="social-and-workplace-intelligence"></a>ソーシャル インテリジェンスおよび職場のインテリジェンス
+[MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) は、時間の管理、職場での共同作業、ワークライフバランスに関するエンド ユーザーの分析情報を提供する Office 365 アプリです。 通話、チャット、メールなどの作業活動に費やされる時間のデータを統合したり、ユーザーの生産性とウェルビーイングを向上させたりするための[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns)を使用できるようになりました。 
 
 ## <a name="july-2019-new-and-generally-available"></a>2019 年 7 月: 新機能および一般公開 
 

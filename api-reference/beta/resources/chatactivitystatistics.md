@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 53822af8af2426cb8100cbf8a9cb417757d72e14
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 05003110c397932f27e700c119f3926b44fe7c31
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450785"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622643"
 ---
 # <a name="chatactivitystatistics-resource-type"></a>chatActivityStatistics リソースの種類
 
@@ -40,6 +40,8 @@ Microsoft Teams または Skype for Business でのチャット活動にかか�
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id", 
   "optionalProperties": [
 
   ],

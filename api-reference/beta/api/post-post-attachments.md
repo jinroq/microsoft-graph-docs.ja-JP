@@ -1,22 +1,24 @@
 ---
 title: 添付ファイルを追加する
-description: 添付ファイルを投稿に追加する場合に、この API を使用します。 そこから
+description: グループの投稿を作成するときに添付ファイルを追加します。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 611489e63c36a922f3eabd3a595680565151ab6f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e82f7d7cc7a0ceaac437cb86020ad62bc470b3e1
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412909"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622585"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[添付ファイル](../resources/attachment.md)を投稿に追加する場合に、この API を使用します。現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
+グループの投稿を作成するときに[添付ファイル](../resources/attachment.md)を追加します。 
+
+現在、各 REST 要求の合計サイズは 4 MB に制限されているため、追加できる添付ファイルのサイズは 4 MB 未満に制限されます。
 
 添付ファイルは、次の種類のいずれかにできます。
 
@@ -36,11 +38,12 @@ ms.locfileid: "36412909"
 |アプリケーション | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
+グループの[conversationThread](../resources/conversationthread.md)に[投稿](../resources/post.md)を作成するときに添付ファイルを含めます。 親の[会話](../resources/conversation.md)を指定することはオプションです。
+
 <!-- { "blockType": "ignored" } -->
-グループの[会話](../resources/conversation.md)に属する[スレッド](../resources/conversationthread.md)内の[投稿](../resources/post.md)の添付ファイル。
 ```http
-POST /groups/{id}/threads/{id}/posts/{id}/attachments
-POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
+POST /groups/{id}/threads/{id}/reply
+POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | ヘッダー       | 値 |
@@ -48,31 +51,43 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
-要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
+要求本文で、 **post**パラメーターを含む JSON オブジェクトを指定します。
+
+| パラメーター    | 型   |説明|
+|:---------------|:--------|:----------|
+|post|[post](../resources/post.md)|返信される新しい投稿。[添付ファイル](../resources/attachment.md)コレクション内の1つ以上の添付ファイルが含まれます。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `201 Created` 応答コードと、応答本文で [Attachment](../resources/attachment.md) オブジェクトを返します。
+成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文は返されません。
 
-## <a name="example-file-attachment"></a>例 (添付ファイル)
-
-##### <a name="request"></a>要求
-以下は、要求の例です。
+## <a name="examples"></a>例
+### <a name="example-1-include-a-file-attachment"></a>例 1: 添付ファイルを含める
+#### <a name="request"></a>要求
+投稿の作成時に添付ファイルとしてファイルを含める要求の例を次に示します。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_post"
+  "name": "create_file_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 142
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
-  "name": "name-value",
-  "contentBytes": "contentBytes-value"
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "Which quarter does that file cover? See my attachment."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.fileAttachment",
+      "name": "Another file as attachment",
+      "contentBytes": "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
+    } ]
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -89,99 +104,105 @@ Content-length: 142
 
 ---
 
-
-要求本文で、[Attachment](../resources/attachment.md) オブジェクトの JSON 表記を指定します。
-
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+#### <a name="response"></a>応答
+以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_file_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accpted
 ```
 
-## <a name="example-item-attachment"></a>例 (項目の添付ファイル)
+### <a name="example-2-include-an-item-attachment"></a>例 2: アイテムの添付ファイルを含める
 
-##### <a name="request"></a>要求
+#### <a name="request"></a>要求
+投稿の作成時に添付ファイルとしてイベントを含む要求の例を次に示します。
 
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
+}-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/attachments
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 100
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "name-value",
-  "item": { }
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached an event."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.itemAttachment",
+      "name": "Holiday event", 
+      "item": {
+          "@odata.type": "microsoft.graph.event",
+          "subject": "Discuss gifts for children",
+          "body": {
+              "contentType": "HTML",
+              "content": "Let's look for funding!"
+          },
+          "start": {
+              "dateTime": "2019-12-02T18:00:00",
+              "timeZone": "Pacific Standard Time"
+          },
+          "end": {
+              "dateTime": "2019-12-02T19:00:00",
+              "timeZone": "Pacific Standard Time"
+          }
+      }
+    } ]
+  }
 }
 ```
 
 
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+#### <a name="response"></a>応答
+以下は、応答の例です。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "name": "create_item_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 162
-
-{
-  "lastModifiedDateTime": "2016-10-19T10:37:00Z",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
-}
+HTTP/1.1 202 Accepted
 ```
 
-## <a name="example-reference-attachment"></a>例 (添付ファイルの参照)
+### <a name="example-3-include-a-reference-attachment"></a>例 3: 参照添付ファイルを含める
 
-##### <a name="request"></a>要求
-既存の投稿に参照添付ファイルを追加する要求の例を次に示します。
+#### <a name="request"></a>要求
+投稿の作成時に参照添付ファイルを含む要求の例を次に示します。
 添付ファイルは、OneDrive 上のフォルダーを指します。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_post",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post",
+  "sampleKeys": ["1848753d-185d-4c08-a4e4-6ee40521d115","AAQkADJUdfolA=="]
 }-->
-
-```
-POST https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments
+```http
+POST https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115/threads/AAQkADJUdfolA==/reply
 Content-type: application/json
-Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+  "post": {
+    "body": {
+      "contentType": "text",
+      "content": "I attached a reference to a file on OneDrive."
+    },
+    "attachments": [{
+      "@odata.type": "#microsoft.graph.referenceAttachment", 
+      "name": "Personal pictures", 
+      "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
+      "providerType": "oneDriveConsumer", 
+      "permission": "Edit", 
+      "isFolder": "True"
+    } ]
+  }
+}
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-reference-attachment-from-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -197,32 +218,14 @@ Content-length: 319
 ---
 
 
-##### <a name="response"></a>応答
-完全な応答の例を次に示します。
+#### <a name="response"></a>応答
+以下は、応答の例です。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_with_post"
 } -->
 ```http
-HTTP 201 Created
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/groups/c75831bdfad/threads/AAQkAGF97XEKhULw/posts/AAMkAGFcAAA/attachments/$entity",
-  "@odata.type": "#microsoft.graph.referenceAttachment",
-  "id": "AAMkAGE1Mg72tgf7hJp0PICVGCc0g=",
-  "lastModifiedDateTime": "2016-03-12T06:04:38Z",
-  "name": "Personal pictures",
-  "contentType": null,
-  "size": 382,
-  "isInline": false,
-  "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-  "providerType": "oneDriveConsumer",
-  "thumbnailUrl": null,
-  "previewUrl": null,
-  "permission": "edit",
-  "isFolder": true
-}
+HTTP/1.1 202 Accpted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

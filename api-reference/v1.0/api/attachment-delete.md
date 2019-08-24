@@ -2,19 +2,19 @@
 title: 添付ファイルを削除する
 description: 予定表イベント、メール メッセージ、またはグループ投稿から添付ファイルを削除します。
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78b8fd39741fb58b4386a70bc463de2cf4a4d546
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8482bdc9a19ea1ba5febc805970e0faca83446e3
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347718"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622545"
 ---
 # <a name="delete-attachment"></a>添付ファイルを削除する
 
-予定表イベント、メール メッセージ、またはグループ投稿から添付ファイルを削除します。
+ユーザーの予定表イベント、メールメッセージ、またはグループ投稿から添付ファイルを削除します。
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
@@ -27,17 +27,24 @@ ms.locfileid: "36347718"
 -->
 
 ## <a name="http-request"></a>HTTP 要求
-ユーザーまたはグループの既定の[カレンダー](../resources/calendar.md)内の[イベント](../resources/event.md)の添付ファイル。
+ユーザーの既定の[予定表](../resources/calendar.md)にある[イベント](../resources/event.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
 
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
+DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+ユーザーに属する指定された[予定表](../resources/calendar.md)の[イベント](../resources/event.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Assume group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->

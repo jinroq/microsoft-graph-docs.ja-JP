@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7fd33fead33967859f22b9b7ae9c72ae2588616
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a90addda2b71060bcb2e72aff0f1faceb63519c5
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412881"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622601"
 ---
 # <a name="post-reply"></a>投稿: 返信
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。要求内で親の会話とスレッドの両方を指定するか、または親の会話を使用せずに親スレッドだけを指定することができます。
+グループ会話の投稿に返信して、指定されたスレッドに新しい投稿を追加します。 
+
+要求内で親の会話とスレッドの両方を指定するか、または親の会話を使用せずに親スレッドだけを指定することができます。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -48,7 +50,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードを返します。応答本文には何も返されません。
+成功した場合、このメソッドは `202 Accepted` 応答コードを返します。応答本文は返されません。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。
@@ -136,7 +138,7 @@ Content-length: 1131
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
