@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: cb8f3d0f1c5aeae8f14bb240de82802f93dc68d8
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 2a8728e2bd3cadaafc0710953427c81980def5b3
+ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36462006"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36564735"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -93,7 +93,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | v1.0  | **ownerPrincipalName** プロパティを [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) エンティティに追加しました。|
 | 追加        | v1.0  | **office365Active** プロパティおよび **office365Inactive** プロパティを [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) エンティティに追加しました。|
 
-### <a name="social-and-workplace-intelligence-analytics"></a>ソーシャル インテリジェンスおよび職場のインテリジェンス (分析)
+### <a name="social-and-workplace-intelligence"></a>ソーシャル インテリジェンスおよび職場のインテリジェンス
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1601,7 +1601,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版       | [セキュリティ API](/graph/api/resources/security-api-overview?view=graph-rest-beta) を追加しました。これには次のリソースと操作が含まれています。<br/>[警告](/graph/api/resources/alert?view=graph-rest-beta) (および関連するエンティティ)<br/>[警告の取得](/graph/api/alert-get?view=graph-rest-beta)<br/>[警告の一覧表示](/graph/api/alert-list?view=graph-rest-beta)<br/>[警告の更新](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>次の関連ドキュメントを追加しました。<br/>[エラー](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[SIEM との統合](security-siemintegration.md)
+| 追加        | ベータ版       | [セキュリティ API](/graph/api/resources/security-api-overview?view=graph-rest-beta) を追加しました。これには次のリソースと操作が含まれています。<br/>[警告](/graph/api/resources/alert?view=graph-rest-beta) (および関連するエンティティ)<br/>[警告の取得](/graph/api/alert-get?view=graph-rest-beta)<br/>[警告の一覧表示](/graph/api/alert-list?view=graph-rest-beta)<br/>[警告の更新](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>次の関連ドキュメントを追加しました。<br/>[エラー](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Microsoft Graph Security API を使用したセキュリティ ソリューションの統合](security-integration.md)
 
 ### <a name="teamwork-microsoft-teams"></a>チームワーク (Microsoft Teams)
 

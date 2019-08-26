@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dbdf0f11ef99b7cb283d4f80c2cfa6768ea8040c
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 065871442108722963a4d55d5725038656ba160f
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461833"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622581"
 ---
 # <a name="get-attachment"></a>添付ファイルを取得する
 
-[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、または[投稿](../resources/post.md)に添付されている添付ファイルのプロパティとリレーションシップを読み取ります。 
+ユーザー [イベント](../resources/event.md)、[メッセージ](../resources/message.md)、または[投稿](../resources/post.md)に添付されている添付ファイルのプロパティとリレーションシップを読み取ります。 
 
 添付ファイルには、次の種類のいずれかを指定できます。
 
