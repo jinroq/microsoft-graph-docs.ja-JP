@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: b73428b951beb9dff91268c4bc0d21df3249ce56
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 04cf9a738a254d398cac6a243d8163bbbc0e9c33
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460986"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36637777"
 ---
 ```javascript
 
@@ -21,6 +21,6 @@ const educationRubric = {
 
 let res = await client.api('/education/me/rubrics/{id}')
     .version('beta')
-    .update({educationRubric : educationRubric});
+    .update(educationRubric);
 
 ```

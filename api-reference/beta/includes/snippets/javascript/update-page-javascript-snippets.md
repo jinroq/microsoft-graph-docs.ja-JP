@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 819318934baf928978419467e3f474584ffce711
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: e47d3f4023ffdeb2a766de10f8ad5ca562ccdba9
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35728725"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36637972"
 ---
 ```javascript
 
@@ -31,6 +31,6 @@ const Stream = [
 
 let res = await client.api('/me/onenote/pages/{id}/content')
     .version('beta')
-    .update({Stream : Stream});
+    .update(Stream);
 
 ```
