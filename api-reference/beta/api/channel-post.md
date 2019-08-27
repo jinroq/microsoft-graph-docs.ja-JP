@@ -2,15 +2,15 @@
 title: チャネルを作成する
 description: 要求の本文で指定されているように、Microsoft Team に新しいチャネルを作成します。
 localization_priority: Normal
-author: nkramer
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3039130eabc6f5925feca0b5b4e0e5eb67d01d13
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 66b456188037dff0dc802e96f94452baebcd87af
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418710"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633378"
 ---
 # <a name="create-channel"></a>チャネルを作成する
 
@@ -21,8 +21,8 @@ ms.locfileid: "36418710"
 > **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題の一覧](/graph/known-issues#application-permissions)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,13 +37,16 @@ ms.locfileid: "36418710"
 ```http
 POST /teams/{id}/channels
 ```
+
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、[チャンネル](../resources/channel.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
@@ -51,7 +54,9 @@ POST /teams/{id}/channels
 成功した場合、このメソッドは `201 Created` 応答コードと [チャンネル](../resources/channel.md) オブジェクトを応答本文で返します。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
@@ -82,8 +87,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+### <a name="response"></a>応答
+
+以下は、応答の例です。
+
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -9484,6 +9484,8 @@
                   href: api/channel-post.md
                 - name: チャネルを取得する
                   href: api/channel-get.md
+                - name: '更新プログラム チャネル '
+                  href: api/channel-patch.md
                 - name: チャネル メッセージを一覧表示する
                   href: api/channel-list-messages.md
                 - name: チャネル メッセージを取得する
@@ -9511,6 +9513,12 @@
                   href: api/conversationmember-list.md
                 - name: チャットで1人のメンバーを取得する
                   href: api/conversationmember-get.md
+                - name: チャットにメンバーを追加する
+                  href: api/conversationmember-add.md
+                - name: チャットからメンバーを削除する
+                  href: api/conversationmember-delete.md
+                - name: チャットでのメンバーの役割を更新する
+                  href: api/conversationmember-update.md
             - name: チャット メッセージ
               href: resources/chatmessage.md
               items:
@@ -9695,13 +9703,13 @@
               items:
                 - name: リスト
                   href: api/outlookuser-list-taskfolders.md
-                - name: 作成する
+                - name: 作成
                   href: api/outlookuser-post-taskfolders.md
                 - name: 取得
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 削除する
+                - name: 削除
                   href: api/outlooktaskfolder-delete.md
                 - name: フォルダー内のタスクを一覧表示する
                   href: api/outlooktaskfolder-list-tasks.md

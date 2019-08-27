@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: e5dace8eac1e60153661a36b021c049f53b0face
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 687c2ea46e5e5768a14fa84ae74109fee830d5a3
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032565"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633847"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 値
 
@@ -27,7 +27,7 @@ ms.locfileid: "36032565"
 
 ### <a name="timezonestandard-values"></a>timeZoneStandard の値
 
-| 値
+| Member
 |:-----------------
 | ws
 | iana
@@ -47,7 +47,7 @@ ms.locfileid: "36032565"
 
 ### <a name="attendeetype-values"></a>attendeeType の値
 
-| 値
+| Member
 |:-------------------------
 | 必須
 | 省略可能
@@ -56,7 +56,7 @@ ms.locfileid: "36032565"
 
 ### <a name="externalaudiencescope-values"></a>externalAudienceScope 値
 
-| 値
+| Member
 |:-------------------------
 | none
 | contactsOnly
@@ -65,7 +65,7 @@ ms.locfileid: "36032565"
 
 ### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus の値
 
-| 値
+| Member
 |:-------------------------
 | 党
 | alwaysEnabled
@@ -91,7 +91,7 @@ ms.locfileid: "36032565"
 
 ### <a name="educationexternalsource-values"></a>educationExternalSource の値
 
-| 値
+| Member
 |:-------------------------
 | sis
 | 手動
@@ -100,7 +100,7 @@ ms.locfileid: "36032565"
 
 ### <a name="educationgender-values"></a>educationGender の値
 
-| 値
+| Member
 |:-------------------------
 | female
 | 男
@@ -110,7 +110,7 @@ ms.locfileid: "36032565"
 
 ### <a name="eventtype-values"></a>eventType 値
 
-| 値
+| Member
 |:-------------------------
 | 単一インスタンス
 | 発生
@@ -120,7 +120,7 @@ ms.locfileid: "36032565"
 
 ### <a name="sensitivity-values"></a>感度の値
 
-| 値
+| Member
 |:-------------------------
 | ノーマル
 | personal
@@ -130,7 +130,7 @@ ms.locfileid: "36032565"
 
 ### <a name="importance-values"></a>重要度の値
 
-| 値
+| Member
 |:-------------------------
 | 低さ
 | ノーマル
@@ -138,14 +138,14 @@ ms.locfileid: "36032565"
 
 
 ### <a name="educationuserrole-values"></a>educationUserRole の値
-| 値
+| Member
 |:---------------------
 | student
 | teacher
 
 ### <a name="meetingmessagetype-values"></a>会議の Messagetype の値
 
-| 値
+| Member
 |:-----------------
 | none
 | meetingRequest
@@ -157,7 +157,7 @@ ms.locfileid: "36032565"
 
 ### <a name="followupflagstatus-values"></a>の値
 
-| 値
+| Member
 |:-------------------------
 | notFlagged 付き
 | complete
@@ -166,7 +166,7 @@ ms.locfileid: "36032565"
 
 ### <a name="inferenceclassificationtype-values"></a>inferenceClassificationType の値
 
-| 値
+| Member
 |:-----------------
 | 注力
 | も
@@ -174,7 +174,7 @@ ms.locfileid: "36032565"
 
 ### <a name="iosnotificationalerttype-values"></a>iosNotificationAlertType の値
 
-| 値
+| Member
 |:-------------------------
 | deviceDefault
 | 尺
@@ -183,7 +183,7 @@ ms.locfileid: "36032565"
 
 ### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason の値
 
-| 値
+| Member
 |:-------------
 | 不明
 | 認証
@@ -199,7 +199,7 @@ ms.locfileid: "36032565"
 
 
 ### <a name="bodytype-values"></a>bodyType の値
-| 値
+| Member
 |:---------
 | text
 | Html
@@ -207,7 +207,7 @@ ms.locfileid: "36032565"
 
 ### <a name="locationtype-values"></a>locationType の値
 
-| 値
+| Member
 |:-------------------------
 | 既定値です。
 | conferenceRoom
@@ -222,7 +222,7 @@ ms.locfileid: "36032565"
 
 ### <a name="locationuniqueidtype-values"></a>locationUniqueIdType の値
 
-| 値
+| Member
 |:-------------------------
 | 不明
 | locationStore
@@ -233,7 +233,7 @@ ms.locfileid: "36032565"
 
 ### <a name="messageactionflag-values"></a>messageActionFlag の値
 
-| 値
+| Member
 |:-------------------------
 | any
 | call
@@ -260,7 +260,7 @@ ms.locfileid: "36032565"
 
 ### <a name="operationstatus-values"></a>operationStatus の値
 
-| 値
+| Member
 |:-----------------
 | NotStarted
 | 実行中
@@ -270,7 +270,7 @@ ms.locfileid: "36032565"
 
 ### <a name="onenotepatchactiontype-values"></a>onenotePatchActionType の値
 
-| 値
+| Member
 |:-------------------------
 | Replace
 | 追加
@@ -280,7 +280,7 @@ ms.locfileid: "36032565"
 
 ### <a name="onenotepatchinsertposition-values"></a>onenotePatchInsertPosition の値
 
-| 値
+| Member
 |:-------------------------
 | After
 | Before
@@ -288,7 +288,7 @@ ms.locfileid: "36032565"
 
 ### <a name="phonetype-values"></a>phoneType の値
 
-| 値
+| Member
 |:-------------------------
 | コール
 | 出張
@@ -304,7 +304,7 @@ ms.locfileid: "36032565"
 
 ### <a name="plannerpreviewtype-values"></a>プランの種類の値
 
-| 値
+| Member
 |:-------------------------
 | 自動
 | noPreview
@@ -315,7 +315,7 @@ ms.locfileid: "36032565"
 
 ### <a name="status-values"></a>状態の値
 
-| 値
+| Member
 |:-----------------
 | active
 | まし
@@ -326,7 +326,7 @@ ms.locfileid: "36032565"
 
 ### <a name="weekindex-values"></a>weekIndex の値
 
-| 値
+| Member
 |:-------------------------
 | まずは
 | 補助
@@ -337,7 +337,7 @@ ms.locfileid: "36032565"
 
 ### <a name="dayofweek-values"></a>dayOfWeek 値
 
-| 値
+| Member
 |:-------------------------
 | n
 | 曜日
@@ -349,7 +349,7 @@ ms.locfileid: "36032565"
 
 ### <a name="recurrencepatterntype-values"></a>recurrencePatternType の値
 
-| 値
+| Member
 |:-------------------------
 | 定期的
 | あたり
@@ -361,7 +361,7 @@ ms.locfileid: "36032565"
 
 ### <a name="recurrencerangetype-values"></a>recurrenceRangeType の値
 
-| 値
+| Member
 |:-------------------------
 | endDate
 | 無制限
@@ -369,7 +369,7 @@ ms.locfileid: "36032565"
 
 
 ### <a name="onenotesourceservice-values"></a>onenoteSourceService の値
-| 値
+| Member
 |:---------------------
 | 不明
 | OneDrive
@@ -379,7 +379,7 @@ ms.locfileid: "36032565"
 
 ### <a name="responsetype-values"></a>responseType の値
 
-| 値
+| Member
 |:-------------------------
 | none
 | 構成内容変更
@@ -391,7 +391,7 @@ ms.locfileid: "36032565"
 
 ### <a name="activitydomain-values"></a>activityDomain の値
 
-| 値
+| Member
 |:-------------------------
 | 不明
 | 作業時間
@@ -401,7 +401,7 @@ ms.locfileid: "36032565"
 
 ### <a name="websitetype-values"></a>websiteType の値
 
-| 値
+| Member
 |:-------------------------
 | も
 | コール
@@ -596,7 +596,7 @@ ms.locfileid: "36032565"
 
 Windows 定義ごとに、ユーザーアカウントの種類 (グループメンバーシップ) に指定できる値。
 
-|メンバー|値|説明|
+|Member|メンバー|説明|
 |:---|:---|:---|
 |不明|-1|わかり.|
 |standard|.0|標準ユーザーグループのメンバ。|
@@ -605,7 +605,7 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 
 ### <a name="riskdetail-values"></a>riskDetail の値
 
-| 値
+| Member
 |:-------------------------
 | adminGeneratedTemporaryPassword
 | userPerformedSecuredPasswordChange
@@ -619,7 +619,7 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 
 ### <a name="riskeventtypes-values"></a>riskEventTypes の値
 
-| 値
+| Member
 |:-------------------------
 | unlikelyTravel
 | anonymizedIPAddress
@@ -634,7 +634,7 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 
 ### <a name="risklevel-values"></a>riskLevel の値
 
-| 値
+| Member
 |:-------------------------
 | none
 | 低さ
@@ -645,7 +645,7 @@ Windows 定義ごとに、ユーザーアカウントの種類 (グループメ�
 
 ### <a name="riskstate-values"></a>riskState の値
 
-| 値
+| Member
 |:-------------------------
 | none
 | confirmedSafe

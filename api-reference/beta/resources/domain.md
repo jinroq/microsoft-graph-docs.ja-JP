@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e6390b72a7292a9529c11c6200d4c61dcc5355c1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dda30901f93661bafa8fe1a6d73f95a0cfdc4fb9
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973824"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633693"
 ---
 # <a name="domain-resource-type"></a>ドメインリソースの種類
 
@@ -50,7 +50,7 @@ ms.locfileid: "35973824"
 
 | プロパティ   | 型 | 説明 |
 |:---------------|:--------|:----------|
-|authenticationType|String| ドメインに対して構成されている認証の種類を示します。 値は、*管理*されているか、*フェデレーション*されています。<br> *Managed*は、Azure AD がユーザー認証を実行するクラウド管理のドメインを示します。<br>*フェデレーション*は、Active Directory フェデレーションサービスを経由して、テナントの社内 Active directory などの id プロバイダーとの認証がフェデレーションされることを示します。 Null 許容ではない |
+|authenticationType|String| ドメインに対して構成されている認証の種類を示します。 値は、*管理*されているか、*フェデレーション*されています。<br> *Managed*は、Azure AD がユーザー認証を実行するクラウド管理のドメインを示します。<br>*フェデレーション*は、Active Directory フェデレーションサービスを経由して、テナントの社内 Active directory などの id プロバイダーとの認証がフェデレーションされることを示します。 この caption は値の取得のみ可能で、null 許容ではありません。 |
 |availabilityStatus|String| [Verify](../api/domain-verify.md)アクションが使用される場合を除き、このプロパティは常に null になります。 [Verify](../api/domain-verify.md)アクションを使用すると、応答で**ドメイン**エンティティが返されます。 応答内の**ドメイン**エンティティの**availabilityStatus**プロパティは、*すぐに*、または*EmailVerifiedDomainTakeoverScheduled*でもかまいません。|
 |id|String| ドメインの完全修飾名。 キー、不変、null 許容ではない、unique |
 |isAdminManaged|Boolean| ドメインの DNS レコード管理が Office 365 に委任されている場合、このプロパティの値は false になります。 それ以外の場合、値は true になります。 Null 許容ではない |

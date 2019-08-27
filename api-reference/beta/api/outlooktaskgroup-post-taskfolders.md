@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6290b055322c1264117e7aae75573774b4831e72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 328f250b3f3116576734ac4218959576c0930914
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35983699"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633672"
 ---
 # <a name="create-outlooktaskfolder"></a>OutlookTaskFolder の作成
 
@@ -47,6 +47,8 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 次の例では、指定し`Cooking`たタスクグループに、というタスクフォルダーを作成します。
+
+# <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
@@ -60,6 +62,12 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-outlooktaskfolder-from-outlooktaskgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 要求本文で、 [Outlooktaskfolder](../resources/outlooktaskfolder.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。

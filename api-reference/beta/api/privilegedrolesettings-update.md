@@ -3,14 +3,14 @@ title: PrivilegedRoleSettings の更新
 description: 指定した役割設定の役割設定を更新します。 PrivilegedRoleSettings オブジェクトが返されます。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ef9b8db2f4e0d580ec136caa7d827d19f22d6929
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 01737dd7ffbb15e3fd96cad6b9c9c3aa55cc981d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412587"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633658"
 ---
 # <a name="update-privilegedrolesettings"></a>PrivilegedRoleSettings の更新
 
@@ -21,7 +21,7 @@ ms.locfileid: "36412587"
 
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
->**注:** 要求者は、特権ロール管理者、全体管理者、セキュリティ管理者、またはセキュリティ閲覧者のいずれかの役割を持っている必要があります。 
+>**注:** 要求者は、役割の設定を更新するための特権の役割管理者の役割を持っている必要があります。 
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|

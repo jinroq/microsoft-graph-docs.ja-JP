@@ -4115,10 +4115,14 @@
               items:
                 - name: チャネルを一覧表示する
                   href: api/channel-list.md
-                - name: チャネルを作成する
-                  href: api/channel-post.md
                 - name: チャネルを取得する
                   href: api/channel-get.md
+                - name: チャネルを作成する
+                  href: api/channel-post.md
+                - name: '更新プログラム チャネル '
+                  href: api/channel-patch.md
+                - name: チャネルを削除する
+                  href: api/channel-delete.md
             - name: アプリ カタログ
               href: resources/teamsapp.md
               items:

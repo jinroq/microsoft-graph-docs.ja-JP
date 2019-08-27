@@ -1,16 +1,16 @@
 ---
 title: チャネルを取得する
 description: チャネルのプロパティと関係を取得します。
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-doc_type: apiPageType
-ms.openlocfilehash: 8e3bf6e3ece7a39e2eceef661b29af2e64e6bd06
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8690a832484b607e3dcb788232b599952e49fdd0
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418776"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633420"
 ---
 # <a name="get-channel"></a>チャネルを取得する
 
@@ -19,6 +19,7 @@ ms.locfileid: "36418776"
 [チャネル](../resources/channel.md)のプロパティと関係を取得します。
 
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -41,21 +42,27 @@ GET /teams/{id}/channels/{id}
 このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
 
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [channel](../resources/channel.md) オブジェクトを返します。
+
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_channel"
@@ -63,6 +70,7 @@ GET /teams/{id}/channels/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -77,10 +85,12 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-##### <a name="response"></a>応答
-以下は、応答の例です。 
+### <a name="response"></a>応答
+
+以下は、応答の例です。
 
 >**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +104,8 @@ Content-length: 201
 {
     "description": "description-value",
     "displayName": "display-name-value",
-    "id": "id-value"
+    "id": "id-value",
+    "membershipType": "membership-type-value"
 }
 ```
 
