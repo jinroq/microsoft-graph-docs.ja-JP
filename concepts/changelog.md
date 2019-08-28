@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 2a8728e2bd3cadaafc0710953427c81980def5b3
-ms.sourcegitcommit: 0d57eda47899baacc95385e331979880e069fba9
+ms.openlocfilehash: 078bf52f6b80ade9ae46a1a285f979986e269818
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36564735"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633714"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,6 +17,12 @@ ms.locfileid: "36564735"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="august-2019"></a>2019 年 8 月
+
+### <a name="education"></a>教育
+
+| 変更の種類 | バージョン | 説明                                                                                               |
+| :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
+| 追加    | ベータ版    | [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に新しいプロパティ **grade** を追加しました。 |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
 
@@ -99,8 +105,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加 | ベータ版 | 職場のインテリジェンス[分析 API](/graph/api/resources/useranalytics?view=graph-rest-beta) を導入しました。これによりユーザーが通話、チャット (インスタント メッセージ)、電子メール、集中作業、会議など、勤務時間中および勤務時間外のさまざまなアクティビティにどのように時間を費やすかについての分析を取得できます。 |
 | 追加 | ベータ版 | ユーザーが [analytics API](/graph/api/resources/settings?view=graph-rest-beta) を使用するために現在必要な設定を表す新しい職場のインテリジェンス[設定 API](/graph/api/resources/useranalytics?view=graph-rest-beta) を導入しました。 |
-| 追加 | ベータ版 | 新しい [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) リソース タイプと、それから派生した新しいリソースタイプ [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta)、[chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta)、[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta)、[focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta)、および [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta) が導入されました。 |
+| 追加 | ベータ版 | 新しい [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) リソース タイプと、それから派生した新しいリソース タイプ [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta)、[chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta)、[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta)、[focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta)、および [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta) が導入されました。 |
 
+### <a name="teamwork-microsoft-teams"></a>チームワーク (Microsoft Teams)
+
+| **変更の種類** | **バージョン**   | **説明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [メンバーをプライベート チャンネルに追加](/graph/api/conversationmember-add?view=graph-rest-beta)する機能を追加しました。 |
+| 追加 | ベータ版 | [メンバーをプライベート チャンネルから削除](/graph/api/conversationmember-delete?view=graph-rest-beta)する機能を追加しました。 |
+| 追加 | ベータ版 | [プライベート チャンネルでメンバーの役割を更新](/graph/api/conversationmember-update?view=graph-rest-beta)する機能を追加しました。 |
+| 追加 | ベータ版 | 特定のチャンネルがプライベートか標準かを表示するために、[チャンネル]] (/graph/api/resources/channel?view=graph-rest-beta) リソースに `membershipType` プロパティを追加しました。 |
 
 ## <a name="july-2019"></a>2019 年 7 月
 
