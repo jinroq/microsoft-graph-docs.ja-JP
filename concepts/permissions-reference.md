@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: f71f7a0f880e3897daf7a9ca51502a7d465b3aa2
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 25f5f7df625aabaf4ace2f54b77537cd456981ab
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173063"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450684"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -73,6 +73,31 @@ _AccessReview.Read.All_、_AccessReview.ReadWrite.All_ と _AccessReview.ReadWri
 Azure AD ロールのアクセス レビューを読み取るための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」、「セキュリティ管理者」、「セキュリティ閲覧者」、または「特権ロール管理者」のいずれかの管理者ロールのメンバーになっている必要があります。 Azure AD ロールのアクセス レビューを書き込むための委任されたアクセス許可があるアプリの場合、サインインしているユーザーが「全体管理者」または「特権ロール管理者」のいずれかの管理者ロールのメンバーになっている必要があります。
 
 管理者ロールの詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
+
+---
+
+## <a name="analytics-resource-permissions"></a>分析リソースのアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   すべてのユーザー アクティビティの統計情報の読み取り。 | サインイン ユーザーなしで、ユーザー アクティビティの統計情報をアプリで読み取れるようにします。 | はい |
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+なし。
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+
+* _Analytics.Read_: [ユーザーの関連設定を一覧表示](/graph/api/useranalytics-get-settings?view=graph-rest-beta)します (`GET /beta/me/analytics/settings)
+* _Analytics.Read_: [ユーザーのアクティビティ統計情報を取得](/graph/api/activitystatistics-get?view=graph-rest-beta)します (`GET /beta/me/analytics/activitystatistics/{id})
+
+#### <a name="application"></a>Application
+
+なし。
 
 ---
 
@@ -1149,7 +1174,7 @@ _RoleManagement.ReadWrite.Directory_ のアクセス許可を持つアプリケ�
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Sites.Read.All_        | すべてのサイト コレクションに含まれるアイテムの読み取り | アプリは、サインインしているユーザーに代わって、すべてのサイト コレクション内のドキュメントを読み取り、アイテムを一覧表示できます。 | いいえ  | いいえ |
+| _Sites.Read.All_        | すべてのサイト コレクションに含まれるアイテムの読み取り | アプリは、サインインしているユーザーに代わって、すべてのサイト コレクション内のドキュメントを読み取り、アイテムを一覧表示できます。 | 不要  | いいえ |
 | _Sites.ReadWrite.All_   | すべてのサイト コレクション内のアイテムの読み取りおよび書き込み | サインイン ユーザーの代わりに、すべてのサイト コレクションに含まれるドキュメントとリスト アイテムをアプリで編集または削除できるようにします。 | いいえ  | いいえ |
 | _Sites.Manage.All_      | すべてのサイト コレクションにおけるアイテムとリストの作成、編集、および削除 | サインイン ユーザーの代わりに、すべてのサイト コレクションに含まれるリスト、ドキュメント、およびリスト アイテムをアプリで管理および作成できるようにします。 | いいえ | いいえ |
 | _Sites.FullControl.All_ | すべてのサイト コレクションのフル コントロール | サインイン ユーザーに代わって、アプリはすべてのサイト コレクション内の SharePoint サイトをフル コントロールできます。  | はい  | いいえ |
@@ -1249,8 +1274,8 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | すべての信頼フレームワーク ポリシーの読み取り | サインインしているユーザーの代わりに、すべての信頼フレームワーク ポリシーをアプリで読み取れるようにします。 | はい | いいえ |
-| _Policy.ReadWrite.TrustFramework_ | 全ての信頼フレームワーク ポリシーの読み取りと書き込み | サインインしているユーザーの代わりに、アプリで信頼フレームワーク ポリシーの読み取りと書き込みを行えるようにします。 | はい | いいえ |
+| _Policy.Read.All_ | 組織のポリシーの読み取り | サインインしているユーザーの代わりに、アプリで組織のポリシーを読み取れるようにします。 | はい | いいえ |
+| _Policy.ReadWrite.TrustFramework_ | 組織の信頼フレームワーク ポリシーの読み取りと書き込み | サインインしているユーザーの代わりに、アプリで組織の信頼フレームワーク ポリシーの読み取りと書き込みを行えるようにします。 | はい | いいえ |
 
 ### <a name="remarks"></a>注釈
 職場または学校のアカウントは、テナントのグローバル管理者のものである必要があります。
@@ -1260,10 +1285,10 @@ _共有_のアクセス許可は、現時点では職場または学校アカウ
 #### <a name="delegated"></a>委任
 次に示す使用法は、両方の委任されたアクセス許可に対して有効です。
 
-* _Policy.Read.All_: すべての信頼フレームワーク ポリシーの読み取り (`GET /beta/trustFramework/policies`)
-* _Policy.ReadWrite.TrustFramework_: 全ての信頼フレームワーク ポリシーの読み取りと書き込み (`POST /beta/trustFramework/policies`)
+* _Policy.Read.All_: 組織のポリシーの読み取り (`GET /beta/trustFramework/policies`)
+* _Policy.ReadWrite.TrustFramework_: 組織の信頼フレームワーク ポリシーの読み取りと書き込み (`POST /beta/trustFramework/policies`)
 
-より複雑な複数のアクセス許可を伴うシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
+複数のアクセス許可を伴うより複雑なシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 
 ---
 
@@ -1389,8 +1414,8 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 
 |   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | すべての機能ロールアウト ポリシーの読み取り | サインインしているユーザーの代わりに、すべての機能ロールアウト ポリシーをアプリで読み取れるようにします。 | はい | いいえ |
-| _Policy.ReadWrite.FeatureRollout_ | すべての機能ロールアウト ポリシーの読み取りと書き込み | サインインしているユーザーの代わりに、機能ロールアウト ポリシーの読み取りと書き込みがアプリでできるようにします。 | はい | いいえ |
+| _Policy.Read.All_ | 組織のポリシーの読み取り | サインインしているユーザーの代わりに、アプリで組織のポリシーを読み取れるようにします。 | はい | いいえ |
+| _Policy.ReadWrite.FeatureRollout_ | 組織の機能ロールアウト ポリシーの読み取りと書き込み | サインインしているユーザーの代わりに、アプリで組織の機能ロールアウト ポリシーの読み取りと書き込みを行えるようにします。 特定の機能のロールアウトにユーザーとグループを割り当てたり、除去したりできます。 | はい | いいえ |
 
 #### <a name="application-permissions"></a>アプリケーションのアクセス許可
 なし。
@@ -1403,8 +1428,8 @@ _User.ReadBasic.All_ アクセス許可では、基本プロファイルと呼�
 #### <a name="delegated"></a>委任
 次に示す使用法は、両方の委任されたアクセス許可に対して有効です。
 
-* _Policy.Read.All_: すべての機能ロールアウト ポリシーの読み取り (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.FeatureRollout_: すべての機能ロールアウト ポリシーの読み取りと書き込み (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.Read.All_: 組織のポリシーの読み取り (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: 組織の機能ロールアウト ポリシーの読み取りと書き込み (`POST /beta/directory/featureRolloutPolicies`)
 
 複数のアクセス許可を伴うより複雑なシナリオについては、「[アクセス許可のシナリオ](#permission-scenarios)」を参照してください。
 

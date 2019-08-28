@@ -3,14 +3,14 @@ title: fileAttachment リソースの種類
 description: イベントに添付されたファイル (テキストファイルや Word 文書など)
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 966de812c8b0507c3d757d42fba5624c0b82ce4f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: ab81c67bbf0c4d7ab6699d17977c4d1a3907f94e
+ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972041"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484318"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment リソースの種類
 
@@ -35,7 +35,7 @@ ms.locfileid: "35972041"
 ## <a name="properties"></a>プロパティ
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|base64 でエンコードされたファイルの内容。|
+|contentBytes|Edm。バイナリ|base64 でエンコードされたファイルの内容。|
 |contentId|String|Exchange ストア内の添付ファイルの ID。|
 |contentLocation|String|このプロパティは、サポートされていないため、使用しないでください。|
 |contentType|String|添付ファイルのコンテンツ タイプ。|
@@ -55,6 +55,8 @@ ms.locfileid: "35972041"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -63,7 +65,7 @@ ms.locfileid: "35972041"
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "string (binary)",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

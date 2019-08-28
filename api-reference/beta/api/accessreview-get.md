@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8e628c2ba8835d42f00116e46b4dfa0527765fe
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ff201c64156c334b756a9cfc8318fd9882154515
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408838"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460816"
 ---
 # <a name="get-accessreview"></a>AccessReview を取得する
 
@@ -120,13 +120,12 @@ Content-type: application/json
 
 ## <a name="see-also"></a>関連項目
 
-| メソッド           | 戻り値の型    |説明|
-|:---------------|:--------|:----------|
-|[AccessReview を作成する](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  新しい accessReview を作成します。 |
-|[ProgramControls のリスト](programcontrol-list.md) | [Programcontrol](../resources/programcontrol.md)コレクション | テナント内の programControls を一覧表示します。 |
-|[AccessReview レビュー担当者のリスト](accessreview-listreviewers.md) |     [Useridentity](../resources/useridentity.md)コレクション|    AccessReview のレビュー担当者を取得します。 |
-|[AccessReview に関する決定事項を一覧表示する](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    AccessReview の決定事項を取得します。|
-|[自分の accessReview の決定事項を一覧表示する](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md)コレクション|    レビュー担当者として、accessReview の決定事項を取得します。|
+- [AccessReview を作成する](accessreview-create.md)
+- [AccessReviews をリストする](accessreview-list.md)
+- [ProgramControls のリスト](programcontrol-list.md)
+- [AccessReview レビュー担当者のリスト](accessreview-listreviewers.md)
+- [AccessReview に関する決定事項を一覧表示する](accessreview-listdecisions.md)
+- [自分の accessReview の決定事項を一覧表示する](accessreview-listmydecisions.md)
 
 
 <!--

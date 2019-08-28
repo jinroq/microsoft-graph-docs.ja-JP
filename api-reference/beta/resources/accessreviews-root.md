@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 2c3ef3317b513cdcecef4fb0fe402584afe6fa6d
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: ecd49dc603fa4ae7c4afdd0120267a47d8f06c43
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173056"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460758"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD アクセス レビュー
 
@@ -41,6 +41,7 @@ ms.locfileid: "36173056"
 |[AccessReview を作成する](../api/accessreview-create.md) | [accessReview](accessreview.md) |   新しい accessReview を作成します。 |
 |[AccessReview の削除](../api/accessreview-delete.md) | なし。   | AccessReview を削除します。 |
 |[AccessReview を更新する](../api/accessreview-update.md) | [accessReview](accessreview.md) | AccessReview を更新します。 |
+|[AccessReviews をリストする](../api/accessreview-list.md) |    [Accessreview](accessreview.md)コレクション |    BusinessFlowTemplate の accessReviews をリストします。 |
 |[AccessReview レビュー担当者のリスト](../api/accessreview-listreviewers.md) |      [Useridentity](useridentity.md)コレクション| AccessReview のレビュー担当者を取得します。 |
 |[AccessReview レビュー担当者を追加する](../api/accessreview-addreviewer.md) |      なし。   |   閲覧者を accessReview に追加します。 |
 |[AccessReview レビュー担当者を削除する](../api/accessreview-removereviewer.md) | なし。  |   AccessReview からレビュー担当者を削除します。 |

@@ -1,16 +1,16 @@
 ---
 title: パッチチャネル
 description: 指定したチャネルのプロパティを更新します。
-author: nkramer
+author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6e8cd0369178917d0a1542e36c8a8ea83b6b7f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b951835941c44d4be5f67bf9c9bb0e23cbf288d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35944241"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633385"
 ---
 # <a name="patch-channel"></a>パッチチャネル
 
@@ -18,9 +18,8 @@ ms.locfileid: "35944241"
 
 指定した[チャネル](../resources/channel.md)のプロパティを更新します。
 
-> **注**: アプリケーションのアクセス許可とこの API には既知の問題があります。 詳細については、「[既知の問題の一覧](/graph/known-issues#application-permissions)」を参照してください。
-
 ## <a name="permissions"></a>アクセス許可
+
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
@@ -43,6 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>要求本文
+
 要求本文で、[チャンネル](../resources/channel.md) オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
@@ -50,7 +50,9 @@ PATCH /teams/{id}/channels/{id}
 成功した場合、このメソッドは `204 No Content` 応答コードを返します。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
@@ -67,7 +69,8 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-##### <a name="response"></a>応答
+### <a name="response"></a>応答
+
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "response",

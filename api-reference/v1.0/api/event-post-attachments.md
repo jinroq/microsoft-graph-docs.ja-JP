@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9960719df755c8e99cb62cdcfbb74731284d4bf5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3022351924e779facb6b9bda3bda04d0cae66ecc
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372413"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36461773"
 ---
 # <a name="add-attachment"></a>添付ファイルを追加する
 
@@ -81,7 +81,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_v1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -95,19 +95,19 @@ Content-length: 151
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-v1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[目的-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-event-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-event-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-from-event-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,6 +119,7 @@ Content-length: 151
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
@@ -137,7 +138,7 @@ Content-type: application/json
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
@@ -147,7 +148,10 @@ Content-type: application/json
 
 以下は、アイテムの添付ファイルとしてイベントを別のイベントに添付する例です。
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_event"
+}-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -181,6 +185,7 @@ Content-length: 600
 以下は、応答の例です。
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->

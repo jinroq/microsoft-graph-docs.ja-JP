@@ -4,12 +4,12 @@ description: Microsoft Graph では、Microsoft 365 のクラウド サービス
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: a1ab4140272cb227898ba1db79d4ab575073e51f
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: bf50bcd6d55b9c31ebb6ecca4d176ef230bb2bc8
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417718"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450495"
 ---
 # <a name="overview-of-social-and-workplace-intelligence-in-microsoft-graph"></a>Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンスの概要
 
@@ -89,7 +89,15 @@ Insights API は、[used](/graph/api/resources/insights-used?view=graph-rest-bet
 
 ![最近使用したファイルが表示されている、Outlook on the web のあるユーザーの人物カードのスクリーン ショット](images/peoplecard-concept.png)
 
+## <a name="why-integrate-with-myanalytics-preview"></a>MyAnalytics (プレビュー) と統合する理由
+
+
+  [Myanalytics](https://docs.microsoft.com/ja-JP/workplace-analytics/myanalytics/index)は、人々がどのように時間を費やし、誰と過ごすかについての分析情報を提供します。 このデータは、人々が 1 日を計画し、さまざまな仕事のパターンを理解し、仕事と生活のバランスを取るのに役立ちます。
+
+Analytics API を使用すると、ユーザー分析データをカスタムのサード パーティ アプリと同期または統合して、ユーザーの生産性と共同作業の向上に役立つさまざまなシナリオをサポートすることができます。 たとえば、MyAnalytics データをモバイル デバイス アクティビティと統合して、ユーザーがすべての仕事とソーシャル アクティビティを追跡し、1 つのアプリ内で 1 日のすべてを計画できるようにすることができます。
+
 ## <a name="api-reference"></a>API リファレンス
+
 これらのサービスの API リファレンスをお探しですか?
 
 - [Microsoft Graph v1.0 の People API](/graph/api/resources/social-overview?view=graph-rest-1.0)
@@ -97,6 +105,7 @@ Insights API は、[used](/graph/api/resources/insights-used?view=graph-rest-bet
 
 ## <a name="next-steps"></a>次の手順
 
-* [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、自分のファイルで People および Insights API を試してみてください。 サインインして、左側の列の**サンプルをさらに表示**を選択します。 メニューを使用して **People** と **Insights (beta)** を有効にします。
+* [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、自分のファイルで People、Insights、Analytics API を試してみてください。 サインインして、左側の列の [**サンプルをさらに表示**] を選択します。 メニューを使用して **People**、**Insights (beta)**、**Analytics** を有効にします。
 * 詳細については、[People API](people-example.md) および [person](/graph/api/resources/person?view=graph-rest-1.0) エンティティを参照してください。
 * Insights API を使い始めるには、「[Insights API を使用する](/graph/api/resources/insights?view=graph-rest-beta)」を参照してください。
+* [Analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life) の詳細については、こちらを参照してください。

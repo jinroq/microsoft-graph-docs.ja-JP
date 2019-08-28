@@ -3,12 +3,12 @@ title: Microsoft Graph の主要なサービスおよび機能
 description: 'Microsoft Graph では、REST API とクライアント ライブラリを使用して、非常に優れた Office 365、Windows 10、および Microsoft 365 の Enterprise Mobility and Security のサービスを統合することができます。 さらに、ユーザーの生産性、創造性、チーム共同作業を促進し、ビジネス リソースおよびユーザー データを保護することのできるセキュリティおよびソーシャル インテリジェンスが提供されます。 '
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: bb100d4b8c64300681dd0463184cb30b925654d2
-ms.sourcegitcommit: ee710ff556f4a7907181df5c323e345f52808ce2
+ms.openlocfilehash: 5a13840584997d37ff6c9d6a4dfb02d0f01c1363
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417711"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450488"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph の主要なサービスおよび機能
 
@@ -74,6 +74,7 @@ Microsoft Graph の一部のサービスは、そこで初めて登場したサ�
 |:-----------|:--------------------|:-----------|:----------------|
 | ソーシャル インテリジェンス: 連絡先 | Azure AD、Outlook、SharePoint など | ユーザーの通信や共同作業のパターン、またビジネスの付き合いによって決まるユーザーとの関連性に応じて連絡先についての情報を取得します。  | [Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンス](social-intel-concept-overview.md) |
 | ソーシャル インテリジェンス: ドキュメントのインサイト (プレビュー) | Delve、OneDrive、Outlook、SharePoint | 高度な分析機能と機械学習のテクニックを使用して、よく使用されるドキュメントやユーザーが表示、変更、または共有したドキュメントを取得します。  | [Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンス](social-intel-concept-overview.md)  |
+| ソーシャル インテリジェンスおよび職場のインテリジェンス: 分析 (プレビュー) | MyAnalytics | 高度な分析と機械学習技術を使用して、人々がどのように時間を費やし、誰と過ごすかについての分析情報を提供します。 このデータは、人々が 1 日を計画し、さまざまな仕事のパターンを理解し、仕事と生活のバランスを取るのに役立ちます。  | [Microsoft Graph のソーシャル インテリジェンスおよび職場のインテリジェンス](social-intel-concept-overview.md) |
 
 
 ## <a name="device-management"></a>デバイスの管理

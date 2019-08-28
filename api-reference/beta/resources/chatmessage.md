@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f807c45fcff2a5e2ea928105ed970d426cfdc1f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17b6912312c66bca8b84ccce9d25ac3c83a2edf9
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974032"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460767"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage リソースの種類
 
@@ -29,6 +29,7 @@ ms.locfileid: "35974032"
 |[メッセージへの返信を取得する](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| チャネル内のメッセージへの返信を 1 件取得します。|
 |[チャネルでの chatMessage の作成](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| チャネル内で新しい最上位レベルのメッセージを作成します。|
 |[チャネル内のメッセージに返信する](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| チャネル内の既存メッセージに返信します。|
+|[チャットでの chatMessage の作成](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| 既存の1:1 またはグループチャットの会話でメッセージを送信します。|
 |[チャット内のメッセージを一覧表示する](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | 1:1 またはグループチャットのメッセージを一覧表示します。 |
 |[チャット内のメッセージを取得する](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | チャット内の 1 つのメッセージを取得します。 |
 |[ホストされているすべての画像を一覧表示する](../api/chatmessagehostedimage-list-hostedimages.md) | [Hostedimage](../resources/chatmessagehostedimage.md)コレクション| メッセージ内のすべてのホストされた画像を取得します。|

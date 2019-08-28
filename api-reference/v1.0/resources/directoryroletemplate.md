@@ -1,16 +1,16 @@
 ---
 title: directoryRoleTemplate リソース型
-description: ディレクトリ ロール テンプレートを表します。 ディレクトリ ロール テンプレートでは、ディレクトリ ロール (directoryRole) のプロパティ値を指定します。 テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。 ディレクトリ ロールを読み取る場合や、そのメンバーを更新する場合は、まず、そのディレクトリ ロールをテナントでアクティブにする必要があります。 既定では、会社の管理者 (Company Administrators) ディレクトリ ロールのみがアクティブ化されています。 他の使用可能なディレクトリロールをアクティブ化するには`/directoryRoles` 、要求の**roleTemplateId**パラメーターでディレクトリロールが指定されているディレクトリロールテンプレートの ID を使用して、POST 要求をエンドポイントに送信します。 この ID は、要求の roleTemplateId パラメーターで指定したディレクトリ ロールに基づきます。 この要求が正常に完了すると、ディレクトリ ロールの読み取りや、ディレクトリ ロールへのメンバーの追加ができるようになります。**注**:ディレクトリ ロール テンプレートは、ユーザー (Users) ディレクトリ ロールに公開されます。 ユーザー ディレクトリ ロールは、暗黙的であり、ディレクトリ クライアントには表示されません。 テナント内のすべてのユーザーは、インフラストラクチャによって、このロールに割り当てられます。 このロールは、あらかじめアクティブ化されています。 このテンプレートは、使用しないでください。
+description: ディレクトリ ロール テンプレートを表します。 ディレクトリ ロール テンプレートでは、ディレクトリ ロール (directoryRole) のプロパティ値を指定します。 テナントでアクティブにすることがあるディレクトリの役割ごとに、関連付けられているディレクトリ ロール テンプレート オブジェクトがあります。
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5480e32498b4503cf4119b56c1025979c383a21c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 286f1503e644e1d0c74250b2f1211bf9ae4d3555
+ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029450"
+ms.lasthandoff: 08/17/2019
+ms.locfileid: "36450614"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate リソース型
 

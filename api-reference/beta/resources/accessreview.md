@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4205f0995b0e8c71c8e01991837b4d721ecfaaf7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f42124a5b69027d16b2c8adc54d001fd8cf81c0e
+ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974571"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "36460757"
 ---
 # <a name="accessreview-resource-type"></a>accessReview リソースの種類
 
@@ -23,10 +23,11 @@ Azure AD [access レビュー](accessreviews-root.md)機能では、は`accessRe
 
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
+|[AccessReviews をリストする](../api/accessreview-list.md) | [Accessreview](accessreview.md)コレクション | BusinessFlowTemplate の accessReviews をリストします。 |
 |[AccessReview を取得する](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   特定の id を持つアクセスレビューを取得します。 |
 |[AccessReview を作成する](../api/accessreview-create.md) | [accessReview](accessreview.md) |   新しい accessReview を作成します。 |
-|[AccessReview の削除](../api/accessreview-delete.md) | なし。   | AccessReview を削除します。 |
 |[AccessReview を更新する](../api/accessreview-update.md) | [accessReview](accessreview.md) | AccessReview を更新します。 |
+|[AccessReview の削除](../api/accessreview-delete.md) | なし。   | AccessReview を削除します。 |
 |[AccessReview レビュー担当者のリスト](../api/accessreview-listreviewers.md) |      [Useridentity](useridentity.md)コレクション| AccessReview のレビュー担当者を取得します。 |
 |[AccessReview レビュー担当者を追加する](../api/accessreview-addreviewer.md) |      なし。   |   閲覧者を accessReview に追加します。 |
 |[AccessReview レビュー担当者を削除する](../api/accessreview-removereviewer.md) | なし。  |   AccessReview からレビュー担当者を削除します。 |

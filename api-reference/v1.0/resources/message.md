@@ -5,16 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e27963f18d3925bca6ee200434f4044c2c0b9197
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f3a84e91cdfb20eacf764d5363ebc5fb3987dff
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036142"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426399"
 ---
 # <a name="message-resource-type"></a>メッセージ リソースの種類
 
 mailFolder のメッセージ。
+
+Exchange Online メールボックスから送信される 1 つの電子メール メッセージのための **toRecipients**、**ccRecipients**、および **bccRecipients** プロパティに含まれる受信者の最大合計数は 500 です。 詳細については、「[送信の制限](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)」を参照してください。
 
 このリソースは以下をサポートしています。
 

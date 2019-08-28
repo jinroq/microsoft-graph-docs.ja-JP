@@ -1,16 +1,16 @@
 ---
 title: チャネルを一覧表示する
 description: このチーム内のチャネルの一覧を取得します。
-author: nkramer
+author: clearab
+doc_type: apiPageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-doc_type: apiPageType
-ms.openlocfilehash: 5d2fd47ada9cb8ea9f816fab92fe2a27f48bc193
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b96365b6e29e5742ac59d9b202be8c8d2e094db8
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418727"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633399"
 ---
 # <a name="list-channels"></a>チャネルを一覧表示する
 
@@ -19,8 +19,8 @@ ms.locfileid: "36418727"
 この [チーム](../resources/team.md)で [チャネル](../resources/channel.md)の一覧を取得します。
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,11 +40,13 @@ GET /teams/{id}/channels
 このメソッドは、応答をカスタマイズするための $filter、$select、および $expand [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
 
 ## <a name="request-headers"></a>要求ヘッダー
+
 | ヘッダー       | 値 |
 |:---------------|:--------|
 | Authorization  | ベアラー {トークン}。必須。  |
 
 ## <a name="request-body"></a>要求本文
+
 このメソッドには、要求本文を指定しません。
 
 ## <a name="response"></a>応答
@@ -52,33 +54,39 @@ GET /teams/{id}/channels
 成功した場合、このメソッドは `200 OK` 応答コードと、応答本文で [Channel](../resources/channel.md) オブジェクトのコレクションを返します。
 
 ## <a name="example"></a>例
-##### <a name="request"></a>要求
+
+### <a name="request"></a>要求
+
 以下は、要求の例です。
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_channels"
+  "name": "list_channels"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-channels-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-channels-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-channels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-channels-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a>応答
-以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
+### <a name="response"></a>応答
+
+以下は、応答の例です。
+
+> **注:** 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +103,8 @@ Content-length: 262
     {
       "description": "description-value",
       "displayName": "display-name-value",
-      "id": "id-value"
+      "id": "id-value",
+      "membershipType": "membership-type-value"
     }
   ]
 }

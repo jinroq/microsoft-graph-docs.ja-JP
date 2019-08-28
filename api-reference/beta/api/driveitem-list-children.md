@@ -6,12 +6,12 @@ title: フォルダーの内容を一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0f2fd43c752a3c072d7c031d9f9662bc75a2059f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 91945814dab0ab8793620d413fc0610560253741
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416738"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633287"
 ---
 # <a name="list-children-of-a-driveitem"></a>driveItem の子を一覧表示する
 
@@ -120,7 +120,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ## <a name="response"></a>応答
 
 成功すると、このメソッドはターゲット アイテムの子コレクション内にあるアイテムの一覧を返します。
-子のコレクションは、[driveItem][item-resource] リソースで構成されます。
+子コレクションは、[driveItem][item-resource] リソースで構成されます。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-**注:** コレクションが既定のページ サイズ (200 アイテム) を超えた場合は、応答で **@odata.nextLink** プロパティが返され、より多くのアイテムが使用できることが示されます。また、アイテムの次のページの要求 URL も提供されます。
+**注:** コレクションが既定のページサイズ (200 アイテム) を超える場合は、応答で** \@odata リンク**プロパティが返され、使用可能なアイテムの数が多くなることを示し、アイテムの次のページの要求 URL を提供します。
 
 ページ サイズは[オプションのクエリ文字列パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)で制御できます。
 

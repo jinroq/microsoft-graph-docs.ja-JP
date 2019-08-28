@@ -3,20 +3,20 @@ title: 添付ファイルを削除する
 description: 予定表イベント、メッセージ、Outlook タスク、または投稿から添付ファイルを削除します。
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 53a56b720ed1b1b2def64916f25831473cc79555
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: f3e4a06e86ef5da90851a84055e3162ae475129f
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408201"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622559"
 ---
 # <a name="delete-attachment"></a>添付ファイルを削除する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-予定表[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)から添付ファイルを削除します。
+ユーザーの予定表[イベント](../resources/event.md)、[メッセージ](../resources/message.md)、 [Outlook タスク](../resources/outlooktask.md)、または[投稿](../resources/post.md)から添付ファイルを削除します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -33,20 +33,44 @@ ms.locfileid: "36408201"
 
 ## <a name="http-request"></a>HTTP 要求
 
-[イベント](../resources/event.md)の添付ファイル。
-
+ユーザーの既定の[予定表](../resources/calendar.md)にある[イベント](../resources/event.md)の添付ファイル。
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+
+DELETE /me/calendar/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+ユーザーに属する指定された[予定表](../resources/calendar.md)の[イベント](../resources/event.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
+DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-ユーザーのメールボックス内の[メッセージ](../resources/message.md)の添付ファイル。
+ユーザーの既定 [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+
+DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
+```
+ユーザーの [calendarGroup](../resources/calendargroup.md) に属する[カレンダー](../resources/calendar.md)内[イベント](../resources/event.md)の添付ファイル。
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
+
+Attachments for a [message](../resources/message.md) in a user's mailbox.
 <!-- { "blockType": "ignored" } -->
 
 ```http

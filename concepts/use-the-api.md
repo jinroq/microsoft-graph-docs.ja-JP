@@ -3,12 +3,12 @@ title: Microsoft Graph API を使用する
 description: Microsoft Graph は、Microsoft Cloud サービス リソースへのアクセスを可能にする RESTful Web API です。アプリを登録 して、サービス または ユーザーの認証トークンを取得する と、Microsoft Graph API に対して要求を行うことができます。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 18de281cc0becfacfdabe5fb81a68358f04c3747
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 9f95868069c2ffd404076e5b3baf572e21b61eeb
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840643"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633245"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Microsoft Graph API を使用する
 
@@ -30,7 +30,7 @@ Microsoft Graph は、Microsoft Cloud サービス リソースへのアクセ�
 * [{HTTP メソッド}](#http-methods) - Microsoft Graph への要求で使用する HTTP メソッド。
 * [{バージョン}](#version) - アプリケーションが使用している Microsoft Graph API のバージョン。
 * [{リソース}](#resource) - ユーザーが参照している Microsoft Graph のリソース。 
-* [{クエリ パラメーター}](#query-parameters-optional) - 応答をカスタマイズするために使用する省略可能な OData クエリ オプションまたは REST メソッド パラメーター。
+* [{クエリ パラメーター}](#query-parameters) - 応答をカスタマイズするために使用する省略可能な OData クエリ オプションまたは REST メソッド パラメーター。
 
 要求を行うと、次を含む応答が返されます。 
 

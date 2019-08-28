@@ -3,14 +3,14 @@ title: itemAttachment リソースの種類
 description: 別のイベントに添付されている連絡先、イベント、またはメッセージ
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 31fd3e74e7fc35589abc57a891678e9a129c2a2e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: b4220a1428edab2eeab89cabe53efc91bea76a8b
+ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010085"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484381"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment リソースの種類
 
@@ -48,6 +48,7 @@ ms.locfileid: "36010085"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
   "keyProperty":"id",
   "optionalProperties": [
     "item"

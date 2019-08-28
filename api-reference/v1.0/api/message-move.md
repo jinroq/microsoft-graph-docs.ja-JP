@@ -5,16 +5,16 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e51deede6ff3f05cc0f9c4549975a3c46bf56356
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cc2c48ebad59f70a77586a03ba924a6fd9ed7490
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374730"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426420"
 ---
 # <a name="message-move"></a>メッセージ: move
 
-メッセージをフォルダーに移動します。 これにより、宛先フォルダーにメッセージの新しいコピーが作成され、元のメッセージが削除されます。
+指定されたユーザーのメールボックス内の別のフォルダーにメッセージを移動します。 これにより、宛先フォルダーにメッセージの新しいコピーが作成され、元のメッセージが削除されます。
 
 ## <a name="permissions"></a>アクセス許可
 

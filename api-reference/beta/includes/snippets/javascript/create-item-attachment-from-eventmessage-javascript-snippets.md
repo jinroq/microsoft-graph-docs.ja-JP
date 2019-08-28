@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 09deb6b70ff7fc17c45463ee42764a5963928b2f
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: efb02466089d3de11ef8c2322b2d36400e515fc9
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35712339"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36637771"
 ---
 ```javascript
 
@@ -22,6 +22,7 @@ const attachment = {
 };
 
 let res = await client.api('/me/events/{id}/attachments')
-    .post({attachment : attachment});
+    .version('beta')
+    .post(attachment);
 
 ```

@@ -7447,8 +7447,15 @@
                 - name: 申請を戻す
                   href: api/educationsubmission-return.md
             - name: 結果
-              href: resources/educationoutcome.md
               items:
+                - name: 結果
+                  href: resources/educationoutcome.md
+                - name: フィードバック結果の種類
+                  href: resources/educationfeedbackoutcome.md
+                - name: ポイントの結果の種類
+                  href: resources/educationpointsoutcome.md
+                - name: の結果の種類
+                  href: resources/educationrubricoutcome.md
                 - name: 更新結果
                   href: api/educationoutcome-update.md
             - name: 同期プロファイル
@@ -7816,14 +7823,16 @@
                 - name: アクセス レビュー
                   href: resources/accessreview.md
                   items:
-                    - name: アクセス レビューを作成する
-                      href: api/accessreview-create.md
-                    - name: アクセス レビューを削除する
-                      href: api/accessreview-delete.md
+                    - name: アクセスレビューを一覧表示する
+                      href: api/accessreview-list.md
                     - name: アクセス レビューを取得する
                       href: api/accessreview-get.md
+                    - name: アクセス レビューを作成する
+                      href: api/accessreview-create.md
                     - name: アクセス レビューを更新する
                       href: api/accessreview-update.md
+                    - name: アクセス レビューを削除する
+                      href: api/accessreview-delete.md
                     - name: Reviewer (校閲者) を追加する
                       href: api/accessreview-addreviewer.md
                     - name: 決定を一覧表示する
@@ -8412,6 +8421,33 @@
                           href: api/governanceroleassignmentrequest-update.md
                         - name: キャンセル
                           href: api/governanceroleassignmentrequest-cancel.md
+            - name: 役割管理
+              href: resources/rolemanagement.md
+              items:
+                - name: ロールの定義
+                  href: resources/unifiedroledefinition.md
+                  items:
+                    - name: ロール定義のリスト
+                      href: api/rbacapplication-list-roledefinitions.md
+                    - name: ロール定義の作成
+                      href: api/rbacapplication-post-roledefinitions.md
+                    - name: ロール定義の取得
+                      href: api/unifiedroledefinition-get.md
+                    - name: ロール定義の更新
+                      href: api/unifiedroledefinition-update.md
+                    - name: ロール定義の削除
+                      href: api/unifiedroledefinition-delete.md
+                - name: ロールの割り当て
+                  href: resources/unifiedroleassignment.md
+                  items:
+                    - name: 役割の割り当ての一覧表示
+                      href: api/rbacapplication-list-roleassignments.md
+                    - name: 役割の割り当てを作成する
+                      href: api/rbacapplication-post-roleassignments.md
+                    - name: ロールの割り当てを取得する
+                      href: api/unifiedroleassignment-get.md
+                    - name: ロールの割り当てを削除する
+                      href: api/unifiedroleassignment-delete.md
             - name: サービス プリンシパル
               href: resources/serviceprincipal.md
               items:
@@ -9241,6 +9277,33 @@
                   items:
                     - name: 共有リスト
                       href: api/insights-list-shared.md
+            - name: 分析
+              href: resources/useranalytics.md
+              items:
+                - name: Settings
+                  items:
+                    - name: Settings
+                      href: resources/settings.md
+                    - name: 設定を取得する
+                      href: api/useranalytics-get-settings.md
+                - name: アクティビティの統計情報
+                  items:
+                    - name: アクティビティの統計情報
+                      href: resources/activitystatistics.md
+                    - name: 呼び出しの統計の種類
+                      href: resources/callactivitystatistics.md
+                    - name: チャットの統計の種類
+                      href: resources/chatactivitystatistics.md
+                    - name: 電子メールの統計の種類
+                      href: resources/emailactivitystatistics.md
+                    - name: フォーカス統計の種類
+                      href: resources/focusactivitystatistics.md
+                    - name: 会議の統計の種類
+                      href: resources/meetingactivitystatistics.md
+                    - name: アクティビティ統計のリスト
+                      href: api/activitystatistics-list.md
+                    - name: アクティビティの統計情報を取得する
+                      href: api/activitystatistics-get.md
             - name: メンション
               href: resources/mention.md
         - name: タスクとプラン
@@ -9421,6 +9484,8 @@
                   href: api/channel-post.md
                 - name: チャネルを取得する
                   href: api/channel-get.md
+                - name: '更新プログラム チャネル '
+                  href: api/channel-patch.md
                 - name: チャネル メッセージを一覧表示する
                   href: api/channel-list-messages.md
                 - name: チャネル メッセージを取得する
@@ -9448,6 +9513,12 @@
                   href: api/conversationmember-list.md
                 - name: チャットで1人のメンバーを取得する
                   href: api/conversationmember-get.md
+                - name: チャットにメンバーを追加する
+                  href: api/conversationmember-add.md
+                - name: チャットからメンバーを削除する
+                  href: api/conversationmember-delete.md
+                - name: チャットでのメンバーの役割を更新する
+                  href: api/conversationmember-update.md
             - name: チャット メッセージ
               href: resources/chatmessage.md
               items:
@@ -9630,15 +9701,15 @@
             - name: Outlook タスク フォルダー
               href: resources/outlooktaskfolder.md
               items:
-                - name: List
+                - name: リスト
                   href: api/outlookuser-list-taskfolders.md
-                - name: 作成する
+                - name: 作成
                   href: api/outlookuser-post-taskfolders.md
                 - name: 取得
                   href: api/outlooktaskfolder-get.md
                 - name: 更新
                   href: api/outlooktaskfolder-update.md
-                - name: 削除する
+                - name: 削除
                   href: api/outlooktaskfolder-delete.md
                 - name: フォルダー内のタスクを一覧表示する
                   href: api/outlooktaskfolder-list-tasks.md
@@ -9649,13 +9720,13 @@
               items:
                 - name: リスト
                   href: api/outlookuser-list-taskgroups.md
-                - name: 作成する
+                - name: 作成
                   href: api/outlookuser-post-taskgroups.md
                 - name: 取得
                   href: api/outlooktaskgroup-get.md
                 - name: 更新
                   href: api/outlooktaskgroup-update.md
-                - name: 削除する
+                - name: 削除
                   href: api/outlooktaskfolder-delete.md
                 - name: グループ内のタスク フォルダーを一覧表示する
                   href: api/outlooktaskfolder-list-tasks.md

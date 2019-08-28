@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0bc9fa375e3f22087fbf268933370d8a6222654e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3a7f4e49f50ca4cb26e52d767064cc57b255ce4
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006368"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633707"
 ---
 # <a name="educationclass-resource-type"></a>educationClass リソース タイプ
 
@@ -52,6 +52,7 @@ ms.locfileid: "36006368"
 | externalId     | String                                | 同期システムからのクラスの ID。                                                |
 | externalName   | String                                | 同期システムからのクラスの名前。                                                |
 | externalSource | string                                | このクラスの作成方法。 使用可能な値: `sis`、`manual`、`unknownFutureValue`。 |
+| grade          | string                                | クラスの成績レベル。                                                               |
 | mailNickname   | String                                | すべてのメンバーに電子メールを送信する際のメール名 (この機能が有効な場合)。                         |
 | term           | [educationTerm]                       | クラスの用語。                                                                     |
 
@@ -87,6 +88,7 @@ ms.locfileid: "36006368"
   "externalId": "String",
   "externalName": "String",
   "externalSource": "string",
+  "grade": "string",
   "id": "String (identifier)",
   "mailNickname": "String",
   "term": { "@odata.type": "microsoft.graph.educationTerm" }

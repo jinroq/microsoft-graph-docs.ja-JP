@@ -3,14 +3,14 @@ title: referenceAttachment リソースの種類
 description: 'OneDrive for Business のクラウドドライブ上のフォルダーまたはファイル (テキストファイルや Word 文書など) またはその他のサポートされているストレージの場所へのリンクは、 '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ef3e2dd5292ee018c0b72c29c8bd6c33fed00f11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 555f465f0452b7ad3c3bf012221efad73dcffd68
+ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008713"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484325"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment リソースの種類
 
@@ -54,6 +54,8 @@ OneDrive for Business クラウドドライブ上のフォルダーまたはフ�
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],

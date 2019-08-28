@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 6a3d6c583227c1f8a8955fc4fc008e4bab9f55c9
-ms.sourcegitcommit: eb5f63deafcdd6db44e791f2d1f4c46604ab06fc
+ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
+ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36245659"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622650"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -81,10 +81,6 @@ Microsoft Graph では、グループと Microsoft Teams API にアクセスす�
 ### <a name="policy"></a>ポリシー
 
 Microsoft Graph を使用して Office 365 グループを作成および名前付けすると、Outlook Web App で構成されたすべての Office 365 のグループ ポリシーがバイパスされます。
-
-### <a name="adding-and-getting-attachments-of-group-posts"></a>グループの投稿の添付ファイルの追加と取得
-
-現在のところ、グループの投稿への添付ファイルの[追加](/graph/api/post-post-attachments?view=graph-rest-1.0)、グループの投稿の添付ファイルの[一覧表示](/graph/api/post-list-attachments?view=graph-rest-1.0)と取得を行うと、"OData 要求がサポートされていません" というエラー メッセージが返されます。`/v1.0` と `/beta` の両方のバージョンに対する修正プログラムが準備されており、2016 年 1 月の終わりまでには一般に利用可能になると予測されます。
 
 ### <a name="setting-the-allowexternalsenders-property"></a>allowExternalSenders プロパティの設定
 
