@@ -1,22 +1,22 @@
 ---
 title: conversationMember を取得する
-description: チャットのメンバーを取得します。
-author: nkramer
+description: チャットまたはチャネルのメンバーを取得します。
+author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ff0ec4dfd39c4f5d2c54be567869d23f362eb87
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a1c4b522a828fcf08fe3b6385f6074aec4497b2a
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417825"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633322"
 ---
 # <a name="get-conversationmember"></a>conversationMember を取得する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[chat](../resources/chat.md) から [conversationMember](../resources/conversationmember.md) を取得します。
+[chat](../resources/chat.md) または [channel](../resources/channel.md) から [conversationMember](../resources/conversationmember.md) を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -24,15 +24,16 @@ ms.locfileid: "36417825"
 
 |アクセス許可の種類|アクセス許可 (特権の小さいものから大きいものへ)|
 |---------|-------------|
-|委任 (職場または学校のアカウント)|Chat.Read、Chat.ReadWrite|
+|委任 (職場または学校のアカウント)|**ユーザー**または**チャット** リソースの場合:<br/>Chat.Read、Chat.ReadWrite<br/><br/>**チャネル** リソースの場合:<br/>Group.Read.All、Group.ReadWrite.All|
 |委任 (個人用 Microsoft アカウント)|サポートされていません|
-|アプリケーション |Chat.Read.All、Chat.ReadWrite.All |
+|アプリケーション| **ユーザー**または**チャット** リソースの場合:<br/>Chat.Read.All、Chat.ReadWrite.All<br/><br/>**チャネル** リソースの場合:<br/>Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members/{id}
 GET /users/{id}/chats/{id}/members/{id}
+GET /teams/{id}/channels/{id}/members/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -55,7 +56,7 @@ GET /users/{id}/chats/{id}/members/{id}
 
 ## <a name="example"></a>例
 
-##### <a name="request"></a>要求
+### <a name="request"></a>要求
 
 以下は、要求の例です。
 
@@ -81,10 +82,9 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 ---
 
+### <a name="response"></a>応答
 
-##### <a name="response"></a>応答
-
-以下は、応答の例です。 
+以下は、応答の例です。
 
 >**注:** 読みやすくするために、ここに示す応答オブジェクトは短縮されている場合があります。実際の呼び出しからは、すべてのプロパティが返されます。
 <!-- {
