@@ -1,32 +1,36 @@
 ---
 title: aadUserConversationMember リソース タイプ
-description: 会話のユーザーを表します。
+description: チャットまたはチャネルの Azure Active Directory ユーザーを表します。
 localization_priority: Priority
-author: nkramer
+author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c4e937d88a1e504c6774b2dcb657dee443d54843
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 058164d44ef6d9d6ba6667cf1cb7249bf57c2a83
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013634"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633511"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>aadUserConversationMember リソース タイプ
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[chat](chat.md) の Azure Active Directory ユーザーを表します。 このタイプは、[conversationMember](conversationmember.md) から継承されています。
+[チャット](chat.md)または[チャネル](channel.md)の Azure Active Directory ユーザーを表します。 このタイプは、[conversationMember](conversationmember.md) から継承されています。
 
 ## <a name="methods"></a>メソッド
 
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
-|[チャットのメンバーを一覧表示する](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) コレクション | チャットのすべてのメンバーのリストを取得します。|
-|[チャットのメンバーを取得する](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | チャットの 1 人のユーザーを取得します。|
+|[メンバーを一覧表示する](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) コレクション | チャットまたはチャネルのすべてのメンバーのリストを取得します。|
+|[メンバーを取得する](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | チャットまたはチャネルの 1 人のユーザーを取得します。|
+|[メンバーを追加する](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| チャネルにメンバーを追加します。|
+|[メンバーを更新する](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| チャネルのメンバーを更新します。|
+|[メンバーを削除する](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| チャネルからメンバーを削除します。|
 
 ## <a name="properties"></a>プロパティ
-| プロパティ     | 型   |説明|
+
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |id|String| 読み取り専用です。 ユーザーの一意の ID。|
 |displayName| string | ユーザーの表示名。 |
