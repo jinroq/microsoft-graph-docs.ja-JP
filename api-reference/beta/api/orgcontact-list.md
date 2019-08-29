@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8e6fd682d42b6c1a412ab9a40a81928a80eb3236
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 21902b537ff14be15b469da124a47c1a5f0b1eb7
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414232"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667527"
 ---
 # <a name="list-orgcontacts"></a>OrgContacts を一覧表示する
 
@@ -23,9 +23,9 @@ ms.locfileid: "36414232"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | OrgContact。すべての、Directory.accessasuser.all、およびすべてのディレクトリを取得しています。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | OrgContact。すべて、ディレクトリの読み取り。すべてのディレクトリ。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

@@ -5,26 +5,27 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6d446a75a16c336a2ca9f0eb65081d8b2e776a41
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: afde0586d165d452576de5e984d91bf9a1e53e3f
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414318"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667534"
 ---
 # <a name="get-orgcontact"></a>OrgContact の取得
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Orgcontact へオブジェクトのプロパティと関係を取得します。
+組織の連絡先オブジェクトのプロパティと関係を取得します。
+
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委任 (職場または学校のアカウント) | OrgContact。すべての、Directory.accessasuser.all、およびすべてのディレクトリを取得しています。    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | Directory.Read.All、Directory.ReadWrite.All |
+|アプリケーション | OrgContact。すべて、ディレクトリの読み取り。すべてのディレクトリ。 |
 
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->

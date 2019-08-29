@@ -7965,8 +7965,19 @@
                 - name: ログの準備
                   href: resources/provisioningobjectsummary.md
                   items:
-                    - name: ディレクトリのプロビジョニングを一覧表示する
+                    - name: リストのプロビジョニング
                       href: api/provisioningobjectsummary-list.md
+            - name: 証明書ベースの認証構成
+              href: resources/certificatebasedauthconfiguration.md
+              items:
+                - name: リスト
+                  href: api/certificatebasedauthconfiguration-list.md
+                - name: 取得
+                  href: api/certificatebasedauthconfiguration-get.md
+                - name: 作成
+                  href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                - name: 削除
+                  href: api/certificatebasedauthconfiguration-delete.md
             - name: 契約書
               href: resources/contract.md
               items:
@@ -8104,7 +8115,7 @@
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: 更新
                   href: api/featurerolloutpolicy-update.md
-                - name: 削除
+                - name: 削除する
                   href: api/featurerolloutpolicy-delete.md
                 - name: AppliesTo の作成
                   href: api/featurerolloutpolicy-post-appliesto.md
@@ -9682,7 +9693,7 @@
             - name: Outlook タスク
               href: resources/outlooktask.md
               items:
-                - name: List
+                - name: リスト
                   href: api/outlookuser-list-tasks.md
                 - name: 作成する
                   href: api/outlookuser-post-tasks.md
