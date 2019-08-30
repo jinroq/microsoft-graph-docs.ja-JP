@@ -9499,6 +9499,8 @@
                   href: api/channel-patch.md
                 - name: チャネル メッセージを一覧表示する
                   href: api/channel-list-messages.md
+                - name: チャネルメッセージのデルタを取得する
+                  href: api/chatmessage-delta.md
                 - name: チャネル メッセージを取得する
                   href: api/channel-get-message.md
                 - name: メッセージの返信を一覧表示する
@@ -9701,7 +9703,7 @@
                   href: api/outlooktask-get.md
                 - name: 更新
                   href: api/outlooktask-update.md
-                - name: 削除する
+                - name: 削除
                   href: api/outlooktask-delete.md
                 - name: 完了
                   href: api/outlooktask-complete.md
