@@ -3,12 +3,12 @@ title: デルタ クエリを使用して、Microsoft Graph データの変更�
 description: デルタ クエリを使用すると、アプリケーションは、要求ごとにターゲット リソースをすべて読み取ることなく、新しく作成、更新、または削除されたエンティティを検出できます。Microsoft Graph アプリケーションはデルタ クエリを使用して、変更をローカル データ ストアと効率的に同期させることができます。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e053811ae0c070f767ea8aefc20d768d188d355a
-ms.sourcegitcommit: b198efc2391a12a840e4f1b8c42c18a55b06037f
+ms.openlocfilehash: 6a7dee807c35bb790d122941f381b8541054e87f
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35820802"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677114"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>デルタ クエリを使用して、Microsoft Graph データの変更を追跡する
 
@@ -98,8 +98,9 @@ ms.locfileid: "35820802"
 | フォルダー内の個人用連絡先                                  | [連絡先](/graph/api/resources/contact?view=graph-rest-1.0)リソースの[デルタ](/graph/api/contact-delta?view=graph-rest-1.0)関数                                             |
 | 学校 (プレビュー)                                              | [学校](/graph/api/resources/educationschool?view=graph-rest-beta)リソース (プレビュー) の[デルタ](/graph/api/educationschool-delta?view=graph-rest-beta)関数                  |
 | サービス プリンシパル (プレビュー)                                   | [サービス プリンシパル](/graph/api/resources/serviceprincipal?view=graph-rest-beta) リソース (プレビュー) の[デルタ](/graph/api/serviceprincipal-delta?view=graph-rest-beta)関数      |
-| ユーザー                                                          | [ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースの[デルタ](/graph/api/user-delta?view=graph-rest-1.0)関数                                                      |
-| プランナーの項目\*\*(プレビュー)                                    | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) リソースのすべてのセグメントの[デルタ](/graph/api/planneruser-list-delta?view=graph-rest-beta)関数 (プレビュー) |
+| ユーザー                                                          | [ユーザー](/graph/api/resources/user?view=graph-rest-1.0)リソースの[デルタ](/graph/api/user-delta?view=graph-rest-1.0)関数 |
+| プランナーの項目\*\*(プレビュー)                                    | [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) リソースのすべてのセグメントの[デルタ](/graph/api/planneruser-list-delta?view=graph-rest-beta)関数 (プレビュー)|
+| チャネルの chatMessages (プレビュー)                            | [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) の[デルタ](/graph/api/chatmessage-delta?view=graph-rest-beta)関数 |
 
 > \* OneDrive リソースの使用パターンは、他のサポートされているリソースと似ていますが、構文には若干の違いがあります。 ドライブのデルタ クエリは、他のリソースの種類との一貫性を保つために将来更新されます。 現在の構文の詳細については、 「[ドライブの変更履歴を記録する](/graph/api/driveitem-delta?view=graph-rest-1.0)」を参照してください。
 

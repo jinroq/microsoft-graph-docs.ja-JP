@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 078bf52f6b80ade9ae46a1a285f979986e269818
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: c06335cf1f5892a31b68fe4e3f4810f5757724fb
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633714"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667590"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -17,12 +17,6 @@ ms.locfileid: "36633714"
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
 
 ## <a name="august-2019"></a>2019 年 8 月
-
-### <a name="education"></a>教育
-
-| 変更の種類 | バージョン | 説明                                                                                               |
-| :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
-| 追加    | ベータ版    | [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に新しいプロパティ **grade** を追加しました。 |
 
 ### <a name="devices-and-apps-microsoft-intune"></a>デバイスとアプリ (Microsoft Intune)
 
@@ -71,6 +65,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | 新しい [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) リソースを追加しました。|
 | 追加 | ベータ版 | [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta) で [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) リソースを管理するための API を追加しました。|
 | 追加 | ベータ版 | 新しい [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) リソースを追加しました。|
+| 追加    | ベータ版    | [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に新しいプロパティ **grade** を追加しました。 |
 
 ### <a name="files-onedrive-for-business"></a>ファイル (OneDrive for Business)
 
@@ -82,12 +77,17 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン** | **説明**                  |
 |:----------------|:------------|:-----------------------------------------|
+| 変更 | ベータ版 | [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) 名前空間を変更しました。|
 | 追加 | ベータ版 | [roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta) リソースを追加しました。これは、RBAC プロバイダーから提示されるロール定義とロール割り当てへのアクセスを提供します。 |
 | 追加 | ベータ版 | [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) リソースを追加しました。これは、実行できる操作のリストであるアクセス権限コレクションを表します。 |
 | 追加 | ベータ版 | リソースへのアクセス権を付与する [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) リソースを追加しました。 |
 | 追加 | ベータ版 | unifiedRoleDefinition リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - プロバイダーの unifiedRoleDefinition オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - 新しい unifiedRoleDefinition オブジェクトを作成します。</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - 統一されたロール定義オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトのプロパティを更新します。</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトを削除します。</li></ul> |
 | 追加 | ベータ版 | unifiedRoleAssignment リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - プロバイダーの unifiedRoleAssignment オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleAssignment]() - 新しい unifiedRoleAssignment オブジェクトを作成します。</li><li>[Get unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトを削除します。 |
 | 追加 | ベータ版 | [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta) 操作を追加しました。 |
+|追加  | ベータ版 | [組織の連絡先を読み取るための委任されたアクセス許可とアプリケーション アクセス許可](permissions-reference.md#organizational-contact-permissions)を追加しました: OrgContact.Read.All |
+| 追加 | ベータ版 | 新しいエンティティ [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta) を追加しました。 |
+| 追加 | ベータ版 | 新しい複合型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta) を追加しました。 |
+| 追加 | ベータ版 | [organization](/graph/api/resources/organization?view=graph-rest-beta) リソースの**certificateBasedAuthConfiguration** に新しい関連付けを追加しました。 これにより、[Azure Active Directory で証明書に基づく認証](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)が可能になります。|
 
 ### <a name="reports"></a>レポート
 
@@ -1601,7 +1601,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="personal-contacts-outlook"></a>個人用連絡先 (Outlook)
 
-| **変更の種類** | **バージョン** | **説明**                          |
+| **変更の種類** | **Version** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0          | **flag** プロパティを [contact](/graph/api/resources/contact?view=graph-rest-1.0) エンティティに追加しました。 共有 [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0) 複合型を追加しました。|
 

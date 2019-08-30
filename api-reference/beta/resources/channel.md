@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a8c6239cc91eb10ecec5d2e037ffa9364e55646e
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: cdcb7f10d068372c167f65a7868672a7cb669107
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633679"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677128"
 ---
 # <a name="channel-resource-type"></a>チャネルのリソースの種類
 
@@ -27,6 +27,7 @@ ms.locfileid: "36633679"
 |[チャネルを取得する](../api/channel-get.md) | [channel](channel.md) | チャネルのプロパティとリレーションシップを読み取ります。|
 |[チャネルを更新する](../api/channel-patch.md) | [channel](channel.md) | チャネルのプロパティを更新します。|
 |[チャネルを削除する](../api/channel-delete.md) | なし | チャネルを削除します。|
+|[メッセージの差分を取得する](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | チャネルの増分メッセージを取得します。 |
 |[チャネル メッセージを一覧表示する](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | チャネルのメッセージを取得します。 |
 |[チャネル メンバーを一覧表示する](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) コレクション| チャネルのメンバーを一覧表示します。 |
 |[チャネル メンバーを取得する](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| チャネルのメンバーを取得します。 |
@@ -43,7 +44,7 @@ ms.locfileid: "36633679"
 
 ## <a name="properties"></a>プロパティ
 
-| プロパティ    | 型 |説明|
+| プロパティ   | 型 |説明|
 |:---------------|:--------|:----------|
 |description|String|チャネルの説明テキストです (省略可能)。|
 |displayName|String|Microsoft Teams でユーザーに対して表示されるチャネルの名前。|
@@ -55,7 +56,7 @@ ms.locfileid: "36633679"
 
 ## <a name="relationships"></a>リレーションシップ
 
-| リレーションシップ | 型   |説明|
+| リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) コレクション|チャネル内のすべてのメッセージのコレクションです。 ナビゲーションのプロパティです。 Null 許容型です。 現在この API では読み取りだけがサポートされていますが、最終的にはメッセージの作成もサポートされる予定です。|
 |tabs|[teamsTab](../resources/teamstab.md) コレクション|チャネル内のすべてのタブのコレクションです。 ナビゲーションのプロパティです。|
