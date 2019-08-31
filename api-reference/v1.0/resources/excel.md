@@ -5,12 +5,12 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 44d24c2757d690542a5afdcc7496d92551502aea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030402"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699129"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 
@@ -93,7 +93,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->注: セッション ID の有効期限が切れていた場合、そのセッションで `404` HTTP エラー コードが返されます。 このようなシナリオでは、新しいセッションを作成して続行できます。 または、定期的にセッションを更新して維持するという方法もあります。 通常、永続セッションの有効期限は、非アクティブ状態が約 7 分間経過した後に切れます。 非永続セッションの有効期限は、非アクティブ状態が約 5 分間経過した後に切れます。 
+>注: セッション ID の有効期限が切れていた場合、そのセッションで `404` HTTP エラー コードが返されます。 このようなシナリオでは、新しいセッションを作成して続行できます。 または、定期的にセッションを更新して維持するという方法もあります。 通常、永続セッションの有効期限は、非アクティブ状態が約 5 分間経過した後に切れます。 非永続セッションの有効期限は、非アクティブ状態が約 7 分間経過した後に切れます。 
 
 ## <a name="common-excel-scenarios"></a>一般的な Excel のシナリオ
 
