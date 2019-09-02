@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c06335cf1f5892a31b68fe4e3f4810f5757724fb
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: c63f5675b65130a0e63d3ab78f28cea17c68d278
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667590"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699233"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -55,11 +55,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 |追加|ベータ版|[remoteAction](/graph/api/resources/intune-devices-remoteaction?view=graph-rest-beta) 列挙型に **setDeviceName** メンバーを追加しました|
 |追加|ベータ版|[runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta) 列挙型に **error** および **pending** メンバーを追加しました|
 |追加|ベータ版|[weeklySchedule](/graph/api/resources/intune-deviceconfig-weeklyschedule?view=graph-rest-beta) 列挙型に **noScheduledScan** メンバーを追加しました|
+|追加|ベータ版|**derivedCredentials** ナビゲーション プロパティを [deviceManagement](/graph/api/resources/intune-shared-devicemanagement) エンティティに追加しました|
 
 ### <a name="education"></a>教育
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) に新しいプロパティ **grade** を追加しました。|
 | 追加 | ベータ版 | 新しい [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) リソースが追加されました。|
 | 追加 | ベータ版 | [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) と [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta) で [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) リソースを管理するための API を追加しました。|
 | 追加 | ベータ版 | 新しい [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) リソースを追加しました。|
@@ -107,14 +109,21 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | ユーザーが [analytics API](/graph/api/resources/settings?view=graph-rest-beta) を使用するために現在必要な設定を表す新しい職場のインテリジェンス[設定 API](/graph/api/resources/useranalytics?view=graph-rest-beta) を導入しました。 |
 | 追加 | ベータ版 | 新しい [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) リソース タイプと、それから派生した新しいリソース タイプ [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta)、[chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta)、[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta)、[focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta)、および [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta) が導入されました。 |
 
+### <a name="tasks-and-plans-planner"></a>タスクとプラン (Planner)
+
+|変更の種類|バージョン|説明|
+|:---|:---|:---|
+|追加|ベータ版|**priority** プロパティを [plannerTask](/graph/api/resources/plannertask?view=graph-rest-beta) エンティティに追加しました。|
+
 ### <a name="teamwork-microsoft-teams"></a>チームワーク (Microsoft Teams)
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| 追加 | ベータ版 | [チャネル メッセージ デルタ クエリ API](/graph/api/channel-messages-delta?view=graph-rest-beta) を使用して、チャネルから増分メッセージを取得する機能が追加されました。|
 | 追加 | ベータ版 | [メンバーをプライベート チャンネルに追加](/graph/api/conversationmember-add?view=graph-rest-beta)する機能を追加しました。 |
 | 追加 | ベータ版 | [メンバーをプライベート チャンネルから削除](/graph/api/conversationmember-delete?view=graph-rest-beta)する機能を追加しました。 |
 | 追加 | ベータ版 | [プライベート チャンネルでメンバーの役割を更新](/graph/api/conversationmember-update?view=graph-rest-beta)する機能を追加しました。 |
-| 追加 | ベータ版 | 特定のチャンネルがプライベートか標準かを表示するために、[チャンネル]] (/graph/api/resources/channel?view=graph-rest-beta) リソースに `membershipType` プロパティを追加しました。 |
+| 追加 | ベータ版 | 特定のチャンネルがプライベートか標準かを表示するために `membershipType` プロパティに [channel](/graph/api/resources/channel?view=graph-rest-beta) リソースに追加しました。 |
 
 ## <a name="july-2019"></a>2019 年 7 月
 
@@ -357,8 +366,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 ### <a name="groups"></a>グループ
 | **変更の種類** | **バージョン** | **説明** |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | 
-  **assignedlabels**プロパティが[group](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta) エンティティに追加されました。 このプロパティは、グループに関連付けられている機密ラベル ペア (ラベル ID、ラベル名) のリストを表します。
+| 追加 | ベータ版 | **assignedlabels**プロパティが[group](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta) エンティティに追加されました。 このプロパティは、グループに関連付けられている機密ラベル ペア (ラベル ID、ラベル名) のリストを表します。
 
 ### <a name="identity-and-access-azure-ad--identity-protection"></a>ID とアクセス (Azure AD) | ID 保護
 
@@ -470,8 +478,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | **アクセス レビュー**に対する新しいアプリケーション アクセス許可 AccessReview.Read.All、ProgramControl.Read.All、ProgramControl.ReadWrite.All を追加しました。 詳細については、[アクセス レビュー API のリファレンス](/graph/api/resources/accessreviews-root?view=graph-rest-beta)を参照してください。 |
 | 追加 | ベータ版 | **signInSessionsValidFromDateTime** プロパティを[ユーザー](/graph/api/resources/user?view=graph-rest-beta) リソースに追加します。 これは、**refreshTokensValidFromDateTime** プロパティの名前変更ですが、両方のプロパティはクライアントがスムーズに移行できるようにサポートされます。 数ヶ月後に、古いプロパティ **refreshTokensValidFromDateTime** が削除されます。|
 | 追加 | ベータ版 | **revokeSignInSessions** アクションを[ユーザー](/graph/api/resources/user?view=graph-rest-beta) リソースに追加します。 これは、**invalidateAllRefreshTokens** プロパティの名前変更ですが、両方のサービス アクションはクライアントがスムーズに移行できるようにサポートされます。 数ヶ月後に、古いサービス アクション **invalidateAllRefreshTokens** は削除されます。 |
-| 追加 | ベータ版 |
-  [Azure Active Directory B2C](https://docs.microsoft.com/ja-JP/azure/active-directory-b2c/active-directory-b2c-overview) をサポートする新しいリソース型の [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) を導入しました。 このリソース型は、[作成](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[一覧表示](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[取得](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、 [更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)、および[削除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)の操作をサポートしています。|
+| 追加 | ベータ版 |[Azure Active Directory B2C](https://docs.microsoft.com/ja-JP/azure/active-directory-b2c/active-directory-b2c-overview) をサポートする新しいリソース型の [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta) を導入しました。 このリソース型は、[作成](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[一覧表示](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[取得](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、 [更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)、および[削除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)の操作をサポートしています。|
 
 ### <a name="mail-outlook"></a>メール (Outlook)
 
@@ -747,8 +754,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 | **変更の種類** | **バージョン**   | **説明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 追加 | ベータ版 | 
-  [グループ](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta)に、[グループの有効期限](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/groups-lifecycle)に関する新しいプロパティ `expirationDateTime` を追加しました。|
+| 追加 | ベータ版 | [グループ](https://docs.microsoft.com/ja-JP/graph/api/resources/group?view=graph-rest-beta)に、[グループの有効期限](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/groups-lifecycle)に関する新しいプロパティ `expirationDateTime` を追加しました。|
 | 追加 | ベータ版 | 新しいリソースの種類 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta) を追加します。|
 | 追加 | ベータ版 | [organization](/graph/api/resources/organization?view=graph-rest-beta) リソースに `createdDateTime` プロパティを追加しました。|
 | 追加 | v1.0 | [デバイス](/graph/api/resources/device?view=graph-rest-1.0)のダイレクト [メンバーシップ](/graph/api/device-list-memberOf?view=graph-rest-1.0)を取得する `memberOf` メソッドを追加しました。 このメソッドは、入れ子になったメンバーシップを含むメンバーシップのリストを取得するために追加されました。|
@@ -1601,7 +1607,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="personal-contacts-outlook"></a>個人用連絡先 (Outlook)
 
-| **変更の種類** | **Version** | **説明**                          |
+| **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | v1.0          | **flag** プロパティを [contact](/graph/api/resources/contact?view=graph-rest-1.0) エンティティに追加しました。 共有 [followupFlag](/graph/api/resources/followupflag?view=graph-rest-1.0) 複合型を追加しました。|
 
