@@ -3,12 +3,12 @@ title: 'Microsoft Graph のアクセス許可のリファレンス '
 description: Microsoft Graph は、アプリがアクセスするリソース (ユーザー、グループ、メールなど) を制御する詳細なアクセス許可を公開しています。 開発者は、アプリが要求する Microsoft Graph のアクセス許可を決定します。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 25f5f7df625aabaf4ace2f54b77537cd456981ab
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: bd3f87afdf7aa9b110dd02e9798705a8acbe1c3f
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450684"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667548"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph のアクセス許可のリファレンス
 
@@ -984,6 +984,7 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 | _Organization.Read.All_ |会社情報の読み取り | サインインしたユーザーがいない場合でも、アプリで組織および関連するリソースの読み取りを実行できるようにします。関連するリソースには、購読している SKU やテナントのブランド情報などがあります。 | はい |
 | _Organization.ReadWrite.All_ |組織情報の読み取りと書き込み | サインインしたユーザーがいない場合でも、アプリで組織および関連するリソースの読み取りと書き込みを実行できるようにします。関連するリソースには、購読している SKU やテナントのブランド情報などがあります。 |はい |
 
+
 ### <a name="example-usage"></a>使用例
 
 #### <a name="delegated"></a>委任
@@ -994,6 +995,30 @@ Azure AD v2.0 エンドポイントでは、_scope_ パラメーターで_offlin
 #### <a name="application"></a>アプリケーション
 
 * _Organization.ReadWrite.All_: 組織情報を更新 (**technicalNotificationMails** など) (`PATCH /organization/{id}`)。
+
+---
+
+## <a name="organizational-contact-permissions"></a>組織の連絡先のアクセス許可
+
+#### <a name="delegated-permissions"></a>委任されたアクセス許可
+
+|   アクセス許可    |  表示文字列   |  説明 | 管理者の同意が必要 | Microsoft アカウントのサポート |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _OrgContact.Read.All_ | 組織の連絡先の読み取り|サインインしているユーザーの代わりに、アプリですべての組織の連絡先を読み取れるようにします。 これらは組織によって管理されている連絡先であり、ユーザー個人の連絡先とは異なります。|はい | いいえ |
+
+<br/>
+
+#### <a name="application-permissions"></a>アプリケーションのアクセス許可
+
+|アクセス許可    |表示文字列   |説明 |管理者の同意が必要 |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _OrgContact.Read.All_ |組織の連絡先の読み取り | ユーザーのサインインなしで、アプリですべての組織の連絡先を読み取れるようにします。  これらは組織によって管理されている連絡先であり、ユーザー個人の連絡先とは異なります。 | はい |
+
+### <a name="example-usage"></a>使用例
+
+#### <a name="delegated"></a>委任
+
+* _OrgContact.Read.All_: すべての組織の連絡先を取得 (`GET /contacts`)。
 
 ---
 

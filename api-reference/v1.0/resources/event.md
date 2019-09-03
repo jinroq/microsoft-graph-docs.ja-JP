@@ -5,16 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f9a77d6d386632df9f617f46af485220680ea1ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bd4edf3af292f8266b41f8deab8c06cae564f709
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030423"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667583"
 ---
 # <a name="event-resource-type"></a>event リソースの種類
 
 [ユーザー](user.md)の予定表か、Office 365 [グループ](group.md)の既定の予定表のイベントです。
+
+**イベント**に含まれる参加者の最大数、および Exchange Online メールボックスから送信される [eventMessage](eventmessage.md) の受信者の最大数は 500 です。 詳細については、「[送信の制限](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits)」を参照してください。
 
 このリソースは以下をサポートしています。
 
@@ -92,7 +94,17 @@ ms.locfileid: "36030423"
 |開始|[dateTimeTimeZone](datetimetimezone.md)|イベントが開始する日付、時刻、タイムゾーン。 既定で、開始時刻は UTC 単位です。|
 |subject|String|イベントの件名行のテキスト。|
 |type|eventType|イベントの種類。 使用可能な値: `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 読み取り専用です。|
-|webLink|String|Outlook Web App でイベントを開く URL。<br/><br/>Outlook Web App のメールボックスにログインしている場合、ブラウザーでイベントが開きます。まだブラウザーでログインしていない場合、ログインするように求められます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
+|webLink|String|Web 上の Outlook でイベントを開く URL。<br/><br/>Outlook on the web は、メールボックスにサインインしている場合、ブラウザーでイベントを開きます。 それ以外の場合は、Outlook on the web はサインインするように求めます。<br/><br/>この URL には、iFrame 内からアクセスできます。|
+
+> [!NOTE]
+> **webLink** プロパティは、Outlook on the web の以前のバージョンでのみイベントを開く URL を指定します。 以下は URL 形式で、_{event-id}_ は **id** プロパティの URL エンコード値です。
+>
+> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+>
+> Outlook on the web の現在のバージョンで URL を開くには、URL を次の形式に変換します。
+>
+> `https://outlook.office365.com/calendar/item/{event-id}`
+
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|

@@ -384,8 +384,7 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>関連項目
 
-- 
-  [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)
+- [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)
 - [Retail Teams テンプレートの使用を開始する](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Healthcare Teams テンプレートの使用を開始する](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [チームを使用してグループを作成する](/graph/teams-create-group-and-team)

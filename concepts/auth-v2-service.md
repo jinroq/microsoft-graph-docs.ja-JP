@@ -4,18 +4,18 @@ description: 一部のアプリでは、ユーザーの代わりに独自の ID 
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a47720844196fef3c870d49bce328e750d65a11b
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 106d1f79917427e68df4dcc738fb5720c3dd5ad8
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599876"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633735"
 ---
 # <a name="get-access-without-a-user"></a>ユーザーなしでアクセスを取得
 
 一部のアプリでは、ユーザーの代わりに独自の ID を使用して Microsoft Graph を呼び出します。多くの場合、これらは、サインインしたユーザーが存在しないサーバー上で実行される、バックグラウンド サービスかデーモンです。この種のアプリの例として、夜間に起動して実行される電子メール アーカイブ サービスがあります。場合によっては、サインインしているユーザーが存在するアプリでも、独自の ID で Microsoft Graph を呼び出す必要があります。たとえば、サインインしたユーザーが所有している組織内の特権よりも高い特権を必要とする機能をアプリが使用する必要がある場合があります。  
 
-独自の ID で Microsoft Graph を呼び出すアプリは、OAuth 2.0 クライアント資格情報の付与フローを使用して、Azure AD からアクセス トークンを取得します。このトピックでは、サービスを構成し、OAuth クライアント資格情報の付与フローを使用して、アクセス トークンを取得する基本的な手順について説明します。
+独自の ID で Microsoft Graph を呼び出すアプリは、OAuth 2.0 [クライアント資格情報の付与フロー](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)を使用して、Azure AD からアクセス トークンを取得します。このトピックでは、サービスを構成し、OAuth クライアント資格情報の付与フローを使用して、アクセス トークンを取得する基本的な手順について説明します。
 
 ## <a name="authentication-and-authorization-steps"></a>認証および承認の手順
 
@@ -44,15 +44,15 @@ OAuth 2.0 クライアント資格情報の付与フローでは、Azure AD が�
 
 ## <a name="2-configure-permissions-for-microsoft-graph"></a>2.Microsoft Graph のアクセス許可を構成する
 
-独自の ID で Microsoft Graph を呼び出すアプリの場合、Microsoft Graph はアプリケーションのアクセス許可を公開します。(Microsoft Graph は、ユーザーに代わって Microsoft Graph を呼び出すアプリの委任されたアクセス許可も公開します。)アプリに必要なアプリケーションのアクセス許可は、アプリを登録する時点で事前に構成します。アプリケーションのアクセス許可には常に管理者の同意が必要です。管理者は、組織にアプリがインストールされるときに [Azure ポータル](https://portal.azure.com)を使用してこれらのアクセス許可に同意するか、構成済みのアクセス許可に管理者が同意することによりアプリでサインアップ エクスペリエンスを提供することができます。管理者の同意が Azure AD によって記録されると、アプリは再度同意を要求する必要なしにトークンを要求できます。Microsoft Graph で使用できるアクセス許可の詳細については、「[アクセス許可のリファレンス](./permissions-reference.md)」を参照してください。
+独自の ID で Microsoft Graph を呼び出すアプリの場合、Microsoft Graph はアプリケーションのアクセス許可を公開します (Microsoft Graph は、ユーザーに代わって Microsoft Graph を呼び出すアプリの委任されたアクセス許可も公開できます)。アプリに必要なアプリケーションのアクセス許可は、アプリを登録する時点で事前に構成します。アプリケーションのアクセス許可には常に管理者の同意が必要です。管理者は、組織にアプリがインストールされるときに [Azure ポータル](https://portal.azure.com)を使用してこれらのアクセス許可に同意するか、構成済みのアクセス許可に管理者が同意することによりアプリでサインアップ エクスペリエンスを提供することができます。管理者の同意が Azure AD によって記録されると、アプリは再度同意を要求する必要なしにトークンを要求できます。Microsoft Graph で使用できるアクセス許可の詳細については、「[アクセス許可のリファレンス](./permissions-reference.md)」を参照してください。
 
 [Azure アプリ登録ポータル](https://go.microsoft.com/fwlink/?linkid=2083908)でアプリのアプリケーション アクセス許可を構成するには、アプリケーションの [**API アクセス許可**] ページで [**アクセス許可を追加**]、[**Microsoft Graph**] の順に選択し、[**アプリケーションのアクセス許可**] でアプリに必要なアクセス許可を選択します。
 
-次のスクリーンショットは、Microsoft Graph のアプリケーションのアクセス許可に対する **[アクセス許可の選択]** ダイアログを示しています。
+次のスクリーンショットは、Microsoft Graph のアプリケーションのアクセス許可に対する **[アクセス許可の選択]** ダイアログ ボックスを示しています。
 
 ![Microsoft Graph のアプリケーションのアクセス許可に対する [アクセス許可の選択] ダイアログ。](./images/auth-v2/v2-application-permissions.png)
 
-> **注**:アプリで必要になるアクセス許可の、最低限の権限セットを構成することをお勧めします。これにより、アクセス許可の長大なリストに同意を求めるものよりも快適なエクスペリエンスを管理者に提供できます。
+> **注**: アプリで必要になるアクセス許可の、最低限の権限セットを構成することをお勧めします。これにより、アクセス許可の長大なリストに同意を求めるものよりも快適なエクスペリエンスを管理者に提供できます。
 
 ## <a name="3-get-administrator-consent"></a>3.管理者の同意を取得する
 
@@ -203,24 +203,24 @@ Content-Length: 407
 
 独自の ID で Microsoft Graph を呼び出すアプリは、次に示す 2 つのカテゴリのいずれかに分類されます。
 
-- サインインしたユーザーが存在しないサーバーで実行されるバックグラウンド サービス (デーモン)。
+- サインインしたユーザーが存在しないサーバーで実行される[バックグラウンド サービス (デーモン)](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)。
 - サインインしたユーザーは存在するが、独自の ID でも Microsoft Graph を呼び出すアプリ (たとえば、ユーザーの特権よりも高い特権を必要とする機能を使用するため)。
 
 独自の ID で Microsoft Graph を呼び出すアプリは、OAuth 2.0 クライアントの認証情報の付与を使用して Azure AD で認証し、トークンを取得します。 Microsoft ID プラットフォームのエンドポイントの場合は、次のリソースを使用して、このシナリオについてさらに詳しく調べることができます。
 
-- エラーへの対応を含む、クライアント資格情報の付与フローの完全な処理については、「[Azure Active Directory v2.0 と OAuth 2.0 クライアント資格情報フロー](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)」を参照してください。
+- エラーへの対応を含む、クライアント資格情報の付与フローの完全な処理については、「[Azure Active Directory v2.0 と OAuth 2.0 クライアント資格情報フロー](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)」を参照してください。
 - サービスから Microsoft Graph を呼び出すサンプルについては、GitHub の「[v2.0 デーモンのサンプル](https://github.com/Azure-Samples/active-directory-dotnet-daemon-v2)」を参照してください。
-- 推奨される Microsoft ライブラリとサード パーティ製認証ライブラリの詳細については、「[Azure Active Directory v2.0 認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)」を参照してください。
+- 推奨される Microsoft ライブラリとサード パーティ製認証ライブラリの詳細については、「[Microsoft ID プラットフォームの認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries)」を参照してください。
 
 ## <a name="endpoint-considerations"></a>エンドポイントに関する考慮事項
 
-Microsoft では引き続き Azure AD エンドポイントをサポートします。 Microsoft ID プラットフォームのエンドポイントと Azure AD のエンドポイントの使用には、いくつかの違いがあります。 Azure AD エンドポイントを使用する場合:
+Microsoft では引き続き Azure AD エンドポイントをサポートします。 Microsoft ID プラットフォームのエンドポイントと Azure AD のエンドポイントの使用には、[いくつかの違い](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison)があります。 Azure AD エンドポイントを使用する場合:
 
 - アプリがマルチ テナント アプリの場合は、[Microsoft Azure portal](https://portal.azure.com) でマルチ テナントとなるよう明示的に設定する必要があります。
 - 管理者の同意エンドポイント (`/adminconsent`) はありません。 その代わりに、認証要求に `prompt=admin_consent` パラメーターを追加することで、アプリは実行時に管理者の同意を要求できます。 詳細については、「[Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)」の「**実行時の Azure AD 同意フレームワークのトリガー**」を参照してください。
 - 承認とトークン要求のパラメーターは異なります。たとえば、Azure AD エンドポイント要求には、`scope` パラメーターはありません。その代わりに、`resource` パラメーターを使用して、承認 (管理者の同意用) またはトークンが要求されているリソース (`resource=https://graph.microsoft.com`) の URI を指定します。
 
-Azure AD エンドポイントの場合は、次のリソースを使用して、このシナリオについてさらに詳しく調べることができます。
+次のリソースを使用して、このシナリオについてさらに詳しく調べることができます。
 
-- クライアント資格情報の付与フローの概要、サンプル、詳細な処理へのクイック リンクについては、「[開発者のための Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)」の**作業の開始セクション**の**サービス間**を参照してください。
-- Azure AD エンドポイントの場合は、Azure Active Directory 認証ライブラリ (ADAL) を使用して Azure AD からトークンを取得できます。ADAL は、.NET、iOS、Android、JavaScript、Java、および Node.js を含む、いくつかのプラットフォームで利用できます。Azure AD エンドポイント向けの ADAL と、その他の Microsoft 認証ライブラリの詳細については、「[Azure Active Directory 認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)」を参照してください。
+- さまざまな種類のアプリで Microsoft ID プラットフォームを使用する方法については、「[Microsoft ID プラットフォームのドキュメント](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)」の「**はじめに**」リンクを参照してください。 ガイドには、Microsoft ID プラットフォームのサポートされているさまざまな種類のアプリの概要トピック、クイックスタート、チュートリアル、コード サンプル、およびプロトコル ドキュメントへのリンクが含まれています。
+- Microsoft ID プラットフォームのエンドポイントで使用可能な Microsoft Authentication Library (MSAL) およびサーバー ミドルウェアの詳細については、「[Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)」を参照してください。

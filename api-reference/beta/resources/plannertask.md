@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1eb718daad405fb6aaed2f170747bc91dad47b76
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ced498b9bc56d8f21f96ede67d1a9a6501ddb21
+ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009000"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36677177"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask のリソースの種類
 
@@ -46,6 +46,7 @@ ms.locfileid: "36009000"
 |id|String|読み取り専用。 タスクの ID。 28 文字長で、大文字と小文字の区別があります。 [書式検証](tasks-identifiers-disclaimer.md)はサービスによって行われます。|
 |orderHint|String|リスト ビューでこの種類の項目の順序付けに使用するヒント。形式は[ここ](planner-order-hint-format.md)の説明に従って定義されます。|
 |percentComplete|Int32|タスクの完了の割合。`100` に設定すると、タスクが完了したと見なされます。 |
+|priority|Int32|タスクの優先度。 有効な値の範囲は`0` ~ `10` (包含) で、値が低い優先度 (`0`最も高い`10`優先度で、最も低い優先度) になります。  現在、Planner では`0`値`1`が`2` "緊急" `3` `4`として解釈され、" `5`重要`6` `7` " `8` `9` `10` 、、、、および "低" として解釈されます。  現時点では、Planner は`1` "緊急"、 `3` `5` "中" `9` 、"低" の値を設定します。|
 |planId|String|タスクが属している計画 ID。|
 |previewType|String|タスクに表示されるプレビューの種類を設定します。 可能な値は、`automatic`、`noPreview`、`checklist`、`description`、`reference` です。|
 |referenceCount|Int32|タスクに上に存在している外部への参照の数。|
@@ -91,6 +92,7 @@ ms.locfileid: "36009000"
   "id": "String (identifier)",
   "orderHint": "String",
   "percentComplete": 1024,
+  "priority": 1024,
   "planId": "String",
   "previewType": "String",
   "referenceCount": 1024,

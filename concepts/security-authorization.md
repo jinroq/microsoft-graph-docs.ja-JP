@@ -146,18 +146,12 @@ Microsoft ID プラットフォーム エンドポイントにアプリケーシ
 
 |**アプリケーションの種類**|**認証ライブラリ**|
 |------------------------|----------------------------|
-|
-  [デスクトップ アプリケーション - iOS](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: iOS 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|
-  [デスクトップ アプリケーション - Android](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|
-  [デスクトップ アプリケーション - .Net](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|
-  [Web アプリケーション - JavaScript SPA](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[JavaScript 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|
-  [Web アプリケーション - .NET Web Server](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookies、SystemWeb|
-|
-  [Web アプリケーション - NodeJS Web アプリケーション](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[デスクトップ アプリケーション - iOS](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: iOS 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[デスクトップ アプリケーション - Android](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[デスクトップ アプリケーション - .Net](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Web アプリケーション - JavaScript SPA](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[JavaScript 用 Microsoft Authentication Library プレビュー](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Web アプリケーション - .NET Web Server](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection、Cookies、SystemWeb|
+|[Web アプリケーション - NodeJS Web アプリケーション](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 既存のライブラリを使用しないアプリケーションの場合は、「[ユーザーの代わりにアクセスを取得](auth-v2-user.md)」を参照してください。
 

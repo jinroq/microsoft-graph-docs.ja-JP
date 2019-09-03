@@ -4,16 +4,16 @@ description: Microsoft Graph を使用してユーザーの代理としてリソ
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e72fcd846f433c0ceac48ffc6a01f3f61736415a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: dc4fa7792cf6913b1a7829c6865dd4a47802f7c7
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599808"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633728"
 ---
-# <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得する
+# <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得
 
-Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Azure AD からアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コードの付与フローがあります。このトピックでは、このフローの使用例について説明します。
+Microsoft Graph を使用してユーザーの代理としてリソースを読み取り/書き込みするには、Microsoft ID プラットフォームからアクセス トークンを取得し、Microsoft Graph に送信する要求にトークンを添付する必要があります。アクセス トークンの取得に使用する認証フローは、開発しているアプリの種類と、OpenID Connect を使用してユーザーがアプリにサインインするかどうかによって異なります。ネイティブ アプリ、モバイル アプリ、一部の Web アプリで使用される一般的なフローの 1 つに、OAuth 2.0 認証コードの付与フローがあります。このトピックでは、このフローの使用例について説明します。
 
 ## <a name="authentication-and-authorization-steps"></a>認証および承認の手順
 
@@ -31,9 +31,9 @@ Microsoft ID プラットフォームのエンドポイントを使用するに�
 
 OAuth 2.0 認証コードの付与フローを使用するようにアプリを構成するには、アプリの登録時に次の値を保存する必要があります。
 
-- アプリ登録ポータルによって割り当てられたアプリケーション ID。
+- アプリ登録ポータルによって割り当てられたアプリケーション (クライアント) ID。
 - クライアント (アプリケーション) シークレット。パスワードか、公開鍵や秘密鍵のペア (証明書) のいずれか。 ネイティブ アプリの場合、これは必須ではありません。
-- Azure AD からの応答を受信するためのリダイレクト URL。
+- Azure AD からの応答を受信するためのリダイレクト URI (または応答 URL)。
 
 Azure portal でアプリを構成する手順については、「[アプリを登録する](./auth-register-app-v2.md)」を参照してください。
 
@@ -73,19 +73,19 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 ### <a name="consent-experience"></a>同意エクスペリエンス
 
-この時点で、ユーザーは Microsoft で認証するための資格情報の入力を求められます。 v2.0 エンドポイントは、ユーザーが `scope` クエリ パラメーターに示されているアクセス許可に同意したことを確認します。  ユーザーがこれらのアクセス許可のいずれかに同意していない場合と、管理者が組織内のすべてのユーザーに代わって同意していない場合は、必要なアクセス許可に同意するよう求められます。  
+この時点で、ユーザーは Microsoft で認証するための資格情報の入力を求められます。 Microsoft ID プラットフォーム v2.0 エンドポイントは、ユーザーが `scope` クエリ パラメーターに示されているアクセス許可に同意したことを確認します。  ユーザーがこれらのアクセス許可のいずれかに同意していない場合と、管理者が組織内のすべてのユーザーに代わって同意していない場合は、必要なアクセス許可に同意するよう求められます。  
 
-Microsoft アカウントの同意ダイアログの例を次に示します。
+次は Microsoft アカウント ユーザーの同意ダイアログ ボックスの例です。
 
 ![Microsoft アカウントの同意ダイアログ](./images/v2-consumer-consent.png)
 
-> **試してみましょう** Microsoft アカウントや Azure AD の職場または学校のアカウントを所有している場合は、下のリンクをクリックして試してみてください。サインイン後、ブラウザーは `https://localhost/myapp/` にリダイレクトされ、アドレスバーに `code` が表示されます。
+> **試してみましょう** Microsoft アカウントや Azure AD の職場または学校のアカウントを所有している場合は、次のリンクをクリックして試してみてください。サインイン後、ブラウザーは `https://localhost/myapp/` にリダイレクトされ、アドレスバーに `code` が表示されます。
 >
 > <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20user.read%20mail.read&state=12345" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize...</a>
 
 ### <a name="authorization-response"></a>承認応答
 
-ユーザーがアプリがリクエストした権限に同意した場合、応答には `code` パラメーターに承認コードが含まれます。上記の要求に対して成功した応答の例を次に示します。要求の `response_mode` パラメーターが `query` に設定されているため、応答はリダイレクト URL のクエリ文字列で返されます。
+ユーザーがアプリがリクエストした権限に同意した場合、応答には `code` パラメーターに承認コードが含まれます。以前の要求に対して成功した応答の例を次に示します。要求の `response_mode` パラメーターが `query` に設定されているため、応答はリダイレクト URL のクエリ文字列で返されます。
 
 ```
 GET https://localhost/myapp/?
@@ -146,7 +146,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | パラメーター | 説明 |
 | --- | --- |
 | token_type |トークンの種類の値を示します。Azure AD がサポートしている種類はベアラーのみです。 |
-| スコープ |access_token が有効な Microsoft Graph のアクセス許可のスペースで区切った一覧。 |
+| scope |access_token が有効な Microsoft Graph のアクセス許可のスペースで区切った一覧。 |
 | expires_in |アクセス トークンの有効期間 (秒単位)。 |
 | access_token |要求されたアクセス トークン。アプリはこのトークンを、Microsoft Graph の呼び出しで使用できます。 |
 | refresh_token |OAuth 2.0 の更新トークン。 アプリはこのトークンを使用して、現在のアクセス トークンの有効期限が切れた後、追加のアクセス トークンを取得します。  更新トークンは有効期限が長く、長期間にわたってリソースへのアクセスを保持するために使用できます。  詳細については、「[Azure Active Directory v2.0 トークン リファレンス](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens)」を参照してください。 |
@@ -247,24 +247,24 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 Microsoft Graph は、次に示す種類のアプリから、ユーザーの代わりに呼び出すことができます。
 
-- ネイティブ/モバイル アプリ
-- Web アプリ
-- シングル ページ アプリ (SPA)
-- バックエンド Web API: たとえば、ネイティブ アプリなどのクライアント アプリが Web API のバックエンドで機能を実装するシナリオなどの場合。 Microsoft ID プラットフォームのエンドポイントでは、クライアント アプリとバックエンドの Web API の両方に同じアプリケーション ID が必要です。
+- [ネイティブ/モバイル アプリ](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Web アプリ](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [シングル ページ アプリ (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [バックエンド Web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview): たとえば、ネイティブ アプリなどのクライアント アプリが Web API のバックエンドで機能を実装するシナリオなどの場合。 Microsoft ID プラットフォームのエンドポイントでは、クライアント アプリとバックエンドの Web API の両方に同じアプリケーション ID が必要です。
 
-Microsoft ID プラットフォームのエンドポイントでサポートされているアプリの種類の詳細については、「[アプリの種類](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows)」を参照してください。
+Microsoft ID プラットフォームのエンドポイントでサポートされているアプリのシナリオの詳細については、「[アプリのシナリオおよび認証フロー](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios)」を参照してください。
 
 > **注**: スタンドアロンの Web API からの Microsoft Graph の呼び出しは、現在 Microsoft ID プラットフォームのエンドポイントではサポートされていません。 このシナリオでは、Azure AD エンドポイントを使用する必要があります。
 
 Microsoft ID プラットフォームのエンドポイントからユーザーに代わって Microsoft Graph にアクセスする方法の詳細については、次を参照してください。
 
 - プロトコルのドキュメントへのリンクや、さまざまな種類のアプリでの作業の開始についての記事は、「[Microsoft ID プラットフォームのエンドポイントのドキュメント](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)」を参照してください。
-- 認証フローの詳細な説明については、「[Microsoft ID プラットフォームのプロトコル](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols)」を参照してください。
+- サポートされているアプリケーション タイプと認証フローの詳細な説明については、「[v2.0 アプリ タイプ](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types)」を参照してください。
 - 推奨される認証ライブラリ (Microsoft およびサード パーティ) と Microsoft ID プラットフォーム用サーバー ミドルウェアの詳細については、「[Azure Active Directory v2.0 認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)」を参照してください。
 
 ## <a name="endpoint-considerations"></a>エンドポイントに関する考慮事項
 
-Microsoft では引き続き Azure AD エンドポイントをサポートします。 Microsoft ID プラットフォームのエンドポイントと Azure AD のエンドポイントの使用には、いくつかの違いがあります。 Azure AD エンドポイントを使用する場合:
+Microsoft では引き続き Azure AD エンドポイントをサポートします。 Microsoft ID プラットフォームのエンドポイントと Azure AD のエンドポイントの使用には、[いくつかの違い](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison)があります。 Azure AD エンドポイントを使用する場合:
 
 - アプリには、プラットフォームごとのアプリケーション ID (クライアント ID) が必要です。
 - アプリがマルチ テナント アプリの場合は、[Azure ポータル](https://portal.azure.com)でマルチ テナントとなるよう明示的に設定する必要があります。
@@ -274,5 +274,5 @@ Microsoft では引き続き Azure AD エンドポイントをサポートしま
 
 Azure AD エンドポイントからユーザーに代わって Microsoft Graph にアクセスする方法の詳細については、次を参照してください。
 
-- さまざまな種類のアプリで Azure AD エンドポイントを使用する方法の詳細については、「[開発者のための Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)」の**作業開始**リンクを参照してください。このガイドには、Azure AD エンドポイントでサポートされている、さまざまな種類のアプリの概要トピック、コードのチュートリアル、およびプロトコルのドキュメントへのリンクが含まれています。
-- Azure AD エンドポイントで使用可能な Active Directory 認証ライブラリ (ADAL) とサーバー ミドルウェアの詳細については、「[Azure Active Directory 認証ライブラリ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries)」を参照してください。
+- さまざまな種類のアプリで Microsoft ID プラットフォームのエンドポイントを使用する方法については、「[Microsoft ID プラットフォームの開発者向けドキュメント](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)」の「**はじめに**」リンクを参照してください。 ドキュメントには、Microsoft ID プラットフォームのエンドポイントでサポートされているさまざまな種類のアプリの概要トピック、クイックスタート、チュートリアル、コード サンプル、およびプロトコル ドキュメントへのリンクが含まれています。
+- Microsoft ID プラットフォームのエンドポイントで使用可能な Microsoft Authentication Library (MSAL) およびサーバー ミドルウェアの詳細については、「[Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)」を参照してください。

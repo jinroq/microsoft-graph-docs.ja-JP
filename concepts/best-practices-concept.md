@@ -42,8 +42,7 @@ Microsoft Authentication Library API ([MSAL](https://docs.microsoft.com/ja-JP/az
 
   - アプリケーションのプライバシーに関する声明、使用条件、名前、ロゴ、ドメインは、同意その他の操作で表示されるので、エンドユーザーが理解できるように慎重に構成する必要があります。
   - アプリケーションに同意するのがどのようなユーザーなのか (エンドユーザーか管理者か) を考慮した上で、アプリケーションが[適切なアクセス許可を要求する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-scopes)ように構成します。
-  - 
-  [静的、動的、増分同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
+  - [静的、動的、増分同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent)の違いを確実に理解している必要があります。
 
 - **マルチテナント アプリケーションを考慮する**。 ユーザーによって、アプリケーションや同意のコントロールはまちまちで、その状態もさまざまであることを想定します。 例:
 

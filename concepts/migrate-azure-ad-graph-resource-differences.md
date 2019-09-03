@@ -4,12 +4,12 @@ description: アプリを移行するために、Azure AD Graph のリソース�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 590ec2fae33e5172e274341793c82409a4c28c8c
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 23a27e80027e6c862c32648bb452770cf3e27b5c
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630203"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667598"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph と Microsoft Graph のリソースの種類の違い
 
@@ -29,6 +29,7 @@ Azure AD Graph から Microsoft Graph にアプリを移行するときは、リ
 | [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ-[アプリケーション](/graph/api/resources/application?view=graph-rest-beta)<br>v 1.0-_まだ使用できません_ ||
 | [AppRole](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ[承認 le](/graph/api/resources/approle?view=graph-rest-beta)<br>v 1.0-_まだ使用できません_ | |
 | [AppRoleAssignment](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-ベータ&nbsp;[承認 leassignment](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>v 1.0-_まだ使用できません_ | |
+| [CertificateAuthorityInformation](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ&nbsp;-&nbsp;版の[certificateauthority](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>version 1.0&nbsp;-&nbsp;_はまだ利用できません_ | |
 | [Contact](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ版の[連絡先](/graph/api/resources/orgContact?view=graph-rest-beta)<br>v 1.0-_まだ使用できません_ | |
 | [DirectoryLinkChange](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ-_新&nbsp;手法_ <br>v2.0 1.0-_新しい&nbsp;方法_ | デルタクエリは、このリソースを必要としないメカニズムで、リレーションシップの変更の検出をサポートします。 「 [AZURE AD graph と Microsoft Graph の機能の違い」を](migrate-azure-ad-graph-feature-differences.md)参照してください。 |
 | [KeyCredential](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)| β- [Keycredential](/graph/api/resources/keyCredential?view=graph-rest-beta)<br>v 1.0-_まだ使用できません_ | |
@@ -41,14 +42,14 @@ Azure AD Graph から Microsoft Graph にアプリを移行するときは、リ
 | [PasswordCredential](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ- [Passwordcredential](/graph/api/resources/passwordCredential?view=graph-rest-beta) <br> v 1.0-_まだ使用できません_ ||
 | [PasswordProfile](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ- [Passwordprofile](/graph/api/resources/passwordProfile?view=graph-rest-beta) <br> v 1.0-PasswordProfile ||
 | [ポリシー](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ-[ポリシー](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) _(変更する対象)_ <br> v 1.0-_まだ使用できません_ | 各ポリシーには、一意の種類の名前と構造があります。|
-| [プロビジョニングエラー](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ&nbsp;-&nbsp;版[onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-beta) <br> v 1.0&nbsp;-&nbsp;onPremisesProvisioningError  | |
+| [プロビジョニングエラー](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ&nbsp;-&nbsp;版_は使用できません_ <br> version 1.0&nbsp;-&nbsp;_は使用できません_ | このリソースは推奨されていません。  ただし、AD Connect 関連のプロビジョニングエラーを説明する新しいリソースは、 [onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0)にあります。 |
 | [RequiredResourceAccess](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ版の[Resourceaccess](/graph/api/resources/requiredResourceAccess?view=graph-rest-beta) <br> v 1.0-_まだ使用できません_ | |
 | [ResourceAccess](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ- [Resourceaccess](/graph/api/resources/resourceAccess?view=graph-rest-beta) <br> v 1.0-_まだ使用できません_ | |
 | [ServiceEndpoint](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ[エンドポイント](/graph/api/resources/endpoint?view=graph-rest-beta) <br> v1.0-エンドポイント_はまだ利用できません_ | [エンドポイント](/graph/api/resources/endpoint?view=graph-rest-beta)は、[グループ](/graph/api/resources/group?view=graph-rest-beta)リソースの一部としてのみ使用できます。|
 | [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ- [Serviceprincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> v 1.0-_まだ使用できません_ | |
 | [SignInName](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ版_はまだ利用できません_ <br> v 1.0-_まだ使用できません_ | ユーザーアカウントへのサインインに使用されているがまだ使用**** できない識別子の新しいモデル。 Azure AD B2C シナリオをサポートします。 |
 | [TenantDetail](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ-[組織](/graph/api/resources/organization?view=graph-rest-beta) <br> v 1.0-[組織](/graph/api/resources/organization?view=graph-rest-v1.0) | |
-| [TrustedCasForPasswordAuth](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ&nbsp;-&nbsp;版_はまだ利用できません_ <br> v 1.0-_まだ使用できません_  | Certificate' **Authconfiguration**に名前を変更しましたが、まだ使用できません。|
+| [TrustedCasForPasswordAuth](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-ベータ&nbsp;の[certificateベース authconfiguration](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> v 1.0-_まだ使用できません_ | |
 | [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | ベータ版_はまだ利用できません_ <br> v 1.0-_まだ使用できません_ |  ユーザーアカウントへのサインインに使用されているがまだ使用**** できない識別子の新しいモデル。 Azure AD B2C シナリオをサポートします。 |
 
 ## <a name="next-steps"></a>次のステップ

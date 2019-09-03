@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 79fc7676752d4f1ba8363c527c46ac50e9f9afff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c3415edebdb792a931abf2b79a591ef3729d2cf6
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966329"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667506"
 ---
 # <a name="organization-resource-type"></a>組織リソースの種類
 
@@ -25,7 +25,7 @@ ms.locfileid: "35966329"
 | メソッド       | 戻り値の型  |説明|
 |:---------------|:--------|:----------|
 |[組織を取得する](../api/organization-get.md) | [organization](organization.md) |組織オブジェクトのプロパティと関係を読み取ります。|
-|[Update](../api/organization-update.md) | [organization](organization.md)  |organization オブジェクトを更新します。 更新できるプロパティは、**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones**、**privacyProfile** のみです。 |
+|[Update organization](../api/organization-update.md) | [organization](organization.md)  |organization オブジェクトを更新します。 更新できるプロパティは、**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones**、**privacyProfile** のみです。 |
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
@@ -62,8 +62,9 @@ ms.locfileid: "35966329"
 
 ## <a name="relationships"></a>関係
 
-| リレーションシップ     | 型   |説明|
+| リレーションシップ  | 型  |説明|
 |:---------------|:--------|:----------|
+|Certificateベース Authconfiguration|[Certificateベース Authconfiguration](certificatebasedauthconfiguration.md)コレクション| 証明書ベースの認証構成を管理するナビゲーションプロパティ。 このコレクションには、Certificateの1つのインスタンスのみを作成できます。  |
 |extensions|[extension](extension.md) コレクション|組織リソースに対して定義されているオープン拡張機能のコレクション。 Null 許容型。|
 
 ## <a name="json-representation"></a>JSON 表記

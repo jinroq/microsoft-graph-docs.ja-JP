@@ -56,8 +56,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |isReadReceiptRequested|Boolean|メッセージの開封確認メッセージが要求されているかどうかを示します。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、複数値の拡張プロパティのコレクション。 Null 許容型です。|
 |replyTo|受信者コレクション|返信時に使用される電子メール アドレス。 isDraft = true の場合にのみ更新可能です。|
-|sender|受信者|メッセージを生成するために実際に使用されるアカウント。 
-  [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときに、更新可能です。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。|
+|sender|受信者|メッセージを生成するために実際に使用されるアカウント。 [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときに、更新可能です。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) コレクション| メッセージに対して定義された、単一値の拡張プロパティのコレクションです。 Null 許容型です。|
 |subject|String|メッセージの件名。 isDraft = true の場合にのみ更新可能です。|
 |toRecipients|受信者コレクション|メッセージの宛先受信者。|

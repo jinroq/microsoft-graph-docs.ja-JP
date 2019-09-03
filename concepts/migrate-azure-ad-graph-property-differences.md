@@ -4,12 +4,12 @@ description: アプリを移行するために、Azure AD Graph リソース (�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb1e08410cd8345e1a8e531b62f0bdd391861164
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 75a164925171d49d930492ba44029deb0d73e49d
+ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450621"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36667604"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Azure AD Graph と Microsoft Graph のプロパティの相違点
 
@@ -193,14 +193,27 @@ Azure AD Graph TenantDetails リソースは、Microsoft Graph の組織に名�
 
 |Azure AD Graph <br>(v 1.6) プロパティ |Microsoft Graph<br> プロパティ|Comments|
 |---|---|---|
-| **companyLastDirSyncTime** | ベータ&nbsp;-&nbsp;版**onPremisesLastSyncDateTime** <br>v 1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
+| **companyLastDirSyncTime** | ベータ&nbsp;-&nbsp;版**onPremisesLastSyncDateTime** <br> v 1.0&nbsp;-&nbsp;**onPremisesLastSyncDateTime** |  |
 | **dirSyncEnabled** | ベータ&nbsp;-&nbsp;版**onPremisesSyncEnabled** <br> v 1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
-| **プロビジョニングエラー** | ベータ&nbsp; - &nbsp;版_は使用できません_ <br> version 1.0 &nbsp; - &nbsp; _は使用できません_ | このプロパティとその情報は廃止されました。|
-| **電話番号** | ベータ&nbsp;-&nbsp;版**businessPhones** <br> v 1.0 &nbsp; - &nbsp; **businessPhones** |  |
+| **プロビジョニングエラー** | ベータ&nbsp;-&nbsp;版_は使用できません_ <br> version 1.0&nbsp;-&nbsp;_は使用できません_ | このプロパティとその情報は廃止されました。|
+| **電話番号** | ベータ&nbsp;-&nbsp;版**businessPhones** <br> v 1.0&nbsp;-&nbsp;**businessPhones** |  |
 
 ## <a name="trustedcasforpasswordlessauth-property-differences"></a>Trustedcasforpasswordauthentication プロパティの違い
 
-Azure AD Graph Trustedcasforpasswordを含む Auth リソースは、Microsoft Graph の Certificateベース Authconfiguration に変更されました。  プロパティの違いはありません。
+Azure AD Graph Trustedcasforpasswordonly Auth リソースは、 [Certificateの Authconfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta)に名前が変更され、Microsoft Graph ベータ版の endpoing でのみ使用できます。 プロパティの違いはありません。ただし、Certificateauthority プロパティで使用される**certificateauthority**リソースの種類**** には違いがあります。
+
+### <a name="certificateauthorityinformation"></a>CertificateAuthorityInformation
+
+Azure AD Graph CertificateAuthorityInformation は、Microsoft Graph の**Certificateauthority**に名前が変更されます。 プロパティの相違点を次に示します。
+
+|Azure AD Graph <br>(v 1.6) プロパティ |Microsoft Graph<br> プロパティ|Comments|
+|---|---|---|
+| **authorityType** | &nbsp;-ベータ&nbsp;**isrootauthority**<br> version 1.0 &nbsp; - &nbsp; _はまだ利用できません_ | このプロパティの型も、ブール型 (Boolean) に変更されています。 以前は、このプロパティは "RootAuthority" または "IntermediateAuthority" のいずれかに設定する必要がありました。 新しいプロパティを**true**に設定することは、"rootauthority" に相当します。 |
+| **crlDistributionPoint** | ベータ&nbsp;-&nbsp;版**certificateRevocationListUrl** <br> version 1.0&nbsp;-&nbsp;_はまだ利用できません_ | |
+| **deltaCrlDistributionPoint** | ベータ&nbsp;-&nbsp;版**deltaCertificateRevocationListUrl** <br> version 1.0&nbsp;-&nbsp;_はまだ利用できません_ | |
+| **trustedCertificate** | ベータ&nbsp;-&nbsp;版の**証明書** <br> version 1.0&nbsp;-&nbsp;_はまだ利用できません_ | |
+| **trustedIssuer** | &nbsp;-ベータ&nbsp;**発行者**<br> version 1.0&nbsp;-&nbsp;_はまだ利用できません_ | |
+| **trustedIssuerSki** | &nbsp;-ベータ&nbsp;**issuerski**<br> version 1.0 &nbsp; - &nbsp; _はまだ利用できません_ | |
 
 ## <a name="next-steps"></a>次のステップ
 

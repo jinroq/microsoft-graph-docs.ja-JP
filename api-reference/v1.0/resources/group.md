@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0a8a4cb0a756b302cda792b0c8d32cef846a5d1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b9b13f10ed63de8f453355113cdc42da69139a3
+ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029317"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699122"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -130,7 +130,7 @@ Office 365 グループまたはセキュリティ グループのいずれか�
 |renewedDateTime|DateTimeOffset| グループの最後の更新時のタイムスタンプです。 これは直接変更することはできず、[更新サービス アクション](../api/group-renew.md)経由でのみ更新されます。 Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、常に UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。|
 |securityEnabled|ブール値|グループがセキュリティ グループであるかどうかを指定します。 <br><br>既定で返されます。 $filter をサポートします。|
 |unseenCount|Int32|サインにしているユーザーのグループへの最後のアクセス以降に新しい投稿を受け取った会話の数です。 <br><br>$select でのみ返されます。 |
-|visibility|String| Office 365 グループの表示を指定します。 使用可能な値: `private`、`public`、`hiddenmembership`。空の値はパブリックとして扱われます。  詳細については、「[グループの表示オプション](#group-visibility-options)」を参照してください。<br>表示はグループが作成されているときのみ設定することができます。編集はできません。<br>表示は、統合グループのみでサポートされています。セキュリティ グループではサポートされていません。 <br><br>既定で返されます。|
+|visibility|String| Office 365 グループの表示を指定します。 使用可能な値: `Private`、`Public`、`Hiddenmembership`。空の値はパブリックとして扱われます。  詳細については、「[グループの表示オプション](#group-visibility-options)」を参照してください。<br>表示はグループが作成されているときのみ設定することができます。編集はできません。<br>表示は、統合グループのみでサポートされています。セキュリティ グループではサポートされていません。 <br><br>既定で返されます。|
 
 
 ### <a name="group-visibility-options"></a>グループの表示オプション
@@ -139,9 +139,9 @@ Office 365 グループまたはセキュリティ グループのいずれか�
  
 |値|説明|
 |:----|-----------|
-| `public` | 所有者のアクセス許可の必要がなく、だれでもグループに参加することができます。<br>グループのコンテンツをだれでも読むことができます。|
-| `private` | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。|
-| `hiddenmembership` | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。<br>メンバー以外はグループのメンバーを確認することができません。<br>管理者 (グローバル、会社、ユーザー、ヘルプデスク) が、グループのメンバーシップを参照できます。<br>グループは、グローバル アドレス帳 (GAL) に表示されます。|
+| パブリック | 所有者のアクセス許可の必要がなく、だれでもグループに参加することができます。<br>グループのコンテンツをだれでも読むことができます。|
+| プライベート | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。|
+| Hiddenmembership | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。<br>メンバー以外はグループのメンバーを確認することができません。<br>管理者 (グローバル、会社、ユーザー、ヘルプデスク) が、グループのメンバーシップを参照できます。<br>グループは、グローバル アドレス帳 (GAL) に表示されます。|
 
 
 ## <a name="relationships"></a>リレーションシップ

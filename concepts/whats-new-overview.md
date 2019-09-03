@@ -110,8 +110,7 @@ Intune [7 月](changelog.md#july-2019)の更新プログラム
 ## <a name="want-to-stay-in-the-loop"></a>常に最新の情報を把握するには
 - Microsoft Graph でのサポートを希望するシナリオがある場合は、 [Microsoft Graph User Voice (Microsoft Graph のユーザーの声)](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) で新機能の提案と投票を行ってください。
 - Microsoft Graph コミュニティで活発に活動してください。 毎月の Microsoft Graph コミュニティ コールに[参加](https://aka.ms/microsoftgraphcall)してみてください。
-- 
-  [Office 365 開発者プログラム](https://developer.microsoft.com/ja-JP/office/dev-program)に登録すると、Office 365 サブスクリプションを無料で入手し、開発を開始できます。
+- [Office 365 開発者プログラム](https://developer.microsoft.com/ja-JP/office/dev-program)に登録すると、Office 365 サブスクリプションを無料で入手し、開発を開始できます。
 
 
 ## <a name="see-also"></a>関連項目
