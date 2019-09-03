@@ -59,7 +59,6 @@ Microsoft Graph の通知を使用するために追加の許可を追加する�
 
 ## <a name="next-steps"></a>次の手順
 
-
-  [アクセス許可と同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/v2-permissions-and-consent)に関する詳細を確認する、または「Microsoft Graph [アクセス許可のリファレンス](https://docs.microsoft.com/ja-JP/graph/permissions-reference)」を参照します。
+[アクセス許可と同意](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/v2-permissions-and-consent)に関する詳細を確認する、または「Microsoft Graph [アクセス許可のリファレンス](https://docs.microsoft.com/ja-JP/graph/permissions-reference)」を参照します。
 
 これで、アプリの登録が完了しました。デバイス間の操作性のためのアプリケーションをセットアップし、Microsoft Graph 経由で送信される通知を行うためと、対応するアプリ プラットフォームを対象にするために[パートナー センター](https://partner.microsoft.com/)に移動します。 詳細については、[クロスデバイス エクスペリエンスに参加する](notifications-integration-cross-device-experiences-onboarding.md)を参照してください。 

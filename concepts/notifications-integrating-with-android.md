@@ -116,8 +116,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 クライアント側のSDKは、Connected Device Platforms と呼ばれるインフラストラクチャの上に構築されています。 機能を使用するには、アプリ内でプラットフォームを初期化する必要があります。 この初期化手順は、通知シナリオを実行する前に必須であるため、メインクラス **OnCreate** メソッド内で実行する必要があります。
 
-
-  [
+[
   **ConnectedDevicesPlatform**](https://docs.microsoft.com/ja-JP/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest) クラスをインスタンス化して、プラットフォームを構築および初期化する必要があります。 これを行う前に、プラットフォームが起動した後、イベントが発生する可能性があるため、イベント ハンドラーを接続してください。 
 
 ```java

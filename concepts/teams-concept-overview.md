@@ -68,20 +68,14 @@ Microsoft Teams API は、Teams 内部および外部のどちらのアプリも
 
 |アプリの種類|シナリオの説明|
 |:-------|:-------------------|
-| 
-  [タブ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/tabs/tabs-overview) |Microsoft Teams でコンテンツを表示します。|
-| 
-  [ボット](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/bots/bots-overview) |会話の中でタスクを実行するようユーザーを支援します。|
-| 
-  [コネクタ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/connectors/connectors) |外部サービスからチャネルに対して更新情報を投稿します。|
-| 
-  [アクション可能なメッセージング](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/cards/cards) |拡張対話機能をコネクタ カードに追加します。|
-| 
-  [メッセージング拡張機能](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/messaging-extensions) |ユーザーが会話の中で情報に関するクエリを実行したり共有したりできるようにします。|
+| [タブ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/tabs/tabs-overview) |Microsoft Teams でコンテンツを表示します。|
+| [ボット](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/bots/bots-overview) |会話の中でタスクを実行するようユーザーを支援します。|
+| [コネクタ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/connectors/connectors) |外部サービスからチャネルに対して更新情報を投稿します。|
+| [アクション可能なメッセージング](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/cards/cards) |拡張対話機能をコネクタ カードに追加します。|
+| [メッセージング拡張機能](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/messaging-extensions) |ユーザーが会話の中で情報に関するクエリを実行したり共有したりできるようにします。|
 |Web サイト| Web ページに拡張コンテンツを表示します。|
 |サービス|Web サービスによりクライアント アプリケーションを拡張して Microsoft Graph データを使用できるようにします。|
-| 
-  [アクティビティ フィード](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/activity-feed)|フィード通知によりユーザーの参加を促します。|
+| [アクティビティ フィード](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/activity-feed)|フィード通知によりユーザーの参加を促します。|
 | [通話とオンライン会議 (プレビュー)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |音声/ビデオ通話を開始して参加することができるボットで Microsoft Teams アプリを作成し、対話型音声応答 (IVR) フローに基づいて通話をルーティング/転送し、オンライン会議に参加します。|
 
 ## <a name="api-reference"></a>API リファレンス
@@ -96,7 +90,6 @@ Microsoft Teams API は、Teams 内部および外部のどちらのアプリも
 - [Microsoft Teams API の使用](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)方法を確認する。
 - [チーム](/graph/api/resources/team?view=graph-rest-1.0)、[チャネル](/graph/api/resources/channel?view=graph-rest-1.0)、および [グループ](/graph/api/resources/group?view=graph-rest-1.0)のリソースのメソッド、プロパティ、およびリレーションシップについて詳しく調べる。
 - [Graph エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)で API をお試しください。
-- 
-  [Microsoft Teams プログラミング モデル](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/concepts-overview)に関する詳細を読む。
+- [Microsoft Teams プログラミング モデル](https://docs.microsoft.com/ja-JP/microsoftteams/platform/concepts/concepts-overview)に関する詳細を読む。
 - [通話およびオンライン会議 API](/graph/api/resources/calls-api-overview?view=graph-rest-beta)を調べる。
 - サンプル コードですぐに開始する: [Contoso エアライン](https://github.com/microsoftgraph/contoso-airlines-teams-sample)、[C# ミニサンプル](https://github.com/microsoftgraph/csharp-teams-sample-graph)

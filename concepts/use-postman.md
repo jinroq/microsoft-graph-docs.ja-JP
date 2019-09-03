@@ -16,8 +16,7 @@ Microsoft Graph Postman のコレクションを使用して、Microsoft Graph A
 
 ![Postman の画像](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
-この記事では、Postman と Microsoft Graph の使用方法について説明します。 
-  [Graph Explorer](https://developer.microsoft.com/ja-JP/graph/graph-explorer) を使用して、web ブラウザーで直接 Microsoft Graph API を検索することもできます。
+この記事では、Postman と Microsoft Graph の使用方法について説明します。 [Graph Explorer](https://developer.microsoft.com/ja-JP/graph/graph-explorer) を使用して、web ブラウザーで直接 Microsoft Graph API を検索することもできます。
 
 ## <a name="accessing-the-collection"></a>コレクションへのアクセス
 Postman のコレクションにアクセスするには、2 つの方法があります。使用する方法、付与する方法です。 最初にコンピューターで [Postman](https://www.getpostman.com/) を実行している必要があります。

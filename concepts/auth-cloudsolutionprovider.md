@@ -13,7 +13,7 @@ ms.locfileid: "35620179"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>クラウド ソリューション プロバイダーのアプリケーションからの Microsoft Graph の呼び出し
 
-> **注:** このトピックは Microsoft クラウド ソリューション プロバイダー (CSP) アプリケーション開発者**のみ**に適用されます。[Microsoft クラウド ソリューション プロバイダー (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) プログラムは、マイクロソフトパートナーが Microsoft Online サービスを再販し、管理することを可能とします。
+> **注:** このトピックは Microsoft クラウド ソリューション プロバイダー (CSP) アプリケーション開発者**のみ**に適用されます。[Microsoft クラウド ソリューション プロバイダー (CSP)](https://partner.microsoft.com/ja-JP/cloud-solution-provider) プログラムは、マイクロソフトパートナーが Microsoft Online サービスを再販し、管理することを可能とします。
 
 このトピックは、パートナーが管理する顧客のアプリケーションへのアクセスを Microsoft Graph を介し、[認証コードの許可のフロー](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-protocols-oauth-code)または[サービス間クライアント資格情報フロー](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service)により許容する方法を説明します。
 
@@ -35,8 +35,7 @@ CSP プログラムは、マイクロソフトパートナーが Microsoft Onlin
 
 ここで必要な最初の手順は、他のマルチテナントのアプリケーションの登録と設定の手順とほぼ同じです。
 
-1. 
-  [Azure ポータル](https://portal.azure.com)を使い、パートナー テナントに[アプリケーションを登録します](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-app-registration)。パートナー管理アプリケーションとして機能するよう、アプリケーションを [multi-tenant app](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant) として設定します。また、アプリが複数の地域で配布、販売される場合は、<a href="#region">ここ</a>で示すようにそれぞれの地域で登録する必要があります。
+1. [Azure ポータル](https://portal.azure.com)を使い、パートナー テナントに[アプリケーションを登録します](https://docs.microsoft.com/ja-JP/azure/active-directory/active-directory-app-registration)。パートナー管理アプリケーションとして機能するよう、アプリケーションを [multi-tenant app](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant) として設定します。また、アプリが複数の地域で配布、販売される場合は、<a href="#region">ここ</a>で示すようにそれぞれの地域で登録する必要があります。
 2. 再度 Azure ポータルから、最小限の特権のアプローチにより*必要となる権限*でマルチテナントのアプリケーションを設定します。
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>アプリをすべての顧客について事前同意します。
@@ -79,15 +78,13 @@ CSP プログラムは、マイクロソフトパートナーが Microsoft Onlin
 
 これは、標準的な[認証コード付与のフロー](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-protocols-oauth-code)ですが、エージェントがパートナーのアカウントを使用してサインインする必要がある点が異なります。わかりやすくするため、パートナーテナントを *partner.com* (エージェントのホーム テナント) とし、顧客を *customer.com* とします。
 
-1. 
-  [認証コードを取得する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code)アプリケーションは ```/authorize``` エンドポイントに要求を送信します。ターゲット テナントとして**顧客テナント** (この例では ```customer.com```) を指定しなくてはなりません。エージェントは、引き続き自分の ```username@partner.com``` アカウントでサインインします。
+1. [認証コードを取得する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code)アプリケーションは ```/authorize``` エンドポイントに要求を送信します。ターゲット テナントとして**顧客テナント** (この例では ```customer.com```) を指定しなくてはなりません。エージェントは、引き続き自分の ```username@partner.com``` アカウントでサインインします。
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. 
-  [承認コードを使用してアクセス トークンを取得する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token)アプリケーションは、```token``` エンドポイントに要求を送る際、ターゲット テナントを**顧客テナント** (この例では ```customer.com```) とする必要があります。
+2. [承認コードを使用してアクセス トークンを取得する](https://docs.microsoft.com/ja-JP/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token)アプリケーションは、```token``` エンドポイントに要求を送る際、ターゲット テナントを**顧客テナント** (この例では ```customer.com```) とする必要があります。
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
@@ -107,7 +104,7 @@ CSP プログラムは、マイクロソフトパートナーが Microsoft Onlin
 
 ## <a name="calling-microsoft-graph-immediately-after-customer-creation"></a>顧客作成後すぐに Microsoft Graph を呼び出す
 
-[Partner Center API](https://partnercenter.microsoft.com/en-us/partner/developer) を使用して新しい顧客を作成すると、新しい顧客テナントも作成されます。さらに、パートナーの関連付けが行われ、この新しい顧客テナントとレコードのパートナーとしての関連付けが行われます。このパートナー関係が新しい顧客テナントに反映されるには最長 3 分かかることがあります。作成後すぐにアプリケーションが直接に Microsoft Graph を呼び出すと、アクセス拒否エラーを受け取ることがあります。既存の顧客が招待を受け付けると、これと同じ遅延が発生することがあります。このため、事前承認は顧客テナントに存在しているパートナー関係に依存します。
+[Partner Center API](https://partnercenter.microsoft.com/ja-JP/partner/developer) を使用して新しい顧客を作成すると、新しい顧客テナントも作成されます。さらに、パートナーの関連付けが行われ、この新しい顧客テナントとレコードのパートナーとしての関連付けが行われます。このパートナー関係が新しい顧客テナントに反映されるには最長 3 分かかることがあります。作成後すぐにアプリケーションが直接に Microsoft Graph を呼び出すと、アクセス拒否エラーを受け取ることがあります。既存の顧客が招待を受け付けると、これと同じ遅延が発生することがあります。このため、事前承認は顧客テナントに存在しているパートナー関係に依存します。
 
 この問題を回避するには、顧客の作成後、パートナー アプリケーションは (Microsoft Graph を呼び出すための) トークン取得のために Azure AD を呼び出す前に **3 分間**待機することを推奨します。 ほとんどの場合がこれで解決します。 3 分待機しても認証エラーが発生する場合は、さらに 60 秒間待機してからもう一度試行します。
 

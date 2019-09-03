@@ -70,8 +70,7 @@ Microsoft Teams のチームは、[channel](channel.md) オブジェクトのコ
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) コレクション| このチームで実行済みまたは実行中の非同期操作です。 | 
 |primaryChannel|[channel](channel.md)|チームに関連付けられているプライマリ チャネル。|
 |schedule|[schedule](schedule.md)| このチームのシフトのスケジュール。|
-|template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 
-  [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)を参照してください。 |
+|template|[teamsTemplate](teamstemplate.md)| このチームの作成元テンプレート。 [使用可能なテンプレート](https://docs.microsoft.com/ja-JP/MicrosoftTeams/get-started-with-teams-templates)を参照してください。 |
 
 ## <a name="json-representation"></a>JSON 表記
 

@@ -120,8 +120,7 @@ ms.locfileid: "35966742"
 |parentFolderId|String|メッセージの親 mailFolder の一意識別子。|
 |receivedDateTime|DateTimeOffset|メッセージが受信された日時です。|
 |replyTo|[recipient](recipient.md) collection|返信時に使用される電子メール アドレス。|
-|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は **from** プロパティと同じです。 
-  [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときには、このプロパティに異なる値を設定できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
+|sender|[recipient](recipient.md)|メッセージを生成するために実際に使用されるアカウント。 ほとんどの場合、この値は **from** プロパティと同じです。 [共有メールボックス](https://docs.microsoft.com/ja-JP/exchange/collaboration/shared-mailboxes/shared-mailboxes)からメッセージを送信するとき、またはメッセージを [delegate](https://support.office.com/ja-JP/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926) として送信するときには、このプロパティに異なる値を設定できます。 いずれの場合でも、この値は、実際に使用されているメールボックスに対応している必要があります。 メッセージの[from プロパティと sender プロパティの設定](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)に関する詳細情報を参照してください。|
 |sentDateTime|DateTimeOffset|メッセージが送信された日時。|
 |subject|String|メッセージの件名。|
 |toRecipients|[recipient](recipient.md) collection|メッセージの宛先。|

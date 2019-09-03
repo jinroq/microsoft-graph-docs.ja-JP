@@ -91,8 +91,7 @@ Insights API は、[used](/graph/api/resources/insights-used?view=graph-rest-bet
 
 ## <a name="why-integrate-with-myanalytics-preview"></a>MyAnalytics (プレビュー) と統合する理由
 
-
-  [Myanalytics](https://docs.microsoft.com/ja-JP/workplace-analytics/myanalytics/index)は、人々がどのように時間を費やし、誰と過ごすかについての分析情報を提供します。 このデータは、人々が 1 日を計画し、さまざまな仕事のパターンを理解し、仕事と生活のバランスを取るのに役立ちます。
+[Myanalytics](https://docs.microsoft.com/ja-JP/workplace-analytics/myanalytics/index)は、人々がどのように時間を費やし、誰と過ごすかについての分析情報を提供します。 このデータは、人々が 1 日を計画し、さまざまな仕事のパターンを理解し、仕事と生活のバランスを取るのに役立ちます。
 
 Analytics API を使用すると、ユーザー分析データをカスタムのサード パーティ アプリと同期または統合して、ユーザーの生産性と共同作業の向上に役立つさまざまなシナリオをサポートすることができます。 たとえば、MyAnalytics データをモバイル デバイス アクティビティと統合して、ユーザーがすべての仕事とソーシャル アクティビティを追跡し、1 つのアプリ内で 1 日のすべてを計画できるようにすることができます。
 
