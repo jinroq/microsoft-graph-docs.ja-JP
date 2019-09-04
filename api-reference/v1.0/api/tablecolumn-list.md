@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9dabdb00ddf7394deca4dbfbf5b6a650df58f844
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 96733587e099c7a105116d2394a10b3fe520f699
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372371"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729134"
 ---
 # <a name="list-tablecolumncollection"></a>TableColumnCollection を一覧表示する
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[WorkbookTableColumn](../resources/tablecolumn.md)オブジェクトのコレクションを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[WorkbookTableColumn](../resources/workbooktablecolumn.md)オブジェクトのコレクションを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。
@@ -54,7 +54,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
   "blockType": "request",
   "name": "get_tablecolumncollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
