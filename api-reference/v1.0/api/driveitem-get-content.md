@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: DriveItem のプライマリ ストリーム (ファイル) のコンテンツをダウンロードします。 file プロパティを持つ driveItem のみがダウンロード可能です。
 doc_type: apiPageType
-ms.openlocfilehash: 451a324e930c01d569e8028f61a4b795a5a83a1e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 115e89350795f2287c869472888be3f63ea0b9a7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375066"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721139"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>DriveItem のコンテンツをダウンロードする
 
@@ -56,7 +56,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

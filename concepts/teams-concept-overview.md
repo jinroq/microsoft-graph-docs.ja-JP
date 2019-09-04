@@ -4,12 +4,12 @@ description: 'Microsoft Teams は、チームワークおよびインテリジ�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: da9999a0719d190950adf20bc119044366126f24
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d269408bc01036830e85be04fbaec3a07b2a6f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621222"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730331"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API の概要
 
@@ -40,7 +40,7 @@ Microsoft Graph を使用することにより、業務上の新しい問題が�
 顧客に新しい[チーム](/graph/api/resources/team?view=graph-rest-1.0)と[チャネル](/graph/api/resources/channel?view=graph-rest-1.0)を作成してもらうことができます。 
 その新しいチームに、[Teams アプリ](https://docs.microsoft.com/ja-JP/microsoftteams/platform/#pivot=home&panel=home-all)を[インストール](/graph/api/teamsappinstallation-add?view=graph-rest-1.0)します。 
 その新しいチャネルの[タブにアプリをピン留め](/graph/api/teamstab-add?view=graph-rest-1.0)します。 
-Web サイトまでリンクしているそのチャネルに[メッセージを送信](/graph/api/channel-post-chatmessage?view=graph-rest-beta)します。
+Web サイトまでリンクしているそのチャネルに[メッセージを送信](/graph/api/channel-post-messages?view=graph-rest-beta)します。
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>複数のチームとチャネルを作成および管理する
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f22afcb7537d2a905c9cd9d26489557dacbb2f44
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5f9db0adc4a78e4a6e203fb72c0179a4cc1a1075
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337168"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720768"
 ---
 # <a name="list-groups"></a>グループの一覧表示
 Office 365 グループを含み、それに限定されない組織のすべてのグループを一覧表示します。 
@@ -71,7 +71,7 @@ OData クエリ オプションの詳細については、「[OData クエリ �
   "blockType": "request",
   "name": "get_groups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -186,7 +186,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_groups_withlicenseerrors"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

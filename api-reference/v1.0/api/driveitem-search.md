@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: クエリと一致するアイテムを対象にアイテムの階層を検索します。
 doc_type: apiPageType
-ms.openlocfilehash: 46f24b88ba22d71789b8d5d9afe38626e050076e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 220ba34a2b88ba29cf20c63016af50c6322bcfae
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367249"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726369"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>ドライブ内の DriveItems を検索する
 
@@ -61,7 +61,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/search(q='{search-query}')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -124,7 +124,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/search(q='{search-query}')
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

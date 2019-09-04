@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7c117c314587aa26502dce1f40cb57dd9c9c44f0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9de4f41bfee17a560da5d971ce6ad2e6562b2bf8
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337257"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726761"
 ---
 # <a name="list-members"></a>メンバーを一覧表示する
 グループの直接メンバーの一覧を取得します。グループは、ユーザー、連絡先、および他のグループをメンバーとして持つことができます。この操作は推移的ではありません。
@@ -53,7 +53,7 @@ GET /groups/{id}/members
   "blockType": "request",
   "name": "get_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
