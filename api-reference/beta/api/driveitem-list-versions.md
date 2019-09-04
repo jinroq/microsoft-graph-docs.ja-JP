@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 20b05e9b0bcba7baae95f2f407c70be36f48a61b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 0a70d1097e1e311462790ee95e0f0c9fb1b2eb05
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416682"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717994"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>ドライブ項目のバージョンを一覧表示する
 
@@ -59,7 +59,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

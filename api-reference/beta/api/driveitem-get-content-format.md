@@ -6,12 +6,12 @@ title: 他の形式に変換する
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 47dc10a1292ab4b75f4bd5712b1d0deb9df1b44b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 914f6b5d847c6b8af5439c4b5e83f3d9f281aa65
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416801"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719382"
 ---
 # <a name="download-a-file-in-another-format"></a>別の形式でファイルをダウンロードする
 
@@ -63,7 +63,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drive/items/{item-id}/content?format={format}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

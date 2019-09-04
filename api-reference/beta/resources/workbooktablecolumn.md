@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 07dbcd2e900ced3fe235300cfab2b4922ddccc9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f4359b712f183ffc634e079aea0d61094a2b013
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007075"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726712"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>workbookTableColumn リソースの種類
 
@@ -39,7 +39,7 @@ ms.locfileid: "36007075"
 |:---------------|:--------|:----------|
 |id|int|テーブル内の列を識別する一意のキーを返します。読み取り専用です。|
 |index|int|テーブルの列コレクション内の列のインデックス番号を返します。0 を起点とする番号になります。読み取り専用です。|
-|name|string|テーブル列の名前を取得します。読み取り専用です。|
+|name|string|テーブル列の名前を返します。|
 |values|Json|指定した範囲の Raw 値を表します。返されるデータの型は、文字列、数値、またはブール値のいずれかになります。エラーが含まれているセルは、エラー文字列を返します。|
 
 ## <a name="relationships"></a>関係

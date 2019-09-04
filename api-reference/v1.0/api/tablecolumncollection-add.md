@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 265a978abb42b00d49aac991c0abd7a63728dd91
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6632ba9b8809500612b312cf792907586a6c6bd7
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373141"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36729113"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: 追加
 
@@ -47,7 +47,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 |name|string|name
 ## <a name="response"></a>応答
 
-成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookTableColumn](../resources/tablecolumn.md)オブジェクトを返します。
+成功した場合、この`200 OK`メソッドは応答コードと、応答本文で[WorkbookTableColumn](../resources/workbooktablecolumn.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 以下は、この API を呼び出す方法の例です。

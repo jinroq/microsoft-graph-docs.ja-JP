@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: DriveItem の有効な共有アクセス許可を一覧表示します。
 doc_type: apiPageType
-ms.openlocfilehash: 19fa8efb45570622b969fba060cd8d3da360166c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9700dbd4429ee20b4e2d5921e60d0f506bbfdc8d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376053"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36721102"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>DriveItem の共有アクセス許可を一覧表示する
 
@@ -80,7 +80,7 @@ DriveItem の有効な共有アクセス許可は、次の 2 つのソースが�
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/permissions
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

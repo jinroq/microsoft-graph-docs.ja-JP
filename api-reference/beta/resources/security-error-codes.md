@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 2d77a0f21623a98e4041b845e92a23c7574a415d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2291f0009c7d54a62ac30d448a9f97ff8935a569
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008559"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726313"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Microsoft Graph セキュリティ API のエラー応答
 
@@ -50,6 +50,10 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 ```
 
 > **注:** 各 HTTP ヘッダーはサブアイテムのコレクションであるため、ユーザーは警告ヘッダーを列挙してすべてのアイテムをチェックできます。
+
+## <a name="threat-indicator-bulk-action-errors"></a>脅威インジケーターの一括アクションエラー
+
+一括操作 (作成、更新、および削除) は、2つの異なる潜在的なエラーコードを生成できます。  400エラーコードは、提供された本文にシリアル化中にエラーが発生したことを示します。また、206エラーコードは、プロバイダーに対してフェデレーションアウトされたときに1つ以上の一括操作が失敗したことを示します。 応答には、脅威インテリジェンスインジケーターごとに個別のプロバイダーからの成功/エラーデータが含まれます。 警告とは異なり、潜在的なすべてのエラー情報は、脅威インジケーターの一括アクションに対する応答の本文内に含まれます。
 
 ## <a name="constraints"></a>制約
 
