@@ -5,12 +5,12 @@ title: フォローされたアイテムを一覧表示する
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 80dd68c1c1da0d57150d0a3b14497734830b99a2
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 2e9e67b32700dcb07017e5f4509d43915cc55742
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416962"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719431"
 ---
 # <a name="list-followed-items"></a>フォローされたアイテムを一覧表示する
 
@@ -35,7 +35,7 @@ ms.locfileid: "36416962"
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/following
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

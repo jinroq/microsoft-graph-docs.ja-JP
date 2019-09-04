@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0f782b2dc92165fcd266a5bb76d8fca5ad7d034d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3718b6c1915791d2a87e9fc760efa77fecbfca44
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410760"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722546"
 ---
 # <a name="list-timeoffreasons"></a>TimeOffReasons 理由を一覧表示する
 
@@ -62,7 +62,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
   "blockType": "request",
   "name": "schedule-list-timeoffreasons"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
