@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: DriveItem の子リレーションシップで DriveItems のコレクションを返します。
 doc_type: apiPageType
-ms.openlocfilehash: 5c875b35c9c11ffcfdd878991da2ef229e79fc7b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 144710d858ced9fd83fb1ed815377f94279736b6
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372063"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726376"
 ---
 # <a name="list-children-of-a-driveitem"></a>driveItem の子を一覧表示する
 
@@ -63,7 +63,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -94,7 +94,7 @@ GET /me/drive/root/children
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -149,7 +149,7 @@ Content-type: application/json
 }
 ```
 
-**注:** コレクションが既定のページ サイズ (200 アイテム) を超えた場合は、応答で **@odata.nextLink** プロパティが返され、より多くのアイテムが使用できることが示されます。また、アイテムの次のページの要求 URL も提供されます。
+**注**:コレクションが既定のページ サイズ (200 アイテム) を超えた場合は、応答で **\@odata.nextLink** プロパティが返され、より多くのアイテムが使用できることが示されます。また、アイテムの次のページの要求 URL も提供されます。
 
 ページ サイズは[オプションのクエリ文字列パラメーター](https://developer.microsoft.com/graph/docs/concepts/query_parameters)で制御できます。
 
