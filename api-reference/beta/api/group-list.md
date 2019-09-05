@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef03c4ea84ad11f7950c2df482c2480b724448c3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: be90057b02a9a1fe4dd1faab3a57b91c29855500
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420113"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720488"
 ---
 # <a name="list-groups"></a>グループの一覧表示
 
@@ -75,7 +75,7 @@ OData クエリ オプションの詳細については、「[OData クエリ �
   "blockType": "request",
   "name": "get_groups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -193,7 +193,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_groups_withlicenseerrors"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

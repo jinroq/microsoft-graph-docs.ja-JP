@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: a992390ac2a087d1df905a5eff606731b8944316
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2afa8aadb250f9c3450727f9e8fc74cbdad1aea2
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370537"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726355"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>[ファイル] [ドライブ] [バージョン] リソースのコンテンツをダウンロードする
 
@@ -57,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

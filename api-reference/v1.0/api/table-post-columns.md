@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6e1e4cc64388934f403603764ad1f60593791480
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3bea67531c2566c5da67065ee38518da18d6d109
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341712"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727692"
 ---
 # <a name="create-tablecolumn"></a>TableColumn を作成する
 
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Workbook-Session-Id  | 変更を保持するかどうかを決定するブック セッション ID。省略可能。|
 
 ## <a name="request-body"></a>要求本文
-要求本文で、 [WorkbookTableColumn](../resources/tablecolumn.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [WorkbookTableColumn](../resources/workbooktablecolumn.md)オブジェクトの JSON 表記を指定します。
 
 ## <a name="response"></a>応答
 
-成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[WorkbookTableColumn](../resources/tablecolumn.md)オブジェクトを返します。
+成功した場合、この`201 Created`メソッドは応答コードと、応答本文で[WorkbookTableColumn](../resources/workbooktablecolumn.md)オブジェクトを返します。
 
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
@@ -83,7 +83,7 @@ Content-length: 81
 
 ---
 
-要求本文で、 [WorkbookTableColumn](../resources/tablecolumn.md)オブジェクトの JSON 表記を指定します。
+要求本文で、 [WorkbookTableColumn](../resources/workbooktablecolumn.md)オブジェクトの JSON 表記を指定します。
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {

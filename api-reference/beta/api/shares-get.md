@@ -6,12 +6,12 @@ title: 共有アイテムへのアクセス
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 705c7033309fe383ac0649609e783caa4c6acb63
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d47ff5ee252c539f824d202f6727f0972e4a2627
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410125"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36722399"
 ---
 # <a name="accessing-shared-driveitems"></a>共有 DriveItems へのアクセス
 
@@ -88,7 +88,7 @@ redeemSharingLink は、発信者と同等であると考えて、共有リン�
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -142,7 +142,7 @@ Content-type: application/json
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -187,7 +187,7 @@ Content-Type: application/json
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

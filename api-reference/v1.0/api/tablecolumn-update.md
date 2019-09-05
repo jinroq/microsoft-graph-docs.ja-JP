@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1e5c1457dac7db561a5361cfad07e7283b891847
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 07dc8f6ee95dbdd7dbdf2d5424c6736484d34284
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373155"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36727636"
 ---
 # <a name="update-tablecolumn"></a>tablecolumn を更新する
 
@@ -45,7 +45,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookTableColumn](../resources/tablecolumn.md)オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で、更新された[WorkbookTableColumn](../resources/workbooktablecolumn.md)オブジェクトを返します。
 ## <a name="example"></a>例
 ##### <a name="request"></a>要求
 以下は、要求の例です。

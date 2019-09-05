@@ -6,12 +6,12 @@ title: 分析を取得する
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 9e388f913e310d7f8a294a1f5d1703e72cdc1ddd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9dc2fa1360c488b802510395a18364fe45c4c50c
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415492"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36726194"
 ---
 # <a name="get-analytics"></a>分析を取得する
 
@@ -54,7 +54,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

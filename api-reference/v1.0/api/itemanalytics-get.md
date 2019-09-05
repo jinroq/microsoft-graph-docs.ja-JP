@@ -6,12 +6,12 @@ description: このリソースの下で行われたビューに関する itemAn
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f43c9758cbdfd6e5b9cb3e343f0aa54fb0c9abec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c71a86b2ee8fcaa12c17e5b7428480fe12dd203d
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370649"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730282"
 ---
 # <a name="get-itemanalytics"></a>ItemAnalytics の取得
 
@@ -68,7 +68,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

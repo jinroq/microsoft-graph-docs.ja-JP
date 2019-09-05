@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 05ca093ec9ab20d039242d231619bc710ac79925
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c1d9ccd71e49e673235bfca151f5b5db92efd1f
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033986"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730296"
 ---
 # <a name="table-resource-type"></a>テーブル リソースの種類
 
@@ -22,8 +22,8 @@ Excel の表を表します。
 | メソッド           | 戻り値の型    |説明|
 |:---------------|:--------|:----------|
 |[テーブルを取得する](../api/table-get.md) | [WorkbookTable](table.md) |テーブル オブジェクトのプロパティと関係を読み取ります。|
-|[TableColumn を作成する](../api/table-post-columns.md) |[WorkbookTableColumn](tablecolumn.md)| 列コレクションに投稿して、新しい TableColumn を作成します。|
-|[列を一覧表示する](../api/table-list-columns.md) |[WorkbookTableColumn](tablecolumn.md) コレクション| TableColumn オブジェクトのコレクションを取得します。|
+|[TableColumn を作成する](../api/table-post-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md)| 列コレクションに投稿して、新しい TableColumn を作成します。|
+|[列を一覧表示する](../api/table-list-columns.md) |[WorkbookTableColumn](workbooktablecolumn.md) コレクション| TableColumn オブジェクトのコレクションを取得します。|
 |[TableRow を作成します。](../api/table-post-rows.md) |[WorkbookTableRow](tablerow.md)| 行コレクションに投稿して、新しい TableRow を作成します。|
 |[行を一覧表示する](../api/table-list-rows.md) |[WorkbookTableRow](tablerow.md) コレクション| TableRow オブジェクトのコレクションを取得します。|
 |[Update](../api/table-update.md) | [WorkbookTable](table.md)   |テーブル オブジェクトを更新します。 |
@@ -56,7 +56,7 @@ Excel の表を表します。
 ## <a name="relationships"></a>関係
 | リレーションシップ | 型   |説明|
 |:---------------|:--------|:----------|
-|columns|[WorkbookTableColumn](tablecolumn.md) コレクション|テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。|
+|columns|[WorkbookTableColumn](workbooktablecolumn.md) コレクション|テーブルに含まれるすべての列のコレクションを表します。読み取り専用です。|
 |rows|[WorkbookTableRow](tablerow.md) コレクション|テーブルに含まれるすべての行のコレクションを表します。読み取り専用です。|
 |sort|[WorkbookTableSort](tablesort.md)|テーブル内の並べ替えを表します。読み取り専用。|
 |worksheet|[WorkbookWorksheet](worksheet.md)|現在のテーブルを含んでいるワークシート。読み取り専用です。|

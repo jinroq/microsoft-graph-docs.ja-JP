@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 408d3942d8f05dd515882181eab1bc501b79f012
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 46205c1806b82a8965f5d19fcced60c1eb488a09
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337221"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36720810"
 ---
 # <a name="list-rejectedsenders"></a>rejectedSenders の一覧表示
 このグループの拒否された送信者リストに含まれるユーザーまたはグループの一覧を取得します。 
@@ -54,7 +54,7 @@ GET /groups/{id}/rejectedSenders
   "blockType": "request",
   "name": "get_rejectedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

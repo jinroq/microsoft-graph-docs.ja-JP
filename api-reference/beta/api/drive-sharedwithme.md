@@ -6,12 +6,12 @@ title: 共有アイテムのファイルの表示
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 13e029b9f6702709a76037af08b04095bef95c73
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ce039c92a18e6a146e97b7beb4571c2b2428c2d1
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416906"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36719424"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>サインイン ユーザーと共有しているアイテムを一覧表示する
 
@@ -38,7 +38,7 @@ ms.locfileid: "36416906"
 # <a name="httptabhttp"></a>[プロトコル](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
