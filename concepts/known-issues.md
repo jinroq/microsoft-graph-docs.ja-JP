@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: e32474745bb605bd0f9d1451cf8a8818cb06e7e5
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 1344312ded838f2c2828599092cc3392543d2d4d
+ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622650"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36758287"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -40,6 +40,10 @@ ms.locfileid: "36622650"
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>サインイン セッションの無効化で正しくない HTTP コードが返される
 
 [ユーザー: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) では、無効化が成功した場合に `204 No content` の応答が返され、要求に何かしらの問題がある場合には HTTP エラー コード (4xx または 5xx) が返される必要があります。  ただし、サービスの問題により、この API では `200 OK`と常に true のブール値が返されます。  これが修正されるまで、開発者はすべての 2xx リターン コードを、この API の成功として単に受け取ってください。
+
+### <a name="incomplete-objects-when-using-getbyids-request"></a>getByIds リクエストを使用しているときの不完全なオブジェクト
+
+[ID のリストからディレクトリ オブジェクトを取得する](/graph/api/directoryobject-getbyids?view=graph-rest-1.0)を使用してオブジェクトを要求することにより、完全なオブジェクトが返される必要があります。 ところが、現在の v1.0 エンドポイントの [ユーザー](/graph/api/resources/user?view=graph-rest-1.0) オブジェクトでは、制限された一部のプロパティで返されます。 一時的な回避策として、 `$select` クエリ オプションと組み合わせて操作を実行すると、より完全な [ユーザー](/graph/api/resources/user?view=graph-rest-1.0) オブジェクトが返されます。 この動作は、OData の仕様に従っていません。 この動作は将来的に更新される可能性があるので、関心があるすべてのプロパティを `$select=` に提供する場合か、将来の重大な変更でこの回避策が許容されている場合のみ、この回避策を使用します。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

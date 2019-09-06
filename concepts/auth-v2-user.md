@@ -4,12 +4,12 @@ description: Microsoft Graph を使用してユーザーの代理としてリソ
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dc4fa7792cf6913b1a7829c6865dd4a47802f7c7
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: d87b419276a33c4cdc79cf7569590c6377730e1e
+ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633728"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775554"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>ユーザーの代わりにアクセスを取得
 
@@ -107,7 +107,7 @@ code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 ```
 // Line breaks for legibility only
 
-POST /common/oauth2/v2.0/token HTTP/1.1
+POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
@@ -276,3 +276,4 @@ Azure AD エンドポイントからユーザーに代わって Microsoft Graph 
 
 - さまざまな種類のアプリで Microsoft ID プラットフォームのエンドポイントを使用する方法については、「[Microsoft ID プラットフォームの開発者向けドキュメント](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)」の「**はじめに**」リンクを参照してください。 ドキュメントには、Microsoft ID プラットフォームのエンドポイントでサポートされているさまざまな種類のアプリの概要トピック、クイックスタート、チュートリアル、コード サンプル、およびプロトコル ドキュメントへのリンクが含まれています。
 - Microsoft ID プラットフォームのエンドポイントで使用可能な Microsoft Authentication Library (MSAL) およびサーバー ミドルウェアの詳細については、「[Microsoft Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/msal-overview)」を参照してください。
+

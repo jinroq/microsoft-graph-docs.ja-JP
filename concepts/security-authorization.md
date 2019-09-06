@@ -4,12 +4,12 @@ description: Microsoft Graph セキュリティ API からアクセスできる�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 52f781eecef1da2d801025d4ba2409f9297b5cd8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: e8d7389689477f480d45cacd595f2c96e00d66bd
+ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621229"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36730338"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>承認と Microsoft Graph セキュリティ API
 
@@ -76,7 +76,7 @@ Microsoft ID プラットフォーム エンドポイントにアプリケーシ
     >**注**: テナント管理者である必要はありません。**[マイ アプリケーション]** リストにリダイレクトされます。
 2. **[新規登録]** を選択します。
 3. 新しいアプリケーションの登録ページで [**名前**]の値を入力し、サポートするアカウントの種類を選択します。 [**リダイレクト URL**] フィールドにリダイレクト URL を入力します。
-4. [**登録**] を選択してアプリを作成し、アプリの概要ページを表示します。
+4. [**登録**] を選択してアプリを作成し、アプリの概要ページを表示します。 *
 5. アプリの [**API のアクセス許可**] ページに移動します。
 6. [**アクセス許可を追加する**] を選択し、ポップアップで [**Microsoft Graph**] を選択します。 [**委任されたアクセス許可**] を選択します。 検索ボックスを使用して、必要なアクセス許可を検索して選択します。 アクセス許可のリストについては、「[セキュリティのアクセス許可](permissions-reference.md#security-permissions)」を参照してください。
 
@@ -97,6 +97,8 @@ Microsoft ID プラットフォーム エンドポイントにアプリケーシ
 - アプリケーション (クライアント) ID
 - リダイレクト URL
 - 必要なアクセス許可のリスト
+
+\* Windows Defender Advanced Threat Protection (WDATP) では、Microsoft Graph Security API で要求される以上の追加の [ユーザー ロール](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) を要求します。従って、WDATP および Microsoft Graph Security API の両方のロールのユーザーのみが WDATP のデータにアクセスできます。  アプリケーションのみの認証では、これにより制限されません。そのため、アプリ専用の認証トークンを使用することをお勧めします。
 
 詳細情報については、 「[Microsoft ID プラットフォームにアプリを登録する](auth-register-app-v2.md)」を参照してください。
 
