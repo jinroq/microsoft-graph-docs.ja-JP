@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 97918efa4f55aa435214e15396283a4aa4e3cdd3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 96f5e7cdcd9996eb409743186a03239949f4e727
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418853"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792291"
 ---
 # <a name="call-transfer"></a>通話: 転送
 
@@ -31,7 +31,6 @@ ms.locfileid: "36418853"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
-POST /applications/{id}/calls/{id}/transfer
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー

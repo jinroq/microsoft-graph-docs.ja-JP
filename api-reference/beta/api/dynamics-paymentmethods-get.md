@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d02cd6eae1ddc9006beeb58020196cbf1766d4e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c73b5776908545354fb3f66483048309b8e01365
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956073"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791429"
 ---
 # <a name="get-paymentmethods"></a>PaymentMethods を取得する
 Dynamics 365 Business Central の支払い方法オブジェクトのプロパティと関係を取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の支払い方法オブジェクトのプロパ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/paymentMethods('{id}')
+GET /financials/companies/{id}/paymentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/paymentMethods('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 
 **応答**

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 78e80f2a8a6a0b079861d75f809015f27003fcf1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2cf941f8efe1f00ebe5787ef5235501f65e90843
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956416"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791744"
 ---
 # <a name="get-customerpayments"></a>顧客の支払いを取得する
 Dynamics 365 Business Central の顧客支払いオブジェクトのプロパティと関係を取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の顧客支払いオブジェクトのプロパ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+GET /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/customerPaymentJournals('{id}')/customerPaymen
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')/customerPayments('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
 **応答**

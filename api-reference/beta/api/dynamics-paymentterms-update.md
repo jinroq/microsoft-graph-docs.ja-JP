@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3a7c596850989831c549f7cb642318e31f7fa420
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 51d475ba655ff08369c1bda931ea3c18ce6dc460
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956024"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791352"
 ---
 # <a name="update-paymentterms"></a>PaymentTerms の更新
 Dynamics 365 Business Central の支払い用語オブジェクトのプロパティを更新します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の支払い用語オブジェクトのプロパ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-PATCH /financials/companies('{id}')/paymentTerms('{id}')
+PATCH /financials/companies/{id}/paymentTerms/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ PATCH /financials/companies('{id}')/paymentTerms('{id}')
 
 以下は、要求の例です。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 Content-type: application/json
 
 {

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 68b0ceaa1beef3528cf3afc228b961fe737f3bac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69374662dd0a33405b17500b9d357db2f5f32b9d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956780"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792080"
 ---
 # <a name="delete-countriesregions"></a>CountriesRegions の削除
 Dynamics 365 Business Central から国/地域オブジェクトを削除します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central から国/地域オブジェクトを削除しま�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-DELETE /financials/companies('{id}')/countriesRegions('{id}')
+DELETE /financials/companies/{id}/countriesRegions/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
@@ -52,7 +52,7 @@ DELETE /financials/companies('{id}')/countriesRegions('{id}')
 以下は、要求の例です。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
 **応答** 

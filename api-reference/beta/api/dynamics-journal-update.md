@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1be3e84c57922c0edb6db313228e0e2c626165ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7f98f063e6c796d15adc141e58d761ad7de0f154
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956150"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791485"
 ---
 # <a name="update-journals"></a>ジャーナルを更新する
 Dynamics 365 Business Central の journal オブジェクトのプロパティを更新します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の journal オブジェクトのプロパティ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-PATCH /financials/companies('{id}')/journals('{id}')
+PATCH /financials/companies/{id}/journals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -54,7 +54,7 @@ PATCH /financials/companies('{id}')/journals('{id}')
 
 以下は、要求の例です。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 Content-type: application/json
 
 {

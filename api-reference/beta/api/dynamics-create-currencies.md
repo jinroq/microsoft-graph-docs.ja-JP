@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 9463c8ba3c203a5765a79ea81858c9daec5aa689
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32e506869991ca7ee19b280caae8bee9d4e5eeef
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956738"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792122"
 ---
 # <a name="create-currencies"></a>通貨を作成する
 Dynamics 365 Business Central で currency オブジェクトを作成します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central で currency オブジェクトを作成します�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-POST /financials/companies('{id}')/currencies
+POST /financials/companies/{id}/currencies
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ POST /financials/companies('{id}')/currencies
 要求の例を次に示します。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/currencies
+POST https://graph.microsoft.com/beta/financials/companies/{id}/currencies
 Content-type: application/json
 
 {

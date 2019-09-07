@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 565c4f1222b143ed9635a68bf29d88e544e4c8e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f82730cf810caa0e8aebd2bbc9dfd323871d2a4a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956304"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791639"
 ---
 # <a name="get-employees"></a>従業員の取得
 Dynamics 365 Business Central の employee オブジェクトのプロパティと関係を取得します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の employee オブジェクトのプロパティ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-GET /financials/companies('{id}')/employees('{id}')
+GET /financials/companies/{id}/employees/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -50,7 +50,7 @@ GET /financials/companies('{id}')/employees('{id}')
 以下は、要求の例です。
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
 **応答**
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/employees('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/employees/{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"  
 }
 ```

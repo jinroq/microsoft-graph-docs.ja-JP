@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a20b07e2cccb54b069a61ad9a927037481700813
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 161daadfc42213ed5b15c0de4e80e2f722ef8115
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418846"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792535"
 ---
 # <a name="call-unmute"></a>通話: ミュート解除
 
@@ -31,7 +31,6 @@ ms.locfileid: "36418846"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/unmute
-POST /applications/{id}/calls/{id}/unmute
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー

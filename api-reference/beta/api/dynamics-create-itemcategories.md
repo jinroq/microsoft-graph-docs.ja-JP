@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d8031b46d8ded0170dae1bcceeac68038fde0e5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf44a683f79192d02ffe87f57b0a9d5d92bc0f27
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956654"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791996"
 ---
 # <a name="create-itemcategories"></a>ItemCategories の作成
 アイテムカテゴリオブジェクト Dynamics 365 Business Central を作成します。
@@ -28,7 +28,7 @@ ms.locfileid: "35956654"
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-POST /financials/companies('{id}')/itemCategories
+POST /financials/companies/{id}/itemCategories
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ POST /financials/companies('{id}')/itemCategories
 要求の例を次に示します。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories
+POST https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories
 Content-type: application/json
 
 {

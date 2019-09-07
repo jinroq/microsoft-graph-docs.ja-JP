@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 27d7188d8f0443d11ab6799172a04b855cce5261
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 71f8f868531c0a7bf690b92cd9aac2212c79d8f1
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956122"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791450"
 ---
 # <a name="get-journallines"></a>JournalLines を取得する
 Dynamics 365 Business Central の journal 明細行オブジェクトのプロパティとリレーションシップを取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の journal 明細行オブジェクトのプロ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+GET /financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/journals('{id}')/journalLines('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')/journalLines('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 ```
 
 **応答**

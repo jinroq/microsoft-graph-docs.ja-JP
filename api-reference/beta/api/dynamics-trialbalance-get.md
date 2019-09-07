@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b3e5881964d49fa1a42cf1aa4f9da8fba818d6e5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5541fec6f60db848dcecb2400409728f919a67e
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955870"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791212"
 ---
 # <a name="get-trialbalance"></a>TrialBalance の取得
 Dynamics 365 Business Central の試算表レポートオブジェクトのプロパティと関係を取得します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の試算表レポートオブジェクトのプ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-GET /financials/companies('{id}')/trialBalance
+GET /financials/companies/{id}/trialBalance
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -51,7 +51,7 @@ GET /financials/companies('{id}')/trialBalance
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/trialBalance?$orderby number&$filter=dateFilter ge 2019-01-01 and dateFilter le 2019-12-31
+GET https://graph.microsoft.com/beta/financials/companies/{id}/trialBalance?$orderby number&$filter=dateFilter ge 2019-01-01 and dateFilter le 2019-12-31
 ```
 
 **応答**

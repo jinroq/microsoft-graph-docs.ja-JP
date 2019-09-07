@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: a44da57af784d0506392090e06a0851887499f34
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b471de6dac08111453d42b32f2c95e8d2a94f06
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956192"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791520"
 ---
 # <a name="update-itemcategories"></a>ItemCategories の更新
 Dynamics 365 Business Central のアイテムカテゴリオブジェクトのプロパティを更新します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central のアイテムカテゴリオブジェクトの�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-PATCH /financials/companies('{id}')/itemCategories('{id}')
+PATCH /financials/companies/{id}/itemCategories/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -54,7 +54,7 @@ PATCH /financials/companies('{id}')/itemCategories('{id}')
 
 以下は、要求の例です。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{id}
 Content-type: application/json
 
 {

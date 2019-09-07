@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: a5aadffbd09d8605823436b427128d4e80dbecf2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc99d713a239ee6c5859f438045c3b5a45ccd6ed
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956262"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791583"
 ---
 # <a name="delete-items"></a>アイテムの削除
 Dynamics 365 Business Central からアイテムを削除します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central からアイテムを削除します。
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-DELETE /financials/companies('{id}')/items('{id}')
+DELETE /financials/companies/{id}/items/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ DELETE /financials/companies('{id}')/items('{id}')
 
 以下は、要求の例です。
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 ```
 
 **応答**

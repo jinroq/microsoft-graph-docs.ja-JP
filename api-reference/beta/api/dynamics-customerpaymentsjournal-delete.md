@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6979115205152fec6d9bb4f16d0489539491e4a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ddd675b617c679258b0f5de5363922b1e3e6d8d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956388"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791730"
 ---
 # <a name="delete-customerpaymentjournals"></a>CustomerPaymentJournals の削除
 Dynamics 365 Business Central から顧客支払仕訳帳オブジェクトを削除します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central から顧客支払仕訳帳オブジェクトを�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-DELETE /financials/companies('{id}')/customerPaymentJournals('{id}')
+DELETE /financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -55,7 +55,7 @@ DELETE /financials/companies('{id}')/customerPaymentJournals('{id}')
 以下は、要求の例です。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 **応答** 

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 95e9fc2e0de68f737bc68c51e16d55caaa573208
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28ce56d439b43e8706f3a726dc6f18d0b79c64bb
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956080"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791401"
 ---
 # <a name="update-paymentmethods"></a>PaymentMethods の更新
 Dynamics 365 Business Central の支払い方法オブジェクトのプロパティを更新します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の支払い方法オブジェクトのプロパ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-PATCH /financials/companies('{id}')/paymentMethods('{id}')
+PATCH /financials/companies/{id}/paymentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ PATCH /financials/companies('{id}')/paymentMethods('{id}')
 
 以下は、要求の例です。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 Content-type: application/json
 
 {

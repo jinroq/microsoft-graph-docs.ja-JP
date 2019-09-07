@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 31d4907248d64a5200e1dbae9e4b2626f46b2ee1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21dc13cb3852e0c770eb02bfe52c0615bbe28e7e
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956556"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791884"
 ---
 # <a name="create-taxgroups"></a>TaxGroups を作成する
 Dynamics 365 Business Central で税グループオブジェクトを作成します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central で税グループオブジェクトを作成し�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-POST /financials/companies('{id}')/taxGroups
+POST /financials/companies/{id}/taxGroups
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -54,7 +54,7 @@ POST /financials/companies('{id}')/taxGroups
 要求の例を次に示します。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/taxGroups
+POST https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups
 Content-type: application/json
 
 {

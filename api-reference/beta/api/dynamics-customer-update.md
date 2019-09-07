@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 088db4752d62ffc521cf397db2692002537d3015
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a6fe65f031f8f20296fbbf09a5f64c37ae924beb
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956444"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791772"
 ---
 # <a name="update-customers"></a>顧客を更新する
 Dynamics 365 Business Central の customer オブジェクトのプロパティを更新します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の customer オブジェクトのプロパティ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-PATCH /financials/companies('{id}')/customers('{id}')
+PATCH /financials/companies/{id}/customers/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -54,7 +54,7 @@ PATCH /financials/companies('{id}')/customers('{id}')
 以下は、要求の例です。
 
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/customers('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 Content-type: application/json
 
 {

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 1c447be1946d2a5144b15476f70a211c754aa170
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a15fd1e1e07db00342391817ee204501bb7b196c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956094"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791415"
 ---
 # <a name="delete-paymentmethods"></a>PaymentMethods の削除
 Dynamics 365 Business Central から支払い方法オブジェクトを削除します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central から支払い方法オブジェクトを削除�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-DELETE /financials/companies('{id}')/paymentMethods('{id}')
+DELETE /financials/companies/{id}/paymentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -54,7 +54,7 @@ DELETE /financials/companies('{id}')/paymentMethods('{id}')
 以下は、要求の例です。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/paymentMethods('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentMethods/{id}
 ```
 
 **応答** 

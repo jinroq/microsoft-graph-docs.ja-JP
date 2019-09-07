@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: bf91890b5e339bebc73242172d64f6e710e41b02
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: d2451ba6ef8ae993b2ee6be5784bed98fd5f0ea9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412538"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792803"
 ---
 # <a name="delete-program"></a>プログラムの削除
 
@@ -35,7 +35,7 @@ Azure AD [access レビュー](../resources/accessreviews-root.md)機能で、[�
 ## <a name="http-request"></a>HTTP 要求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programs('{id}')
+DELETE /programs/{id}
 ```
 ## <a name="request-headers"></a>要求ヘッダー
 | 名前         | 型        | 説明 |

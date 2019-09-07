@@ -3,21 +3,21 @@ title: Microsoft Graph Toolkit (プレビュー)
 description: Microsoft Graph Toolkit は、フレームワークに依存しない web コンポーネントと、Microsoft Graph にアクセスして作業するためのヘルパーのコレクションです。
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ca55500217ab23f9e6a2744da61f332e745af398
-ms.sourcegitcommit: 705b32b9a64516d8138fab34c173b7df4f78a6ad
+ms.openlocfilehash: 4509e382b89dcd9c403695df2ff7d99115a7f8b4
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "35576404"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792864"
 ---
 # <a name="microsoft-graph-toolkit-preview"></a>Microsoft Graph Toolkit (プレビュー)
 
 Microsoft Graph Toolkit は、フレームワークに依存しない web コンポーネントと、Microsoft Graph にアクセスして作業するためのヘルパーのコレクションです。 すべてのコンポーネントは、カスタマイズを必要とせずに Microsoft Graph にアクセスできます。
 
-> [!NOTE]
-> このライブラリはプレビュー版で、初期段階の開発に含まれています。 コミュニティからのフィードバックに基づいて、すべてのコンポーネントと Api に変更が加えられ、強化されることを期待しています。
+>[!NOTE]
+>このライブラリはプレビュー版で、初期段階の開発に含まれています。 コミュニティからのフィードバックに基づいて、すべてのコンポーネントと Api に変更が加えられ、強化されることを期待しています。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>はじめに
 
 コンポーネントを使用するには、そのローダーを直接 (または、pkg を介して) 参照するか、または npm パッケージをインストールします。
 

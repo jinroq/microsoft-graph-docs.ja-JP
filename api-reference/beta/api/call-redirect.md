@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a43f9c6164e69315d60f39c2ae0b9c1ba3df2c9f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 7ea4e128f6cbbdd8184afdcb7113271fa32510df
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418895"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792269"
 ---
 # <a name="call-redirect"></a>call: redirect
 
@@ -49,6 +49,7 @@ POST /applications/{id}/calls/{id}/redirect
 |timeout|Int32|リダイレクト操作のタイムアウト (秒単位)。|
 |maskCallee 先|Boolean|呼び出し先をマスクするかどうかを示します。|
 |maskCaller|Boolean|発信者をマスクするかどうかを示します。|
+|callbackUri|String|このリダイレクトアクションの結果が投稿される特定のコールバック URI を bot が提供できるようにします。 これにより、リダイレクト操作をトリガーしたのと同じ特定の bot インスタンスに結果を送信できるようになります。 何も指定されていない場合は、bot のグローバルコールバック URI が使用されます。|
 
 ## <a name="response"></a>応答
 応答`202 Accepted`コードを返します。

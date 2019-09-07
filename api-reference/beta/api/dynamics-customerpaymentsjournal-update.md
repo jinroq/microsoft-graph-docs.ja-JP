@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 347bdb01011ce8949401f931ef270550e4395168
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 35ae2504b0448801cc76ecc74daa677e3403b743
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956367"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791681"
 ---
 # <a name="update-customerpaymentjournals"></a>CustomerPaymentJournals の更新
 Dynamics 365 Business Central の顧客支払仕訳帳オブジェクトのプロパティを更新します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の顧客支払仕訳帳オブジェクトのプ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-PATCH /financials/companies('{id}')/customerPaymentJournals('{id}')
+PATCH /financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -55,7 +55,7 @@ PATCH /financials/companies('{id}')/customerPaymentJournals('{id}')
 以下は、要求の例です。
 
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}
 Content-type: application/json
 
 {

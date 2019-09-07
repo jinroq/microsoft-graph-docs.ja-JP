@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: fbe39b0727648f3e8a9226fb9650afc9f73b826c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4dea935ee05865d238e03c8ab33bee429c4b80c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956010"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791345"
 ---
 # <a name="delete-shipmentmethods"></a>ShipmentMethods の削除
 Dynamics 365 Business Central から、送付方法オブジェクトを削除します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central から、送付方法オブジェクトを削除�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-DELETE /financials/companies('{id}')/shipmentMethods('{id}')
+DELETE /financials/companies/{id}/shipmentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ DELETE /financials/companies('{id}')/shipmentMethods('{id}')
 以下は、要求の例です。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/shipmentMethods('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{id}
 ```
 
 **応答** 

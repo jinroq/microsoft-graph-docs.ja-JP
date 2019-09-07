@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 84a756dc92819a2ab40b6bc24600af9c66f2004c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40f39f94f0249e2fa9947d8b3f828fc344a1ed39
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956598"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791919"
 ---
 # <a name="create-paymentterms"></a>PaymentTerms を作成する
 Dynamics 365 Business Central に支払い用語オブジェクトを作成します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central に支払い用語オブジェクトを作成し�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-POST /financials/companies('{id}')/paymentTerms
+POST /financials/companies/{id}/paymentTerms
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ POST /financials/companies('{id}')/paymentTerms
 要求の例を次に示します。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/paymentTerms
+POST https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms
 Content-type: application/json
 
 {

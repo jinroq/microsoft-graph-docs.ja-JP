@@ -5,16 +5,22 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f776395376d00f37e3b7d357ba9f719115c7e9f9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 55782b87569b4d153178c604af88126202c88f98
+ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371843"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36758301"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>ID のリストからディレクトリ オブジェクトを取得します。
 
-ID のリストで指定されたディレクトリ オブジェクトを返します。注:ここで返されるディレクトリ オブジェクトは、**すべて**のプロパティを含む完全なオブジェクトです。この操作に `$select` クエリ オプションは使用できません。
+ID のリストで指定されたディレクトリ オブジェクトを返します。
+
+>[!NOTE]
+>ここで返されるディレクトリ オブジェクトは、すべてのプロパティを含む完全なオブジェクトです。 この操作に `$select` クエリ オプションは使用できません。
+
+>[!NOTE]
+>この API には[既知](/graph/known-issues#incomplete-objects-when-using-getbyids-request)の問題があります。 返されるすべてのディレクトリ オブジェクトが、すべてのプロパティを含む完全なオブジェクトであるとは限りません。
 
 この関数の一般的な用途は次のとおりです。
 
@@ -53,8 +59,8 @@ POST /directoryObjects/getByIds
 
 | パラメーター   | 型 |説明|
 |:---------------|:--------|:----------|
-|ids|String collection| オブジェクトを戻す ID のコレクション。最大 1000 ID まで指定できます。 |
-|types|String コレクション| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) になります。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) から派生する任意のオブジェクトをコレクションに指定できます。例: [user](/graph/api/resources/user?view=graph-rest-v1.0)、[group](/graph/api/resources/group?view=graph-rest-v1.0)、[device](/graph/api/resources/device?view=graph-rest-v1.0) など。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照を検索するには、[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) を指定します。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) になります ([クラウド ソリューション プロバイダー](https://partner.microsoft.com/en-us/cloud-solution-provider) パートナー組織への参照をのぞく)。 値では、大文字と小文字は区別されません。|
+|ids|String collection| オブジェクトを戻す ID のコレクション。 最大 1000 ID まで指定できます。 |
+|types|String コレクション| 検索する一連のリソース コレクションを指定するリソース型のコレクションです。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) になります。 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) から派生する任意のオブジェクトをコレクションに指定できます。例: [user](/graph/api/resources/user?view=graph-rest-v1.0)、[group](/graph/api/resources/group?view=graph-rest-v1.0)、[device](/graph/api/resources/device?view=graph-rest-v1.0) など。 [クラウド ソリューション プロバイダー](https://partner.microsoft.com/ja-JP/cloud-solution-provider) パートナー組織への参照を検索するには、[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0) を指定します。 指定しない場合、既定値は、ディレクトリで定義されているすべてのリソース型を含む [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) になります ([クラウド ソリューション プロバイダー](https://partner.microsoft.com/ja-JP/cloud-solution-provider) パートナー組織への参照をのぞく)。 値では、大文字と小文字は区別されません。|
 
 ## <a name="response"></a>応答
 
