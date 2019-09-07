@@ -3,12 +3,14 @@ title: Azure AD ID およびアクセス管理 API の概要
 description: 'Azure Active Directory (Azure AD) は、ID およびアクセス管理 (IAM) を集中管理し、アプリ、デバイス、サービス、およびインフラストラクチャの間でのセキュアで生産性の高いアクセスを可能にします。 組織では、Azure AD を使用することにより、オンプレミス、ハイブリッド、およびクラウドの各環境において、ID およびコントロール アクセスを管理することができます。  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: bd4c71d1cada7badc15178580fd33edfd0e8cc8b
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.prod: microsoft-identity-platform
+scenarios: getting-started
+ms.openlocfilehash: 9ed9857ccba80c416386a9cff0d36d8e9ca0ce8f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951265"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792983"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD ID およびアクセス管理 API の概要
 
