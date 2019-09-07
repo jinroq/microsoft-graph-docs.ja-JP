@@ -3,12 +3,14 @@ title: OneNote API の概要
 description: OneNote は、顧客が Web、電話、タブレット、またはデスクトップ上で文字、スケッチ、音声を入力することで、家庭、学校、または職場用のアイデアやメモを追跡できるデジタル ノートブックです。 自由にメモを整理し、デバイスを切り替えて作業の中断箇所から再開し、他のユーザーとリアルタイムでメモの共同作業を行えます。
 author: Jewan-microsoft
 localization_priority: Priority
-ms.openlocfilehash: 7431bab05f0a749e20dd032f0b8472a1a822623d
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.prod: onenote
+scenarios: getting-started
+ms.openlocfilehash: 69aa0d83d9625559c7731391f6ad504bd86403f0
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133832"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792612"
 ---
 # <a name="onenote-api-overview"></a>OneNote API の概要
 
@@ -79,22 +81,14 @@ OneNote のコンテンツ更新機能については、Microsoft Graph API の�
 ## <a name="see-also"></a>関連項目
 OneNote サービス固有の REST エンドポイントにのみ公開されている、OneNote その他の機能の一部について説明します。
 
-- 
-  [OneNote の開発](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-landing)
-- 
-  [クラス ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- 
-  [非同期クラス ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- 
-  [スタッフ ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- 
-  [ノートブック、セクション、ページのコピー](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-copy)
-- 
-  [OneNote エンティティのアクセス許可を管理する](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- 
-  [Web ページで OneNote 保存ダイアログを使用する](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- 
-  [Webhooks の購読](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [OneNote の開発](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [クラス ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [非同期クラス ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [スタッフ ノートブックの操作](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [ノートブック、セクション、ページのコピー](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [OneNote エンティティのアクセス許可を管理する](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Web ページで OneNote 保存ダイアログを使用する](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Webhooks の購読](https://docs.microsoft.com/ja-JP/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>API リファレンス
 このサービスの API リファレンスをお探しですか?

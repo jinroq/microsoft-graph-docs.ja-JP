@@ -3,12 +3,14 @@ title: Microsoft Graph におけるユーザーの概要
 description: ユーザーは、Microsoft Graph における Azure Active Directory (Azure AD) の職場または学校のユーザー アカウント、または Microsoft アカウントの表現です。 Microsoft Graph の **user** リソースは、ユーザーと関連性のあるリレーションシップやリソースにアクセスする際に使用できるハブです。
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 4b9af2e4c1a7b461f6b515b48aba75d6af77d1d9
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: users
+scenarios: getting-started
+ms.openlocfilehash: 430f89f27f285084f3a10b15bb86bae1c0df2cdd
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599815"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792962"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Microsoft Graph におけるユーザーの概要
 

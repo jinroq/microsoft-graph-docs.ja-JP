@@ -3,12 +3,13 @@ title: 'アプリで Microsoft Graph データをページングする '
 description: "応答内の、結果の次のページへの URL を含む odata.nextLink' プロパティ。 "
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 8c39ff697de2d6afdb2f24c1ec99d2ce5a89b32c
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+scenarios: getting-started
+ms.openlocfilehash: e2f02b603d09d249dff7dd894dd9c3c7a66600a2
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133804"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792927"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>アプリで Microsoft Graph データをページングする 
 

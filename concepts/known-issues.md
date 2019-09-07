@@ -3,12 +3,12 @@ title: Microsoft Graph に関する既知の問題
 description: この記事では、Microsoft Graph に関する既知の問題について説明します。最新の更新プログラムについては、「Microsoft Graph の変更ログ」を参照してください。
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 1344312ded838f2c2828599092cc3392543d2d4d
-ms.sourcegitcommit: 25884c00cbfa2aa5c001cf777fd0ffa3c9a5ed68
+ms.openlocfilehash: 4895dd81a14369d5756d59ee95451f5942e246dc
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36758287"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792759"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph に関する既知の問題
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 別のユーザーによって共有されている予定表で、次の操作によってイベントにアクセスするとします。
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users/{id}/calendars/{id}/events
 ```
 
 エラー コード `ErrorInternalServerTransientError` で HTTP 500 を受け取る可能性があります。エラーが発生する理由は次のとおりです。
@@ -147,7 +147,7 @@ GET \users('{id}')\calendars('{id}')\events
 新しいアプローチで共有した予定表は、全く別の予定表のようにメールボックスで表示されます。共有された予定表では、予定表 REST API を使用して自分の予定表のようにイベントを表示または編集できます。次に例を示します。
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars/{id}/events
 ```
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>ユーザーのメールボックスに ICS ベースの予定表を追加してアクセスする

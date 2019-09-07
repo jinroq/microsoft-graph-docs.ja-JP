@@ -3,13 +3,14 @@ title: Microsoft Graph での Office 365 グループの概要
 description: 'Office 365 グループは、ユーザーが会話、ファイル、ノート、予定表、プラン、その他の多くのアセットを共有するための基本メンバーシップ サービスを提供します。 '
 author: dkershaw10
 localization_priority: Priority
-ms.prod: reports
-ms.openlocfilehash: cbd06a28b96680e43bbc6b9c2a440ed1b95b21cd
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.prod: groups
+scenarios: getting-started
+ms.openlocfilehash: 4142110f835cb12baa35e1746a536b71fb6635ea
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33621243"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791037"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Microsoft Graph での Office 365 グループの概要
 
