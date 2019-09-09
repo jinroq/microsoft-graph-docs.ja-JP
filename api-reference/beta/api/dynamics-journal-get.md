@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 5426a7fffd68d2fa18e888e2d1aa51a53fd44de2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1422f866d776b4d8b8c623df09251884dd6c22c6
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956164"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791471"
 ---
 # <a name="get-journals"></a>ジャーナルを取得する
 Dynamics 365 Business Central の journal オブジェクトのプロパティとリレーションシップを取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の journal オブジェクトのプロパティ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/journals('{id}')
+GET /financials/companies/{id}/journals/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/journals('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/journals('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 ```
 
 **応答**

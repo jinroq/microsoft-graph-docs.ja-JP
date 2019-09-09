@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b28ec56e2f7fa47726eaff46d37932ddaba16665
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b75a8d70b2692fb5add39e12e388aa364e8ea585
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956276"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791625"
 ---
 # <a name="get-generalledgerentries"></a>一般に備えた Gerentries エントリを取得する
 Dynamics 365 Business Central の総勘定元帳エントリオブジェクトのプロパティとリレーションシップを取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の総勘定元帳エントリオブジェクト�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-GET /financials/companies('{id}')/generalLedgerEntries('{id}')
+GET /financials/companies/{id}/generalLedgerEntries/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/generalLedgerEntries('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/generalLedgerEntries('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntries/{id}
 ```
 
 **応答**

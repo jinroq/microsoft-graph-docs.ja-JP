@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ce3980118a26276ab712e2c422b9260b8624b31c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c2b5235cdc8f841ad7fb11c5319d236f727d4da
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956514"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791842"
 ---
 # <a name="delete-currencies"></a>通貨を削除する
 Dynamics 365 Business Central から currency オブジェクトを削除します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central から currency オブジェクトを削除しま�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-DELETE /financials/companies('{id}')/currencies('{id}')
+DELETE /financials/companies/{id}/currencies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -55,7 +55,7 @@ DELETE /financials/companies('{id}')/currencies('{id}')
 以下は、要求の例です。
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/currencies('{id}')
+DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 
 **応答** 

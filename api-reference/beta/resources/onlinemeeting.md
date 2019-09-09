@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cd3615f82a4e88d6dc0b07c12ba72e39726e755f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 611731673d932d6c5135c0115d735e4d642b1bfe
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009357"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792794"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting リソースの種類
 
@@ -43,6 +43,8 @@ ms.locfileid: "36009357"
 | participants              | [会議参加者](meetingparticipants.md)          | オンライン会議に関連付けられている参加者。  これには、開催者と出席者が含まれます。 |
 | startDateTime             | DateTime                                               | 会議の開始時刻。 |
 | subject                   | String                                                 | オンライン会議の件名。 |
+| capabilities              | 文字列コレクション                                      | 会議機能のリスト。 可能な値は`questionAndAnswer`次のとおりです。 |
+| videoTeleconferenceId     | String                                                 | ビデオ会議 id。 |
 
 ## <a name="relationships"></a>リレーションシップ
 なし
@@ -74,6 +76,8 @@ ms.locfileid: "36009357"
   "meetingType": "meetNow | scheduled | recurring | broadcast",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
-  "subject": "String"
+  "subject": "String",
+  "capabilities": [ "questionAndAnswer" ],
+  "videoTeleconferenceId": "String"
 }
 ```

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8c78d23dd0fc80f3990160ad74e5c98fb09dc0e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1ae365e8dc033931a5c3cd97e4fd631959d1fe68
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36413777"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792542"
 ---
 # <a name="participant-mute"></a>参加者: ミュート
 
@@ -31,7 +31,6 @@ ms.locfileid: "36413777"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
-POST /applications/{id}/calls/{id}/participants/{id}/mute
 ```
 
 ## <a name="request-headers"></a>要求ヘッダー

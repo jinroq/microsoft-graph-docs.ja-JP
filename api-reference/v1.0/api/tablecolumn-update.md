@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 07dc8f6ee95dbdd7dbdf2d5424c6736484d34284
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: cea3f51c5da8a0702ecdb1abf4e6472aef5886c8
+ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727636"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36775561"
 ---
 # <a name="update-tablecolumn"></a>tablecolumn を更新する
 
@@ -83,6 +83,8 @@ Content-length: 81
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+> [!NOTE]
+> 列の複数のフィールドを更新する場合は、要求の中で**値**を string 配列にします。 例: `"values": [["a"], [1], [2], [3]]`。
 
 ##### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。

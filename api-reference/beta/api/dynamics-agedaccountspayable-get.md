@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 5945a7386ce8cd946bd0249c0848d9265e1ed392
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4884e6ba6d593160f3482de60bee3d358eb3a9ac
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956864"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792227"
 ---
 # <a name="get-agedaccountspayable"></a>AgedAccountsPayable を取得する
 Dynamics 365 Business Central の、古いアカウントの買掛金のレポートオブジェクトのプロパティとリレーションシップを取得します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の、古いアカウントの買掛金のレポ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-GET /financials/companies('{id}')/agedAccountsPayable
+GET /financials/companies/{id}/agedAccountsPayable
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
@@ -50,7 +50,7 @@ GET /financials/companies('{id}')/agedAccountsPayable
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
+GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
 **応答**

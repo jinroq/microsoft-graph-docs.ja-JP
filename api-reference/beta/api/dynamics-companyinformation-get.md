@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 10b8fff983f9c4f90bb40127ee5094a0fd0bdf74
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ca5f24ff66961995759cd7ccb84857fd1406bc9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956822"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792136"
 ---
 # <a name="get-companyinformation"></a>会社情報の取得
 Dynamics 365 Business Central の会社情報オブジェクトのプロパティと関係を取得します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の会社情報オブジェクトのプロパテ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-GET /financials/companies('{id}')/companyInformation('{id}')
+GET /financials/companies/{id}/companyInformation/{id}
 ```
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
 このメソッドは、応答をカスタマイズするための [OData クエリ パラメーター](/graph/query-parameters)をサポートします。
@@ -50,7 +50,7 @@ GET /financials/companies('{id}')/companyInformation('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/companyInformation('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
 ```
 
 **応答**
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/financials/companies('{id}')/companyInforma
   "currencyCode": "USD",
   "currentFiscalYearStartDate": "2018-01-01",
   "industry": "",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/companyInformation('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/companyInformation/{id}/picture",
   "businessProfileId": "",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
 }

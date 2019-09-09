@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 55c51b0016876a0b80f35d8d12168bb700881075
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50c119a08e547d87afa2eeb40e790b5e98e7b68d
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955933"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791254"
 ---
 # <a name="get-taxareas"></a>TaxAreas を取得する
 Dynamics 365 Business Central の税エリアオブジェクトのプロパティとリレーションシップを取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の税エリアオブジェクトのプロパテ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/taxAreas('{id}')
+GET /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/taxAreas('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
 ```
 
 **応答**

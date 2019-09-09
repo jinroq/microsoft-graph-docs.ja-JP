@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 2d670883305367e9e505cc1af6e84945aeb36474
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8f836dda6665c09939afbbabf87ef1e02d005ad
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955898"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791226"
 ---
 # <a name="get-taxgroups"></a>TaxGroups を取得する
 Dynamics 365 Business Central の税グループオブジェクトのプロパティと関係を取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の税グループオブジェクトのプロパ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/taxGroups('{id}')
+GET /financials/companies/{id}/taxGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/taxGroups('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/taxGroups('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/taxGroups/{id}
 ```
 
 **応答**

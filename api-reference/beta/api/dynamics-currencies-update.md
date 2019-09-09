@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 7bdacde2564fac7e3ee8f9a74960c15d5da50d1d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47a0b61c56a83199101d9fba1758464e8b35d99c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956479"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791814"
 ---
 # <a name="update-currencies"></a>通貨を更新する
 Dynamics 365 Business Central の currency オブジェクトのプロパティを更新します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の currency オブジェクトのプロパティ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-PATCH /financials/companies('{id}')/currencies('{id}')
+PATCH /financials/companies/{id}/currencies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ PATCH /financials/companies('{id}')/currencies('{id}')
 
 以下は、要求の例です。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/currencies('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 Content-type: application/json
 
 {

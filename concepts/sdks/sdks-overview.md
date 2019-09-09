@@ -3,12 +3,13 @@ title: Microsoft Graph Sdk の概要
 description: 利用可能な Sdk、サポートされているプラットフォーム、および開発者に提供する値について説明します。
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: deab2aac6f087f82c8f383f1aa0bed65e09a08fd
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+scenarios: getting-started
+ms.openlocfilehash: 86641c78a4f1c7b6f14a1e1fd07f52e4ca9d87ef
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630175"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792892"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Microsoft Graph Sdk の概要
 
@@ -29,7 +30,7 @@ Sdk は現在、以下の言語とプラットフォームで利用できます�
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
 - [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
 - [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
-- [Java](https://developer.microsoft.com/en-us/graph/get-started/javascript)
+- [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
 - [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
@@ -38,7 +39,7 @@ Sdk は現在、以下の言語とプラットフォームで利用できます�
 
 ## <a name="office-365-developer-subscription"></a>Office 365 開発者向けサブスクリプション
 
-Microsoft Graph を使用してアプリケーションをビルドする場合は、365 office 365 developer プログラムにサインアップすることにより、無料の office 開発者向けサブスクリプションを取得することをお勧めします。
+Microsoft Graph を使用してアプリケーションをビルドする場合は、 [365 office](http://aka.ms/OfficeDevProgram)365 developer プログラムにサインアップすることにより、無料の office 開発者向けサブスクリプションを取得することをお勧めします。
 
 ## <a name="see-also"></a>関連項目
 

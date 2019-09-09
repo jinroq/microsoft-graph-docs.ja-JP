@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e2e8138a89f25abafe0a5333136d5aef45014f10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9dc553ac9fbd0bbbbe45e7775ffd91f2f4cdb881
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956570"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791898"
 ---
 # <a name="create-taxareas"></a>TaxAreas を作成する
 Dynamics 365 Business Central に tax area オブジェクトを作成します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central に tax area オブジェクトを作成します�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-POST /financials/companies('{id}')/taxAreas('{id}')
+POST /financials/companies/{id}/taxAreas/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -54,7 +54,7 @@ POST /financials/companies('{id}')/taxAreas('{id}')
 要求の例を次に示します。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/taxAreas
+POST https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas
 Content-type: application/json
 
 ```json

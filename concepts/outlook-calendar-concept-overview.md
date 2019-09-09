@@ -4,12 +4,13 @@ description: Outlook カレンダーは、Office 365 の Outlook メッセージ
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e0f161e50cf32b6d50820799826884da4bf67f89
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+scenarios: getting-started
+ms.openlocfilehash: bbcf0f7ab8061309b7864913b15dad427a86e889
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840783"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36793000"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook カレンダー API の概要
 

@@ -5,12 +5,12 @@ ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55d91f72b561b5e476322b4aee051979005c577a
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557921"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36793011"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Microsoft Graph の People API を使用した最も関連のある人物に関する情報の取得
 
@@ -21,7 +21,7 @@ Microsoft Graph では、People API を使用してユーザーに最も関連�
 Microsoft Graph で People API を呼び出すには、アプリに適切なアクセス許可が必要になります。
 
 * People.Read - 一般的な People API の呼び出し (例: `https://graph.microsoft.com/v1.0/me/people/`) の作成に使用します。People.Read には、エンド ユーザーの同意が必要です。
-* People.Read.All - サインインしているユーザーの組織 (`https://graph.microsoft.com/v1.0/users('{id}')/people`) の呼び出しで、特定のユーザーに最も関連性のあるユーザーを取得するために必要です。 People.Read.All には、管理者の同意が必要です。
+* People.Read.All - サインインしているユーザーの組織 (`https://graph.microsoft.com/v1.0/users/{id}/people`) の呼び出しで、特定のユーザーに最も関連性のあるユーザーを取得するために必要です。 People.Read.All には、管理者の同意が必要です。
 
 ## <a name="browse-people"></a>人物の参照
 

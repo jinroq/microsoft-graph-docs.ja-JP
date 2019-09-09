@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d60570b92d16163f2e97c3e0944a6d19236cce9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a71b18110e6fc439aa7545b7c2c1fb1d4501b980
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956458"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791786"
 ---
 # <a name="get-customers"></a>顧客を取得する
 Dynamics 365 Business Central の customer オブジェクトのプロパティと関係を取得します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の customer オブジェクトのプロパティ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-GET /financials/companies('{id}')/customers('{id}')
+GET /financials/companies/{id}/customers/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -50,7 +50,7 @@ GET /financials/companies('{id}')/customers('{id}')
 以下は、要求の例です。
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/customers('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
 **応答**

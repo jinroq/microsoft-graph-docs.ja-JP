@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8ae9f79ba776f3695db9bb5aa8a24f1cddc8aa1e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dea41ecd4fa81488c5392b88347d57658598810f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955814"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791086"
 ---
 # <a name="get-vendors"></a>ベンダーを取得する
 Dynamics 365 Business Central のベンダーオブジェクトのプロパティとリレーションシップを取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central のベンダーオブジェクトのプロパテ�
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/vendors('{id}')
+GET /financials/companies/{id}/vendors/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/vendors('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/vendors('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
 ```
 
 **応答**

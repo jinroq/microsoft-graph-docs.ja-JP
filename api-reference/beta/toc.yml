@@ -9714,7 +9714,7 @@
             - name: Outlook タスク フォルダー
               href: resources/outlooktaskfolder.md
               items:
-                - name: リスト
+                - name: List
                   href: api/outlookuser-list-taskfolders.md
                 - name: 作成
                   href: api/outlookuser-post-taskfolders.md
@@ -9808,6 +9808,19 @@
                   href: api/workbook-list-worksheets.md
                 - name: 名前を一覧表示する
                   href: api/workbook-list-names.md
+            - name: ブックのコメント
+              href: resources/workbookcomment.md
+              items:
+                - name: リスト
+                  href: api/workbook-list-comments.md
+                - name: 取得
+                  href: api/workbookcomment-get.md
+                - name: 返信の一覧表示
+                  href: api/workbookcomment-list-replies.md
+                - name: 返信を作成する
+                  href: api/workbookcomment-post-replies.md
+                - name: 返信を取得する
+                  href: workbookcommentreply-get.md
             - name: ワークシート
               href: resources/workbookworksheet.md
               items:

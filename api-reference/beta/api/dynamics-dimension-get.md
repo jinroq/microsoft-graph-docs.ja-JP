@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8d48f6bd2df2307be7d22cdd6ea9395cc79723a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2e253131da757e0a1565d8ef8b3e9b48d6f26b9
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956360"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791674"
 ---
 # <a name="get-dimensions"></a>ディメンションを取得する
 Dynamics 365 Business Central の**dimensions**オブジェクトのプロパティとリレーションシップを取得します。
@@ -29,7 +29,7 @@ Dynamics 365 Business Central の**dimensions**オブジェクトのプロパテ
 ## <a name="http-request"></a>HTTP 要求
 
 ```
-GET /financials/companies('{id}')/dimensions('{id}')
+GET /financials/companies/{id}/dimensions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -52,7 +52,7 @@ GET /financials/companies('{id}')/dimensions('{id}')
 
 以下は、要求の例です。
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/dimensions('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
 ```
 
 **応答**

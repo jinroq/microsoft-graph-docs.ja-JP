@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 92bb3aa8875795ec3f56b16dc54aa8befeee1b71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a34fe9f02907a8572e2d31e7bec439eb4c8a8b91
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955982"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791310"
 ---
 # <a name="update-shipmentmethods"></a>ShipmentMethods の更新
 Dynamics 365 Business Central の送付方法オブジェクトのプロパティを更新します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の送付方法オブジェクトのプロパテ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-PATCH /financials/companies('{id}')/shipmentMethods('{id}')
+PATCH /financials/companies/{id}/shipmentMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ PATCH /financials/companies('{id}')/shipmentMethods('{id}')
 
 以下は、要求の例です。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/shipmentMethods('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{id}
 Content-type: application/json
 
 {

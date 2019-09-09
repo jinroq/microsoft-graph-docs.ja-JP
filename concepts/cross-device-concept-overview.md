@@ -3,12 +3,13 @@ title: Microsoft Graph のクロスデバイス エクスペリエンス
 description: '複数デバイス時代のユーザーは、複数のプラットフォームやフォーム ファクターのデバイスを使いこなしています。朝のニュースをタブレットで読み、通勤電車の中では携帯電話でメールをチェックし、仕事場ではデスクトップ PC を使います。 夜になると、ホーム メディア コンソールで映画を見た後、スマート スピーカーでその日のニュースを確認します。 平均的なユーザーは、一日の中で複数のデバイスやプラットフォームをあれこれ使い分けています。 '
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 78b1eebb2db66151a0e1ae1fee30f9122510be47
-ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
+scenarios: getting-started
+ms.openlocfilehash: 2961067a91c37179a3f1a5ab92723522db79aa67
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34036522"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792913"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Microsoft Graph のクロスデバイス エクスペリエンス
 

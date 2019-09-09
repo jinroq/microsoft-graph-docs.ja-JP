@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4be5d9a0ba74e6c875b7051085538a76b0bf4bf9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec909fd63688faabb001ac415b03bf498149e363
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956808"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792087"
 ---
 # <a name="update-companyinformation"></a>会社情報の更新
 Dynamics 365 Business Central の会社情報オブジェクトのプロパティを更新します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の会社情報オブジェクトのプロパテ�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-PATCH /financials/companies('{id}')/companyInformation('{id}')
+PATCH /financials/companies/{id}/companyInformation/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ PATCH /financials/companies('{id}')/companyInformation('{id}')
 
 以下は、要求の例です。
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/companyInformation('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
 Content-type: application/json
 
 {
@@ -90,7 +90,7 @@ Content-type: application/json
   "currencyCode": "USD",
   "currentFiscalYearStartDate": "2018-01-01",
   "industry": "",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/companyInformation('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/companyInformation/{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
   }
 ```

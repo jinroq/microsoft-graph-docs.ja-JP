@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c63f5675b65130a0e63d3ab78f28cea17c68d278
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699233"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792955"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -216,6 +216,17 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta) リソースが追加されました。 |
 | 追加 | ベータ版 | ユーザーの個人用アプリで、次のメソッドを有効化する[user](/graph/api/resources/user?view=graph-rest-beta) リソースに新しいメソッドが追加されました。 <br>[ユーザーのインストールされたアプリを一覧表示する](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[ユーザーのアプリをインストールする](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[ユーザーのアプリをアンインストールする](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[ユーザーのインストールされたアプリをアップグレードする](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
+### <a name="calls-and-online-meetings"></a>通話とオンライン会議 
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版        | **mediaState** プロパティが [call](/api-reference/beta/resources/call.md) リソースに追加されました|
+| 変更          | ベータ版        | [recordOperation](/api-reference/beta/resources/recordOperation.md) リソースの**recordResourceLocation** プロパティの名前を **recordingLocation** に変更しました|
+| 変更          | ベータ版        | [recordOperation](/api-reference/beta/resources/recordOperation.md) リソースの **recordResourceAccessToken** プロパティの名前を **recordingAccessToken** に変更しました|
+| 追加        | ベータ版        | **capabilities** プロパティが [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) リソースに追加されました |
+| 追加        | ベータ版        | **videoTeleconferenceId** プロパティが [onlineMeeting](/api-reference/beta/resources/onlinemeeting.md) リソースに追加されました |
+| 追加        | ベータ版        | **producers** プロパティが [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) リソースに追加されました |
+| 追加        | ベータ版        | **contributors** プロパティが [meetingParticipants](/api-reference/beta/resources/meetingparticipants.md) リソースに追加されました |
 
 ## <a name="june-2019"></a>2019 年 6 月
 
@@ -3046,7 +3057,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [グループの復元と完全削除](/graph/api/resources/directory?view=graph-rest-beta)に関するサポートが追加されました。<br/>新しいエンティティ: deleteditems ナビゲーション プロパティを持つディレクトリ。 |
-| 追加        | ベータ版        | 新しいエンティティ:</br>[Endpoint](/graph/api/resources/endpoint?view=graph-rest-beta) |
+| 追加        | ベータ版        | 新しいエンティティ:</br>[エンドポイント](/graph/api/resources/endpoint?view=graph-rest-beta) |
 | 変更          | ベータ版        | [groups](/graph/api/resources/group?view=graph-rest-beta) における新たな [endpoints](/graph/api/group-list-endpoints?view=graph-rest-beta) ナビゲーション プロパティ |
 | 追加        | ベータ版        | 新しいエンティティ:</br>[licenseDetails](/graph/api/resources/licensedetails?view=graph-rest-beta) |
 | 変更          | ベータ版        | [users](/graph/api/resources/user?view=graph-rest-beta) における新たな [licensedetails](/graph/api/user-list-licensedetails?view=graph-rest-beta) ナビゲーション プロパティ |

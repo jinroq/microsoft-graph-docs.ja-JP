@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 41c312a7b118dbe161c56d4eb226ef390d0d3d1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c1cf9e8c2d60c2af6ed20a2203b58c9edadd662f
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35956542"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791870"
 ---
 # <a name="create-unitsofmeasure"></a>UnitsOfMeasure を作成する
 Dynamics 365 Business Central の測定単位オブジェクトを作成します。
@@ -28,7 +28,7 @@ Dynamics 365 Business Central の測定単位オブジェクトを作成しま�
 
 ## <a name="http-request"></a>HTTP 要求
 ```
-POST /financials/companies('{id}')/unitsOfMeasure
+POST /financials/companies/{id}/unitsOfMeasure
 ```
 
 ## <a name="optional-query-parameters"></a>オプションのクエリ パラメーター
@@ -53,7 +53,7 @@ POST /financials/companies('{id}')/unitsOfMeasure
 要求の例を次に示します。
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure
+POST https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure
 Content-type: application/json
 
 {

@@ -3,12 +3,13 @@ title: 'Microsoft Graph 通知を使用して、人中心の通知エクスペ�
 description: '通知は、アプリケーションのユーザーと再びやり取りするのに最も効果的な方法の 1 つです。 優れた通知エクスペリエンスによってほぼリアルタイムにアプリケーション ユーザーとのコミュニケーション チャンネルを開くことができます。これにより、適切なタイミングでアプリケーションの使用が促進され、ユーザーの生産性が向上し、重要なイベントや必要な場合タイムリー アクションが通知されます。 '
 localization_priority: Priority
 ms.prod: notifications
-ms.openlocfilehash: b83e91be74de44dbd72315331964379992b811de
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+scenarios: getting-started
+ms.openlocfilehash: 06d07b7ae8d8f228ab6fa8c373b7eaa9aad8f61c
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133566"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36791030"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Microsoft Graph 通知を使用して、人中心の通知エクスペリエンスを有効にする
 
