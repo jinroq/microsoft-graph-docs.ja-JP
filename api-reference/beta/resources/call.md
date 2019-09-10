@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cd5c4cda918ecc9a9cd317bc610688e0297c0787
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4c36dc781a0e8887c218cf11f3e78d7098d9c99
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973499"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792836"
 ---
 # <a name="call-resource-type"></a>call リソースの種類
 
@@ -37,19 +37,19 @@ ms.locfileid: "35973499"
 | [参加者を一覧表示する](../api/call-list-participants.md)             | [participant](participant.md) コレクション          | participant オブジェクト コレクションを取得します。         |
 | [参加者を招待する](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | アクティブな通話に参加者を招待します。      |
 | [すべての参加者をミュートする](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | 通話ですべての参加者をミュートします。           |
+| [参加者をミュートする](../api/participant-mute.md)                    | [commsOperation](commsoperation.md)               | グループ通話の参加者をミュートします。        |
 | [オーディオ ミキサーを構成する](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | マルチパーティ会話の音声を構成します。  |
 | [audioRoutingGroup を作成する](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | audioRoutingGroups コレクションに投稿して、新しい audioRoutingGroup を作成します。 |
 | [audioRoutingGroups を一覧表示する (List audioRoutingGroups)](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) コレクション|audioRoutingGroup オブジェクト コレクションを取得します。  |
 | **対話型音声応答**                                    |                                                   |                                              |
 | [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | 通話でプロンプトを再生します。                     |
-| [録音する](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | 通話を録音します。                             |
+| [録音する](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | 通話から短い音声クリップを録音します。     |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | メディア処理を取り消します。                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | DTMF トーンを登録します。                     |
 | **自分の参加に関する操作**                                   |                                                   |                                              |
 | [ミュートする](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | 通話で自分をミュートします。                       |
 | [ミュート解除する](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | 通話で自分のミュートを解除します。                     |
-| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | 自分の名簿のメタデータを更新します。          |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | 通話における画面共有を開始および停止します                                             |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | 通話中に画面共有を開始および停止します。   |
 
 ## <a name="properties"></a>プロパティ
 
@@ -58,23 +58,24 @@ ms.locfileid: "35973499"
 | activeModalities    | String コレクション                                                                                      | アクティブなモダリティの一覧。 可能な値は、`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data` です。 読み取り専用です。 サーバーによって生成されます。                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | 通話に応答した参加者。 読み取り専用です。 サーバーによって生成されます。                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md) コレクション                                                                   | 再通話したときのルーティング情報。 読み取り専用です。 サーバーによって生成されます。                                                                                                                |
-| callbackUri         | String                                                                                                 | コールバック時のコールバック ID またはサブスクリプション ID。                                                                                                                               |
-| chatInfo            | [chatInfo](chatinfo.md)                                                                                | チャット情報。                                                                                                                                                                               |
-| direction           | String                                                                                                 | 通話方向。 使用可能な値: `incoming`、`outgoing`。 読み取り専用です。 サーバーによって生成されます。                                                                                            |
-| id                  | String                                                                                                 | 読み取り専用です。 サーバーによって生成されます。                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) または [serviceHostedMediaConfig](servicehostedmediaconfig.md) | メディア構成。                                                                                                                                                                        |
-| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 会議の機能が含まれます。                                                                                                                                                             |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) または [tokenMeetingInfo](tokenmeetinginfo.md)             | 会議の情報。                                                                                                                                                                            |
+| callbackUri         | String                                                                                                 | コールバック時のコールバック URL。 `https` である必要があります。                                                                                                                               |
+| chatInfo            | [chatInfo](chatinfo.md)                                                                                | チャット情報。 会議のシナリオに必要な情報。                                                                                                                                |
+| 方向           | String                                                                                                 | 通話方向。 使用可能な値: `incoming`、`outgoing`。 読み取り専用です。 サーバーによって生成されます。                                                                                            |
+| id                  | String                                                                                                 | 通話 ID。読み取り専用。 サーバーによって生成されます。                                                                                                                                                                        |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) または [serviceHostedMediaConfig](servicehostedmediaconfig.md) | メディア構成。 ピア ツー ピア通話の作成または会議への参加に必要な情報。                                                                        |
+| mediaState          | [callMediaState](callmediastate.md)                                                                    | 読み取り専用。 サーバーによって生成されます。 通話メディアの状態。 |
+| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 会議の機能が含まれます。 読み取り専用。 サーバーによって生成されます。                                                                                                        |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) または [tokenMeetingInfo](tokenmeetinginfo.md)             | 会議の情報。 会議のシナリオに必要な情報。                                                                                                              |
 | myParticipantId     | String                                                                                                 | 読み取り専用です。 サーバーによって生成されます。                                                                                                                                                                        |
 | requestedModalities | String コレクション                                                                                      | 要求されたモダリティの一覧。 | 可能な値は、`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data` です。                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | 結果の情報。 たとえば、終了理由を保持できます。 読み取り専用です。 サーバーによって生成されます。                                                                                                       |
-| ringingTimeoutInSeconds | Int32                                                                                              | 発信ピアツーピア通話の呼び出しタイムアウト                                                                                                                                                     |
-| routingPolicies     | String コレクション                                                                                      | 使用可能な値は、`none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding` です。                                                                                                   |
+| ringingTimeoutInSeconds | Int32                                                                                              | 発信ピア ツー ピア通話の呼び出しタイムアウト (秒単位)。 この属性の最大値は 115 秒です。                                                                                        |
+| routingPolicies     | String collection                                                                                      | このプロパティは、ピア ツー ピア通話にのみ適用されます。 可能な値は、`none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding`、`preferSkypeForBusiness` です。                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | 通話の発信者。                                                                                                                                                                         |
 | state               | String                                                                                                 | 通話状態。 可能な値は、`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated` です。 読み取り専用です。 サーバーによって生成されます。                         |
 | subject             | String                                                                                                 | 会話の件名。                                                                                                                                                                    |
-| Targets             | [participantInfo](participantinfo.md) コレクション                                                       | 通話対象。                                                                                                                                                                            |
-| tenantId            | String                                                                                                 | Azure Active Directory の tenantId。                                                                                                                                                                 |
+| Targets             | [participantInfo](participantinfo.md) コレクション                                                       | 通話対象。 ピア ツー ピア通話の作成に必要な情報。                                                                                                            |
+| tenantId            | String                                                                                                 | 読み取り専用です。 サーバーによって生成されます。 Azure Active Directory の `tenantId`。                                                                                                                        |
 | terminationReason   | String                                                                                                 | 読み取り専用です。 サーバーによって生成されます。                                                                                                                                                                        |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | 読み取り専用です。 サーバーによって生成されます。                                                                                                                                                                        |
 
@@ -84,7 +85,7 @@ ms.locfileid: "35973499"
 
 | リレーションシップ        | 型                                                 | 説明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) コレクション | 読み取り専用。Null 許容型です。                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) コレクション | 読み取り専用です。 Null 許容型。                                                |
 | operations          | [commsOperation](commsoperation.md)コレクション       | 読み取り専用。Null 許容型です。                                                |
 | participants        | [participant](participant.md) コレクション             | 読み取り専用。Null 許容型です。                                                |
 
@@ -101,13 +102,17 @@ ms.locfileid: "35973499"
     "chatInfo",
     "direction",
     "id",
+    "mediaState",
     "meetingCapability",
     "meetingInfo",
     "myParticipantId",
+    "replacesContext",
     "resultInfo",
     "ringingTimeoutInSeconds",
     "routingPolicies",
     "state",
+    "source",
+    "subject",
     "targets",
     "tenantId",
     "terminationReason",
@@ -119,27 +124,29 @@ ms.locfileid: "35973499"
 ```json
 {
   "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "answeredBy": {"@odata.type": "microsoft.graph.participantInfo"},
-  "callRoutes": [{"@odata.type": "microsoft.graph.callRoute"}],
+  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
-  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
-  "mediaConfig": {"@odata.type": "microsoft.graph.mediaConfig"},
-  "meetingCapability": {"@odata.type": "microsoft.graph.meetingCapability"},
-  "meetingInfo": {"@odata.type": "microsoft.graph.meetingInfo"},
+  "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
+  "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
+  "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
+  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
+  "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
-  "ringingTimeoutInSeconds": 1024,
-  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding"],
-  "source": {"@odata.type": "microsoft.graph.participantInfo"},
+  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "ringingTimeoutInSeconds": 99,
+  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding | preferSkypeForBusiness"],
+  "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
 }
 ```
 
