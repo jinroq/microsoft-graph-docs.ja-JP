@@ -2,27 +2,35 @@
 title: ユーザーのメールボックスの設定を更新する
 description: ユーザーのメールボックスの 1 つ以上の設定を更新します。 これには、自動応答の設定 (電子メールの受信時にユーザーに自動的に通知される)、ロケール (言語と国/地域)、タイムゾーン、および稼働時間の設定が含まれます。
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: angelgolfer-ms
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe39d03850c9e3d006827593cb4151c0cdac376b
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 22cccaaff660c8350c69bc68ccadb28b90786a64
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421800"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822740"
 ---
 # <a name="update-user-mailbox-settings"></a>ユーザーのメールボックスの設定を更新する
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ユーザーのメールボックスの設定を 1 つ以上更新します。これには、[自動応答](../resources/automaticrepliessetting.md) (電子メールの受信時に自動的にユーザーに通知)、[ロケール](../resources/localeinfo.md) (言語と国/地域)、タイム ゾーン、[就業時間](../resources/workinghours.md)の設定が含まれます。
+ユーザーの[mailboxSettings](../resources/mailboxsettings.md)の一部として、次の1つ以上の設定を有効、構成、または無効にします。
 
-これらの設定の 1 つ以上を、[mailboxSettings](../resources/mailboxsettings.md)の一部として有効化、構成、または無効化できます。
+- [自動応答](../resources/automaticrepliessetting.md)(電子メールの受信時にユーザーに自動的に通知します)
+- dateFormat
+- [ロケール](../resources/localeinfo.md)(言語および国/地域)
+- timeFormat
+- タイム ゾーン
+- [稼働時間](../resources/workinghours.md)
 
-**注** メールボックス設定は作成または削除できません。
+ユーザーの優先する日付または時刻の形式を更新する場合は、[[短い日付](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate)または[短い時刻](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime)形式] をそれぞれ指定します。 
 
-ユーザーの優先タイム ゾーンを更新する場合、Windows または [Internet Assigned Numbers Authority (IANA) のタイム ゾーン](https://www.iana.org/time-zones) (別称: Olson タイム ゾーン) 形式で指定することができます。 また、次の[例 2](#request-2)に示すように、タイムゾーンをさらにカスタマイズすることもできます。
+ユーザーの優先タイムゾーンを更新する場合は、Windows またはインターネットで[割り当てられた番号証明機関 (IANA) のタイム](https://www.iana.org/time-zones)ゾーン (olson タイムゾーンとも呼ばれる) 形式で指定します。 また、次の[例 2](#example-2)に示すように、タイムゾーンをさらにカスタマイズすることもできます。
+
+> [!TIP] 
+> メールボックスの設定を作成または削除することはできません。
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。アクセス許可の選択方法などの詳細については、「[アクセス許可](/graph/permissions-reference)」を参照してください。
@@ -52,13 +60,15 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | プロパティ     | 型   |説明|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。 このような通知は、将来の日付範囲に対してのみ設定できます。|
+|dateFormat|string|ユーザーのメールボックスの日付形式。|
 |language|[localeInfo](../resources/localeinfo.md)|優先言語および国/地域を含むユーザーのロケール情報。|
+|timeFormat|string|ユーザーのメールボックスの時刻形式。|
 |timeZone|string|ユーザーのメールボックスの既定のタイム ゾーン。|
 |workingHours|[workingHours](../resources/workinghours.md)|ユーザーが働く時間、曜日、タイムゾーン。|
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは `200 OK` 応答コードと、応答本文に [mailboxSettings](../resources/mailboxsettings.md) オブジェクトを返します。
+成功した場合、このメソッド`200 OK`は応答コードと、応答本文で[mailboxSettings](../resources/mailboxsettings.md)オブジェクトの更新されたプロパティを返します。
 
 ## <a name="errors"></a>エラー
 
@@ -72,8 +82,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | 無効な **timeZone** | 400 | InvalidTimeZone | 指定されているタイム ゾーンの設定は無効です。|
 
 
-## <a name="example"></a>例
-##### <a name="request-1"></a>要求 1
+## <a name="examples"></a>例
+### <a name="example-1"></a>例 1
+#### <a name="request"></a>要求 
 最初の例では、**automaticRepliesSetting** プロパティの **status**、**scheduledStartDateTime** および **scheduledEndDateTime** プロパティを設定して、該当する日付範囲に対して自動応答を有効にします。
 
 
@@ -115,7 +126,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response-1"></a>応答 1
+#### <a name="response"></a>応答
 この応答には、自動応答の設定が含まれます。 注: 簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。 実際の呼び出しではすべてのプロパティが返されます。
 <!-- {
   "blockType": "response",
@@ -146,8 +157,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>要求 2
+### <a name="example-2"></a>例 2
+#### <a name="request"></a>要求
 2 番目の例では、サインインしているユーザーの就業時間のタイム ゾーンをカスタマイズするために、**timeZone** プロパティを[カスタム タイム ゾーン](../resources/customtimezone.md)に設定します。
 
 <!-- {
@@ -192,7 +203,7 @@ Content-Type: application/json
   }
 } 
 ```
-##### <a name="response-2"></a>応答 2
+#### <a name="response"></a>応答
 以下は、応答の例です。注:簡潔にするために、ここに示す応答オブジェクトは切り詰められている場合があります。すべてのプロパティは実際の呼び出しから返されます。
 <!-- {
   "blockType": "ignored",

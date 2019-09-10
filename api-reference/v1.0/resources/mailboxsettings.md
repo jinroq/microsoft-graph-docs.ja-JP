@@ -5,16 +5,18 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3fdef250b1614cc19e57af4341f7983fa0fe9fa0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a9fb455d2a67835ff1a3a10f89ee188a21e9956b
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036303"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822782"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings リソースの種類
 
-サインイン ユーザーのプライマリ メールボックスの設定。
+[ユーザー](user.md)のプライマリメールボックスの設定。
+
+ユーザーの**mailboxSettings**プロパティを照会することによって、ユーザーのメールボックス設定を[取得](../api/user-get-mailboxsettings.md)または[更新](../api/user-update-mailboxsettings.md)することができます。
 
 
 ## <a name="properties"></a>プロパティ

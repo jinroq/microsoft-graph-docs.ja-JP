@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph での Excel の操作
-description: 'Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他のサポートされているストレージ プラットフォームに格納されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。`Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。ファイルの場所を URL で指定すれば、ドライブ API でブックにアクセスできます。例:'
+description: Microsoft Graph を使用すると、OneDrive、SharePoint、またはその他のサポートされているストレージ プラットフォームに格納されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。
 localization_priority: Normal
-author: lumine2008
+author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: d19fea84715a685efd87400b92da6aa42b1ee744
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 183cc096719ffee6441c93018fd0858d2aaf39a5
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972076"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822747"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 
@@ -92,7 +92,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->注: セッション ID の有効期限が切れていた場合、そのセッションで `404` HTTP エラー コードが返されます。 このようなシナリオでは、新しいセッションを作成して続行できます。 または、定期的にセッションを更新して維持するという方法もあります。 通常、永続セッションの有効期限は、非アクティブ状態が約 7 分間経過した後に切れます。 非永続セッションの有効期限は、非アクティブ状態が約 5 分間経過した後に切れます。 
+>注: セッション ID の有効期限が切れていた場合、そのセッションで `404` HTTP エラー コードが返されます。 このようなシナリオでは、新しいセッションを作成して続行できます。 または、定期的にセッションを更新して維持するという方法もあります。 通常、永続的なセッションは、非アクティブ状態が約5分後に期限切れになります。 非永続セッションは、約7分間の非アクティブ時間が経過すると有効期限切れになります。 
 
 ## <a name="common-excel-scenarios"></a>一般的な Excel のシナリオ
 
@@ -1179,6 +1179,9 @@ null は有効なカラー値ではないため、以下も無効になります
 }
 ```
 
+また、次の場合にも、応答で null 値が返されます。
+- オブジェクトの特定のプロパティを取得しようとするときにエラーが発生し、このプロパティを null として設定できる場合は、プロパティが応答で null 値を返すことがあります。
+- Range オブジェクトの場合、行全体または列全体の範囲を取得するときに、プロパティによっては、応答として null が返されることがあります。 範囲のサイズが上限 (5M cells) を超えている場合、一部のプロパティは値として null を返します。
 
 ### <a name="blank-input-and-output"></a>空の入力と出力
 

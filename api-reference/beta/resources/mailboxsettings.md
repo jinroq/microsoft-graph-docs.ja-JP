@@ -5,18 +5,20 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 769912b4fc818a892420111749b80614fefc7be9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63340e1edd86ad61c48d707ef0bff685a57c3ef8
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009882"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822733"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings リソースの種類
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-サインイン ユーザーのプライマリ メールボックスの設定。
+[ユーザー](user.md)のプライマリメールボックスの設定。
+
+ユーザーの**mailboxSettings**プロパティを照会することによって、ユーザーのメールボックス設定を[取得](../api/user-get-mailboxsettings.md)または[更新](../api/user-update-mailboxsettings.md)することができます。
 
 
 ## <a name="properties"></a>プロパティ
@@ -24,7 +26,9 @@ ms.locfileid: "36009882"
 |:---------------|:--------|:----------|
 |archiveFolder|string|ユーザーのアーカイブ フォルダーのフォルダー ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|サインイン ユーザーからのメッセージを使用して、着信メールの送信者に自動的に通知する構成設定。|
+|dateFormat|string|ユーザーのメールボックスの日付形式。|
 |language|[localeInfo](localeinfo.md)|優先言語および国/地域を含むユーザーのロケール情報。|
+|timeFormat|string|ユーザーのメールボックスの時刻形式。|
 |timeZone|string|ユーザーのメールボックスの既定のタイム ゾーン。|
 |workingHours|[workingHours](workinghours.md)|ユーザーが働く曜日と、特定のタイムゾーンの時間。|
 
@@ -44,11 +48,12 @@ ms.locfileid: "36009882"
 {
   "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
+  "dateFormat": "string",
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
+  "timeFormat": "string",
   "timeZone": "string",
   "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
