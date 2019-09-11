@@ -393,6 +393,8 @@ items:
                 href: toolkit/components/agenda.md
               - name: タスク
                 href: toolkit/components/tasks.md
+              - name: ユーザー ₋ ピッカー
+                href: toolkit/components/people-picker.md
           - name: プロバイダー
             items:
               - name: プロバイダーの使用

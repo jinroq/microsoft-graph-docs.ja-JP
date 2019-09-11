@@ -3,18 +3,27 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e46f95150bc0a50a43fc619955ce36adf48d95e3
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792955"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822754"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
 この変更ログでは、Microsoft Graph API と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
+
+## <a name="september-2019"></a>2019 年 9 月
+
+### <a name="users--outlook-settings"></a>ユーザー | Outlook の設定
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) リソースの **dateFormat** および **timeFormat** プロパティ。 プロパティは、ユーザーが優先する日付と時刻の形式を表します。|
+
 
 ## <a name="august-2019"></a>2019 年 8 月
 
@@ -3054,7 +3063,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="identity-and-access-directory-apis"></a>ID とアクセス (ディレクトリ API)
 
-| **変更の種類** | **バージョン** | **説明**                          |
+| **変更の種類** | **Version** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [グループの復元と完全削除](/graph/api/resources/directory?view=graph-rest-beta)に関するサポートが追加されました。<br/>新しいエンティティ: deleteditems ナビゲーション プロパティを持つディレクトリ。 |
 | 追加        | ベータ版        | 新しいエンティティ:</br>[エンドポイント](/graph/api/resources/endpoint?view=graph-rest-beta) |
@@ -3266,12 +3275,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | event リソースに [forward](/graph/api/event-forward?view=graph-rest-beta) アクションが追加されました。 |
 | 追加        | ベータ版        | カレンダーの共有をサポートする次のプロパティが、[calendar](/graph/api/resources/calendar?view=graph-rest-beta) リソースに追加されました: **canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isShareWithMe**、**owner**。 |
 
+### <a name="change-notifications-webhooks"></a>変更通知 (webhook)
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | 購読可能なリソースとしてドライブのルート項目が Webhooks に追加されました。 |
+
 ### <a name="mail-outlook"></a>メール (Outlook)
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | v1.0        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 複合型が追加されました。これには **automaticRepliesSetting**、**timeZone**、**language** プロパティが含まれています。 |
-| 追加        | v1.0        | **mailboxSettings** プロパティが [user](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加されました。 |
 | 追加        | ベータ版        | メッセージに含まれる[参照投稿](/graph/api/resources/mention?view=graph-rest-beta)の 1 つ以上のインスタンスを作成、一覧表示、取得、削除する機能のサポートが追加されました。参照投稿は、他のユーザーの注意を引きつけるためのメッセージ内のコールアウトをサポートしています。 |
 | 追加        | ベータ版        | [getMailTips](/graph/api/user-getmailtips?view=graph-rest-beta) アクションのサポートが追加され、特定の受信者のすべてのメール ヒントを取得できるようになりました。 次のリソースが追加されました: [automaticRepliesMailTips](/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta)、[mailTips](/graph/api/resources/mailtips?view=graph-rest-beta)、[mailTipsError](/graph/api/resources/mailtipserror?view=graph-rest-beta)。 |
 
@@ -3296,12 +3309,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | Outlook のグローバル アドレス一覧にこのユーザーを含める必要があるかどうかを制御するための **showInAddressList** プロパティが追加されました。 |
 | 追加        | ベータ版        | **invalidateAllRefreshTokens** サービス アクションが追加されました。これを使って **refreshTokensValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンが無効になります。 |
 
-
-### <a name="change-notifications-webhooks"></a>変更通知 (webhook)
+### <a name="users--outlook-settings"></a>ユーザー | Outlook の設定
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | 購読可能なリソースとしてドライブのルート項目が Webhooks に追加されました。 |
+| 追加        | v1.0        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 複合型が追加されました。これには **automaticRepliesSetting**、**timeZone**、**language** プロパティが含まれています。 |
+| 追加        | v1.0        | **mailboxSettings** プロパティが [user](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加されました。 |
+
 
 ## <a name="august-2016"></a>2016 年 8 月
 
