@@ -1,11 +1,11 @@
 ---
 description: 自動的に生成されたファイル。 変更しない
-ms.openlocfilehash: 9c01e64b2e19bc0b7319ead67b6a87d520f07fb6
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: f89534bffeff6c7b12391d7a97b8715cb110b34e
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35864993"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36846111"
 ---
 ```csharp
 
@@ -22,9 +22,9 @@ var mediaConfig = new MediaConfig
     Blob = "<media config blob>"
 };
 
-var acceptedModalities = new List<String>()
+var acceptedModalities = new List<Modality>()
 {
-    "audio"
+    Modality.Audio
 };
 
 await graphClient.App.Calls["{id}"]
