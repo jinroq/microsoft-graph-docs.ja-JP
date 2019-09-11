@@ -1,14 +1,15 @@
 ---
 title: Microsoft Graph の概要
 description: Microsoft Graph は、Microsoft 365 のデータとインテリジェンスにアクセスするための入り口です。 Microsoft Graph は、Office 365、Enterprise Mobility + Security、および Windows 10 の大量のデータを活用するために使用できる統合型プログラミング モデルを提供します。
-author: ''
+author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 90939951c4271425dc03c7330d16150a50cfb8d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+scenarios: getting-started
+ms.openlocfilehash: 576393f0f273f4ed030df5ad8fa51367b1bb4716
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038200"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792479"
 ---
 # <a name="overview-of-microsoft-graph"></a>Microsoft Graph の概要
 

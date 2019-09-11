@@ -4,22 +4,21 @@ description: Microsoft Graph セキュリティ API を使用して Microsoft �
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 595c1f80bb7c110197bf755fe74c0c842fa06014
-ms.sourcegitcommit: 3b39005e7cb76f57460c9e85542d86e039b67c46
+scenarios: getting-started
+ms.openlocfilehash: 7b12653382f88a3b16c370044fc3cb770aa2ac36
+ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35607393"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36792969"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph セキュリティ API の概要
 
 Microsoft Graph セキュリティ API を使用して Microsoft のセキュリティ製品、サービス、パートナーに接続することで、セキュリティ運用の効率化を図り、脅威の防止、検出、対処の各機能を向上させることができます。 Microsoft Graph セキュリティ API は、単一のプログラム インターフェイスで複数の [Microsoft Graph セキュリティ プロバイダー](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (セキュリティ プロバイダーまたはプロバイダーとも呼ばれる) を接続できる中継サービス (ブローカー) です。 Microsoft Graph セキュリティ API に対する要求は、適用可能なすべてのセキュリティ プロバイダーにフェデレーションされます。 次の図に示すように、結果は集計され、要求元のアプリケーションに共通のスキーマで返されます。 詳細については、「[Microsoft Graph セキュリティ API のデータ フロー](security-dataflow.md)」を参照してください。
 
-
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
 承認については、「[承認と Microsoft Graph セキュリティ API](security-authorization.md)」を参照してください。 代理アクセス許可やアプリケーションのアクセス許可などのアクセス許可については、「[アクセス許可](permissions-reference.md#security-permissions)」を参照してください。
-
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
@@ -35,7 +34,7 @@ Microsoft Graph セキュリティ API を使用して Microsoft のセキュリ
 
 ### <a name="unify-and-standardize-alert-tracking"></a>警告追跡の統合と標準化
 
-1 回接続すれば、Microsoft Graph 統合セキュリティ ソリューションからの警告を統合し、すべてのソリューション間で警告の状態と割り当ての同期を維持します。 また、[Azure Monitor](https://docs.microsoft.com/ja-JP/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) を使用して、Spluk や IBM QRadar などのセキュリティ情報およびイベント管理 (SIEM) ソリューションに警告をストリーミングすることができます。 SIEM とセキュリティ API エンティティとの統合の詳細については、「[SIEM との統合](security-siemintegration.md)」を参照してください。
+1 回接続すれば、Microsoft Graph 統合セキュリティ ソリューションからの警告を統合し、すべてのソリューション間で警告の状態と割り当ての同期を維持します。 また、Microsoft Graph Security API コネクタを使用して、Spluk などのセキュリティ情報およびイベント管理 (SIEM) ソリューションに警告をストリーミングすることができます。 セキュリティ API エンティティとのソリューション統合の詳細については、「[Microsoft Graph Security API を使用したセキュリティ ソリューションの統合](security-integration.md)」を参照してください。
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>セキュリティの警告を関連付け、脅威の予防と対処を向上させる
 
