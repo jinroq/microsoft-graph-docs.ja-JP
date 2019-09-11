@@ -1,16 +1,16 @@
 ---
 title: Microsoft Graph での Excel の操作
-description: Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに格納されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。 `Workbook` (つまり Excel ファイル) リソースには、リレーションシップを介するその他のすべての Excel リソースが含まれています。 ファイルの場所を URL で指定すれば、ドライブ API でブックにアクセスできます。 次に例を示します。
+description: Microsoft Graph を使用すると、OneDrive for Business、SharePoint サイト、またはグループ ドライブに格納されている Excel ブックを、Web アプリケーションやモバイル アプリケーションで読み取ったり変更したりすることができます。
 localization_priority: Priority
-author: lumine2008
+author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 38fb2a38d6c589c8bd0543a5e0c210518eb1ba0d
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: abbb74553e5993f6760adaf4929678f48b7b2b86
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699129"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822768"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Microsoft Graph での Excel の操作
 
@@ -1182,6 +1182,9 @@ null は有効なカラー値ではないため、以下も無効になります
 }
 ```
 
+null 値は、次の場合にも返されます。
+- オブジェクトの特定のプロパティを取得しようとしてエラーが発生し、このプロパティを null に設定できる場合、プロパティは応答で null 値を返すことがあります。
+- Range オブジェクトの場合、行全体または列全体の範囲を取得すると、一部のプロパティが応答として null を返すことがあります。 範囲のサイズが上限 (5M セル) を超える場合、一部のプロパティは null 値を返すことがあります。
 
 ### <a name="blank-input-and-output"></a>空の入力と出力
 
