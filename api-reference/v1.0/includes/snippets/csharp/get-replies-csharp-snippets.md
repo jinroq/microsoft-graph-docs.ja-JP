@@ -5,7 +5,7 @@ ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838891"
+ms.locfileid: "36839052"
 ---
 ```csharp
 

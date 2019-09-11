@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c16e1bf4548fcdb0ebec598a780a8196be26bf6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9a8713b0a65d38c7b160a79c033340ceb9d2366b
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719922"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838673"
 ---
 # <a name="list-chats"></a>チャットの一覧表示
 
@@ -24,9 +24,9 @@ ms.locfileid: "36719922"
 
 |アクセス許可の種類      | アクセス許可 (特権の小さいものから大きいものへ)              |
 |:--------------------|:---------------------------------------------------------|
-|委任 (職場または学校のアカウント) | Chat.Read   |
+|委任 (職場または学校のアカウント) | チャット。読み取り、読み取り/書き込み    |
 |委任 (個人用 Microsoft アカウント) | サポートされていません。    |
-|アプリケーション | サポートされていません。   |
+|アプリケーション | サポートされていません。   | Chat. All、すべてのチャット。   |
 
 ## <a name="http-request"></a>HTTP 要求
 
