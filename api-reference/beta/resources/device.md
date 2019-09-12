@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dad51a2a4a5a0cd248d09d617bd1cd39c6edb852
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a13c39b5d38abb3f44b0fb51ef7a5702ece74b25
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012822"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853827"
 ---
 # <a name="device-resource-type"></a>デバイス リソース型
 
@@ -32,6 +32,7 @@ ms.locfileid: "36012822"
 |[推移的な memberOf を一覧表示する](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| デバイスがメンバーであるグループを一覧表示します。 この操作は推移的です。 |
 |[registeredOwners を一覧表示する](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| registeredOwners ナビゲーション プロパティから、デバイスの登録済み所有者であるユーザーを取得します。|
 |[registeredUsers を一覧表示する](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) コレクション| registeredUsers ナビゲーション プロパティから、デバイスの登録済みユーザーを取得します。|
+|[checkMemberObjects](../api/device-checkmemberobjects.md) | 文字列コレクション | グループ、ディレクトリの役割、または管理単位オブジェクトの一覧のメンバーシップを確認します。 |
 |**オープン拡張機能**| | |
 |[オープン拡張機能を作成する](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| オープン拡張機能を作成し、新規または既存のリソースにカスタム プロパティを追加します。|
 |[オープン拡張機能を取得する](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) コレクション| 拡張機能の名前で識別されるオープン拡張機能を取得します。|
