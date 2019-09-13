@@ -3,12 +3,12 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: e46f95150bc0a50a43fc619955ce36adf48d95e3
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: fefe022cb3c2aafb14819f909efa58bc29fa8a95
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822754"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853806"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
@@ -95,10 +95,17 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | unifiedRoleDefinition リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - プロバイダーの unifiedRoleDefinition オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - 新しい unifiedRoleDefinition オブジェクトを作成します。</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - 統一されたロール定義オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトのプロパティを更新します。</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトを削除します。</li></ul> |
 | 追加 | ベータ版 | unifiedRoleAssignment リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - プロバイダーの unifiedRoleAssignment オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleAssignment]() - 新しい unifiedRoleAssignment オブジェクトを作成します。</li><li>[Get unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトを削除します。 |
 | 追加 | ベータ版 | [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [device](/graph/api/resources/device?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/directoryrole-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [group](/graph/api/resources/group?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [servicePrincipal](/graph/api/resources/serviceprinciple?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [user](/graph/api/resources/user?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
 |追加  | ベータ版 | [組織の連絡先を読み取るための委任されたアクセス許可とアプリケーション アクセス許可](permissions-reference.md#organizational-contact-permissions)を追加しました: OrgContact.Read.All |
 | 追加 | ベータ版 | 新しいエンティティ [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta) を追加しました。 |
 | 追加 | ベータ版 | 新しい複合型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta) を追加しました。 |
 | 追加 | ベータ版 | [organization](/graph/api/resources/organization?view=graph-rest-beta) リソースの**certificateBasedAuthConfiguration** に新しい関連付けを追加しました。 これにより、[Azure Active Directory で証明書に基づく認証](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)が可能になります。|
+
 
 ### <a name="reports"></a>レポート
 
@@ -3063,7 +3070,7 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 
 ### <a name="identity-and-access-directory-apis"></a>ID とアクセス (ディレクトリ API)
 
-| **変更の種類** | **Version** | **説明**                          |
+| **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 追加        | ベータ版        | [グループの復元と完全削除](/graph/api/resources/directory?view=graph-rest-beta)に関するサポートが追加されました。<br/>新しいエンティティ: deleteditems ナビゲーション プロパティを持つディレクトリ。 |
 | 追加        | ベータ版        | 新しいエンティティ:</br>[エンドポイント](/graph/api/resources/endpoint?view=graph-rest-beta) |

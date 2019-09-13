@@ -3,14 +3,14 @@ title: servicePrincipal リソースの種類
 description: ディレクトリ内のアプリケーションのインスタンスを表します。 directoryObject から継承します。
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 02cd5ee8d20ce963205d959cb91229a5621fe92f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: b50a23d2120222d2fd24ede4d4981bba3aa366dc
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008489"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853834"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal リソースの種類
 
@@ -120,9 +120,10 @@ ms.locfileid: "36008489"
 |[所有者を一覧表示する](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) コレクション| owner オブジェクトのコレクションを取得します。|
 |[更新する](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |servicePrincipal オブジェクトを更新します。 |
 |[削除する](../api/serviceprincipal-delete.md) | なし |servicePrincipal オブジェクトを削除します。 |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String コレクション||
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String コレクション||
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String コレクション||
+|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String collection|指定したグループ一覧内のメンバーシップを確認します。|
+|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|String collection|指定したグループ、ディレクトリ ロール、または管理ユニット オブジェクト一覧内のメンバーシップを確認します。|
+|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection|このサービス プリンシパルがメンバーになっているグループ一覧を取得します。|
+|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection|このサービス プリンシパルがメンバーになっているグループおよびディレクトリ ロール一覧を取得します。|
 |[差分](../api/serviceprincipal-delta.md)|servicePrincipal コレクション| サービス プリンシパルに対する増分の変更を取得します。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

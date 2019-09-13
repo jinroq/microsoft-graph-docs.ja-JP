@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: e7ee182238ea0b1f5216ac9aa79e776a0d225486
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450516"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853813"
 ---
 # <a name="user-resource-type"></a>user リソースの種類
 
@@ -64,7 +64,8 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|ユーザーのサブスクリプションを追加または削除します。また、サブスクリプションに関連付けられている特定のプランを有効または無効にすることもできます。|
 |[licenseDetails を一覧表示する](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) コレクション| licenseDetails オブジェクトのコレクションを取得します。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップを確認します。チェックは推移的です。|
-|[delta](../api/user-delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|String collection|グループ、ディレクトリ ロール、または管理ユニット オブジェクト一覧内のメンバーシップを確認します。 チェックは推移的です。|
+|[差分](../api/user-delta.md)|user コレクション| ユーザーに対する増分の変更を取得します。 |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|出席者の空き時間情報、場所、または時間の制約に基づいて、集まる時間と場所を見つけます。|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) コレクション | テナントで定義された部屋の一覧を取得します。|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md) コレクション | ユーザーのテナント内、または特定の部屋の一覧内のすべての会議室を取得します。 |
@@ -197,8 +198,7 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 
 | リレーションシップ | 型 |説明|
 |:---------------|:--------|:----------|
-|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) コレクション| 利用規約に対するユーザー承認状態。 読み取り専用です。 Null 許容型です。|
-|分析|[useranalytics](useranalytics.md) コレクション| ユーザーのアクティビティ統計と関連設定。 読み取り専用。 Null 許容型。|
+|agreementAcceptances|[agreementAcceptance](agreementacceptance.md) コレクション| 利用規約に対するユーザー承認状態。 読み取り専用です。 Null 許容型。|
 |予定表|[calendar](calendar.md)|ユーザーの標準予定表。読み取り専用です。|
 |calendarGroups|[calendarGroup](calendargroup.md) コレクション|ユーザーの予定表グループ。読み取り専用です。Null 許容型。|
 |calendarView|[event](event.md) コレクション|予定表のカレンダー ビュー。読み取り専用です。Null 許容型。|
@@ -239,7 +239,6 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -339,7 +338,6 @@ Azure AD ユーザー アカウントを表します。[directoryObject](directo
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
