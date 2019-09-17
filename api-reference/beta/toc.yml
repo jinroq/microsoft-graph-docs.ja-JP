@@ -8028,6 +8028,8 @@
                   href: api/device-list-memberof.md
                 - name: デバイスの推移性のグループを一覧表示する
                   href: api/device-list-transitivememberof.md
+                - name: メンバーオブジェクトの確認
+                  href: api/device-checkmemberobjects.md
             - name: ディレクトリ オブジェクト
               href: resources/directoryobject.md
               items:
@@ -8470,6 +8472,8 @@
                   href: api/serviceprincipal-update.md
                 - name: サービス プリンシパルを削除する
                   href: api/serviceprincipal-delete.md
+                - name: メンバーオブジェクトの確認
+                  href: api/serviceprincipal-checkmemberobjects.md
             - name: 購読している SKU
               href: resources/subscribedsku.md
               items:

@@ -248,6 +248,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: 保護された API
             href: teams-protected-apis.md
+          - name: ボットを使ってプロアクティブ メッセージを送信する
+            href: teams-proactive-messaging.md
       - name: ブックとグラフ
         displayName: Excel
         items:
@@ -393,6 +395,8 @@ items:
                 href: toolkit/components/agenda.md
               - name: タスク
                 href: toolkit/components/tasks.md
+              - name: ユーザー ₋ ピッカー
+                href: toolkit/components/people-picker.md
           - name: プロバイダー
             items:
               - name: プロバイダーの使用

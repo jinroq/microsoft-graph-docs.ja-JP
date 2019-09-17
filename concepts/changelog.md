@@ -3,18 +3,27 @@ title: Microsoft Graph の変更ログ
 description: この変更ログでは、Microsoft Graph と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0d0f7956849e6479db14307f4992ad86edab0666
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: fefe022cb3c2aafb14819f909efa58bc29fa8a95
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792955"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853806"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph の変更ログ
 
 この変更ログでは、Microsoft Graph API と、v1.0 およびベータ版のエンドポイント Microsoft Graph API の変更内容について説明します。
 
 Microsoft Graph API に関する既知の問題の詳細については、「[既知の問題](known-issues.md)」を参照してください。
+
+## <a name="september-2019"></a>2019 年 9 月
+
+### <a name="users--outlook-settings"></a>ユーザー | Outlook の設定
+
+| **変更の種類** | **バージョン** | **説明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 追加        | ベータ版        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) リソースの **dateFormat** および **timeFormat** プロパティ。 プロパティは、ユーザーが優先する日付と時刻の形式を表します。|
+
 
 ## <a name="august-2019"></a>2019 年 8 月
 
@@ -86,10 +95,17 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加 | ベータ版 | unifiedRoleDefinition リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - プロバイダーの unifiedRoleDefinition オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - 新しい unifiedRoleDefinition オブジェクトを作成します。</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - 統一されたロール定義オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトのプロパティを更新します。</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - unifiedRoleDefinition オブジェクトを削除します。</li></ul> |
 | 追加 | ベータ版 | unifiedRoleAssignment リソースをサポートするために次の操作が追加されました。 <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - プロバイダーの unifiedRoleAssignment オブジェクトの一覧を取得します。</li><li>[Create unifiedRoleAssignment]() - 新しい unifiedRoleAssignment オブジェクトを作成します。</li><li>[Get unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトのプロパティとリレーションシップを取得します。</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - unifiedRoleAssignment オブジェクトを削除します。 |
 | 追加 | ベータ版 | [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [device](/graph/api/resources/device?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/directoryrole-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [group](/graph/api/resources/group?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [servicePrincipal](/graph/api/resources/serviceprinciple?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
+| 追加 | ベータ版 | [user](/graph/api/resources/user?view=graph-rest-beta) リソースの [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta) 操作を追加しました。 |
 |追加  | ベータ版 | [組織の連絡先を読み取るための委任されたアクセス許可とアプリケーション アクセス許可](permissions-reference.md#organizational-contact-permissions)を追加しました: OrgContact.Read.All |
 | 追加 | ベータ版 | 新しいエンティティ [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta) を追加しました。 |
 | 追加 | ベータ版 | 新しい複合型 [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta) を追加しました。 |
 | 追加 | ベータ版 | [organization](/graph/api/resources/organization?view=graph-rest-beta) リソースの**certificateBasedAuthConfiguration** に新しい関連付けを追加しました。 これにより、[Azure Active Directory で証明書に基づく認証](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)が可能になります。|
+
 
 ### <a name="reports"></a>レポート
 
@@ -3266,12 +3282,16 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | event リソースに [forward](/graph/api/event-forward?view=graph-rest-beta) アクションが追加されました。 |
 | 追加        | ベータ版        | カレンダーの共有をサポートする次のプロパティが、[calendar](/graph/api/resources/calendar?view=graph-rest-beta) リソースに追加されました: **canEdit**、**canShare**、**canViewPrivateItems**、**isShared**、**isShareWithMe**、**owner**。 |
 
+### <a name="change-notifications-webhooks"></a>変更通知 (webhook)
+
+| **変更の種類** | **バージョン** | **説明**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| 追加        | ベータ版        | 購読可能なリソースとしてドライブのルート項目が Webhooks に追加されました。 |
+
 ### <a name="mail-outlook"></a>メール (Outlook)
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | v1.0        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 複合型が追加されました。これには **automaticRepliesSetting**、**timeZone**、**language** プロパティが含まれています。 |
-| 追加        | v1.0        | **mailboxSettings** プロパティが [user](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加されました。 |
 | 追加        | ベータ版        | メッセージに含まれる[参照投稿](/graph/api/resources/mention?view=graph-rest-beta)の 1 つ以上のインスタンスを作成、一覧表示、取得、削除する機能のサポートが追加されました。参照投稿は、他のユーザーの注意を引きつけるためのメッセージ内のコールアウトをサポートしています。 |
 | 追加        | ベータ版        | [getMailTips](/graph/api/user-getmailtips?view=graph-rest-beta) アクションのサポートが追加され、特定の受信者のすべてのメール ヒントを取得できるようになりました。 次のリソースが追加されました: [automaticRepliesMailTips](/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta)、[mailTips](/graph/api/resources/mailtips?view=graph-rest-beta)、[mailTipsError](/graph/api/resources/mailtipserror?view=graph-rest-beta)。 |
 
@@ -3296,12 +3316,13 @@ Microsoft Graph API に関する既知の問題の詳細については、「[�
 | 追加        | ベータ版        | Outlook のグローバル アドレス一覧にこのユーザーを含める必要があるかどうかを制御するための **showInAddressList** プロパティが追加されました。 |
 | 追加        | ベータ版        | **invalidateAllRefreshTokens** サービス アクションが追加されました。これを使って **refreshTokensValidFromDateTime** ユーザー プロパティを現在の日時にリセットすることで、アプリケーションに発行されたすべての更新トークンとセッション トークンが無効になります。 |
 
-
-### <a name="change-notifications-webhooks"></a>変更通知 (webhook)
+### <a name="users--outlook-settings"></a>ユーザー | Outlook の設定
 
 | **変更の種類** | **バージョン** | **説明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 追加        | ベータ版        | 購読可能なリソースとしてドライブのルート項目が Webhooks に追加されました。 |
+| 追加        | v1.0        | [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) 複合型が追加されました。これには **automaticRepliesSetting**、**timeZone**、**language** プロパティが含まれています。 |
+| 追加        | v1.0        | **mailboxSettings** プロパティが [user](/graph/api/resources/user?view=graph-rest-1.0) リソースに追加されました。 |
+
 
 ## <a name="august-2016"></a>2016 年 8 月
 

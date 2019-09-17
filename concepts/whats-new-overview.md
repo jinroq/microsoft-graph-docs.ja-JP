@@ -3,12 +3,12 @@ title: Microsoft Graph の新機能
 description: Microsoft Graph の最新機能
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 4840dbb711f2088f011c5c66d6c59d47d58145af
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: 7a6ab3c50fe14986744ccfd64fdddadd9aa67a6e
+ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622629"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822775"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph の新機能
 
@@ -20,8 +20,16 @@ Microsoft Graph チームでは、お客様のニーズを定期的に評価し�
 
 2. フィードバックで十分に実行可能性が示されるようであれば、 **_一般提供_ (GA)** ステータスに昇格させます。 関連するすべての REST API の更新プログラムは、v1.0 エンドポイントに追加されます (`https://graph.microsoft.com/v1.0`)。 
 
-以下は、Microsoft Graph の最新機能の特長、[アイデアの共有](#want-to-stay-in-the-loop)方法を示します。 API の更新の詳細については、API 変更ログの「[8 月](changelog.md#august-2019)」と「[7 月](changelog.md#july-2019)」のセクションを参照してください。 
+以下は、Microsoft Graph の最新機能の特長、[アイデアの共有](#want-to-stay-in-the-loop)方法を示します。 API の更新の詳細については、API 変更ログの「[9 月](changelog.md#september-2019)」と「[8 月](changelog.md#august-2019)」のセクションを参照してください。 
 
+
+## <a name="september-2019-new-in-preview"></a>2019 年 9 月: プレビューの新機能
+
+> [!IMPORTANT]
+> _プレビュー_ ステータスの機能 (API やツールを含む) は予告なしに変更されることがあり、一部の機能は GA ステータスに昇格されずに終わります。 製品版アプリにそれらの機能を使用しないでください。
+
+### <a name="users"></a>ユーザー
+- ユーザーが優先する[メールボックスの日付と時刻の形式設定](/graph/api/resources/mailboxsettings?view=graph-rest-beta)を取得または更新します。
 
 ## <a name="august-2019-new-and-generally-available"></a>2019 年 8 月: 新機能および一般公開 
 
@@ -58,54 +66,6 @@ Intune の [8 月](changelog.md#august-2019) の更新プログラム
 ### <a name="social-and-workplace-intelligence"></a>ソーシャル インテリジェンスおよび職場のインテリジェンス
 エンド ユーザーは、Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) アプリを使用して、時間の管理、職場での共同作業、ワークライフバランスに関する分析情報を取得できます。 現在、通話、チャット、メールなどの作業活動に費やされる時間のデータを統合したり、ユーザーの生産性とウェルビーイングを向上させたりするための[分析 API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns)を使用できるようになりました。 
 
-## <a name="july-2019-new-and-generally-available"></a>2019 年 7 月: 新機能および一般公開 
-
-### <a name="example-code-snippets"></a>コード スニペットの例
-v1.0 およびベータ リファレンスのすべての API トピックに、Objective-C のコード スニペットが含まれるようになりました。 [イベントを取得](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example)するための、Objective-C の例をご覧ください。
-
-### <a name="group"></a>グループ
-- [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) 関数を使用して、既存の Office 365 グループの表示名またはメールニックネームが命名ポリシーに準拠していることを確認します。
-- または、グループを作成する前に、[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) の [validateProperties](/graph/api/directoryobject-validateproperties?view=graph-rest-1.0) 関数を使用して、最初に名前を検証できます。
-
-### <a name="identity-and-access"></a>ID とアクセス
-- [新しい委任されたアクセス許可およびアプリケーション アクセス許可](permissions-reference.md#organization-permissions)、_Organization.Read.All_、ならびに _Organization.ReadWrite.All_ を使用して[組織](/graph/api/resources/organization?view=graph-rest-1.0)や [購読している SKUs](/graph/api/resources/subscribedsku?view=graph-rest-1.0) などの関連リソースにアクセスします。
-- 会社のディレクトリの役割ベースのアクセス制御（RBAC）には、[新しい委任およびアプリケーションの権限](permissions-reference.md#role-management-permissions)、_RoleManagement.Read.Directory_ および_RoleManagement.ReadWrite.Directory_ を使用します。
-
-  - 読み取り/書き込み権限を使用して、最初にディレクトリ ロールを[アクティブ化](/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0)します。 
-  - ロールをアクティブにすると、読み取り権限を使用して、[ディレクトリ ロールの読み取り](/graph/api/directoryrole-list?view=graph-rest-1.0)、[ロールメンバーの一覧表示](/graph/api/directoryrole-list-members?view=graph-rest-1.0)、および[ディレクトリ ロール テンプレートの一覧表示](/graph/api/directoryroletemplate-list?view=graph-rest-1.0)ができます。 
-  - また、読み取り/書き込み権限を使用して、ロール メンバーを[追加](/graph/api/directoryrole-post-members?view=graph-rest-1.0)したり、[削除](/graph/api/directoryrole-delete-member?view=graph-rest-1.0)したりすることができます。
-
-
-## <a name="july-2019-new-in-preview"></a>2019 年 7 月: プレビューの新機能
-
-> [!IMPORTANT]
-> _プレビュー_ ステータスの機能 (API やツールを含む) は予告なしに変更されることがあり、一部の機能は GA ステータスに昇格されずに終わります。 製品版アプリにそれらの機能を使用しないでください。
-
-### <a name="calendar"></a>カレンダー 
-新しい [places API](/graph/api/resources/place?view=graph-rest-beta) を使用して、Exchange Online 管理者が設定した[部屋](/graph/api/resources/room?view=graph-rest-beta)や[部屋リスト](/graph/api/resources/roomlist?view=graph-rest-beta)などの豊富なロケーション タイプを活用できます。
-
-### <a name="devices-and-apps"></a>デバイスとアプリ
-Intune [7 月](changelog.md#july-2019)の更新プログラム
-
-### <a name="files"></a>ファイル 
-ファイル、フォルダー、またはその他の [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) の[共有リンクの作成](/graph/api/driveitem-createlink?view=graph-rest-beta)を行うときに、有効期限の日時またはパスワードを適用します。
-
-### <a name="identity-and-access"></a>ID とアクセス
-- [アクセス レビュー](/graph/api/resources/accessreviews-root?view=graph-rest-beta) の CRUD 操作のための [新しいアプリケーションのアクセス許可](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ を使用します。 
-- [新しい委任およびアプリケーションの権限](permissions-reference.md#administrative-units-permissions)、_AdministrativeUnit.Read.All_、および_AdministrativeUnit.ReadWrite.All_ を使用して、それぞれの[管理ユニット](/graph/api/resources/administrativeunit?view=graph-rest-beta) リソースの読み取りまたは書き込みを行います（作成、更新、削除、またはメンバーシップの管理を含む）。
-- [新しい委任されたアクセス許可およびアプリケーション アクセス許可](permissions-reference.md#organization-permissions)、_Organization.Read.All_ および _Organization.ReadWrite.All_ を使用して、[組織](/graph/api/resources/organization?view=graph-rest-beta) や [購読している SKU](/graph/api/resources/subscribedsku?view=graph-rest-beta) などの関連リソースにアクセスします。
-- 新しい[discover](/graph/api/directorydefinition-discover?view=graph-rest-beta) 関数を使用して最新のディレクトリ[同期スキーマ](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta)を検索し、ディレクトリ オブジェクト、属性、それらの種類をアプリに同期します。
-- [機能ロールアウト ポリシー](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) を使用して、テナント管理者が機能を組織全体で有効にする前に、特定のグループに対して試験運用を実施するのを助けます。
-
-### <a name="mail"></a>メール
-より詳細なアプリケーション アクセス許可、_Mail.ReadBasic.All_ を使用して、メッセージ本文、プレビュー本文、添付ファイルを除くユーザーのメールボックスと、メールボックスの検索を除く拡張プロパティを読み取ります。 [message](/graph/api/resources/message?view=graph-rest-beta) と **mailFolder**用の[mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) と [変更履歴](delta-query-overview.md) に適用できるようになりました。
-
-### <a name="reports"></a>レポート
-- 削除されたアイテムの数とサイズに関する追加の[メールボックス使用状況データ](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta)を取得します。
-
-### <a name="teamwork"></a>チームワーク
-- ユーザーのための[インストール](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta)、[アンインストール](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta)、[アップグレード](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)、および[インストール済みの Microsoft Teams アプリの一覧表示](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta)を行います。
-- アプリのみのアクセスを使用して、チャンネルメッセージ、チャンネルメッセージへの返信、チャット内のメッセージを読み取ります。 そのようなアクセス権の[要求と承諾](teams-protected-apis.md)を得ます。
 
 ## <a name="want-to-stay-in-the-loop"></a>常に最新の情報を把握するには
 - Microsoft Graph でのサポートを希望するシナリオがある場合は、 [Microsoft Graph User Voice (Microsoft Graph のユーザーの声)](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) で新機能の提案と投票を行ってください。

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a8facfb63a4e88f7fcf31a27342ccdec026147ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6f7c28f517def80f2290aa04c838f9910209a752
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971864"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853820"
 ---
 # <a name="group-resource-type"></a>group リソースの種類
 
@@ -49,6 +49,7 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 |[memberOf を一覧表示する](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) コレクション| このグループが直接のメンバーであるグループおよび管理単位を、memberOf ナビゲーション プロパティから取得します。|
 |[推移的な memberOf を一覧表示する](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) コレクション| ユーザーがメンバーになっているグループ、管理単位を一覧表示します。 この操作は推移的で、このグループが入れ子のメンバーになっているグループが含まれます。 |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|グループの一覧内のメンバーシップについて確認します。この関数は、推移的です。|
+|[checkMemberObjects](../api/group-checkmemberobjects.md)|String collection|グループ、ディレクトリ ロール、または管理ユニット オブジェクト一覧内のメンバーシップを確認します。 この関数は推移的です。|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|このグループがメンバーであるすべてのグループを返します。この関数は、推移的です。|
 |[getMemberObjects](../api/group-getmemberobjects.md)|String collection|グループがメンバーになっているすべてのグループ、管理単位を返します。この関数は推移的です。 |
 |[設定を作成する](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |directorySettingTemplate に基づいて、設定オブジェクトを作成します。POST 要求は、テンプレートに定義されているすべての設定の settingValues を提供する必要があります。グループ固有のテンプレートにのみ、この操作を使用します。|
@@ -120,7 +121,7 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 |mail|String|グループの SMTP アドレス (たとえば、"Serviceadmins@contoso.onmicrosoft.com")。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
 |mailEnabled|ブール値|メールが有効なグループであるかどうかを指定します。 <br><br>既定で返されます。|
 |mailNickname|String|グループのメール エイリアスです (組織内で一意)。 このプロパティは、グループの作成時に指定する必要があります。 <br><br>既定で返されます。 $filter をサポートします。|
-|membershipRule|String|グループが動的なグループの場合 (groupTypes に `DynamicMembership` が含まれる) に、このグループのメンバーを決定する規則です。 メンバーシップの規則の構文の詳細については、「[メンバーシップの規則の構文](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。 <br><br>既定で返されます。 |
+|membershipRule|String|グループが動的なグループの場合 (groupTypes に `DynamicMembership` が含まれる) に、このグループのメンバーを決定する規則です。 メンバーシップの規則の構文の詳細については、「[メンバーシップの規則の構文](https://azure.microsoft.com/ja-JP/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。 <br><br>既定で返されます。 |
 |membershipRuleProcessingState|String|動的メンバーシップの処理が進行中か、または一時停止しているかどうかを示します。 使用可能な値は、"On" または "Paused" です。 <br><br>既定で返されます。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|グループがオンプレミスのディレクトリと最後に同期した日時を示します。Timestamp 型は、ISO 8601 形式を使用して日付と時刻の情報を表し、必ず UTC 時間です。 たとえば、2014 年 1 月 1 日午前 0 時 (UTC) は、`'2014-01-01T00:00:00Z'` のようになります。 <br><br>既定で返されます。 読み取り専用です。 $filter をサポートします。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) コレクション| Microsoft 同期製品のプロビジョニング中に発生するエラーです。 <br><br>既定で返されます。|
@@ -135,7 +136,7 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
 |unseenConversationsCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、新しい投稿が 1 つまたは複数配信された会話のカウントです。 このプロパティは、**unseenCount** と同じです。 <br><br>$select でのみ返されます。|
 |unseenCount|Int32|サインにしているユーザーのグループへの最後のアクセス以降に新しい投稿を受け取った会話の数です。 このプロパティは、**unseenConversationsCount** と同じです。<br><br>$select でのみ返されます。 |
 |unseenMessagesCount|Int32|サインイン ユーザーのグループへの最後のアクセス以降に、グループの会話に配信された新しい投稿のカウントです。 <br><br>$select でのみ返されます。|
-|visibility|String| Office 365 グループの表示を指定します。 使用可能な値: `private`、`public`、`hiddenmembership`。空の値はパブリックとして扱われます。  詳細については、「[グループの表示オプション](#group-visibility-options)」を参照してください。<br>表示はグループが作成されているときのみ設定することができます。編集はできません。<br>表示は、統合グループのみでサポートされています。セキュリティ グループではサポートされていません。 <br><br>既定で返されます。|
+|visibility|String| Office 365 グループの表示を指定します。 使用可能な値: `Private`、`Public`、`Hiddenmembership`。空の値はパブリックとして扱われます。  詳細については、「[グループの表示オプション](#group-visibility-options)」を参照してください。<br>表示はグループが作成されているときのみ設定することができます。編集はできません。<br>表示は、統合グループのみでサポートされています。セキュリティ グループではサポートされていません。 <br><br>既定で返されます。|
 
 ### <a name="group-visibility-options"></a>グループの表示オプション
 
@@ -143,9 +144,9 @@ Office 365 グループ、Microsoft Teams のチーム、またはセキュリ�
  
 |値|説明|
 |:----|-----------|
-| `public` | 所有者のアクセス許可の必要がなく、だれでもグループに参加することができます。<br>グループのコンテンツをだれでも読むことができます。|
-| `private` | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。|
-| `hiddenmembership` | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。<br>メンバー以外はグループのメンバーを確認することができません。<br>管理者 (グローバル、会社、ユーザー、ヘルプデスク) が、グループのメンバーシップを参照できます。<br>グループは、グローバル アドレス帳 (GAL) に表示されます。|
+| パブリック | 所有者のアクセス許可の必要がなく、だれでもグループに参加することができます。<br>グループのコンテンツをだれでも読むことができます。|
+| プライベート | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。|
+| Hiddenmembership | グループに参加するには、所有者のアクセス許可が必要です。<br>メンバー以外はグループのコンテンツを読むことができません。<br>メンバー以外はグループのメンバーを確認することができません。<br>管理者 (グローバル、会社、ユーザー、ヘルプデスク) が、グループのメンバーシップを参照できます。<br>グループは、グローバル アドレス帳 (GAL) に表示されます。|
 
 ## <a name="relationships"></a>リレーションシップ
 | リレーションシップ | 型   |説明|
